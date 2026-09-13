@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Don't Forget</title>
+  <meta name="description" content="Snap a photo of the thing you don't want to leave behind. Get reminded on a timer or when you walk away.">
+  <meta name="theme-color" content="#1f6feb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Don't Forget">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1><span class="logo" aria-hidden="true">📸</span> Don't Forget</h1>
+    <div class="topbar-actions">
+      <button id="btn-enable-notifs" class="chip chip-action" hidden>🔔 Enable alerts</button>
+      <button id="btn-about" class="icon-btn" aria-label="About and reliability">?</button>
+    </div>
+  </header>
+
+  <div id="ios-hint" class="banner" hidden>
+    <strong>iPhone tip:</strong> tap Share → <em>Add to Home Screen</em>, then open the app from there. Notifications only work from the installed app.
+  </div>
+
+  <!-- HOME -->
+  <main id="screen-home" class="screen">
+    <div id="geo-status" class="status-row" hidden>
+      <span class="dot dot-live"></span> <span id="geo-status-text">Watching your location</span>
+    </div>
+
+    <section id="list-active" class="list" aria-label="Active reminders"></section>
+
+    <div id="empty-state" class="empty" hidden>
+      <div class="empty-art">🧥☂️🔑</div>
+      <h2>Nothing to forget yet</h2>
+      <p>Sat down at a restaurant with your jacket on the chair? Snap it. You'll get a reminder with the photo before you walk out without it.</p>
+    </div>
+
+    <details id="past-wrap" class="past" hidden>
+      <summary>Past reminders (<span id="past-count">0</span>)</summary>
+      <section id="list-past" class="list"></section>
+      <button id="btn-clear-past" class="link-btn">Clear past reminders</button>
+    </details>
+
+    <button id="btn-new" class="fab" aria-label="New reminder">＋ New reminder</button>
+  </main>
+
+  <!-- NEW REMINDER -->
+  <main id="screen-new" class="screen" hidden>
+    <div class="screen-head">
+      <button id="btn-cancel-new" class="link-btn">‹ Back</button>
+      <h2>New reminder</h2>
+    </div>
+
+    <form id="form-new" novalidate>
+      <!-- Step 1: photo -->
+      <section class="card">
+        <label class="step-title" for="photo-input">1. Photo of the thing</label>
+        <input id="photo-input" type="file" accept="image/*" capture="environment" hidden>
+        <button type="button" id="btn-take-photo" class="big-btn">📷 Take a photo</button>
+        <div id="photo-preview-wrap" hidden>
+          <img id="photo-preview" alt="Preview of the item">
+          <button type="button" id="btn-retake" class="link-btn">Retake</button>
+        </div>
+      </section>
+
+      <!-- Step 2: label -->
+      <section class="card">
+        <label class="step-title" for="label-input">2. What is it? <span class="muted">(optional)</span></label>
+        <input id="label-input" type="text" maxlength="40" placeholder="e.g. jacket, umbrella, charger" autocomplete="off">
+      </section>
+
+      <!-- Step 3: when -->
+      <section class="card">
+        <div class="step-title">3. Remind me in…</div>
+        <p class="muted small" id="suggest-line"></p>
+        <div id="preset-grid" class="preset-grid" role="radiogroup" aria-label="Duration presets"></div>
+        <div class="custom-row">
+          <label for="custom-minutes">Custom:</label>
+          <input id="custom-minutes" type="number" inputmode="numeric" min="1" max="1440" placeholder="min">
+          <span class="muted">minutes</span>
+        </div>
+        <p class="due-line">Alarm at <strong id="due-preview">–</strong></p>
+      </section>
+
+      <!-- Step 4: location -->
+      <section class="card">
+        <label class="switch-row">
+          <span>
+            <span class="step-title">4. Also remind me when I leave this spot</span>
+            <span class="muted small" id="geo-help">Pins your current location. You'll be alerted if you walk away (roughly 75–300 m, depending on GPS accuracy) while the app is open.</span>
+            <span class="muted small warn-text" id="geo-embed-hint" hidden>⚠️ This preview is shown inside a frame, and browsers block location access there. Open the app in its own tab to use this.</span>
+          </span>
+          <input id="geo-toggle" type="checkbox" role="switch">
+        </label>
+        <div id="geo-pin-status" class="muted small" hidden></div>
+      </section>
+
+      <button type="submit" id="btn-save" class="big-btn primary" disabled>Set reminder</button>
+    </form>
+  </main>
+
+  <!-- ALERT MODAL -->
+  <div id="alert" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="alert-title">
+    <div class="modal-card">
+      <div id="alert-kicker" class="kicker">⏰ Time's up</div>
+      <h2 id="alert-title">Don't forget this!</h2>
+      <img id="alert-photo" alt="The item you don't want to forget">
+      <p id="alert-sub" class="muted"></p>
+      <div class="modal-actions">
+        <button id="btn-alert-done" class="big-btn primary">✓ Got it</button>
+        <div class="row">
+          <button id="btn-snooze-5" class="big-btn">Snooze 5 min</button>
+          <button id="btn-snooze-10" class="big-btn">Snooze 10 min</button>
+        </div>
+        <button id="btn-alert-close" class="link-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT / RELIABILITY -->
+  <div id="about" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="about-title">
+    <div class="modal-card">
+      <h2 id="about-title">How reliable is this?</h2>
+      <p>This is a web app, which keeps it easy to try on any phone, but browsers limit what an app can do once you leave it.</p>
+      <ul class="plain">
+        <li><strong>Timers:</strong> fire while the app is open or in a recent tab. If your phone fully suspends the tab, the alert appears the moment you come back.</li>
+        <li><strong>Leaving a place:</strong> location is only tracked while the app is open on screen. Browsers don't allow background geofencing.</li>
+        <li><strong>Notifications:</strong> need permission. On iPhone the app must be added to the Home Screen first.</li>
+        <li><strong>Privacy:</strong> photos and locations never leave your device. Everything is stored in the browser.</li>
+      </ul>
+      <p class="muted small">For true background alarms and geofences, the next step is a native iOS/Android app or a push-notification server.</p>
+      <h3 class="diag-head">What works in this browser</h3>
+      <ul id="diag" class="diag"></ul>
+      <button id="btn-about-close" class="big-btn">Close</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
