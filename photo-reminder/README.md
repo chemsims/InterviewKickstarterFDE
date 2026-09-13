@@ -1,0 +1,53 @@
+# Don't Forget
+
+Snap a photo of the thing you don't want to leave behind (jacket on the chair, umbrella by the door, charger at a friend's place). Pick how long you'll be, or pin the spot. When the timer runs out, or when you walk away, the app shows you the photo.
+
+No accounts, no server, no build step. Photos and locations stay in your browser.
+
+## Try it
+
+```bash
+cd photo-reminder
+npx http-server -p 8080 .      # or: python3 -m http.server 8080
+```
+
+Open `http://localhost:8080` on your laptop, or on your phone over the same Wi‑Fi (use your laptop's IP). Camera, notifications and location need HTTPS or `localhost`, so for a phone test the easiest route is a tunnel (`npx localtunnel --port 8080`) or any static host (GitHub Pages, Netlify, Vercel).
+
+On iPhone, use Share → **Add to Home Screen** and open it from there. That's the only way iOS lets a web app show notifications.
+
+## How it works
+
+1. **Photo.** `<input type="file" capture="environment">` opens the rear camera on phones. The image is downscaled to 1280 px and stored as a JPEG in IndexedDB. A 320 px thumbnail is kept as a data URL so it can appear inside the notification itself.
+2. **Time.** Presets (quick errand 15 min, saying hi 30 min, sitting down to eat 45 min, meeting 1 h, movie 2.5 h) or a custom number of minutes. The app pre-selects a preset from the time of day (meal hours → "sitting down to eat", mornings → "coffee", late → "movie"). That is a heuristic, not a prediction, and it's one tap to change.
+3. **Place.** Toggle "remind me when I leave this spot" to pin your current GPS position. The leave radius is twice the GPS accuracy, clamped to 75–300 m, and the app only fires after two consecutive fixes that are outside the radius even after subtracting the fix's own accuracy. That filters the single-point GPS jumps that make naive geofences ring while you're still sitting down.
+4. **Alert.** A full-screen card with the photo, a chime, vibration on phones, and a system notification with the photo and "Got it" / "Snooze 10 min" buttons. Snooze 5 or 10 minutes, or mark it done.
+5. **Catch-up.** A 5-second ticker checks due times, and the app re-checks the instant the tab becomes visible again, so a timer that expired while the phone was locked rings as soon as you look at it.
+
+Files: `index.html` (UI), `app.js` (all logic), `styles.css`, `sw.js` (offline cache + notification button routing), `manifest.webmanifest` + icons (installable PWA).
+
+## What a web app can and cannot do here
+
+Being honest about this matters more than any feature:
+
+| Capability | Web app (this) | Native app |
+|---|---|---|
+| Timer while app is open | Yes | Yes |
+| Timer while phone is locked / app closed | Rings when you reopen; no true background alarm on iOS, unreliable on Android | Yes |
+| Alert when you leave a place, app open | Yes | Yes |
+| Alert when you leave a place, app closed | **No.** Browsers do not expose background geolocation | Yes (native geofencing) |
+| Notifications | Yes (Android any browser; iOS only when installed to Home Screen) | Yes |
+| Install friction | Zero | App Store |
+
+The geofence is therefore most useful in the "phone on the table, app open" scenario, and the timer is the reliable core. Two ways to close the gap later:
+
+- **Push server.** Store the due time server-side and send a Web Push at that moment. Push wakes the service worker even when the app is closed, on both Android and installed iOS PWAs. Doesn't help geofencing.
+- **Native shell.** Wrap the same UI in Capacitor and use native geofencing + local notifications. That is the only route to "alert me when I leave, even if the app is closed".
+
+## Testing
+
+The end-to-end test in `test/e2e.cjs` drives the real UI in headless Chromium with a fake clock and fake GPS: it creates a reminder, fast-forwards 31 minutes and checks the alert with the photo appears, then creates a geofenced reminder, moves the fake GPS 500 m away and checks the "you're leaving" alert.
+
+```bash
+npx http-server -p 8765 -s . &
+node test/e2e.cjs
+```
