@@ -196,3 +196,5 @@ input[type="text"], input[type="number"] {
 .diag .d-yes { color: var(--live); }
 .diag .d-no { color: var(--danger); }
 .diag .d-maybe { color: var(--muted); }
+
+.warn-text { color: var(--danger); }

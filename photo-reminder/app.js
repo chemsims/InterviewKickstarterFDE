@@ -24,6 +24,12 @@
   const now = () => Date.now();
   const uid = () => (crypto.randomUUID ? crypto.randomUUID() : String(now()) + Math.random().toString(16).slice(2));
   const clamp = (v, lo, hi) => Math.min(hi, Math.max(lo, v));
+  /** Geolocation is blocked by permissions policy in a cross-origin iframe (e.g. a Claude Artifact preview)
+      unless the embedder explicitly delegates it, which viewer sandboxes generally don't for this API.
+      Confirmed by testing: getCurrentPosition fails with a permissions-policy error even when the browser
+      itself has granted location, while Notification.requestPermission succeeds in the same frame. */
+  let isEmbedded = false;
+  try { isEmbedded = window.self !== window.top; } catch { isEmbedded = true; }
 
   function fmtClock(ts) {
     return new Date(ts).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
@@ -382,7 +388,9 @@
     } catch (e) {
       draft.geo = null;
       $('geo-toggle').checked = false;
-      status.textContent = `Couldn't get your location: ${e.message}`;
+      status.textContent = isEmbedded
+        ? "Location is blocked in this embedded preview. Open the app in its own tab (see the About panel) to use this."
+        : `Couldn't get your location: ${e.message}`;
     }
   }
   async function submitNew(e) {
@@ -480,7 +488,8 @@
     const perm = notifPermission();
     const rows = [
       ['Camera / photo picker', 'yes', 'available'],
-      ['Location', ('geolocation' in navigator) ? 'yes' : 'no', ('geolocation' in navigator) ? 'available' : 'not available here'],
+      ['Location', (!('geolocation' in navigator)) ? 'no' : isEmbedded ? 'no' : 'yes',
+        (!('geolocation' in navigator)) ? 'not supported by this browser' : isEmbedded ? 'blocked: page is embedded in a frame' : 'available'],
       ['Notifications', perm === 'granted' ? 'yes' : perm === 'denied' ? 'no' : 'maybe',
         perm === 'granted' ? 'allowed' : perm === 'denied' ? 'blocked' : perm === 'unsupported' ? 'not available here' : 'not asked yet'],
       ['Vibration', navigator.vibrate ? 'yes' : 'maybe', navigator.vibrate ? 'available' : 'not on this device'],
@@ -492,6 +501,7 @@
   }
 
   function platformHints() {
+    $('geo-embed-hint').hidden = !isEmbedded;
     const ua = navigator.userAgent;
     const isIOS = /iP(hone|ad|od)/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
     const standalone = window.navigator.standalone === true || matchMedia('(display-mode: standalone)').matches;
