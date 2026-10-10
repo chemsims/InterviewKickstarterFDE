@@ -142,14 +142,81 @@ def create_app(config: Config | None = None, transcriber: Transcriber | None = N
     return app
 
 
-def main() -> None:
+def serve(config: Config) -> None:
     import uvicorn
 
-    config = load_config()
     print(f"Voice Digest data: {config.home}")
     print(f"AI summaries: {'on (' + config.claude_model + ')' if config.ai_enabled else 'off'}")
     uvicorn.run(create_app(config), host=config.host, port=config.port)
 
 
+def run_import(config: Config, folder: str | None, since: str | None, limit: int | None,
+               dry_run: bool, transcriber: Transcriber | None = None,
+               summarizer: Summarizer | None = None) -> int:
+    from datetime import datetime
+
+    from .importer import ImportAccessError, default_voice_memos_dir, import_folder, plan_import
+
+    source = Path(folder).expanduser() if folder else default_voice_memos_dir()
+    if source is None or not source.is_dir():
+        print("Voice Memos folder not found. Pass the folder to import, e.g.\n"
+              "  voice-digest import ~/Desktop/memos")
+        return 1
+    try:
+        since_dt = datetime.fromisoformat(parse_bound(since, is_end=False)) if since else None
+    except ValueError:
+        print(f"--since must be a date like 2026-10-01, got {since!r}")
+        return 1
+
+    if summarizer is None and config.ai_enabled:
+        summarizer = ClaudeSummarizer(model=config.claude_model)
+    pipeline = Pipeline(Store(config.db_path), config.audio_dir,
+                        transcriber or LocalWhisperTranscriber(config.whisper_model), summarizer)
+    print(f"Importing from: {source}")
+    try:
+        if dry_run:
+            plan = list(plan_import(pipeline, source, since_dt, limit))
+            new = [(p, w) for p, w, _, existing in plan if existing is None]
+            retry = [p for p, _, _, existing in plan if existing is not None and existing.status != "done"]
+            for path, when in new:
+                print(f"  would import {path.name} (recorded {when:%Y-%m-%d %H:%M})")
+            for path in retry:
+                print(f"  would retry  {path.name}")
+            print(f"{len(new)} new, {len(retry)} to retry, "
+                  f"{len(plan) - len(new) - len(retry)} already imported. Nothing was changed.")
+            return 0
+        result = import_folder(pipeline, source, since_dt, limit, on_progress=print)
+    except ImportAccessError as e:
+        print(e)
+        return 1
+    print(f"\nImported {len(result.imported)}, retried {len(result.retried)}, "
+          f"skipped {result.skipped} already done, {len(result.failed)} with errors.")
+    if result.failed:
+        print("Notes with errors are saved; fix the cause and run the import again to retry them.")
+    return 0
+
+
+def main(argv: list[str] | None = None) -> int:
+    import argparse
+
+    parser = argparse.ArgumentParser(prog="voice-digest", description="Local voice notes with AI digests.")
+    sub = parser.add_subparsers(dest="command")
+    sub.add_parser("serve", help="Run the web app (default)")
+    imp = sub.add_parser("import", help="Import audio files, e.g. iPhone Voice Memos synced via iCloud")
+    imp.add_argument("folder", nargs="?",
+                     help="Folder of audio files (default: the Mac Voice Memos folder)")
+    imp.add_argument("--since", help="Only memos recorded on/after this date (YYYY-MM-DD)")
+    imp.add_argument("--limit", type=int, help="Import at most N new memos this run")
+    imp.add_argument("--dry-run", action="store_true",
+                     help="List what would be imported without transcribing or calling Claude")
+    args = parser.parse_args(argv)
+
+    config = load_config()
+    if args.command == "import":
+        return run_import(config, args.folder, args.since, args.limit, args.dry_run)
+    serve(config)
+    return 0
+
+
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

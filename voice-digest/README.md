@@ -37,6 +37,30 @@ that transcription works offline. Browsers only allow the microphone on
 | `VOICE_DIGEST_WHISPER_MODEL` | `base` | `tiny` (fastest) … `large-v3` (most accurate) |
 | `VOICE_DIGEST_HOST` / `_PORT` | `127.0.0.1` / `8765` | Bind address (loopback only by default) |
 
+## Importing iPhone Voice Memos (Mac)
+
+Record in the iPhone **Voice Memos** app. With Voice Memos turned on in iCloud
+settings, recordings sync to the Mac's Voice Memos app automatically. Then:
+
+```bash
+voice-digest import --dry-run      # list what would be imported; changes nothing
+voice-digest import                # transcribe + summarize every new memo
+voice-digest import --since 2026-10-01 --limit 5   # a smaller first batch
+```
+
+- Reads the Mac Voice Memos folder by default, or pass any folder:
+  `voice-digest import ~/Desktop/memos`.
+- Uses each memo's **recording time**, so "what did I say this week" works.
+- **Only reads** your Voice Memos: audio is copied into `~/.voice-digest`, nothing is moved or deleted.
+- Safe to re-run: memos already imported are skipped (matched by content, so
+  renaming doesn't matter); ones that failed (offline, no API key) are retried.
+- Memos still downloading from iCloud are skipped until they finish; run it again later.
+
+**"macOS blocked access to the Voice Memos folder"**: macOS protects other apps'
+data. Either give your terminal app Full Disk Access (System Settings → Privacy &
+Security → Full Disk Access, then reopen the terminal), or select memos in the
+Voice Memos app, drag them into a folder, and import that folder.
+
 ## Using your notes from Claude Code
 
 ```bash

@@ -35,6 +35,10 @@ class VoiceNote:
     tags: list[str] = field(default_factory=list)
     error: str | None = None
     updated_at: str | None = None
+    # Set for notes imported from files (e.g. iPhone Voice Memos): a hash of the
+    # audio so re-running an import skips files it already has.
+    source_hash: str | None = None
+    source_name: str | None = None
 
     def to_dict(self, include_transcript: bool = True) -> dict[str, Any]:
         data: dict[str, Any] = {

@@ -10,6 +10,7 @@ import json
 import sqlite3
 import uuid
 from contextlib import contextmanager
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterator
 
@@ -34,7 +35,9 @@ CREATE TABLE IF NOT EXISTS notes (
     decisions TEXT NOT NULL DEFAULT '[]',
     open_questions TEXT NOT NULL DEFAULT '[]',
     tags TEXT NOT NULL DEFAULT '[]',
-    error TEXT
+    error TEXT,
+    source_hash TEXT,
+    source_name TEXT
 );
 CREATE INDEX IF NOT EXISTS notes_created_at ON notes(created_at);
 CREATE TABLE IF NOT EXISTS digests (
@@ -49,9 +52,9 @@ CREATE TABLE IF NOT EXISTS digests (
 """
 
 
-def new_id() -> str:
+def new_id(when: datetime | None = None) -> str:
     # Time-prefixed so IDs sort chronologically and are readable in tool output.
-    return utc_now().strftime("%Y%m%d-%H%M%S-") + uuid.uuid4().hex[:6]
+    return (when or utc_now()).astimezone(timezone.utc).strftime("%Y%m%d-%H%M%S-") + uuid.uuid4().hex[:6]
 
 
 class Store:
@@ -62,6 +65,7 @@ class Store:
             db_path.parent.mkdir(parents=True, exist_ok=True)
             with self._connect() as conn:
                 conn.executescript(_SCHEMA)
+                _migrate(conn)
 
     @contextmanager
     def _connect(self) -> Iterator[sqlite3.Connection]:
@@ -79,10 +83,12 @@ class Store:
     # ---- notes -------------------------------------------------------------
 
     def create_note(self, audio_file: str | None = None, duration_seconds: float | None = None,
-                    note_id: str | None = None) -> VoiceNote:
+                    note_id: str | None = None, created_at: str | None = None,
+                    source_hash: str | None = None, source_name: str | None = None) -> VoiceNote:
         now = to_iso(utc_now())
-        note = VoiceNote(id=note_id or new_id(), created_at=now, updated_at=now,
-                         audio_file=audio_file, duration_seconds=duration_seconds)
+        note = VoiceNote(id=note_id or new_id(), created_at=created_at or now, updated_at=now,
+                         audio_file=audio_file, duration_seconds=duration_seconds,
+                         source_hash=source_hash, source_name=source_name)
         self.save_note(note)
         return note
 
@@ -93,6 +99,7 @@ class Store:
             "status": note.status, "audio_file": note.audio_file,
             "duration_seconds": note.duration_seconds, "transcript": note.transcript,
             "title": note.title, "summary": note.summary, "error": note.error,
+            "source_hash": note.source_hash, "source_name": note.source_name,
             **{f: json.dumps(getattr(note, f)) for f in _LIST_FIELDS},
         }
         cols = ", ".join(row)
@@ -103,6 +110,11 @@ class Store:
     def get_note(self, note_id: str) -> VoiceNote | None:
         with self._connect() as conn:
             row = conn.execute("SELECT * FROM notes WHERE id = ?", (note_id,)).fetchone()
+        return _row_to_note(row) if row else None
+
+    def find_by_source_hash(self, source_hash: str) -> VoiceNote | None:
+        with self._connect() as conn:
+            row = conn.execute("SELECT * FROM notes WHERE source_hash = ?", (source_hash,)).fetchone()
         return _row_to_note(row) if row else None
 
     def delete_note(self, note_id: str) -> VoiceNote | None:
@@ -169,11 +181,24 @@ class Store:
         ]
 
 
+def _migrate(conn: sqlite3.Connection) -> None:
+    """Add columns introduced after a database was first created."""
+    existing = {r["name"] for r in conn.execute("PRAGMA table_info(notes)")}
+    for column in ("source_hash", "source_name"):
+        if column not in existing:
+            conn.execute(f"ALTER TABLE notes ADD COLUMN {column} TEXT")
+    conn.execute("CREATE INDEX IF NOT EXISTS notes_source_hash ON notes(source_hash)")
+
+
 def _row_to_note(row: sqlite3.Row) -> VoiceNote:
     return VoiceNote(
         id=row["id"], created_at=row["created_at"], updated_at=row["updated_at"],
         status=row["status"], audio_file=row["audio_file"],
         duration_seconds=row["duration_seconds"], transcript=row["transcript"],
         title=row["title"], summary=row["summary"], error=row["error"],
+        # .get-style access: a read-only reader may open a database created
+        # before these columns existed.
+        source_hash=row["source_hash"] if "source_hash" in row.keys() else None,
+        source_name=row["source_name"] if "source_name" in row.keys() else None,
         **{f: json.loads(row[f]) for f in _LIST_FIELDS},
     )
