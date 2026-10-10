@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voice Digest</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <h1>Voice Digest</h1>
+    <nav>
+      <button class="tab active" data-tab="record">Record</button>
+      <button class="tab" data-tab="digest">Digest</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="tab-record" class="panel">
+      <div class="recorder">
+        <button id="record-btn" class="record" aria-label="Start recording">●</button>
+        <div id="timer" class="timer">0:00</div>
+        <div id="record-status" class="status" role="status">Tap to record</div>
+      </div>
+
+      <div class="list-head">
+        <h2>Notes</h2>
+        <input id="search" type="search" placeholder="Search notes…" aria-label="Search notes">
+      </div>
+      <ul id="notes" class="notes"></ul>
+    </section>
+
+    <section id="tab-digest" class="panel" hidden>
+      <div class="digest-controls">
+        <label>Period
+          <select id="period">
+            <option value="today">Today</option>
+            <option value="7d" selected>Last 7 days</option>
+            <option value="30d">Last 30 days</option>
+            <option value="all">All notes</option>
+          </select>
+        </label>
+        <label class="check" title="More accurate, but sends full transcripts of these notes to Claude instead of just their summaries.">
+          <input id="include-transcripts" type="checkbox"> Include full transcripts
+        </label>
+        <button id="digest-btn" class="primary">Generate digest</button>
+      </div>
+      <p class="privacy">Only the notes in the selected period are sent to Claude — their summaries by default.</p>
+      <div id="digest-status" class="status" role="status"></div>
+      <article id="digest" class="digest"></article>
+
+      <h2>Past digests</h2>
+      <ul id="past-digests" class="notes"></ul>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
