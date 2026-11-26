@@ -1086,14 +1086,14 @@
  ],
  "conclusion": [
   {
-   "prompt": "Use Topics 1.5–1.7: explain why sodium's 3s electron has the lowest binding energy in its PES spectrum AND why sodium has a large atomic radius and low first ionization energy.",
-   "lines": 4,
-   "answer": "The 3s electron is far out (n = 3) and shielded by 10 core electrons (Zeff ≈ 1), so attraction is weak: lowest PES peak, large radius (190 pm), low IE (496 kJ/mol). Accept: distance + shielding linked to all three."
+   "prompt": "Topics 1.5–1.7: why is Na's 3s PES peak lowest in energy, its radius large and its first IE low?",
+   "lines": 2,
+   "answer": "3s is far out (n = 3) and shielded (Zeff ≈ 1): weak pull → lowest PES peak, 190 pm radius, IE 496 kJ/mol."
   },
   {
-   "prompt": "Use Topics 1.5 and 1.8: explain why magnesium forms Mg²⁺ (not Mg⁺ or Mg³⁺) and why the formula with chlorine is MgCl₂.",
+   "prompt": "Topics 1.5 and 1.8: why Mg²⁺ (not Mg⁺ or Mg³⁺), and why MgCl₂?",
    "lines": 2,
-   "answer": "Mg (…3s²) loses its two 3s electrons to reach a full previous shell; a third would be a core electron. Two Cl⁻ balance one Mg²⁺: MgCl₂."
+   "answer": "Losing both 3s electrons leaves a full shell; a 3rd would be a core electron. 2 Cl⁻ balance Mg²⁺: MgCl₂."
   }
  ],
  "key_notes": [
@@ -1181,7 +1181,7 @@
     "day": 1,
     "title": "Teacher demo: Moles and Molar Mass (Topic 1.1)",
     "goal": "Students see how the sim works and connect mass → moles → particles.",
-    "worksheet_pages": "Cover + Topic 1.1 (first half)",
+    "worksheet_pages": "Cover + p. 1 (Topic 1.1)",
     "agenda": [
      [
       "0–5",
@@ -1253,7 +1253,7 @@
      {
       "do": "Click NaCl. Point out that the mass jumps to 58.4 g (one molar mass) and the particles are “formula units”.",
       "say": "“Why not molecules?” (NaCl is ionic, no separate molecules.) Stop here: students do the rest on Day 2.",
-      "students": "Start Analyze #2 (formula units vs molecules)."
+      "students": "Notes: ionic NaCl is counted in formula units."
      }
     ]
    },
@@ -1261,7 +1261,7 @@
     "day": 2,
     "title": "Student sim work: Topics 1.1–1.3",
     "goal": "Finish moles, then mass spectra and empirical formulas.",
-    "worksheet_pages": "Topic 1.1 (finish), 1.2, 1.3",
+    "worksheet_pages": "pp. 1–6 (finish 1.1; Topics 1.2 and 1.3)",
     "agenda": [
      [
       "0–5",
@@ -1298,7 +1298,7 @@
     "day": 3,
     "title": "Student sim work: Topics 1.4–1.5",
     "goal": "Use composition to judge purity; build electron configurations.",
-    "worksheet_pages": "Topics 1.4 and 1.5",
+    "worksheet_pages": "pp. 7–10 (Topics 1.4 and 1.5)",
     "agenda": [
      [
       "0–5",
@@ -1331,7 +1331,7 @@
     "day": 4,
     "title": "Student sim work: Topics 1.6–1.7",
     "goal": "Read PES spectra and explain periodic trends with Zeff.",
-    "worksheet_pages": "Topics 1.6 and 1.7",
+    "worksheet_pages": "pp. 11–14 (Topics 1.6 and 1.7)",
     "agenda": [
      [
       "0–5",
@@ -1353,7 +1353,7 @@
     "circulate": [
      "1.6: graph has higher binding energy on the LEFT and the 2p peak tallest.",
      "1.6: students compare order and height only (the energy axis is not to scale).",
-     "1.7: Zeff calculated before step 2 (Cl 7, Na 1).",
+     "1.7: Zeff column filled from step 1 (Na 1 up to Cl 7), before the step 2 explanation.",
      "1.7: on step 1, students click each element to fill the Period 3 table.",
      "1.7: electron affinity taken from step 5 with the toggle on Electron affinity."
     ],
@@ -1364,7 +1364,7 @@
     "day": 5,
     "title": "Student sim work: Topic 1.8 + Conclusion",
     "goal": "Predict ionic formulas and pull the unit together.",
-    "worksheet_pages": "Topic 1.8 + Conclusion",
+    "worksheet_pages": "pp. 15–17 (Topic 1.8 + Conclusion)",
     "agenda": [
      [
       "0–5",

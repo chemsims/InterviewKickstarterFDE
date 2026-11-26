@@ -11,7 +11,7 @@
     {
      "type": "setup",
      "items": [
-      "Open **Topic 3.1** in **Guided** mode. Screen 1: **Macroscopic property = Boiling point**. Screens 3–4: choose pairs with the **Particle A** and **Particle B** buttons."
+      "**Topic 3.1**, **Guided**. Screen 1: property **Boiling point**. Screens 3–4: set pairs with **Particle A** / **Particle B**."
      ]
     },
     {
@@ -27,10 +27,9 @@
     {
      "type": "notes",
      "items": [
-      "London dispersion forces come from {{temporary}} dipoles. Bigger electron clouds and more {{contact area}} make them stronger.",
-      "A polar bond does not guarantee a polar molecule: {{geometry}} decides whether bond dipoles cancel.",
-      "Hydrogen bonding needs an H bonded directly to {{N, O, or F|12}} and an N, O or F {{acceptor}}.",
-      "Weaker attractions usually mean {{higher}} vapor pressure and a lower boiling point."
+      "London dispersion forces come from {{temporary|9}} dipoles; bigger clouds and more {{contact area|12}} make them stronger.",
+      "A polar bond does not make a polar molecule: {{geometry|9}} decides if bond dipoles cancel.",
+      "Hydrogen bonding needs an H bonded directly to {{N, O, or F|12}} and an N, O or F {{acceptor}}. Weaker attractions mean {{higher}} vapor pressure."
      ]
     },
     {
@@ -53,12 +52,12 @@
       ],
       [
        "2",
-       "Dispersion score: methane / chlorine / iodine",
+       "Model dispersion score: CH₄ / Cl₂ / I₂",
        "{{3.8 / 5.9 / 9.9}}"
       ],
       [
        "3",
-       "Dominant force: chloromethane + chloromethane",
+       "Dominant force: CH₃Cl + CH₃Cl",
        "{{Dipole-dipole}}"
       ],
       [
@@ -72,14 +71,13 @@
        "{{36.1 °C / 9.5 °C}}"
       ]
      ],
-     "row_height": 0.3,
-     "note": "Dispersion score = the sim's own relative model number, not a measurement."
+     "row_height": 0.28
     },
     {
      "type": "question",
      "items": [
       {
-       "prompt": "Screen 4: set A and B to **fluoromethane** (CH₃F). It has H and F. Can it hydrogen bond with itself? Why?",
+       "prompt": "Screen 4: can **fluoromethane** (CH₃F, A and B) hydrogen bond with itself? Why?",
        "lines": 2,
        "answer": "No. Its H atoms are bonded to C, not to F, so it has no N–H, O–H or F–H donor. The sim shows dipole-dipole as the dominant force."
       }
@@ -94,7 +92,7 @@
     {
      "type": "setup",
      "items": [
-      "Open **Topic 3.2** in **Guided** mode. On each screen pick the solid and **Property focus** in the table. NaCl: use the **Ionic condition** buttons (**Solid**, then **Molten**)."
+      "**Topic 3.2**, **Guided**. Pick the solid and **Property focus** in the table. NaCl: **Ionic condition** = **Solid**, then **Molten**."
      ]
     },
     {
@@ -110,10 +108,9 @@
     {
      "type": "notes",
      "items": [
-      "Solid ions are {{fixed}} in the lattice. A layer shift puts {{like charges}} together, so ionic solids are brittle.",
-      "Graphite is soft because its layers {{slide}}, though bonds inside each layer are strong.",
-      "Melting a molecular solid overcomes attractions {{between}} molecules, not bonds inside them.",
-      "Mobile valence {{electrons}} make metals conduct. Alloy atoms {{block}} metal-core sliding."
+      "Solid ions are {{fixed|8}} in the lattice; a layer shift puts {{like charges|11}} together, so they shatter.",
+      "Melting a molecular solid overcomes attractions {{between|8}} molecules, not bonds inside them.",
+      "Mobile valence {{electrons|9}} make metals conduct. Alloy atoms {{block|7}} metal-core sliding."
      ]
     },
     {
@@ -168,7 +165,7 @@
        "{{reduced}}"
       ]
      ],
-     "row_height": 0.3
+     "row_height": 0.28
     },
     {
      "type": "question",
@@ -189,23 +186,23 @@
     {
      "type": "setup",
      "items": [
-      "Open **Topic 3.3** in **Guided** mode (5 screens). Screen 4 uses **argon** gas. Its **Gas temperature** (T) and **Gas volume** (V) sliders are relative 0–100 scales, not K or L."
+      "**Topic 3.3**, **Guided** (5 screens). Screen 4: **argon**; the T and V sliders are relative 0–100 scales."
      ]
     },
     {
      "type": "notes",
      "items": [
-      "Crystalline solids show repeating {{long-range}} order; amorphous solids (the glass-like solid) do not.",
-      "Liquid particles stay {{close}} together while moving, colliding, and exchanging {{neighbors}}.",
-      "Solid and liquid molar volumes are often {{similar}}. Water is the exception: ice takes up {{more}} volume than the liquid.",
-      "Screen 5 Property tile: a gas has no definite {{shape}} or {{volume}}; it fills the available container."
+      "Crystalline solids have repeating {{long-range|10}} order; amorphous solids (glass) do not.",
+      "Liquid particles stay {{close|7}} together while moving and exchanging {{neighbors|9}}.",
+      "Solid and liquid molar volumes are often {{similar|8}}; but ice takes up {{more|6}} volume than water.",
+      "Screen 5 Property tile: a gas has no definite {{shape|6}} or {{volume|7}}; it fills its container."
      ]
     },
     {
      "type": "predict",
      "items": [
       {
-       "prompt": "Screen 4: if you shrink the container at the same temperature, will wall collisions be more or less frequent?",
+       "prompt": "Screen 4: shrink the container at constant T. Will wall collisions be more or less frequent?",
        "lines": 1,
        "answer": "Collisions become more frequent (particles are closer). Accept any prediction with a reason."
       }
@@ -252,7 +249,7 @@
        "{{high collision frequency}}"
       ]
      ],
-     "row_height": 0.34
+     "row_height": 0.3
     },
     {
      "type": "question",
@@ -274,13 +271,6 @@
      "type": "setup",
      "items": [
       "**Topic 3.4**, **Guided**. Keep pressure in **atm**. The sim uses **R = 0.08206 L·atm/(mol·K)** (8.314 kPa, 62.36 mmHg). Use **K**."
-     ]
-    },
-    {
-     "type": "equations",
-     "items": [
-      "Boyle (n, T constant): P₁V₁ = {{P₂V₂}}       Charles (P, n constant): V₁/T₁ = {{V₂/T₂}}",
-      "Ideal gas law: {{PV = nRT}}       Partial pressure: P(A) = {{X(A)}} × P(total)"
      ]
     },
     {
@@ -312,7 +302,7 @@
      "type": "question",
      "items": [
       {
-       "prompt": "Why doesn't heating a gas from 25 °C to 50 °C (constant P) double its volume?",
+       "prompt": "Charles' law is V₁/T₁ = {{V₂/T₂}}. Why doesn't heating a gas from 25 °C to 50 °C double its volume?",
        "lines": 2,
        "answer": "V is proportional to Kelvin temperature: 298 K → 323 K is only 1.08×, so V rises about 8 %, not 2×."
       }
@@ -331,13 +321,6 @@
      ]
     },
     {
-     "type": "notes",
-     "items": [
-      "In KE = ½mv², speed is {{squared}}. Equal temperature means equal average {{KE}}, not equal speed.",
-      "Peak height is not particle {{count}}. Changing only volume does {{not}} shift the curve."
-     ]
-    },
-    {
      "type": "calc",
      "items": [
       {
@@ -351,7 +334,7 @@
        "answer": "400 K: **4.99 kJ/mol**. 800 K: **9.98 kJ/mol**. Doubling T doubles average KE."
       },
       {
-       "prompt": "Screen 4: v_rms = √(3RT/M). Find v_rms for N₂ (M = 0.02801 kg/mol) at 300 K and 600 K.",
+       "prompt": "Screen 4: v_rms = √(3RT/M). Find v_rms for N₂ (M = 0.02801 kg/mol) at 300 K and 600 K. Speed scales with {{√T}}, not T.",
        "lines": 2,
        "answer": "300 K: **517 m/s**. 600 K: **731 m/s**. Ratio 1.41 = √2, not 2."
       }
@@ -359,7 +342,7 @@
     },
     {
      "type": "graph",
-     "prompt": "Sketch the 300 K and 600 K curves from Screen 4. Label each and mark each peak.",
+     "prompt": "Sketch the 300 K and 600 K curves (Screen 4). Mark each peak. Peak height is not particle {{count}}.",
      "x_label": "Molecular speed (m/s)",
      "y_label": "Fraction of molecules",
      "answer": "600 K curve: peak farther right and lower, wider, longer high-speed tail. Same total area.",
@@ -437,8 +420,7 @@
      "type": "notes",
      "items": [
       "Attractions do not remove {{particles}}; they lower the momentum transfer at the {{wall}}.",
-      "Particles keep the same {{size}} when compressed; only the free volume shrinks.",
-      "Z near 1 can also mean large opposing corrections {{cancel}}."
+      "Particles keep the same {{size}} when compressed; only the free volume shrinks."
      ]
     },
     {
@@ -460,14 +442,13 @@
     {
      "type": "setup",
      "items": [
-      "**Topic 3.7**, **Guided** (5 screens). Screens 1–2: **Sucrose** (342.30 g/mol), **85.575 g**, **Final solution volume 500 mL**. Keep each screen's starting values."
+      "**Topic 3.7**, **Guided**. Screens 1–2: **Sucrose** (342.30 g/mol), **85.575 g**, **500 mL**."
      ]
     },
     {
      "type": "notes",
      "items": [
-      "In M = n/V, V is the final {{solution}} volume (not solvent volume), in {{liters}}.",
-      "Equal molarity does not require equal total {{moles}}."
+      "In M = n/V, V is the final {{solution|8}} volume (not solvent), in {{liters|7}}. Equal M does not mean equal {{moles|6}}."
      ]
     },
     {
@@ -484,7 +465,7 @@
        "answer": "n = (0.400)(0.250 L) = **0.100 mol**; N = 0.100 × 6.022 × 10²³ = **6.02 × 10²² molecules**."
       },
       {
-       "prompt": "Screen 4 (glucose, 0.120 mol, 0.300 M): type a guess in **Your predicted final volume**, then calculate it.",
+       "prompt": "Screen 4 (glucose, 0.120 mol, 0.300 M): type a guess first, then calculate V.",
        "lines": 2,
        "answer": "V = n/M = 0.120 ÷ 0.300 = 0.400 L = **400 mL** (the default 300 mL guess is too small)."
       }
@@ -513,7 +494,7 @@
        "{{2.26 × 10²³}}"
       ]
      ],
-     "row_height": 0.34
+     "row_height": 0.3
     },
     {
      "type": "question",
@@ -534,7 +515,7 @@
     {
      "type": "setup",
      "items": [
-      "Open **Topic 3.8** in **Guided** mode (4 screens). Screen 1: **Sodium chloride(aq)**, solute formula units at 4 model units = **6**, **Model volume = 2**. The particle picture is schematic."
+      "**Topic 3.8**, **Guided**. Screen 1: **Sodium chloride(aq)**, formula units at 4 model units = **6**, **Model volume 2**."
      ]
     },
     {
@@ -610,8 +591,8 @@
     {
      "type": "notes",
      "items": [
-      "In CaCl₂(aq), the represented Ca²⁺ : Cl⁻ ratio stays {{1:2}}.",
-      "The six or eight water positions are a 2D orientation exercise, not a real hydration {{number}}."
+      "In CaCl₂(aq), the represented Ca²⁺ : Cl⁻ ratio stays {{1:2|5}}.",
+      "The 6 or 8 water positions are a 2D exercise, not a real hydration {{number|7}}."
      ]
     },
     {
@@ -619,7 +600,7 @@
      "items": [
       {
        "prompt": "Draw CaCl₂(aq) with 2 formula units and several water molecules. Show the water orientation around one Ca²⁺ and one Cl⁻.",
-       "lines": 4,
+       "lines": 3,
        "points": 3,
        "answer": "2 Ca²⁺ and 4 Cl⁻, separated (no lattice). O ends of water point toward Ca²⁺; H ends point toward Cl⁻. Net charge 0."
       }
@@ -634,7 +615,7 @@
     {
      "type": "setup",
      "items": [
-      "**Topic 3.9**, **Guided** (4 screens). Screen 2: record **sample 1** before any reset (a reset loads a new sample and reshuffles the dyes)."
+      "**Topic 3.9**, **Guided**. Screen 2: record **sample 1** before any reset (a reset reshuffles the dyes)."
      ]
     },
     {
@@ -667,7 +648,7 @@
        "{{Clear}}"
       ]
      ],
-     "row_height": 0.3
+     "row_height": 0.27
     },
     {
      "type": "predict",
@@ -682,7 +663,7 @@
     {
      "type": "table",
      "title": "Data table 2",
-     "subtitle": "Screen 2 (paper, sample 1): run to the end, read each spot's relative movement; change strength and run again",
+     "subtitle": "Screen 2, sample 1: run to the end, read relative movement; change strength, rerun",
      "columns": [
       "Mobile competition",
       "A",
@@ -703,13 +684,13 @@
        "{{44}}"
       ]
      ],
-     "row_height": 0.3
+     "row_height": 0.27
     },
     {
      "type": "notes",
      "items": [
-      "The least-retained analyte moves {{farthest}} on TLC and exits the column {{first}}.",
-      "In distillation, weaker IMFs mean {{higher}} vapor pressure, so the early fraction is {{L}}-rich."
+      "The least-retained analyte moves {{farthest|8}} on TLC and exits the column {{first|6}}.",
+      "Distillation: weaker IMFs mean {{higher|7}} vapor pressure, so the early fraction is {{L|3}}-rich."
      ]
     },
     {
@@ -731,7 +712,7 @@
     {
      "type": "setup",
      "items": [
-      "**Topic 3.10**, **Guided**. Drag the vial onto the beaker or press **Pour & mix**; wait for the outcome. Screen 3: choose the solute, then each solvent."
+      "**Topic 3.10**, **Guided**. Drag the vial onto the beaker (or **Pour & mix**); wait for the outcome."
      ]
     },
     {
@@ -902,7 +883,7 @@
     {
      "type": "setup",
      "items": [
-      "Open **Topic 3.12** in **Guided** mode (4 screens). Use c = 2.998 × 10⁸ m/s and h = 6.626 × 10⁻³⁴ J·s (the sim's values). Calculate before you read each readout."
+      "**Topic 3.12**, **Guided**. Sim values: c = 2.998 × 10⁸ m/s, h = 6.626 × 10⁻³⁴ J·s. Calculate first."
      ]
     },
     {
@@ -915,7 +896,7 @@
      "type": "calc",
      "items": [
       {
-       "prompt": "Screen 1 (500 nm): calculate the photon energy. What is ΔE of the species for absorption? For emission?",
+       "prompt": "Screen 1 (500 nm): find photon E, and the species' ΔE for absorption and for emission.",
        "lines": 2,
        "answer": "E = hc/λ = (6.626 × 10⁻³⁴)(2.998 × 10⁸)/(5.00 × 10⁻⁷) = **3.97 × 10⁻¹⁹ J**. Absorption ΔE = +3.97 × 10⁻¹⁹ J; emission −3.97 × 10⁻¹⁹ J."
       },
@@ -930,7 +911,7 @@
        "answer": "E = (6.626 × 10⁻³⁴)(7.50 × 10¹⁴) = **4.97 × 10⁻¹⁹ J**. Doubling ν doubles E (9.94 × 10⁻¹⁹ J)."
       },
       {
-       "prompt": "Screen 4: the gap matches a 486 nm photon; the candidate is 600 nm. Find both energies. Absorbed?",
+       "prompt": "Screen 4: gap = a 486 nm photon; candidate = 600 nm. Find both energies. Absorbed?",
        "lines": 2,
        "answer": "Gap = **4.09 × 10⁻¹⁹ J**; 600 nm photon = **3.31 × 10⁻¹⁹ J**, 19 % too small, so it is rejected. Retune to 486 nm (within the sim's 0.5 % tolerance)."
       }

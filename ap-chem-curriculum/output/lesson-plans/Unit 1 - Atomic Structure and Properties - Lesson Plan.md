@@ -79,7 +79,7 @@ mole · molar mass · Avogadro's number · isotope · m/z · relative abundance 
 
 **Goal:** Students see how the sim works and connect mass → moles → particles.
 
-**Worksheet pages:** Cover + Topic 1.1 (first half)
+**Worksheet pages:** Cover + p. 1 (Topic 1.1)
 
 | Minutes | Activity |
 |---|---|
@@ -102,13 +102,13 @@ mole · molar mass · Avogadro's number · isotope · m/z · relative abundance 
 | 7 | Click Next → step 4. Read “1.00 mol × 6.022 × 10²³ = 6.022 × 10²³ molecules.” | “How many molecules would 2 moles hold?” (1.204 × 10²⁴.) “Is a mole a mass or a number?” (a number) | Notes: one mole always contains 6.022 × 10²³ particles. |
 | 8 | Click Next → step 5. Trace the dimensional-analysis chain left to right. | “Each factor cancels the unit before it. What is left at the end?” (molecules) | Notes: each factor cancels the previous unit. |
 | 9 | Click Next → step 6. Drag the H₂O mass scale to the right end (36.0 g). | “Check your prediction. What happened to moles and particles?” (2.00 mol, 1.203 × 10²⁴ — both doubled. The last digit is 1.203, not 1.204, because the sim uses 18.015 g/mol.) | Step 6 table rows 1–2. |
-| 10 | Click NaCl. Point out that the mass jumps to 58.4 g (one molar mass) and the particles are “formula units”. | “Why not molecules?” (NaCl is ionic, no separate molecules.) Stop here: students do the rest on Day 2. | Start Analyze #2 (formula units vs molecules). |
+| 10 | Click NaCl. Point out that the mass jumps to 58.4 g (one molar mass) and the particles are “formula units”. | “Why not molecules?” (NaCl is ionic, no separate molecules.) Stop here: students do the rest on Day 2. | Notes: ionic NaCl is counted in formula units. |
 
 ### Day 2: Student sim work: Topics 1.1–1.3
 
 **Goal:** Finish moles, then mass spectra and empirical formulas.
 
-**Worksheet pages:** Topic 1.1 (finish), 1.2, 1.3
+**Worksheet pages:** pp. 1–6 (finish 1.1; Topics 1.2 and 1.3)
 
 | Minutes | Activity |
 |---|---|
@@ -134,7 +134,7 @@ mole · molar mass · Avogadro's number · isotope · m/z · relative abundance 
 
 **Goal:** Use composition to judge purity; build electron configurations.
 
-**Worksheet pages:** Topics 1.4 and 1.5
+**Worksheet pages:** pp. 7–10 (Topics 1.4 and 1.5)
 
 | Minutes | Activity |
 |---|---|
@@ -159,7 +159,7 @@ mole · molar mass · Avogadro's number · isotope · m/z · relative abundance 
 
 **Goal:** Read PES spectra and explain periodic trends with Zeff.
 
-**Worksheet pages:** Topics 1.6 and 1.7
+**Worksheet pages:** pp. 11–14 (Topics 1.6 and 1.7)
 
 | Minutes | Activity |
 |---|---|
@@ -172,7 +172,7 @@ mole · molar mass · Avogadro's number · isotope · m/z · relative abundance 
 
 - 1.6: graph has higher binding energy on the LEFT and the 2p peak tallest.
 - 1.6: students compare order and height only (the energy axis is not to scale).
-- 1.7: Zeff calculated before step 2 (Cl 7, Na 1).
+- 1.7: Zeff column filled from step 1 (Na 1 up to Cl 7), before the step 2 explanation.
 - 1.7: on step 1, students click each element to fill the Period 3 table.
 - 1.7: electron affinity taken from step 5 with the toggle on Electron affinity.
 
@@ -184,7 +184,7 @@ mole · molar mass · Avogadro's number · isotope · m/z · relative abundance 
 
 **Goal:** Predict ionic formulas and pull the unit together.
 
-**Worksheet pages:** Topic 1.8 + Conclusion
+**Worksheet pages:** pp. 15–17 (Topic 1.8 + Conclusion)
 
 | Minutes | Activity |
 |---|---|
