@@ -764,7 +764,7 @@
     {
      "type": "setup",
      "items": [
-      "Click **6 · Lewis** in **Guided** mode (Free Explore fills in the count for you). Choose a **Molecule:**, type the total in **Step 1 — total valence electrons**, press **Check count**.",
+      "Click **6 · Lewis** in **Guided** mode (Free Explore fills in the count for you). Pick a molecule from **Molecule:**, type the total in **Step 1 — total valence electrons**, press **Check count**.",
       "Build with the **Bond order** and **Lone pairs** controls, press **Check structure**, then read **Show formal charges**. Don't press **Show answer** before you check your own."
      ]
     },
@@ -1122,7 +1122,7 @@
     {
      "type": "setup",
      "items": [
-      "Click **8 · 3-D** and choose each **Molecule:**. Toggle **Lone pairs**, **Bond angle**, **Dipole**, **Wedge–dash view** and **Spin**; drag to rotate.",
+      "Click **8 · 3-D** and pick each molecule from **Molecule:**, then toggle **Lone pairs**, **Bond angle**, **Dipole**, **Wedge–dash view** and **Spin**; drag to rotate.",
       "Record from the **Readout** panel (geometries, bond angle(s), polarity, hybridization, sigma / pi bonds)."
      ]
     },
@@ -1371,7 +1371,7 @@
      ],
      [
       "35–45",
-      "Pairs finish the p. 1 Calculate box (Al–O, Ca–F) on their own devices or from the projector, then check in the sim."
+      "Pairs finish the p. 1 Calculate box (Al–O) and the H–F question on their own devices or from the projector, then check in the sim."
      ],
      [
       "45–50",
@@ -1405,9 +1405,9 @@
       "students": "H–F row; fifth notes bullet (continuum, 0.4, metal + nonmetal)."
      },
      {
-      "do": "Ask Predict 2, then click Na–Cl. Drag sodium's electron all the way onto Cl and check. Let the animation finish.",
+      "do": "Ask: will sodium's electron be shared or handed over? Then click Na–Cl. Drag sodium's electron all the way onto Cl and check. Let the animation finish.",
       "say": "Watch the sizes: Na shrinks into Na⁺, Cl grows into Cl⁻. Nothing is shared: an ionic bond.",
-      "students": "Predict 2; third notes bullet; Na–Cl row."
+      "students": "Third notes bullet; Na–Cl row."
      },
      {
       "do": "Click Mg–O, drag both electrons onto O and check. Read the line above the atoms: \"+ and − ions attract\" and the Particles line.",
@@ -1422,7 +1422,7 @@
      {
       "do": "Show the Properties to expect line for Na–Cl, then for Cl–Cl.",
       "say": "Bond type predicts properties. We'll test the ionic and metal ones ourselves on screens 3 and 5.",
-      "students": "Analyze question 3."
+      "students": "Nothing new: a class discussion. (The Conclusion page comes back to it.)"
      }
     ]
    },
@@ -1618,13 +1618,11 @@
   "differentiation": {
    "support": [
     "Pair a strong reader with a student who needs support; the reader reads the Beaky step text aloud.",
-    "Give the Data table 1 rows on p. 7 with the electron-domain geometry column filled in.",
     "Allow a VSEPR shape chart for p. 8.",
     "For p. 1 Calculate, give the hint: find the smallest number of electrons both atoms can agree on."
    ],
    "extension": [
     "Explain with the Energy screen why C≡C (839) is less than 3 × C–C (348) and what that says about π bonds.",
-    "Predict the shape and polarity of BrF₅ and ClF₃ before checking in 3-D.",
     "Predict where KF and CaS would fall in the lattice-energy order, and justify with |q₊q₋|/r (no sim check)."
    ]
   },

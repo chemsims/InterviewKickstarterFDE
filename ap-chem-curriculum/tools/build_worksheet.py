@@ -421,8 +421,10 @@ class Worksheet:
             s.append(_Mark(self, p["title"], p.get("sim_screen", "")))
             for b in p["blocks"]:
                 fl = self.block(b, pts)
-                # keep a band with the first thing after it
-                if len(fl) >= 2:
+                # tables and graphs move as one piece; other blocks keep the band with their first item
+                if b["type"] in ("table", "graph"):
+                    s.append(KeepTogether(fl))
+                elif len(fl) >= 2:
                     s.append(KeepTogether(fl[:2]))
                     s.extend(fl[2:])
                 else:

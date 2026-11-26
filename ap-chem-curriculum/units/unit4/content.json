@@ -22,7 +22,7 @@
       {
        "prompt": "Methane burns: CH₄ + O₂ → CO₂ + H₂O. How many O₂ molecules do you think one CH₄ molecule needs? Explain by counting atoms.",
        "lines": 2,
-       "answer": "2 O₂. One CH₄ makes 1 CO₂ (2 O) and 2 H₂O (2 O, to hold the 4 H), so the products need 4 O atoms = 2 O₂. Accept any prediction with an atom-counting reason."
+       "answer": "2 O₂: the products need 4 O (2 in CO₂, 2 in 2H₂O). Accept any prediction with an atom-counting reason."
       }
      ]
     },
@@ -86,7 +86,7 @@
        "{{11 → 10}}"
       ]
      ],
-     "note": "Write the coefficients in order, left to right. A coefficient of 1 is not written in an equation, but write it here."
+     "note": "Write coefficients left to right; write 1 here even though equations leave it out."
     },
     {
      "type": "question",
@@ -119,7 +119,7 @@
       "Open **Limiting Reagent** in **Guided** mode. Choose **Oxalic Acid + Sodium Bicarbonate**. Press **Next** through the messages.",
       "When the sim asks you to set the volume, drag the beaker slider **all the way to the top: 0.70 L**. Then press **Next**.",
       "Click the **H₂C₂O₄** bottle **3 times**. Each click adds **5 molecules** (15 total). **Wait for the molecules to land before you click again**: fast clicks get lost.",
-      "Then follow the messages: shake in **NaHCO₃**, press **Next** to run the reaction, and add extra NaHCO₃ when asked."
+      "Then follow the messages: shake in **NaHCO₃**, press **Next** to run the reaction, and add extra NaHCO₃ when asked. For row 2, Reset and choose **Nitric Acid + Sodium Hydroxide** with the same settings."
      ]
     },
     {
@@ -189,8 +189,7 @@
        "{{4.51}}",
        "{{96%}}"
       ]
-     ],
-     "note": "Fill in row 2 after you run reaction 2 (choose **Nitric Acid + Sodium Hydroxide**, top of the slider again, 3 slow clicks)."
+     ]
     },
     {
      "type": "calc",
@@ -232,7 +231,7 @@
      "type": "setup",
      "items": [
       "Open **Precipitation** in **Guided** mode. Choose **M₂CO₃(aq) + CaCl₂(aq) → CaCO₃(s) + 2MCl(aq)**. Drag the volume slider **to the top: 0.700 L**.",
-      "Click the **CaCl₂** shaker once to pick it up, then **4 more times**: **20 molecules** (point at it to check). Press **Next**.",
+      "Click the **CaCl₂** shaker once to pick it up, then **4 more times** (**20 molecules**). Press **Next**.",
       "Pick up the **M₂CO₃** shaker and pour **2 times only (10 molecules)**. Write down the grams it shows. M is random, so your partner may get a different metal."
      ]
     },
@@ -242,7 +241,7 @@
       {
        "prompt": "Which product is the precipitate? How can you tell from the equation alone?",
        "lines": 1,
-       "answer": "CaCO₃. It is the product marked (s), a solid, so it settles out of the solution as a precipitate."
+       "answer": "CaCO₃: it is the product marked (s), a solid."
       }
      ]
     },
@@ -250,7 +249,7 @@
      "type": "notes",
      "items": [
       "One way to know a reaction is a precipitation reaction: one of the products is a {{solid (s)}}.",
-      "M is not a real element. It stands for one of three metals in the table: {{Na}}, {{Li}} or {{K}}.",
+      "M is not a real element: it is one of the three metals in the table, {{Na}}, {{Li}} or {{K}}.",
       "For the solution in the beaker, moles = V × M. For the solid precipitate, moles = mass ÷ {{molar mass}}. In a real lab you would extract the precipitate with a {{filter}} and {{weigh}} it to know its mass."
      ]
     },
@@ -344,7 +343,7 @@
        "answer": "Ca²⁺(aq) + CO₃²⁻(aq) → CaCO₃(s). Spectators: M⁺ (Na⁺, Li⁺ or K⁺) and Cl⁻. Accept with or without states for 1 of 2 points."
       },
       {
-       "prompt": "The sim then runs 2MI(aq) + Pb(NO₃)₂(aq) → PbI₂(s) + 2MNO₃(aq). Use 20 Pb(NO₃)₂ and 2 pours of MI. Same 10 molecules, same 0.700 L, so n(MI) = 0.0368 mol. Find the molar mass of MI and check it against the sim's table.",
+       "prompt": "Next the sim runs 2MI(aq) + Pb(NO₃)₂(aq) → PbI₂(s) + 2MNO₃(aq). Use 20 Pb(NO₃)₂ and 2 pours of MI. Same 10 molecules and volume, so n(MI) = 0.0368 mol. Find the molar mass of MI.",
        "lines": 2,
        "points": 3,
        "answer": "MM = grams ÷ 0.0368 mol. Na: 5.53 g → **150 g/mol, NaI**. Li: 4.94 g → 134, LiI. K: 6.12 g → 166, KI (the sim's table: NaI 150, LiI 134, KI 166)."
@@ -647,7 +646,7 @@
       {
        "prompt": "Purple MnO₄⁻ loses its color as soon as it lands in the Fe²⁺ solution. What will you see at the moment the Fe²⁺ runs out?",
        "lines": 1,
-       "answer": "A pale pink that stays: the next drop of MnO₄⁻ has nothing left to react with, so its color remains."
+       "answer": "A pale pink that stays: MnO₄⁻ has nothing left to react with."
       }
      ]
     },
@@ -715,17 +714,17 @@
       {
        "prompt": "Fe²⁺: at the endpoint, before you press Next, calculate (1) mol MnO₄⁻, (2) mol Fe²⁺, (3) [Fe²⁺] in the original sample.",
        "lines": 3,
-       "answer": "(1) 0.0200 mol/L × 0.02000 L = **4.00 × 10⁻⁴ mol** MnO₄⁻. (2) × 5 = **2.00 × 10⁻³ mol** Fe²⁺. (3) 2.00 × 10⁻³ mol ÷ 0.02500 L = **0.0800 M**."
+       "answer": "(1) 0.0200 × 0.02000 L = **4.00 × 10⁻⁴ mol** MnO₄⁻ (2) × 5 = **2.00 × 10⁻³ mol** Fe²⁺ (3) ÷ 0.02500 L = **0.0800 M**"
       },
       {
        "prompt": "BEFORE you titrate the oxalic acid: 2MnO₄⁻ + 5H₂C₂O₄ + 6H⁺ → 2Mn²⁺ + 10CO₂ + 8H₂O. If the 25.00 mL sample is 0.0500 M, predict the endpoint volume of 0.0200 M KMnO₄. Then titrate to check.",
        "lines": 2,
-       "answer": "mol H₂C₂O₄ = 0.0500 × 0.02500 = 1.25 × 10⁻³. × 2/5 = 5.00 × 10⁻⁴ mol MnO₄⁻. V = 5.00 × 10⁻⁴ ÷ 0.0200 = 0.0250 L = **25.00 mL** ✓."
+       "answer": "1.25 × 10⁻³ mol H₂C₂O₄ × 2/5 = 5.00 × 10⁻⁴ mol MnO₄⁻; ÷ 0.0200 M = 0.0250 L = **25.00 mL** ✓."
       },
       {
        "prompt": "H₂O₂ (same 5 : 2 ratio): use your endpoint to find [H₂O₂]. Then press Show answer to check.",
        "lines": 2,
-       "answer": "0.0200 × 0.01750 L = 3.50 × 10⁻⁴ mol MnO₄⁻. × 5/2 = 8.75 × 10⁻⁴ mol H₂O₂. ÷ 0.02500 L = **0.0350 M**."
+       "answer": "3.50 × 10⁻⁴ mol MnO₄⁻ × 5/2 = 8.75 × 10⁻⁴ mol; ÷ 0.02500 L = **0.0350 M**."
       }
      ]
     },
@@ -734,16 +733,16 @@
      "prompt": "Sketch the chart for the Fe²⁺ titration: both lines, up to about 25 mL. Mark the endpoint.",
      "x_label": "KMnO₄ added (mL)",
      "y_label": "moles in flask",
-     "height": 1.4,
-     "answer": "Fe²⁺ line falls in a straight line from its start to zero at 20.00 mL. Excess MnO₄⁻ line is zero until 20.00 mL, then rises in a straight line, less steeply (1/5 the slope). Endpoint marked at 20.00 mL."
+     "height": 1.2,
+     "answer": "Fe²⁺ falls in a straight line to zero at 20.00 mL; excess MnO₄⁻ is zero until 20.00 mL, then rises less steeply (1/5 the slope)."
     },
     {
      "type": "question",
      "items": [
       {
        "prompt": "A student stops at 20.50 mL, where the flask is purple. Is their [Fe²⁺] too high or too low? Explain.",
-       "lines": 2,
-       "answer": "Too high. Past the endpoint the extra MnO₄⁻ did not react, but the calculation counts it, so moles of Fe²⁺ come out too big (the sim: \"A reading taken here would make your answer too high\")."
+       "lines": 1,
+       "answer": "Too high: the extra MnO₄⁻ did not react but is counted, so mol Fe²⁺ comes out too big."
       }
      ]
     }

@@ -180,7 +180,7 @@
       1.1,
       1.1
      ],
-     "row_height": 0.36,
+     "row_height": 0.32,
      "first_col_left": true,
      "subtitle": "After the reaction finishes, click the Table tab and copy the ICE table"
     },
@@ -189,7 +189,7 @@
      "prompt": "Sketch the Q graph (Q vs. time). Draw and label the K line.",
      "x_label": "Time",
      "y_label": "Q",
-     "height": 1.2,
+     "height": 0.95,
      "answer": "Q starts at 0, rises quickly, then slows and levels off exactly on the K line (Q = K = 10)."
     },
     {
@@ -400,7 +400,7 @@
       1.1,
       1.1
      ],
-     "row_height": 0.36,
+     "row_height": 0.32,
      "first_col_left": true,
      "subtitle": "Click the Table tab and copy the ICE table (partial pressures)"
     },
@@ -499,7 +499,7 @@
       1.1,
       1.1
      ],
-     "row_height": 0.36,
+     "row_height": 0.32,
      "first_col_left": true,
      "subtitle": "After the shift, copy the Table tab (Initial = right after you moved the piston)"
     },
@@ -598,7 +598,7 @@
       1.1,
       1.1
      ],
-     "row_height": 0.36,
+     "row_height": 0.32,
      "first_col_left": true,
      "subtitle": "After the shift, copy the Table tab"
     },
@@ -758,7 +758,7 @@
       1.4,
       1.4
      ],
-     "row_height": 0.36,
+     "row_height": 0.32,
      "first_col_left": true,
      "subtitle": "Click the Table tab and copy it"
     },
@@ -855,7 +855,7 @@
       1.4,
       1.4
      ],
-     "row_height": 0.36,
+     "row_height": 0.32,
      "first_col_left": true,
      "subtitle": "Click the Table tab and copy it"
     },

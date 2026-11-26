@@ -32,12 +32,12 @@
      "items": [
       {
        "prompt": "Calculate the rate constant k = −Δ[A]/Δt for c₁ = 0.90 M at t₁ = 0 s and c₂ = 0.25 M at t₂ = 13 s. Include units.",
-       "lines": 3,
+       "lines": 2,
        "answer": "k = −(0.25 − 0.90) M / (13 − 0) s = 0.65 / 13 = **0.050 M/s**. The sim shows Rate = 0.05 and \"k=0.050M/s\"."
       },
       {
        "prompt": "Calculate the half-life with the sim's formula t½ = [A]₀ / (2k).",
-       "lines": 3,
+       "lines": 2,
        "answer": "t½ = 0.90 M / (2 × 0.050 M/s) = **9.0 s**. The sim shows t½ = 9.00 s."
       }
      ]
@@ -58,15 +58,6 @@
       "The rate constant {{k}} is a value on which the rate depends. For this reaction, k = {{0.050}} M/s.",
       "{{Half-life}} (t½) is the point in time at which the concentration of the reactant is {{half}} of what the initial concentration was. For this reaction, t½ = {{9.00}} s.",
       "For this zero order reaction, rate is {{constant}} and it's equal to {{k}}. That's why a graph of [A] vs. t is a {{straight line}}: [A] = −kt + [A]₀, where {{−k}} is the slope."
-     ]
-    },
-    {
-     "type": "equations",
-     "subtitle": "Copy the numbers from the equation panel on the right",
-     "items": [
-      "Rate = k = −Δc/Δt:   Rate = {{0.05|8}} = −({{0.25|8}} − {{0.90|8}}) / ({{13.00|8}} − {{0.00|8}})",
-      "t½ = [A₀]/(2k):   {{9.00|8}} = {{0.90|8}} / (2 × {{0.05|8}})",
-      "Rate = k[A]⁰:   rate does not depend on [A], because any number to the power {{0|6}} is 1."
      ]
     },
     {
@@ -111,14 +102,14 @@
        "{{0.05}}"
       ]
      ],
-     "row_height": 0.34
+     "row_height": 0.3
     },
     {
      "type": "graph",
      "prompt": "Plot [A] vs. time from your table (this one you can draw to scale). Label [A]₀, the end point and t½.",
      "x_label": "Time (s)",
      "y_label": "[A] (M)",
-     "height": 1.9,
+     "height": 1.4,
      "answer": "Straight line from (0 s, 0.90 M) down to (13 s, 0.25 M); slope = −0.05 M/s; t½ marked at 9 s where [A] = 0.45 M."
     },
     {
@@ -175,7 +166,7 @@
       1.3,
       1.3
      ],
-     "row_height": 0.34
+     "row_height": 0.3
     },
     {
      "type": "question",
@@ -191,10 +182,6 @@
        "answer": "k got smaller (0.05 → 0.03 M/s): the same change in concentration spread over a longer time is a slower rate, and for zero order rate = k. Accept: smaller k because Δt is larger."
       }
      ]
-    },
-    {
-     "type": "explore",
-     "text": "Open Explore mode (🧪 button in the top-left menu). Choose Order: Zero (0). Change only the Time slider. How does k change when the time doubles?"
     }
    ]
   },
@@ -226,12 +213,12 @@
      "items": [
       {
        "prompt": "Calculate k with the sim's formula k = (ln[A]₀ − ln[A]ₜ) / t. Include units.",
-       "lines": 3,
+       "lines": 2,
        "answer": "k = (ln 0.60 − ln 0.15) / 10 s = (−0.51 − (−1.90)) / 10 = **0.139 s⁻¹**. The sim shows k = 0.14 in the panel and \"k=0.139\" in the text."
       },
       {
        "prompt": "Calculate t½ = ln 2 / k, and the rate at the start, rate = k[A]₀.",
-       "lines": 3,
+       "lines": 2,
        "answer": "t½ = 0.693 / 0.139 s⁻¹ = **5.0 s** (sim: 5.00). Rate = 0.139 s⁻¹ × 0.60 M = **0.083 M/s** (sim: 0.08)."
       }
      ]
@@ -298,14 +285,14 @@
       ]
      ],
      "note": "The sim's clock runs from 10 s to 20 s on this screen, so elapsed time = clock time − 10 s. Use only the number inside the parentheses; the rate number in that row does not change as you scrub.",
-     "row_height": 0.34
+     "row_height": 0.3
     },
     {
      "type": "calc",
      "items": [
       {
        "prompt": "Use the first and last rows of your table to find the slope of ln[A] vs. time. Compare it with k.",
-       "lines": 3,
+       "lines": 2,
        "answer": "slope = (−1.90 − (−0.51)) / (10 − 0) s = **−0.139 s⁻¹**, so k = 0.139 s⁻¹, the same as the panel."
       }
      ]
@@ -315,7 +302,7 @@
      "prompt": "Sketch [A] vs. time AND ln[A] vs. time from your table (two lines on one set of axes, or split the box). Label which is which.",
      "x_label": "Elapsed time (s)",
      "y_label": "[A] (M)  /  ln[A]",
-     "height": 1.9,
+     "height": 1.6,
      "answer": "[A]: curve falling from 0.60 to 0.15 M, steep at first, flatter later (0.30 M at 5 s). ln[A]: straight line from −0.51 to −1.90, slope −0.139 s⁻¹."
     },
     {
@@ -338,7 +325,7 @@
     },
     {
      "type": "explore",
-     "text": "In Explore mode choose Order: First (1). Keep the Time slider at 10 s and move [A] end until it is half of [A]₀. What is t½? Now change [A]₀: does t½ change?"
+     "text": "Open Explore mode (🧪 button in the top-left menu). Order: Zero (0): how does k change when the Time slider doubles? Order: First (1): keep Time at 10 s, move [A] end to half of [A]₀. What is t½? Change [A]₀: does t½ change?"
     }
    ]
   },
@@ -370,12 +357,12 @@
      "items": [
       {
        "prompt": "Calculate k with the sim's formula k = (1/[A]ₜ − 1/[A]₀) / t. Include units.",
-       "lines": 3,
+       "lines": 2,
        "answer": "k = (1/0.25 − 1/1.00) / 10 s = (4.00 − 1.00) / 10 = **0.30 M⁻¹s⁻¹**. The sim shows 0.30 in the panel and \"k=0.300\" in the text."
       },
       {
        "prompt": "Calculate the first half-life, t½ = 1/(k[A]₀). Then calculate the second half-life, starting from [A] = 0.50 M. Do they add up to 10 s?",
-       "lines": 4,
+       "lines": 3,
        "answer": "First: 1/(0.30 × 1.00) = **3.33 s** (sim: t½ = 3.33 s). Second: 1/(0.30 × 0.50) = **6.67 s**. 3.33 + 6.67 = 10.0 s. Yes."
       }
      ]
@@ -442,14 +429,14 @@
       ]
      ],
      "note": "Elapsed time = clock time − 10 s, as on the first order screen.",
-     "row_height": 0.34
+     "row_height": 0.3
     },
     {
      "type": "calc",
      "items": [
       {
        "prompt": "Use the first and last rows to find the slope of 1/[A] vs. time. Compare it with k.",
-       "lines": 3,
+       "lines": 2,
        "answer": "slope = (4.00 − 1.00) M⁻¹ / 10 s = **0.30 M⁻¹s⁻¹** = k."
       }
      ]
@@ -459,7 +446,7 @@
      "prompt": "Sketch [A] vs. time AND 1/[A] vs. time from your table (not from the small 1/[A] box in the sim). Label which is which.",
      "x_label": "Elapsed time (s)",
      "y_label": "[A] (M)  /  1/[A] (M⁻¹)",
-     "height": 1.9,
+     "height": 1.6,
      "answer": "[A]: curve falling from 1.00 to 0.25 M, steeper at the start than the first order curve (0.40 M already at 5 s). 1/[A]: straight line RISING from 1.00 to 4.00 M⁻¹, slope +0.30."
     },
     {
@@ -467,7 +454,7 @@
      "items": [
       {
        "prompt": "Compare the half-lives you found on this page with the first order page. Explain the difference using the rate laws.",
-       "lines": 3,
+       "lines": 2,
        "answer": "First order: both half-lives 5 s (constant). Second order: 3.33 s then 6.67 s (each one doubles). For second order t½ = 1/(k[A]), so as [A] falls the half-life gets longer; rate = k[A]² drops faster than k[A] as [A] falls."
       }
      ]
@@ -548,7 +535,7 @@
       1.3,
       1.9
      ],
-     "row_height": 0.42
+     "row_height": 0.3
     },
     {
      "type": "notes",
@@ -564,12 +551,12 @@
      "items": [
       {
        "prompt": "All three reactions use up the same amount of A in the same 20 s. Use the rate laws to explain why the second order reaction is fastest at the start but slowest near the end.",
-       "lines": 3,
+       "lines": 2,
        "answer": "Rate = k[A]²: when [A] is large, [A]² makes the rate very high, so [A] drops fast at first. When [A] is small, [A]² is tiny, so the rate becomes very low and the curve flattens. Zero order keeps the same rate the whole time."
       },
       {
        "prompt": "A lab gives you [A] vs. time data for an unknown reaction. Explain how you would find its order using the three kinds of graphs from this unit.",
-       "lines": 3,
+       "lines": 2,
        "answer": "Plot [A] vs. t, ln[A] vs. t and 1/[A] vs. t. Whichever is a straight line gives the order: [A] → zero, ln[A] → first, 1/[A] → second. The slope gives k (−k, −k, +k)."
       }
      ]
@@ -608,12 +595,12 @@
      "items": [
       {
        "prompt": "Before the step \"Take a look at the linear graph of ln(k) vs 1/T\": the panel shows Eₐ = 9e3 J (9000 J) and uses R = 8.31. Calculate the slope (−Eₐ/R) of the ln(k) vs. 1/T line.",
-       "lines": 3,
+       "lines": 2,
        "answer": "slope = −9000 J / 8.31 J K⁻¹ = **−1083 K**. The sim says \"a slope of -1083\"."
       },
       {
        "prompt": "Before you turn up the burner: how many times larger is k at 550 K than at 400 K for Eₐ = 9000 J? Use ln(k₂/k₁) = (Eₐ/R)(1/T₁ − 1/T₂) with R = 8.31.",
-       "lines": 4,
+       "lines": 2,
        "answer": "ln(k₂/k₁) = (9000/8.31)(1/400 − 1/550) = 1083 × 6.82 × 10⁻⁴ = 0.738, so k₂/k₁ = e^0.738 = **2.09**. Check in the panel: k₂ = 1.8 and k₁ = 0.9, ratio ≈ 2."
       }
      ]
@@ -674,7 +661,7 @@
       1.2,
       1.5
      ],
-     "row_height": 0.36
+     "row_height": 0.3
     },
     {
      "type": "notes",
@@ -689,7 +676,7 @@
      "prompt": "Sketch the energy diagram at 550 K: reactants, products, the gray original hump, the orange catalyzed hump, the Eₐ arrow and the horizontal kinetic energy line.",
      "x_label": "Reaction progress",
      "y_label": "Energy",
-     "height": 2.0,
+     "height": 1.6,
      "answer": "Reactants start higher than products (exothermic). Orange catalyzed hump lower than gray hump. At 550 K the kinetic energy line is ABOVE the orange hump but BELOW the gray hump. Eₐ arrow from reactants to the top of the hump."
     },
     {
@@ -697,12 +684,12 @@
      "items": [
       {
        "prompt": "Use your diagram: at 550 K, could the reaction go over the original (gray) hump? The catalyzed (orange) hump? Explain how the catalyst and the temperature each make more collisions effective.",
-       "lines": 3,
+       "lines": 2,
        "answer": "Not the gray hump (line is below it), but yes the orange hump (line is above it). The catalyst lowers Eₐ, so more collisions have enough energy; raising T raises the average kinetic energy, so more molecules reach Eₐ."
       },
       {
        "prompt": "k₂ went from 1.8 to 2.1 to 3.7 across the three runs at the same temperature. Use the Arrhenius equation and the sim's Eₐ values to explain this trend.",
-       "lines": 3,
+       "lines": 2,
        "answer": "In k = Ae^(−Eₐ/RT), a smaller Eₐ makes −Eₐ/RT less negative, so k is larger. The sim says each catalyst lowered Eₐ (to 8000 J, then 6000 J), so k increased at the same T."
       }
      ]

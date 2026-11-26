@@ -13,7 +13,7 @@ line is now `HeatLab.tsx:1146-1155`, not :306). The newer commit also confirmed 
 
 | Worksheet item | Answer | Source |
 |---|---|---|
-| Menu name | "Part 1 · Simulation 1" / "Heat transfer and calorimetry" | `unit6/parts.ts:41-43`; kicker format `components/Unit6MenuDrawer.tsx:109` |
+| Menu name | "Part 1 · Simulation 1" / "Heat transfer and calorimetry" | `unit6/parts.ts:16-18`; kicker format `components/Unit6MenuDrawer.tsx:109` |
 | Mode buttons | "Guided" / "Free Explore" | `components/lab/LabModeSwitch.tsx:23,37` |
 | Metal picker | "Choose a Metal"; iron default, order iron → aluminum → lithium | `HeatLab.tsx:1160`, `:197`, `:54` |
 | Mass buttons | ◀ ▶, ±5 g, 10–100 g, default 50 g | `HeatLab.tsx:1083-1101`, `:198` |
@@ -38,7 +38,7 @@ line is now `HeatLab.tsx:1146-1155`, not :306). The newer commit also confirmed 
 
 | Worksheet item | Answer | Source |
 |---|---|---|
-| Menu name | "Energy diagrams, phases, and reaction enthalpy" | `unit6/parts.ts:55` |
+| Menu name | "Energy diagrams, phases, and reaction enthalpy" | `unit6/parts.ts:29` |
 | Substance picker | "Choose a Substance"; water default | `HeatingCurveLab.tsx:1915`, `:1337` |
 | Mass = 1 g (never shown) | `massG: 1` for all three | `heatingCurve/sim/substances.ts:25,39,53` |
 | "ΔH = Cₚ × (T₂ − T₁)", T₁ **initial**, T₂ **current**, Cₚ depends on **substance** and **physical state**, solid water **2.1** | quoted | `heatingCurve/steps.tsx:36-48`; value `substances.ts:30` |
@@ -61,7 +61,7 @@ line is now `HeatLab.tsx:1146-1155`, not :306). The newer commit also confirmed 
 
 | Worksheet item | Answer | Source |
 |---|---|---|
-| Menu name | "Bond enthalpies, formation, and Hess's law" | `unit6/parts.ts:65` |
+| Menu name | "Bond enthalpies, formation, and Hess's law" | `unit6/parts.ts:40` |
 | Compound picker | "Choose a Compound": HCl, C2H6 (NaOH commented out) | `BondEnthalpyLab.tsx:2809-2817`, `:65-69` |
 | "Energy is involved in the **breaking** of atoms' bonds." | quoted | `:1720` |
 | H—H **436** kJ "per mole of bonds" | quoted | `:1728`; callout `:298`; table `:2312-2315` |
@@ -83,20 +83,20 @@ line is now `HeatLab.tsx:1146-1155`, not :306). The newer commit also confirmed 
 
 | Worksheet item | Answer | Source |
 |---|---|---|
-| Menu name | "Part 4" / "Formation Enthalpies" | `unit6/parts.ts:79-80` |
+| Menu name | "Part 4" / "Formation Enthalpies" | `unit6/parts.ts:54-55` |
 | Reaction | C₂H₆ + Cl₂ → C₂H₅Cl + HCl | header `:1225-1229` |
 | Reaction type picker / default | "Reaction type": Exothermic (default) / Endothermic | `:1788-1795`, `:846` |
-| ΔH°f exothermic set | C₂H₆ −85, Cl₂ 0, C₂H₅Cl −113, HCl −92 | `:61-66`, rendered `:2040-2045` |
-| ΔH°f endothermic set | −85, 0, +15, +20 | `:67-72` |
+| ΔH°f exothermic set | C₂H₆ −85, Cl₂ 0, C₂H₅Cl −113, HCl −92 | `:64-67`, rendered `:2040-2045` |
+| ΔH°f endothermic set | −85, 0, +15, +20 | `:70-73` |
 | Equation | "ΔH°rx = ΔH°f products − ΔH°f reactants" | `:2048-2050` |
-| Calc exo | (−113 + −92) − (−85 + 0) = −120 kJ/mol | sim row `:1291-1296`; bubble `:1599`; info `:2155-2156` |
-| Calc endo | (15 + 20) − (−85 + 0) = +120 kJ/mol | sim row `:1299-1304`; bubble `:1616`; info `:2158-2159` |
+| Calc exo | (−113 + −92) − (−85 + 0) = −120 kJ/mol | sim row `:1292-1296`; bubble `:1599`; info `:2155-2156` |
+| Calc endo | (15 + 20) − (−85 + 0) = +120 kJ/mol | sim row `:1300-1304`; bubble `:1616`; info `:2158-2159` |
 | Notes: "With sufficient **energy**, reactants will turn into products!" | quoted | `:1352` |
 | Notes: flame slider → **Activation Energy** | quoted | `:1386` |
 | Notes: burner never moves the reactant or product **plateaus**; from tabulated **ΔH°f** values | quoted | `:1446-1448` |
-| Notes: Cl₂ ΔH°f = **0**, **element** in standard state | 0 from table `:64`; "element" is the AP definition (the sim gives no reason) |
+| Notes: Cl₂ ΔH°f = **0**, **element** in standard state | 0 from table `:65`; "element" is the AP definition (the sim gives no reason) |
 | Graph | exothermic: products below reactants; endothermic: above; Eₐ label has no number | geometry `:131-133`, `:165-167`; Eₐ / ΔH°rxn labels `:527-541` |
-| Q: endothermic set hypothetical | HCl +20 contradicts −92 (Part 3 `BondEnthalpyLab.tsx:1787` and exo set `:65`) | |
+| Q: endothermic set hypothetical | HCl +20 contradicts −92 (Part 3 `BondEnthalpyLab.tsx:1787` and exo set `:67`) | |
 
 ## Values checked by hand
 
@@ -140,7 +140,7 @@ Exit ticket 60·4.2·12.1 = 3049 J
 
 **Part 1 (HeatLab.tsx)**
 - Bottom formula line renders "− 1652 J = 1652 J": a literal "− " (`:1147`) in front of a box that holds a positive `Math.round(qLeft)` (`:307`, `:1149`). Lines `:1146-1155`.
-- Burner default changes with how you get there: starts at 0 (40 °C) (`:203`), reset to 0 on every metal change, including the Next → aluminum/lithium flow (`:206-208`, `:1466`); Guided Reset and switching to Guided set 2 (100 °C) (`:485`, `:536`); menu re-select sets 2 (`:504`). No readout: the Low/Medium/High label is commented out (`:1235-1241`).
+- Burner default changes with how you get there: starts at 0 (40 °C) (`:203`), reset to 0 on every metal change, including the Next → aluminum/lithium flow (`:206-208`, `:1466`); Guided Reset and switching to Guided set 2 (100 °C) (`:485`, `:504`); re-selecting Part 1 in the menu sets 2 (`:536`). No readout: the Low/Medium/High label is commented out (`:1235-1241`).
 - Bubble says "Pinch the slider" (`:1016`) but the control is ◀ ▶ buttons (`:1083-1101`); the slider is commented out (`:1245-1255`).
 - Bubble says "press play to graph" (`:1061-1063`) but the graph auto-starts after the drop (`:389-394`).
 - Mass and water readouts are commented out (`:1288-1290`); values visible only in the formula line.
@@ -149,7 +149,7 @@ Exit ticket 60·4.2·12.1 = 3049 J
 - While still solid, the bubble says "Once [substance] melts, Cₚ changes to 4.2 J/g·°C" for every substance (`heatingCurve/steps.tsx:76`); ethanol is 2.44, acetone 2.18.
 - Heat capacity labelled "Cw" for every substance and phase (`heatingCurve/sim/heatingModel.ts:107-139`, shown at `HeatingCurveLab.tsx:2211`).
 - Mass (1 g) never displayed; ΔH_f / ΔH_v shown as "333 J" etc. with no "per gram" (`steps.tsx:95,121`).
-- Step 0 text ("Both a change in temperature and a change of phase require enthalpy… Select a substance.") and the placeholder row "□ = 4.2 ( □ − □ )" are unreachable in Guided mode: the lab starts at step 1 (`HeatingCurveLab.tsx:1338`) and Back is disabled at step ≤ 1 (`:2325`). Not used.
+- Step 0 text ("Both a change in temperature and a change of phase require enthalpy… Select a substance.") and the placeholder row "□ = 4.2 ( □ − □ )" are unreachable in Guided mode: the lab starts at step 1 (`HeatingCurveLab.tsx:1338`) and Back is disabled at step ≤ 1 (`:2365`). Not used.
 - Heating curve is schematic: every leg is the same size (`:49-52`, `:73-82`).
 
 **Part 3 (BondEnthalpyLab.tsx)**
@@ -162,7 +162,7 @@ Exit ticket 60·4.2·12.1 = 3049 J
 - 6.9 Hess's Law menu item opens the intro screen only; NaOH tour commented out (`:1128-1138`).
 
 **Part 4 (FormationReactionLab.tsx)**
-- The sim labels the **exothermic** set "hypothetical" (`:1634`, `:1650`, `:2130`, `:2155`) and the endothermic set not; the endothermic values (+15, +20) are the invented ones and contradict Part 3's HCl −92 (`:67-72`).
+- The sim labels the **exothermic** set "hypothetical" (`:1634`, `:1650`, `:2130`, `:2155`) and the endothermic set not; the endothermic values (+15, +20) are the invented ones and contradict Part 3's HCl −92 (`:70-73`).
 - Calc row shows "0 = □ − □" at step 1 and "−205 = □ − □" / "+35 = □ − □" at step 2, i.e. the products' sum in the ΔH°rx position (`:1254-1273`).
 - Reactants written "(0 − 85)" meaning 0 + (−85) (`:1295`, `:1303`).
 - Endothermic run: bubble announces "Enthalpy of reaction has been reached! It's 120 kJ (absorbed)" during the climb, before the activation energy (`:1404-1409`).
@@ -171,6 +171,6 @@ Exit ticket 60·4.2·12.1 = 3049 J
 
 ## AP topics not covered by the sim
 
-- **6.9 Hess's Law**: listed in the Part 3 and Part 4 menus (`unit6/parts.ts:73,88`) but there is no Hess's law activity (`BondEnthalpyLab.tsx:1135-1137`). Lesson plan Day 4 reserves 20 minutes for the teacher's usual Hess's law lesson; Conclusion question 2 connects the same −92 kJ/mol from two paths to the state-function idea.
+- **6.9 Hess's Law**: listed in the Part 3 and Part 4 menus (`unit6/parts.ts:48,63`) but there is no Hess's law activity (`BondEnthalpyLab.tsx:1135-1137`). Lesson plan Day 4 reserves 20 minutes for the teacher's usual Hess's law lesson; Conclusion question 2 connects the same −92 kJ/mol from two paths to the state-function idea.
 - Coffee-cup vs. bomb calorimetry and calorimeter heat capacity (part of 6.4) are not modelled: the sim's calorimeter is ideal (no heat to the cup or room). The AP FRQ part (d) touches heat loss.
 - Thermochemical-equation stoichiometry (scaling ΔH with moles beyond the ÷2 for HCl) is only touched lightly.

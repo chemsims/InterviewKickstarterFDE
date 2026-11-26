@@ -82,7 +82,7 @@ electronegativity (EN) · ΔEN · nonpolar / polar covalent · ionic bond · met
 |---|---|
 | 0–5 | Warm-up: "Salt and sugar are both white solids. Why does salt water conduct and sugar water doesn't?" Collect ideas, don't answer yet. |
 | 5–35 | Projected demo of 1 · Bonds (script below). Students fill in p. 1 Predict, Guided notes and the data table with you. |
-| 35–45 | Pairs finish the p. 1 Calculate box (Al–O, Ca–F) on their own devices or from the projector, then check in the sim. |
+| 35–45 | Pairs finish the p. 1 Calculate box (Al–O) and the H–F question on their own devices or from the projector, then check in the sim. |
 | 45–50 | Return to the warm-up: salt is ionic (ions), sugar is molecular. Preview tomorrow: the Energy screen. |
 
 **Demo script.** Do and say this at the projector:
@@ -94,10 +94,10 @@ electronegativity (EN) · ΔEN · nonpolar / polar covalent · ionic bond · met
 | 3 | Ask the H–Cl Predict question before loading. Then click H–Cl. | H has EN 2.20, Cl has 3.16. Where does the pair go? Why? (Expected: closer to Cl, it pulls harder.) | Predict box 1. |
 | 4 | Drag the pair partway toward Cl and check. Point to δ+ on H, δ− on Cl and the purple arrow. | The higher-EN atom gets the partial negative charge. That's a polar covalent bond. | Second notes bullet; H–Cl row (0.96, polar covalent). |
 | 5 | Click H–F. Drag the pair toward F and check. Point to H–F on the ΔEN bar (1.78). | 1.78 is past the 1.7 some books use for ionic. Is it ionic? (Expected: no, both nonmetals.) The sim says metal + nonmetal is the better test. | H–F row; fifth notes bullet (continuum, 0.4, metal + nonmetal). |
-| 6 | Ask Predict 2, then click Na–Cl. Drag sodium's electron all the way onto Cl and check. Let the animation finish. | Watch the sizes: Na shrinks into Na⁺, Cl grows into Cl⁻. Nothing is shared: an ionic bond. | Predict 2; third notes bullet; Na–Cl row. |
+| 6 | Ask: will sodium's electron be shared or handed over? Then click Na–Cl. Drag sodium's electron all the way onto Cl and check. Let the animation finish. | Watch the sizes: Na shrinks into Na⁺, Cl grows into Cl⁻. Nothing is shared: an ionic bond. | Third notes bullet; Na–Cl row. |
 | 7 | Click Mg–O, drag both electrons onto O and check. Read the line above the atoms: "+ and − ions attract" and the Particles line. | Mg gives 2, O takes 2: one of each, MgO. What would Al and O need? (Hold that for the Calculate box.) | Mg–O row (2.13, ionic, Mg²⁺ and O²⁻; MgO). |
 | 8 | Click Na–Na. Press Pool into an electron sea, then check. Then click Cu–Zn and do the same. | Two metals: neither wants the electrons, so they pool into a sea shared by every atom. That's metallic bonding, and a mix of metals is an alloy. | Fourth notes bullet; Na–Na and Cu–Zn rows. |
-| 9 | Show the Properties to expect line for Na–Cl, then for Cl–Cl. | Bond type predicts properties. We'll test the ionic and metal ones ourselves on screens 3 and 5. | Analyze question 3. |
+| 9 | Show the Properties to expect line for Na–Cl, then for Cl–Cl. | Bond type predicts properties. We'll test the ionic and metal ones ourselves on screens 3 and 5. | Nothing new: a class discussion. (The Conclusion page comes back to it.) |
 
 ### Day 2: Student sim work: Energy and Ionic
 
@@ -277,14 +277,12 @@ These are places where the sim's text or numbers can confuse students. The works
 ### Support
 
 - Pair a strong reader with a student who needs support; the reader reads the Beaky step text aloud.
-- Give the Data table 1 rows on p. 7 with the electron-domain geometry column filled in.
 - Allow a VSEPR shape chart for p. 8.
 - For p. 1 Calculate, give the hint: find the smallest number of electrons both atoms can agree on.
 
 ### Extension
 
 - Explain with the Energy screen why C≡C (839) is less than 3 × C–C (348) and what that says about π bonds.
-- Predict the shape and polarity of BrF₅ and ClF₃ before checking in 3-D.
 - Predict where KF and CaS would fall in the lattice-energy order, and justify with |q₊q₋|/r (no sim check).
 
 ## Exit ticket (last day)

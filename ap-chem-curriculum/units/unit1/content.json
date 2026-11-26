@@ -147,10 +147,6 @@
        "answer": "H₂O: 1.203 × 10²⁴ molecules vs. 3.71 × 10²³ formula units of NaCl. Water's molar mass (18.0 g/mol) is smaller than NaCl's (58.4 g/mol), so each gram holds more moles and more particles. Accept: smaller molar mass → more moles per gram."
       }
      ]
-    },
-    {
-     "type": "explore",
-     "text": "Free Explore: set CO₂ to one molar mass and predict the moles first; double a mass and watch the particles."
     }
    ]
   },
@@ -273,17 +269,8 @@
        "prompt": "On step 6 (Boron), drag the sliders until the two peaks are about the same height. What average atomic mass does the sim show? Explain why.",
        "lines": 2,
        "answer": "About 10.51 amu, halfway between 10.013 and 11.009, because equal abundances give each isotope equal weight. Accept 10.4–10.6 amu with the equal-weight reasoning."
-      },
-      {
-       "prompt": "Choose Magnesium. Increase the ²⁶Mg slider. Which way does the average atomic mass move, and why?",
-       "lines": 2,
-       "answer": "It increases toward 26, because more of the heaviest isotope adds more weight to the high-mass value in the weighted average."
       }
      ]
-    },
-    {
-     "type": "explore",
-     "text": "Free Explore: select magnesium and find the isotope with the tallest peak."
     }
    ]
   },
@@ -328,16 +315,6 @@
       "Empirical formula = {{lowest whole-number}} ratio of atoms.",
       "For a molecular compound, compare {{molecular molar mass}} with empirical-formula mass to find the multiplier.",
       "Ionic compounds stay as {{formula units}}; they are not scaled into molecules."
-     ]
-    },
-    {
-     "type": "calc",
-     "items": [
-      {
-       "prompt": "Do this BEFORE step 3: how many moles of hydrogen are in 6.7 g H? (H = 1.008 g/mol)",
-       "lines": 2,
-       "answer": "n = 6.7 g ÷ 1.008 g/mol = **6.65 mol H** (step 3 shows 6.65 mol)."
-      }
      ]
     },
     {
@@ -408,10 +385,6 @@
        "answer": "Masses do not give atom counts. You must divide each mass by its atomic mass to get moles (3.33, 6.65, 3.33), then divide by the smallest (1 : 2 : 1), giving CH₂O."
       }
      ]
-    },
-    {
-     "type": "explore",
-     "text": "Step 6 / Free Explore: type C 80.0, H 13.4, O 106.6 (all doubled). Is the formula still CH₂O? Adjust C, H and O to a 1 : 2 : 1 mole ratio and confirm CH₂O."
     }
    ]
   },
@@ -560,10 +533,6 @@
        "answer": "Mixture. Its 68.8% O is between pure CO (57.1%) and pure CO₂ (72.7%), so it cannot be either pure compound. It is about 75% CO₂ by mass."
       }
      ]
-    },
-    {
-     "type": "explore",
-     "text": "Free Explore: compare pure CO and pure CO₂ and watch the oxygen percent. Set your own blend between the endpoints and predict the % O before you look."
     }
    ]
   },
@@ -577,16 +546,6 @@
       "Open **Topic 1.5 Atomic Structure and Electron Configuration** in **Guided** mode. It starts on **chlorine (Cl, Z = 17)**, neutral.",
       "Step 2 has two sliders: **Electron shell distance** (n = 1 to 3) and **Nuclear charge for comparison**. Moving the nuclear-charge slider changes the atom, so put it back on **17 (Cl)** before step 3.",
       "Steps 3–5 use the **Atom identity** slider; step 5 adds charge buttons (for example Cl⁻)."
-     ]
-    },
-    {
-     "type": "predict",
-     "items": [
-      {
-       "prompt": "Chlorine has 17 electrons. Predict how many are in its outermost shell.",
-       "lines": 1,
-       "answer": "7 (2 in n = 1, 8 in n = 2, 7 in n = 3)."
-      }
      ]
     },
     {
@@ -718,10 +677,6 @@
        "answer": "Same nuclear charge (17), but n = 3 electrons are farther away (larger r). Force ∝ q₁q₂/r², so the pull drops from 17.00 (n = 1) to 1.89 (n = 3). Accept: greater distance → weaker attraction."
       }
      ]
-    },
-    {
-     "type": "explore",
-     "text": "Step 6 / Free Explore: build Mg with a 2+ charge. Find sulfur's valence electron count. Identify the atom with 1s² 2s² 2p⁶ 3s² 3p⁵. Compare the Shells, Core / valence and Subshells views."
     }
    ]
   },
@@ -845,10 +800,6 @@
        "answer": "Forming Na⁺ removes the single 3s electron, so that subshell is empty and its peak disappears. The 10 remaining electrons feel less shielding, so all 3 remaining peaks shift to higher binding energy (“3 peaks higher”)."
       }
      ]
-    },
-    {
-     "type": "explore",
-     "text": "Free Explore challenge prompts: Which peak represents the valence electrons? Why is 2p taller than 2s? Why does the sodium ion lose the 3s peak? Which electrons are held most strongly? Try overlay with Mg and Mg²⁺."
     }
    ]
   },
@@ -970,7 +921,7 @@
     {
      "type": "table",
      "row_height": 0.32,
-     "title": "Data table: Step 3 radius tabs and Down Group 1",
+     "title": "Data table: Step 3 Atom / Cation / Anion tabs",
      "columns": [
       "Atom",
       "Atom radius (pm)",
@@ -995,18 +946,6 @@
        "79",
        "Cl⁻",
        "{{181}}"
-      ],
-      [
-       "Li",
-       "{{167}}",
-       "Li⁺",
-       "{{76}}"
-      ],
-      [
-       "K",
-       "{{243}}",
-       "K⁺",
-       "{{138}}"
       ]
      ]
     },
@@ -1024,10 +963,6 @@
        "answer": "Al loses a 3p electron; it is higher in energy and partly shielded by the 3s² electrons, so it is easier to remove than Mg's 3s electron. (For S, the paired 3p electron repels its partner.) The sim shows these values but does not explain them; accept either reason with evidence."
       }
      ]
-    },
-    {
-     "type": "explore",
-     "text": "Step 6 Try it: Strongest attraction: Na, Mg or Cl? More electronegative: F or Br? Larger radius: Li or K? Justify each with shells, shielding and Zeff before you click."
     }
    ]
   },
@@ -1166,10 +1101,6 @@
        "answer": "K has the lowest first IE in the group (419 kJ/mol vs. 496 for Na and 520 for Li) because its valence electron is in the 4th shell, farther from the nucleus and more shielded, so it is lost most easily."
       }
      ]
-    },
-    {
-     "type": "explore",
-     "text": "Step 6 / Free Explore challenges: find a 1:1 compound, an MX₂ compound and an M₂X compound; build MgCl₂ and Al₂O₃; find the strongest halogen."
     }
    ]
   }
