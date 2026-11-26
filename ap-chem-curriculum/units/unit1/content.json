@@ -719,7 +719,7 @@
      "x_label": "← Higher binding energy",
      "y_label": "Relative intensity",
      "height": 1.3,
-     "answer": "Four peaks, left to right: 1s (height 2), 2s (height 2), 2p (tallest, height 6), 3s (smallest, height 1). Shape and order only."
+     "answer": "Left to right: 1s (2), 2s (2), 2p (tallest, 6), 3s (smallest, 1). Shape and order only."
     },
     {
      "type": "table",
@@ -784,12 +784,12 @@
       {
        "prompt": "Why is the 2p peak taller than the 2s peak? Why is the 1s peak at the highest binding energy?",
        "lines": 2,
-       "answer": "2p holds 6 electrons and 2s holds 2; height ∝ number of electrons. 1s electrons are closest to the nucleus and least shielded, so they need the most energy to remove."
+       "answer": "Height ∝ electrons: 2p has 6, 2s has 2. 1s electrons are closest to the nucleus and least shielded, so removal takes the most energy."
       },
       {
        "prompt": "Why does Na⁺ lose the 3s peak, and what happens to the remaining peaks? (Step 5 shows “Ion shift”.)",
        "lines": 2,
-       "answer": "Forming Na⁺ removes the single 3s electron, so that subshell is empty and its peak disappears. The 10 remaining electrons feel less shielding, so all 3 remaining peaks shift to higher binding energy (“3 peaks higher”)."
+       "answer": "Na⁺ has lost its only 3s electron, so the 3s peak disappears. The rest feel less shielding, so all 3 peaks shift to higher binding energy (“3 peaks higher”)."
       }
      ]
     }
@@ -1088,17 +1088,17 @@
   {
    "prompt": "Use Topics 1.5–1.7: explain why sodium's 3s electron has the lowest binding energy in its PES spectrum AND why sodium has a large atomic radius and low first ionization energy.",
    "lines": 4,
-   "answer": "Na's 3s electron is in the outermost shell (n = 3), shielded by 10 core electrons (Zeff ≈ 1), so Coulomb attraction is weak. That gives the lowest-energy PES peak (3s), a large radius (190 pm) and a low first IE (496 kJ/mol). Accept any answer that links shell distance + shielding/Zeff to all three."
+   "answer": "The 3s electron is far out (n = 3) and shielded by 10 core electrons (Zeff ≈ 1), so attraction is weak: lowest PES peak, large radius (190 pm), low IE (496 kJ/mol). Accept: distance + shielding linked to all three."
   },
   {
    "prompt": "Use Topics 1.5 and 1.8: explain why magnesium forms Mg²⁺ (not Mg⁺ or Mg³⁺) and why the formula with chlorine is MgCl₂.",
    "lines": 2,
-   "answer": "Mg is 1s² 2s² 2p⁶ 3s²: losing the two 3s valence electrons leaves a full previous shell (like Ne). Removing a third electron would take a core electron. Two Cl⁻ ions are needed to balance one 2+ charge: MgCl₂."
+   "answer": "Mg (…3s²) loses its two 3s electrons to reach a full previous shell; a third would be a core electron. Two Cl⁻ balance one Mg²⁺: MgCl₂."
   },
   {
    "prompt": "Use Topics 1.1–1.4: a 36.0 g sample contains only carbon and oxygen and is 66.7% O. Can you tell from this alone whether it is a pure compound or a mixture? What would you compare it to?",
    "lines": 2,
-   "answer": "Not from one percent alone; compare it to the fixed compositions of the pure substances. 66.7% O matches neither CO (57.1%) nor CO₂ (72.7%), so if only those two are possible it must be a mixture (the 50-50 mol example: 14.0 g CO + 22.0 g CO₂)."
+   "answer": "Compare to the pure compositions: 66.7% O matches neither CO (57.1%) nor CO₂ (72.7%), so it is a mixture (14.0 g CO + 22.0 g CO₂)."
   }
  ],
  "key_notes": [

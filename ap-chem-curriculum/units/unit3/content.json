@@ -18,7 +18,7 @@
      "type": "predict",
      "items": [
       {
-       "prompt": "Methane (CH₄) and methanol (CH₃OH) are both small molecules. Which has the higher boiling point? Why?",
+       "prompt": "Which boils higher, methane (CH₄) or methanol (CH₃OH)? Why?",
        "lines": 1,
        "answer": "Methanol: its O–H group lets it hydrogen bond; methane has only weak London dispersion forces. Accept any prediction with a reason."
       }
@@ -27,9 +27,9 @@
     {
      "type": "notes",
      "items": [
-      "London dispersion forces come from {{temporary}} fluctuating dipoles. Larger, more polarizable clouds and more {{contact area}} make them stronger.",
-      "A polar bond does not guarantee a polar molecule. Molecular {{geometry}} decides whether bond dipoles cancel.",
-      "Hydrogen bonding requires a donor H directly bonded to {{N, O, or F}} and an N, O, or F {{acceptor}}.",
+      "London dispersion forces come from {{temporary}} dipoles. Bigger electron clouds and more {{contact area}} make them stronger.",
+      "A polar bond does not guarantee a polar molecule: {{geometry}} decides whether bond dipoles cancel.",
+      "Hydrogen bonding needs an H bonded directly to {{N, O, or F|12}} and an N, O or F {{acceptor}}.",
       "Weaker attractions usually mean {{higher}} vapor pressure and a lower boiling point."
      ]
     },
@@ -72,14 +72,14 @@
        "{{36.1 °C / 9.5 °C}}"
       ]
      ],
-     "row_height": 0.34,
-     "note": "The dispersion score is the sim's own model number (a relative scale), not a measured value."
+     "row_height": 0.3,
+     "note": "Dispersion score = the sim's own relative model number, not a measurement."
     },
     {
      "type": "question",
      "items": [
       {
-       "prompt": "Screen 4: set Particle A and B to **fluoromethane** (CH₃F). It contains H and F. Can it hydrogen bond with itself? Explain with the sim's donor rule.",
+       "prompt": "Screen 4: set A and B to **fluoromethane** (CH₃F). It has H and F. Can it hydrogen bond with itself? Why?",
        "lines": 2,
        "answer": "No. Its H atoms are bonded to C, not to F, so it has no N–H, O–H or F–H donor. The sim shows dipole-dipole as the dominant force."
       }
@@ -101,7 +101,7 @@
      "type": "predict",
      "items": [
       {
-       "prompt": "Solid NaCl is made of ions. Will solid NaCl conduct electricity? Will molten NaCl?",
+       "prompt": "Will solid NaCl conduct electricity? Will molten NaCl?",
        "lines": 1,
        "answer": "Solid: no (ions locked in the lattice). Molten: yes (ions can move). Accept any prediction with a reason."
       }
@@ -110,10 +110,10 @@
     {
      "type": "notes",
      "items": [
-      "Ionic solids have charged particles, but solid ions are {{fixed}} in the lattice. A layer shift puts {{like charges}} together, so they are brittle.",
-      "Graphite is soft because its layers {{slide}}; the covalent bonds inside each layer are still strong.",
-      "Melting a molecular solid overcomes attractions {{between}} molecules, not the covalent bonds inside them.",
-      "Mobile valence {{electrons}} explain conductivity in metals. Alloy atoms can {{block}} metal-core sliding."
+      "Solid ions are {{fixed}} in the lattice. A layer shift puts {{like charges}} together, so ionic solids are brittle.",
+      "Graphite is soft because its layers {{slide}}, though bonds inside each layer are strong.",
+      "Melting a molecular solid overcomes attractions {{between}} molecules, not bonds inside them.",
+      "Mobile valence {{electrons}} make metals conduct. Alloy atoms {{block}} metal-core sliding."
      ]
     },
     {
@@ -168,13 +168,13 @@
        "{{reduced}}"
       ]
      ],
-     "row_height": 0.34
+     "row_height": 0.3
     },
     {
      "type": "question",
      "items": [
       {
-       "prompt": "Copper and solid NaCl both contain charged particles. Why does copper conduct but solid NaCl does not?",
+       "prompt": "Why does copper conduct but solid NaCl does not? Both contain charged particles.",
        "lines": 2,
        "answer": "Copper has mobile (delocalized) valence electrons. NaCl's ions are fixed in the lattice, so no charge can move until it melts or dissolves."
       }
@@ -197,42 +197,15 @@
      "items": [
       "Crystalline solids show repeating {{long-range}} order; amorphous solids (the glass-like solid) do not.",
       "Liquid particles stay {{close}} together while moving, colliding, and exchanging {{neighbors}}.",
-      "Solid and liquid molar volumes are often {{similar}}. Water is the exception: ice takes up {{more}} volume than the liquid."
+      "Solid and liquid molar volumes are often {{similar}}. Water is the exception: ice takes up {{more}} volume than the liquid.",
+      "Screen 5 Property tile: a gas has no definite {{shape}} or {{volume}}; it fills the available container."
      ]
-    },
-    {
-     "type": "table",
-     "title": "Data table 1",
-     "subtitle": "Screen 5: argon, set Phase focus to each phase, copy the Property tile",
-     "columns": [
-      "Phase",
-      "Property tile"
-     ],
-     "col_widths": [
-      1,
-      5
-     ],
-     "rows": [
-      [
-       "Solid",
-       "{{definite shape and definite volume}}"
-      ],
-      [
-       "Liquid",
-       "{{definite volume but shape changes with the container}}"
-      ],
-      [
-       "Gas",
-       "{{no definite shape or volume; fills the available container}}"
-      ]
-     ],
-     "row_height": 0.32
     },
     {
      "type": "predict",
      "items": [
       {
-       "prompt": "Screen 4: if you shrink the container at the same temperature, what happens to how often particles hit the walls?",
+       "prompt": "Screen 4: if you shrink the container at the same temperature, will wall collisions be more or less frequent?",
        "lines": 1,
        "answer": "Collisions become more frequent (particles are closer). Accept any prediction with a reason."
       }
@@ -300,7 +273,7 @@
     {
      "type": "setup",
      "items": [
-      "Open **Topic 3.4** in **Guided** mode. Keep pressure in **atm** until step 4. The sim uses **R = 0.08206 L·atm/(mol·K)** (8.314 for kPa, 62.36 for mmHg or torr). Temperatures in **K**."
+      "**Topic 3.4**, **Guided**. Keep pressure in **atm**. The sim uses **R = 0.08206 L·atm/(mol·K)** (8.314 kPa, 62.36 mmHg). Use **K**."
      ]
     },
     {
@@ -314,22 +287,22 @@
      "type": "calc",
      "items": [
       {
-       "prompt": "**Screen 1** (nitrogen, **Solve P2**): P₁ = 1 atm, V₁ = 100 L. Type **Final volume V₂ = 50 L**. Calculate P₂ first, then check.",
+       "prompt": "**Screen 1** (N₂, **Solve P2**): P₁ = 1 atm, V₁ = 100 L. Type **V₂ = 50 L**. Calculate P₂, then check.",
        "lines": 2,
        "answer": "P₂ = P₁V₁/V₂ = (1 atm)(100 L)/(50 L) = **2 atm**."
       },
       {
-       "prompt": "**Screen 2** (helium, **Solve V2**): V₁ = 50 L, T₁ = 300 K, T₂ = 600 K. Calculate V₂. **Screen 3** (nitrogen, **Solve P2**): P₁ = 1 atm, T₁ = 300 K; type **T₂ = 450 K**. Calculate P₂.",
+       "prompt": "**Screen 2** (**Solve V2**): V₁ = 50 L, T₁ = 300 K, T₂ = 600 K. Find V₂. **Screen 3** (**Solve P2**): P₁ = 1 atm, T₁ = 300 K, type **T₂ = 450 K**. Find P₂.",
        "lines": 2,
        "answer": "V₂ = V₁T₂/T₁ = (50 L)(600 K)/(300 K) = **100 L**. P₂ = P₁T₂/T₁ = (1 atm)(450 K)/(300 K) = **1.5 atm**."
       },
       {
-       "prompt": "**Screen 4** (helium, **Solve P**): n = 1 mol, T = 298 K, V = 50 L. Calculate P in atm. Then switch the unit to **kPa** and predict the new number.",
+       "prompt": "**Screen 4** (He, **Solve P**): n = 1 mol, T = 298 K, V = 50 L. Find P in atm, then predict it in **kPa** and switch units to check.",
        "lines": 2,
        "answer": "P = nRT/V = (1)(0.08206)(298)/50 = **0.489 atm**. In kPa: (1)(8.314)(298)/50 = **49.6 kPa** (sim shows 49.551 kPa)."
       },
       {
-       "prompt": "**Screen 5**, preset **Air-like** (0.78 mol N₂, 0.21 mol O₂, 0.01 mol Ar; 1 atm total): find P(O₂). Then choose **Two gas** (2 mol N₂, 1 mol O₂) and type **Total pressure 3**: find P(O₂).",
+       "prompt": "**Screen 5** **Air-like** (0.78 mol N₂, 0.21 mol O₂, 0.01 mol Ar; 1 atm): find P(O₂). Then **Two gas** (2 mol N₂, 1 mol O₂), **Total pressure 3**: find P(O₂).",
        "lines": 2,
        "answer": "Air-like: X(O₂) = 0.21/1.00, P(O₂) = **0.21 atm**. Two gas: X(O₂) = 1/3, P(O₂) = 0.333 × 3 atm = **1.0 atm** (P(N₂) = 2.0 atm; they add to 3 atm)."
       }
@@ -339,7 +312,7 @@
      "type": "question",
      "items": [
       {
-       "prompt": "Explain why heating a gas from 25 °C to 50 °C at constant P does **not** double its volume.",
+       "prompt": "Why doesn't heating a gas from 25 °C to 50 °C (constant P) double its volume?",
        "lines": 2,
        "answer": "V is proportional to Kelvin temperature: 298 K → 323 K is only 1.08×, so V rises about 8 %, not 2×."
       }
@@ -354,32 +327,31 @@
     {
      "type": "setup",
      "items": [
-      "Open **Topic 3.5** in **Guided** mode. Screen 2: **He** and **Ar** at **800 m/s**, **Same speed**. Screen 3: N₂, **400 K** vs **800 K**. Screen 4: N₂, **300 K** vs **600 K**."
+      "**Topic 3.5**, **Guided**. Screen 2: He and Ar at **800 m/s** (**Same speed**). Screen 3: N₂ **400 K** vs **800 K**. Screen 4: N₂ **300 K** vs **600 K**."
      ]
     },
     {
      "type": "notes",
      "items": [
-      "In KE = ½mv², speed is {{squared}}. Equal temperature means equal average translational {{KE}}, not equal average speed.",
-      "For a gas, speed scales with {{√T}}, not directly with T.",
-      "On the Maxwell-Boltzmann graph, peak height is not particle {{count}}. Changing only volume does {{not}} shift the curve."
+      "In KE = ½mv², speed is {{squared}}. Equal temperature means equal average {{KE}}, not equal speed.",
+      "Peak height is not particle {{count}}. Changing only volume does {{not}} shift the curve."
      ]
     },
     {
      "type": "calc",
      "items": [
       {
-       "prompt": "Screen 2: one He atom has m = 4.0026 g/mol ÷ 1000 ÷ 6.022 × 10²³ = 6.65 × 10⁻²⁷ kg. Calculate KE at 800 m/s. How many times larger is KE for Ar (39.95 g/mol) at the same speed?",
+       "prompt": "Screen 2: one He atom is 6.65 × 10⁻²⁷ kg (4.0026 g/mol ÷ 1000 ÷ N_A). Find its KE at 800 m/s. How many times larger is KE for Ar (39.95 g/mol)?",
        "lines": 2,
        "answer": "KE = ½(6.65 × 10⁻²⁷)(800)² = **2.13 × 10⁻²¹ J**. KE(Ar)/KE(He) = 39.948/4.0026 = **9.98** (sim: 2.12 × 10⁻²⁰ J)."
       },
       {
-       "prompt": "Screen 3: average KE = (3/2)RT, R = 8.314 J/(mol·K). Calculate it in kJ/mol at 400 K and 800 K.",
+       "prompt": "Screen 3: average KE = (3/2)RT, R = 8.314 J/(mol·K). Find it in kJ/mol at 400 K and 800 K.",
        "lines": 2,
        "answer": "400 K: **4.99 kJ/mol**. 800 K: **9.98 kJ/mol**. Doubling T doubles average KE."
       },
       {
-       "prompt": "Screen 4: v_rms = √(3RT/M), M in kg/mol. Calculate v_rms for N₂ (M = 0.02801 kg/mol) at 300 K and at 600 K.",
+       "prompt": "Screen 4: v_rms = √(3RT/M). Find v_rms for N₂ (M = 0.02801 kg/mol) at 300 K and 600 K.",
        "lines": 2,
        "answer": "300 K: **517 m/s**. 600 K: **731 m/s**. Ratio 1.41 = √2, not 2."
       }
@@ -391,7 +363,7 @@
      "x_label": "Molecular speed (m/s)",
      "y_label": "Fraction of molecules",
      "answer": "600 K curve: peak farther right and lower, wider, longer high-speed tail. Same total area.",
-     "height": 1.6
+     "height": 1.35
     }
    ]
   },
@@ -402,14 +374,14 @@
     {
      "type": "setup",
      "items": [
-      "Open **Topic 3.6** in **Guided** mode (5 screens). Load each preset in the table. Z = P_real ÷ P_ideal. Use R = 0.08206 L·atm/(mol·K)."
+      "**Topic 3.6**, **Guided** (5 screens). Load each preset in the table. Z = P_real ÷ P_ideal; R = 0.08206 L·atm/(mol·K)."
      ]
     },
     {
      "type": "calc",
      "items": [
       {
-       "prompt": "Before Screen 2: calculate P_ideal for **1 mol CO₂ at 320 K in 1 L**. The sim's modeled real pressure is 23.8 atm. Calculate Z.",
+       "prompt": "Before Screen 2: find P_ideal for **1 mol CO₂, 320 K, 1 L**. The modeled real P is 23.8 atm. Find Z.",
        "lines": 2,
        "answer": "P_ideal = (1)(0.08206)(320)/1 = **26.3 atm**. Z = 23.8/26.3 = **0.907** (below 1: attractions dominate)."
       }
@@ -459,13 +431,13 @@
        "{{Higher than ideal}}"
       ]
      ],
-     "row_height": 0.46
+     "row_height": 0.4
     },
     {
      "type": "notes",
      "items": [
       "Attractions do not remove {{particles}}; they lower the momentum transfer at the {{wall}}.",
-      "Particles keep the same {{size}} when compressed; the free volume for particle centers gets smaller.",
+      "Particles keep the same {{size}} when compressed; only the free volume shrinks.",
       "Z near 1 can also mean large opposing corrections {{cancel}}."
      ]
     },
@@ -473,7 +445,7 @@
      "type": "question",
      "items": [
       {
-       "prompt": "Under which conditions does a real gas act most ideally? Give a particle-level reason for Z < 1 and for Z > 1.",
+       "prompt": "When does a real gas act most ideally? Give a particle reason for Z < 1 and for Z > 1.",
        "lines": 3,
        "answer": "Low pressure / large volume and high temperature (Z = 0.999 at 24.6 L). Z < 1: attractions pull particles inward and lower wall-collision force. Z > 1: particle volume is a big share of the container, so free volume is smaller and P is higher."
       }
@@ -488,7 +460,7 @@
     {
      "type": "setup",
      "items": [
-      "Open **Topic 3.7** in **Guided** mode (5 screens). Screens 1–2 start with **Sucrose** (342.30 g/mol), **Mass of solute 85.575 g**, **Final solution volume 500 mL**. Keep each screen's starting values unless told to change them."
+      "**Topic 3.7**, **Guided** (5 screens). Screens 1–2: **Sucrose** (342.30 g/mol), **85.575 g**, **Final solution volume 500 mL**. Keep each screen's starting values."
      ]
     },
     {
@@ -502,7 +474,7 @@
      "type": "calc",
      "items": [
       {
-       "prompt": "Screen 2: calculate the moles of sucrose and the molarity. Predict M if the final volume is changed to 250 mL, then test it.",
+       "prompt": "Screen 2: find moles of sucrose and molarity. Predict M at 250 mL, then test it.",
        "lines": 2,
        "answer": "n = 85.575 ÷ 342.3 = **0.250 mol**; M = 0.250 ÷ 0.500 L = **0.500 M**. At 250 mL: **1.000 M** (half the volume doubles M)."
       },
@@ -512,7 +484,7 @@
        "answer": "n = (0.400)(0.250 L) = **0.100 mol**; N = 0.100 × 6.022 × 10²³ = **6.02 × 10²² molecules**."
       },
       {
-       "prompt": "Screen 4 (glucose, 0.120 mol, target 0.300 M): type a guess in **Your predicted final volume**, then calculate the correct volume.",
+       "prompt": "Screen 4 (glucose, 0.120 mol, 0.300 M): type a guess in **Your predicted final volume**, then calculate it.",
        "lines": 2,
        "answer": "V = n/M = 0.120 ÷ 0.300 = 0.400 L = **400 mL** (the default 300 mL guess is too small)."
       }
@@ -547,7 +519,7 @@
      "type": "question",
      "items": [
       {
-       "prompt": "A and B have the same molarity. Do they contain the same number of molecules? Use your table.",
+       "prompt": "A and B have the same molarity. Do they hold the same number of molecules?",
        "lines": 2,
        "answer": "No. B has 3× the volume, so 3× the moles (0.375 vs 0.125 mol) and 3× the molecules. Molarity is concentration, not amount."
       }
@@ -662,7 +634,7 @@
     {
      "type": "setup",
      "items": [
-      "Open **Topic 3.9** in **Guided** mode (4 screens). On Screen 2, record your first run (**sample 1**) before you press any reset: each reset loads a new sample and reshuffles the dyes."
+      "**Topic 3.9**, **Guided** (4 screens). Screen 2: record **sample 1** before any reset (a reset loads a new sample and reshuffles the dyes)."
      ]
     },
     {
@@ -701,7 +673,7 @@
      "type": "predict",
      "items": [
       {
-       "prompt": "Screen 2: the paper is polar. If the mobile phase competes more strongly (3 → 5), will the spots move farther or less far?",
+       "prompt": "Screen 2 (polar paper): if mobile competition goes 3 → 5, will spots move farther or less far?",
        "lines": 1,
        "answer": "Farther (less retention on the paper). Accept any prediction with a reason."
       }
@@ -737,14 +709,14 @@
      "type": "notes",
      "items": [
       "The least-retained analyte moves {{farthest}} on TLC and exits the column {{first}}.",
-      "In distillation, the liquid with weaker IMFs has the {{higher}} vapor pressure, so the early fraction is {{L}}-rich."
+      "In distillation, weaker IMFs mean {{higher}} vapor pressure, so the early fraction is {{L}}-rich."
      ]
     },
     {
      "type": "question",
      "items": [
       {
-       "prompt": "In sample 1, spot C moved least. What does that say about C's attraction to the polar paper and about C's polarity? State the condition.",
+       "prompt": "Spot C moved least. What does that say about C's attraction to the polar paper and its polarity?",
        "lines": 2,
        "answer": "C is attracted most strongly to the polar stationary phase, so (on a polar stationary phase) C is the most polar of the three."
       }
@@ -759,7 +731,7 @@
     {
      "type": "setup",
      "items": [
-      "Open **Topic 3.10** in **Guided** mode (4 screens). Drag the vial onto the beaker or press **Pour & mix**, and wait for the outcome. Screen 2: NaCl in **water** and **hexane**. Screen 3: choose the solute, then each solvent. Screen 4: liquid pairs."
+      "**Topic 3.10**, **Guided**. Drag the vial onto the beaker or press **Pour & mix**; wait for the outcome. Screen 3: choose the solute, then each solvent."
      ]
     },
     {
@@ -910,12 +882,12 @@
      "type": "question",
      "items": [
       {
-       "prompt": "HCl gas absorbs microwave radiation. Which kind of motion changed, and what stayed the same?",
+       "prompt": "HCl absorbs microwaves. Which motion changed, and what stayed the same?",
        "lines": 2,
        "answer": "Rotation: the molecule's orientation (rotational level) changed; the bond length stayed fixed."
       },
       {
-       "prompt": "Rank microwave, infrared, visible and UV photons from lowest to highest energy. Use the wavelength ranges.",
+       "prompt": "Rank microwave, IR, visible and UV photons from lowest to highest energy.",
        "lines": 2,
        "answer": "Microwave < infrared < visible < UV. Shorter wavelength → higher frequency → higher photon energy (E = hc/λ)."
       }
@@ -958,7 +930,7 @@
        "answer": "E = (6.626 × 10⁻³⁴)(7.50 × 10¹⁴) = **4.97 × 10⁻¹⁹ J**. Doubling ν doubles E (9.94 × 10⁻¹⁹ J)."
       },
       {
-       "prompt": "Screen 4: the gap matches a 486 nm photon; the candidate is 600 nm. Calculate both energies. Will 600 nm be absorbed?",
+       "prompt": "Screen 4: the gap matches a 486 nm photon; the candidate is 600 nm. Find both energies. Absorbed?",
        "lines": 2,
        "answer": "Gap = **4.09 × 10⁻¹⁹ J**; 600 nm photon = **3.31 × 10⁻¹⁹ J**, 19 % too small, so it is rejected. Retune to 486 nm (within the sim's 0.5 % tolerance)."
       }
@@ -968,7 +940,7 @@
      "type": "question",
      "items": [
       {
-       "prompt": "Why isn't the 600 nm photon partly absorbed, even though it has most of the gap energy?",
+       "prompt": "Why isn't the 600 nm photon partly absorbed, though it has most of the gap energy?",
        "lines": 2,
        "answer": "Energy levels are quantized: the photon energy must match the gap. A mismatched photon is not absorbed and does not partly move the level."
       }
@@ -983,7 +955,7 @@
     {
      "type": "setup",
      "items": [
-      "Open **Topic 3.13** in **Guided** mode (4 screens): **Allura Red AC**, **25.0 µM**, **1.00 cm**, **504 nm**. Change one control at a time, then press **Measure**. The sim's ε at 504 nm is 2.68 × 10⁴ L mol⁻¹ cm⁻¹."
+      "**Topic 3.13**, **Guided**: **Allura Red AC**, **25.0 µM**, **1.00 cm**, **504 nm**. Change one control at a time, then press **Measure**."
      ]
     },
     {
@@ -1048,21 +1020,11 @@
     },
     {
      "type": "graph",
-     "prompt": "Plot A vs c: runs 1 and 2, Screen 1 (25.0 µM, 0.670), and (0, 0). Draw the best-fit line.",
+     "prompt": "Plot A vs c for runs 1, 2, Screen 1 and (0, 0). Draw the best-fit line. What is its slope?",
      "x_label": "Concentration (µM)",
      "y_label": "Absorbance A",
      "answer": "Straight line through the origin; slope = εb = 0.0268 per µM.",
-     "height": 1.5
-    },
-    {
-     "type": "calc",
-     "items": [
-      {
-       "prompt": "A hypothetical unknown reads A = 0.402 (1.00 cm, 504 nm). Find c in µM, then set it in the sim to check.",
-       "lines": 1,
-       "answer": "c = 0.402/(26,807 × 1.00) = 1.50 × 10⁻⁵ M = **15.0 µM**."
-      }
-     ]
+     "height": 1.4
     },
     {
      "type": "question",
