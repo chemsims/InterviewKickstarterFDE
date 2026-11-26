@@ -1,0 +1,1352 @@
+{
+ "unit": 7,
+ "unit_title": "Equilibrium",
+ "worksheet_title": "Equilibrium",
+ "sim_name": "Equilibrium Lab",
+ "pages": [
+  {
+   "title": "Equilibrium",
+   "sim_screen": "Aqueous · Equilibrium",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Equilibrium Lab → Aqueous Reaction → Equilibrium** (the link ends in ?subUnitId=eqm.aqueous.equilibrium).",
+      "Read each box and click **Next**. On the **Choose a reaction!** screen, open the menu and look at all three reactions."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "You put only A and B into water. Which reaction can happen first, the forward or the reverse? Why?",
+       "lines": 2,
+       "answer": "Forward. There are no products (C, D) yet, so the reverse reaction has nothing to start from. Accept: forward, because only reactants are present."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Some reactions don't go to completion, but as they are {{reversible}}, they move towards {{equilibrium}}.",
+      "Reversible means there's a {{forward}} reaction that makes the products, and a {{reverse}} reaction that makes reactants.",
+      "**Chemical equilibrium** means both forward and reverse reactions have the {{same rate}}."
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table",
+     "subtitle": "Write Q for each reaction in the menu (products on top, coefficients become powers)",
+     "columns": [
+      "Reaction (from the menu)",
+      "Q expression",
+      "Reactant coefficients (sum)",
+      "Product coefficients (sum)"
+     ],
+     "col_widths": [
+      1.9,
+      2.3,
+      1.3,
+      1.3
+     ],
+     "row_height": 0.42,
+     "first_col_left": true,
+     "rows": [
+      [
+       "A + B ⇌ C + D",
+       "{{[C][D] / ([A][B])}}",
+       "{{2}}",
+       "{{2}}"
+      ],
+      [
+       "3A + 2B ⇌ C + 2D",
+       "{{[C][D]² / ([A]³[B]²)}}",
+       "{{5}}",
+       "{{3}}"
+      ],
+      [
+       "2A + 3B ⇌ C + 4D",
+       "{{[C][D]⁴ / ([A]²[B]³)}}",
+       "{{5}}",
+       "{{5}}"
+      ]
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "The sim uses **K = 10** for every aqueous reaction (you will see it on the next page). The sim does not show the next two, so use K = 10. (a) What is K for the reverse reaction C + D ⇌ A + B? (b) What is K for 2A + 2B ⇌ 2C + 2D?",
+       "lines": 3,
+       "points": 2,
+       "answer": "(a) K(reverse) = 1/K = 1/10 = **0.10**. (b) Doubling every coefficient squares K: 10² = **100**."
+      }
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "A classmate says, \"At equilibrium the reaction has stopped.\" Use the sim's definition to correct this.",
+       "lines": 2,
+       "answer": "The reaction has not stopped: the forward and reverse reactions keep going at the same rate, so the amounts stay constant. Accept: dynamic equilibrium, equal rates, constant concentrations."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Reaction Quotient",
+   "sim_screen": "Aqueous · Reaction Quotient + Free Explore",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Reaction Quotient** (?subUnitId=eqm.aqueous.quotient). It always uses **A + B ⇌ C + D**. Set the water to any level (it doesn't change the numbers).",
+      "At **Shake them into the beaker**, shake **A** until [A] in the Q equation (top right) reads **0.30** and stops rising (about 15 shakes). Do the same for **B**. Click **Next**. Do the **Calculate** box before you open the **Table** tab above the graph."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Right after you add A and B (no C or D yet), what is Q? Is Q bigger or smaller than K?",
+       "lines": 1,
+       "answer": "Q = 0, because the top of the fraction ([C][D]) is 0. Q < K, so the forward reaction runs."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "**Q, the reaction quotient**, is the {{product}} concentration divided by the {{reactant}} concentration, each raised to its {{stoichiometric coefficient}}.",
+      "If the reaction is in equilibrium, the value of {{Q}} and {{K}} will be the same.",
+      "The larger the products, the {{larger}} Q. When using concentrations, K is often called {{Kc}}.",
+      "The forward reaction is {{favored}}, because products must be produced to reach equilibrium."
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "Q = {{[C][D] / ([A][B])}}        K = {{10}}"
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Use an ICE table with K = 10. Start: [A] = [B] = 0.30 M, [C] = [D] = 0. Find the equilibrium concentrations. (Hint: x²/(0.30 − x)² = 10, so take the square root of both sides.)",
+       "lines": 4,
+       "answer": "x/(0.30 − x) = √10 = 3.16 → x = 0.948 − 3.16x → x = **0.228 M**. [A] = [B] = 0.30 − 0.228 = **0.072 M**; [C] = [D] = **0.23 M**. Check: 0.228² / 0.072² = 10."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "ICE",
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "rows": [
+      [
+       "Initial",
+       "{{0.30}}",
+       "{{0.30}}",
+       "{{0.00}}",
+       "{{0.00}}"
+      ],
+      [
+       "Change",
+       "{{−0.23}}",
+       "{{−0.23}}",
+       "{{+0.23}}",
+       "{{+0.23}}"
+      ],
+      [
+       "Final",
+       "{{0.07}}",
+       "{{0.07}}",
+       "{{0.23}}",
+       "{{0.23}}"
+      ]
+     ],
+     "col_widths": [
+      1.3,
+      1.1,
+      1.1,
+      1.1,
+      1.1
+     ],
+     "row_height": 0.32,
+     "first_col_left": true,
+     "subtitle": "After the reaction finishes, click the Table tab and copy the ICE table"
+    },
+    {
+     "type": "graph",
+     "prompt": "Sketch the Q graph (Q vs. time). Draw and label the K line.",
+     "x_label": "Time",
+     "y_label": "Q",
+     "height": 0.95,
+     "answer": "Q starts at 0, rises quickly, then slows and levels off exactly on the K line (Q = K = 10)."
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "**Free Explore**: start with A = B = 0.10, C = D = 0.20, then with A = B = 0.05, C = D = 0.25. Find each starting Q and the direction. Why do both end at [A] = 0.072, [C] = 0.23?",
+       "lines": 2,
+       "points": 3,
+       "answer": "Start 1: Q = 0.20²/0.10² = 4 < 10 → forward. Start 2: Q = 0.25²/0.05² = 25 > 10 → reverse. Both mixes hold the same total A + C (0.30) and B + D (0.30), so they reach the same equilibrium from opposite sides."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Le Chatelier's Principle",
+   "sim_screen": "Aqueous · Le Chatelier + Free Explore",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Le Chatelier's Principle** (?subUnitId=eqm.aqueous.lechatelier). It starts from its own equilibrium of A + B ⇌ C + D (it began with [A] = 0.30 and [B] = 0.26).",
+      "Read the Q equation: [A] = 0.088, [B] = 0.051, [C] = 0.21. Copy the Table tab's **Final** row into the first row of the data table.",
+      "At **Shake C and D into the beaker**, shake **C** until [C] reads **0.30** and stops (about 5 shakes). Do the same for **D**."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "You add more product (C and D). Which reaction will be favored? What will happen to [A]?",
+       "lines": 2,
+       "answer": "The reverse reaction; [A] (and [B]) will go up while [C] and [D] go down a little."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Le Chatelier observed that any variation done to a system in equilibrium would make the system {{counteract}}.",
+      "After adding C and D, the {{reverse}} reaction is favored, because {{reactants}} must be produced to reach equilibrium.",
+      "At equilibrium the concentrations are not {{equal}}, just {{constant}}."
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Right after you add C and D: [A] = 0.088, [B] = 0.051, [C] = [D] = 0.30. Calculate Q and compare it with K = 10 before the reaction runs.",
+       "lines": 3,
+       "answer": "Q = (0.30)(0.30) / ((0.088)(0.051)) = 0.090/0.00449 = **20**. Q > K, so the **reverse** reaction is favored."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "subtitle": "Record the concentrations (Table tab, 2 decimals)",
+     "columns": [
+      "",
+      "[A]",
+      "[B]",
+      "[C]",
+      "[D]"
+     ],
+     "col_widths": [
+      2.2,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "row_height": 0.36,
+     "first_col_left": true,
+     "rows": [
+      [
+       "First equilibrium",
+       "{{0.09}}",
+       "{{0.05}}",
+       "{{0.21}}",
+       "{{0.21}}"
+      ],
+      [
+       "Right after adding C, D",
+       "{{0.09}}",
+       "{{0.05}}",
+       "{{0.30}}",
+       "{{0.30}}"
+      ],
+      [
+       "New equilibrium",
+       "{{0.11}}",
+       "{{0.07}}",
+       "{{0.28}}",
+       "{{0.28}}"
+      ]
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Use the new equilibrium values to show that K did not change.",
+       "lines": 2,
+       "answer": "Q = 0.28² / (0.11 × 0.07) = 10.2 ≈ 10 = K (rounding). Adding C and D changed Q, not K."
+      },
+      {
+       "prompt": "[C] was 0.21, jumped to 0.30, and ended at 0.28. Did the system undo the whole change? Explain with Le Chatelier's principle.",
+       "lines": 2,
+       "answer": "No. It used up only about 0.02 M of the added C, so [C] ends higher than before (0.28 > 0.21). The system partly counteracts the change until Q = K again."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "**Le Chatelier Free Explore** (eqm.aqueous.lechatelier.free-explore): set **Add A** to 0.10 and the others to 0. Predict the direction before you click start, then check the graph."
+    }
+   ]
+  },
+  {
+   "title": "Partial Pressure",
+   "sim_screen": "Gaseous · Partial Pressure + Free Explore",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Gaseous Reaction → Partial Pressure** (?subUnitId=eqm.gaseous.partial-pressure). At **Choose a reaction!** pick **3A + 4B ⇌ C + 2D** (the first one).",
+      "At **Use the pump**: pump **A** until P_A in the Q equation reads **1.5** and stops (about 35 pumps). Flip the switch under the pump to **B** and pump B to **1.5** too. Click **Next**.",
+      "The sim shows no units; we use atm for partial pressures."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Which partial pressure will drop more as the reaction runs, P_A or P_B? Why?",
+       "lines": 2,
+       "answer": "P_B: the reaction uses 4 B for every 3 A, so B drops faster."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "In the gaseous reaction, {{partial pressures}} of compounds are used instead of the concentrations.",
+      "In this case we talk about {{Kp}} (p stands for {{pressure}}).",
+      "The forward reaction runs until Q = {{Kp}}, as the products to reactants ratio is still {{lower}} than at equilibrium."
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "Q = {{P_C · P_D² / (P_A³ · P_B⁴)}}        Kp = {{10}}"
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "At equilibrium P_C has gone up by x = 0.274 atm. Use the coefficients to find the change in P_A, P_B and P_D, and all four final pressures, before you open the Table tab.",
+       "lines": 4,
+       "answer": "ΔP_A = −3x = −0.82; ΔP_B = −4x = −1.10; ΔP_D = +2x = +0.55. Final: P_A = 1.50 − 0.82 = **0.68**, P_B = 1.50 − 1.10 = **0.40**, P_C = **0.27**, P_D = **0.55** atm."
+      },
+      {
+       "prompt": "Plug your final pressures into Q. Is Q = Kp?",
+       "lines": 2,
+       "points": 2,
+       "answer": "Q = (0.27)(0.55)² / ((0.68)³(0.40)⁴) = 0.0817 / 0.00805 = 10.1 ≈ 10 = Kp. Yes (the small difference is rounding)."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "ICE",
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "rows": [
+      [
+       "Initial",
+       "{{1.50}}",
+       "{{1.50}}",
+       "{{0.00}}",
+       "{{0.00}}"
+      ],
+      [
+       "Change",
+       "{{−0.82}}",
+       "{{−1.10}}",
+       "{{+0.27}}",
+       "{{+0.55}}"
+      ],
+      [
+       "Final",
+       "{{0.68}}",
+       "{{0.40}}",
+       "{{0.27}}",
+       "{{0.55}}"
+      ]
+     ],
+     "col_widths": [
+      1.3,
+      1.1,
+      1.1,
+      1.1,
+      1.1
+     ],
+     "row_height": 0.32,
+     "first_col_left": true,
+     "subtitle": "Click the Table tab and copy the ICE table (partial pressures)"
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "At the start, the scale under the Q panel tips toward the reactant side. What does that tell you about Q compared with Kp, and which way the reaction must go?",
+       "lines": 2,
+       "answer": "Q < Kp (Q = 0 at the start), so the reactant side is \"heavier\" and the forward reaction is favored until Q = Kp and the scale is level."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "**Partial Pressure Free Explore**: pick A + 2B ⇌ 4C + 3D, set A = B = 1.0 and C = D = 0, and watch which way it goes. Then add some C and D before you start and predict again."
+    }
+   ]
+  },
+  {
+   "title": "Pressure Changes",
+   "sim_screen": "Gaseous · Pressure Changes + Free Explore",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Pressure Changes** (?subUnitId=eqm.gaseous.pressure). It starts from a saved equilibrium of 3A + 4B ⇌ C + 2D, Kp = 10 (not your numbers from the last page).",
+      "The Table tab's Final row shows the start: P_A = 0.74, P_B = 0.36, P_C = 0.25, P_D = 0.51 atm.",
+      "At **Use the slider**, drag the slider next to the beaker (the piston) **all the way down** (smallest volume). Then click **Next**."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Which side of 3A + 4B ⇌ C + 2D has fewer moles of gas? When you squeeze the gas, which way will it shift?",
+       "lines": 2,
+       "answer": "Products: 1 + 2 = 3 mol vs. reactants 3 + 4 = 7 mol. It shifts forward (right), toward fewer moles of gas."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Decreased container volume {{increases}} pressure, increasing the species concentration.",
+      "Since {{reactants}} have higher exponents, Q {{decreases}}.",
+      "The {{forward}} reaction {{consumes}} gas. As you increased the pressure, the system will favor this reaction to reach equilibrium."
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "All the way down, the volume is 0.48 of the starting volume, so every partial pressure is multiplied by 1/0.48 = 2.08. (a) Find the four new pressures. (b) Find Q and compare it with Kp. (Shortcut: Q = Kp × 2.08^(1 + 2 − 3 − 4).)",
+       "lines": 4,
+       "answer": "(a) P_A = 0.74 × 2.08 = **1.53**, P_B = **0.75**, P_C = **0.53**, P_D = **1.06** atm. (b) Q = 10 × 2.08⁻⁴ = 10/18.7 = **0.53** < Kp = 10, so the **forward** reaction is favored."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "ICE",
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "rows": [
+      [
+       "Initial",
+       "{{1.53}}",
+       "{{0.75}}",
+       "{{0.53}}",
+       "{{1.06}}"
+      ],
+      [
+       "Change",
+       "{{−0.22}}",
+       "{{−0.30}}",
+       "{{+0.07}}",
+       "{{+0.15}}"
+      ],
+      [
+       "Final",
+       "{{1.31}}",
+       "{{0.45}}",
+       "{{0.60}}",
+       "{{1.21}}"
+      ]
+     ],
+     "col_widths": [
+      1.3,
+      1.1,
+      1.1,
+      1.1,
+      1.1
+     ],
+     "row_height": 0.32,
+     "first_col_left": true,
+     "subtitle": "After the shift, copy the Table tab (Initial = right after you moved the piston)"
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "What was Kp before and after you moved the piston? Explain why squeezing the gas shifts the reaction even though Kp stays the same.",
+       "lines": 3,
+       "answer": "Kp = 10 both times (Q = Kp panel). Squeezing multiplies every pressure by 2.08, but the reactant side has bigger powers (7 vs. 3), so Q drops to 0.53. The forward reaction (fewer gas moles) runs until Q is back to 10. Only Q changed, not Kp."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "**Pressure Changes Free Explore**: drag the piston **all the way up** (bigger volume, lower pressure). Predict the direction before you start the run. Which side makes more moles of gas?"
+    }
+   ]
+  },
+  {
+   "title": "Temperature Changes",
+   "sim_screen": "Gaseous · Temperature Changes + Free Explore",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Temperature Changes** (?subUnitId=eqm.gaseous.temperature). It starts at a saved equilibrium (P_A = 1.09, P_B = 0.42, P_C = 0.46, P_D = 0.93 atm, Kp = 10). The reaction shows **+ Heat** on the products side.",
+      "At **use the flame slider**, drag the slider under the beaker **all the way to the right**. Read the new Kp in the Q = Kp panel."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Heat is written as a product. If you add heat, which way should the reaction shift? Should Kp go up or down?",
+       "lines": 2,
+       "answer": "To the left (reverse), to use up the added heat. Kp goes down."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Raising the temperature makes the system try to {{consume}} heat, so the reaction favored will be the {{endothermic}} one.",
+      "In this reaction, the forward reaction is {{exothermic}}, while the reverse is {{endothermic}}.",
+      "With the flame all the way up, Kp changes from 10 to {{1.0}}."
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Right after heating, the pressures have not changed yet. What is Q? Compare it with the new Kp and give the direction.",
+       "lines": 2,
+       "answer": "Q is still **10** (it was at equilibrium). New Kp = 1.0, so Q > Kp: the **reverse** reaction is favored."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "ICE",
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "rows": [
+      [
+       "Initial",
+       "{{1.09}}",
+       "{{0.42}}",
+       "{{0.46}}",
+       "{{0.93}}"
+      ],
+      [
+       "Change",
+       "{{+0.15}}",
+       "{{+0.20}}",
+       "{{−0.05}}",
+       "{{−0.10}}"
+      ],
+      [
+       "Final",
+       "{{1.24}}",
+       "{{0.62}}",
+       "{{0.41}}",
+       "{{0.83}}"
+      ]
+     ],
+     "col_widths": [
+      1.3,
+      1.1,
+      1.1,
+      1.1,
+      1.1
+     ],
+     "row_height": 0.32,
+     "first_col_left": true,
+     "subtitle": "After the shift, copy the Table tab"
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Show that the final pressures fit the new Kp.",
+       "lines": 2,
+       "answer": "Q = (0.41)(0.83)² / ((1.24)³(0.62)⁴) = 0.282 / 0.281 = 1.0 = new Kp."
+      },
+      {
+       "prompt": "Compare this page with Pressure Changes. Which change altered the value of Kp, and which only altered Q? Use the sim's numbers.",
+       "lines": 3,
+       "answer": "Heating changed Kp itself (10 → 1.0), so the old pressures (Q = 10) were no longer at equilibrium. Squeezing the gas left Kp at 10 and changed only Q (10 → 0.53)."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "**Temperature Changes Free Explore**: put the flame slider near the middle and start the run. Is the new Kp between 1.0 and 10? Is the shift bigger or smaller than with the full flame?"
+    }
+   ]
+  },
+  {
+   "title": "Ionic Compounds",
+   "sim_screen": "Solubility · Ionic Compounds",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Solubility → Ionic Compounds** (?subUnitId=eqm.solubility.ionic). At **Choose a reaction!** pick **AB(s) ⇌ A⁺ + B⁻** (the first one). Click **Next** through every screen, watching the Q panel and the recap screen."
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Some reactions can produce solids as their products; these are called {{precipitation reactions}}. As they are reversible, the solid can also {{dissolve}}.",
+      "The measurement of how much a salt can dissolve in water is called {{solubility}}.",
+      "A salt is dissolved when it turns into {{ions}}. In this type of reaction we work with the {{net-ionic}} equation.",
+      "AB(s) is not included in Q, because pure {{solids}} and {{liquids}} are not included."
+     ]
+    },
+    {
+     "type": "table",
+     "subtitle": "The recap screen and the Q panel: write Q for each kind of reaction",
+     "columns": [
+      "Kind of reaction",
+      "Equation",
+      "Q expression"
+     ],
+     "col_widths": [
+      1.7,
+      2.5,
+      2.6
+     ],
+     "row_height": 0.42,
+     "first_col_left": true,
+     "rows": [
+      [
+       "Aqueous compounds",
+       "AB(aq) ⇌ A(aq) + B(aq)",
+       "{{[A][B] / [AB]}}"
+      ],
+      [
+       "Gaseous compounds",
+       "AB(g) ⇌ A(g) + B(g)",
+       "{{P_A · P_B / P_AB}}"
+      ],
+      [
+       "A salt dissolving",
+       "AB(s) ⇌ A⁺(aq) + B⁻(aq)",
+       "{{[A⁺][B⁻]}}"
+      ]
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "The sim only has 1:1 salts. Write the Ksp expression for a real salt, CaF₂(s) ⇌ Ca²⁺(aq) + 2F⁻(aq) (not in the sim).",
+       "lines": 1,
+       "answer": "Ksp = [Ca²⁺][F⁻]² (no CaF₂ term; the coefficient 2 becomes a power)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Solubility Product",
+   "sim_screen": "Solubility · Solubility Product + Free Explore",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Solubility Product** (?subUnitId=eqm.solubility.product). The salt is AB(s); this sim uses **Ksp = 0.10** (a made-up salt that dissolves far more than real ones).",
+      "Set the water with the slider (any level; it does not change the numbers).",
+      "Shake **AB(s)** in (each shake adds 125 mg) until the sim says equilibrium (15 shakes). When asked, shake in more AB(s) until it stops. Do the **Calculate** box before you open the **Table** tab."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "What will happen to extra AB(s) you add after Q reaches Ksp?",
+       "lines": 1,
+       "answer": "It stays solid on the bottom; it does not dissolve and Q stays equal to Ksp."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "That's why K is called {{Ksp}}; Ksp stands for {{solubility product}}.",
+      "The higher the Ksp, the {{higher}} the amount of ions the reaction produces at equilibrium.",
+      "Once Q reaches Ksp, the forward and reverse reactions go at the {{same rate}}, so no more solid can be turned into ions.",
+      "You could only dissolve {{1875}} mg of AB(s).",
+      "Extra solid doesn't affect Q, as it is still Q = Ksp. The solution has reached its {{capacity}} to dissolve the salt: it is {{saturated}}."
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Ksp = [A⁺][B⁻] = 0.10, and each AB that dissolves makes one A⁺ and one B⁻. Let s = molar solubility. Find s.",
+       "lines": 3,
+       "answer": "s × s = 0.10 → s = √0.10 = **0.32 M**. [A⁺] = [B⁻] = 0.32 M."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "ICE",
+      "A⁺",
+      "B⁻"
+     ],
+     "rows": [
+      [
+       "Initial",
+       "{{0.00}}",
+       "{{0.00}}"
+      ],
+      [
+       "Change",
+       "{{+0.32}}",
+       "{{+0.32}}"
+      ],
+      [
+       "Equilibrium",
+       "{{0.32}}",
+       "{{0.32}}"
+      ]
+     ],
+     "col_widths": [
+      1.6,
+      1.4,
+      1.4
+     ],
+     "row_height": 0.32,
+     "first_col_left": true,
+     "subtitle": "Click the Table tab and copy it"
+    },
+    {
+     "type": "graph",
+     "prompt": "Sketch the Q graph (Q vs. time), including the time when you added extra solid. Label the K line.",
+     "x_label": "Time",
+     "y_label": "Q",
+     "height": 1.5,
+     "answer": "Q rises from 0 and levels off on the K line (0.10). It stays flat on the K line when extra solid is added."
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "The sim says Ksp is like \"the maximum amount of ions that can be in a solution.\" Make this more exact using your numbers.",
+       "lines": 2,
+       "answer": "Ksp is the largest value of the product [A⁺][B⁻] (0.10) a saturated solution can hold. Each ion is 0.32 M, not 0.10 M. Accept: Ksp is a product of ion concentrations, not an amount."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "**Solubility Product Free Explore**: set Solid added to 1000 mg and start. Is Q less than, equal to, or greater than Ksp? Is the solution saturated? Then try 2500 mg."
+    }
+   ]
+  },
+  {
+   "title": "Common Ion Effect",
+   "sim_screen": "Solubility · Common Ion + Free Explore",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Common Ion Effect** (?subUnitId=eqm.solubility.common-ion); Ksp is still 0.10. Shake **XB(s)** in until it stops (4 shakes = 500 mg): [B⁻] becomes **0.12** M.",
+      "Then shake **AB(s)** in until the sim says equilibrium (11 shakes), and add extra when asked. Do the **Calculate** box before you open the **Table** tab."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "With B⁻ already in the water, will more or less AB(s) dissolve than on the last page? Why?",
+       "lines": 2,
+       "answer": "Less. B⁻ is a product of AB(s) ⇌ A⁺ + B⁻, so Q is already partly \"filled\" and the reaction reaches Ksp sooner."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "When an ion is already in the solution, the salt won't be as {{soluble}}. This is called the {{common-ion effect}}.",
+      "The common ion in this situation is {{B⁻}}. X⁺ {{doesn't}} affect the solubility of AB(s).",
+      "You could only dissolve {{1375}} mg of AB(s), which is {{less}} than before."
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Ksp = 0.10 and [B⁻] starts at 0.12 M. Let s = molar solubility of AB. Solve s(0.12 + s) = 0.10 with the quadratic formula. Find [A⁺] and [B⁻].",
+       "lines": 4,
+       "answer": "s² + 0.12s − 0.10 = 0 → s = (−0.12 + √(0.0144 + 0.40)) / 2 = (−0.12 + 0.644)/2 = **0.26 M**. [A⁺] = **0.26 M**, [B⁻] = 0.12 + 0.26 = **0.38 M**."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "ICE",
+      "A⁺",
+      "B⁻"
+     ],
+     "rows": [
+      [
+       "Initial",
+       "{{0.00}}",
+       "{{0.12}}"
+      ],
+      [
+       "Change",
+       "{{+0.26}}",
+       "{{+0.26}}"
+      ],
+      [
+       "Equilibrium",
+       "{{0.26}}",
+       "{{0.38}}"
+      ]
+     ],
+     "col_widths": [
+      1.6,
+      1.4,
+      1.4
+     ],
+     "row_height": 0.32,
+     "first_col_left": true,
+     "subtitle": "Click the Table tab and copy it"
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Compare the molar solubility of AB with and without the common ion (Solubility Product page). By what percent did it drop? Explain with Le Chatelier's principle.",
+       "lines": 3,
+       "answer": "0.32 M → 0.26 M, about **17%** lower. Adding B⁻ (a product) shifts AB(s) ⇌ A⁺ + B⁻ to the left, so less solid dissolves before Q = Ksp."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "**Common Ion Free Explore**: set Common ion added to 250 mg (half as much B⁻) and Solid added to 1375 mg. Predict: will [A⁺] end between 0.26 and 0.32? Check the Q panel."
+    }
+   ]
+  },
+  {
+   "title": "pH Effect",
+   "sim_screen": "Solubility · pH Effect + Free Explore",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **pH Effect** (?subUnitId=eqm.solubility.ph). It starts where the Common Ion page ended: saturated, [A⁺] = 0.26 M, [B⁻] = 0.38 M, extra AB(s) on the bottom.",
+      "At **Shake H+ ions into the beaker!**, shake **H⁺** in one shake at a time. Record Q after each of the first 5 shakes. The 6th shake starts the dissolving right away."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "H⁺ reacts with B⁻. What do you think will happen to the extra solid on the bottom?",
+       "lines": 1,
+       "answer": "It dissolves: removing B⁻ lowers Q below Ksp, so the forward (dissolving) reaction runs."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Lower pH values mean higher presence of {{H⁺}} ions. In this case, H⁺ reacts with B⁻ to form {{HB(aq)}}.",
+      "Adding H⁺ reduces the B⁻ ions in the solution, {{reducing Q}}, allowing AB(s) to turn into more ions.",
+      "The solution is no longer {{saturated}}, and the {{forward}} reaction is favored until equilibrium."
+     ]
+    },
+    {
+     "type": "table",
+     "subtitle": "Q from the Q panel after each H⁺ shake",
+     "columns": [
+      "H⁺ shakes",
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+     ],
+     "col_widths": [
+      1.3,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9
+     ],
+     "row_height": 0.38,
+     "first_col_left": true,
+     "rows": [
+      [
+       "Q",
+       "{{0.10}}",
+       "{{0.088}}",
+       "{{0.076}}",
+       "{{0.065}}",
+       "{{0.053}}",
+       "{{0.041}}"
+      ]
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "[A⁺] stays at 0.26 M while you add H⁺, and Q drops about 0.012 per shake. (a) How much [B⁻] does each shake remove? (b) Predict [B⁻] and Q right after the 6th shake.",
+       "lines": 3,
+       "answer": "(a) Δ[B⁻] = 0.012 / 0.26 ≈ **0.045 M** per shake (accept 0.045–0.046). (b) [B⁻] = 0.38 − 6(0.045) = **0.11 M**; Q = 0.26 × 0.11 = **0.029** < Ksp = 0.10, so AB(s) dissolves."
+      },
+      {
+       "prompt": "Find the new equilibrium: (0.26 + x)(0.11 + x) = 0.10. Then check your answer with the Q panel at the end.",
+       "lines": 4,
+       "answer": "x² + 0.37x + 0.0286 − 0.10 = 0 → x = (−0.37 + √(0.137 + 0.286)) / 2 = **0.14 M**. [A⁺] = **0.40 M**, [B⁻] = **0.25 M**; the panel shows (0.40)(0.25) = 0.10 = Ksp."
+      }
+     ]
+    },
+    {
+     "type": "graph",
+     "prompt": "Sketch the Solubility vs. pH curve below the Q panel and show where the red dot moves (shape only; the curve is not to scale).",
+     "x_label": "pH",
+     "y_label": "Solubility",
+     "height": 1.5,
+     "answer": "A U-shaped curve, lowest in the middle. The red dot sits on the high-pH arm, then moves left toward low pH as H⁺ is added."
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Claim: lowering the pH made AB more soluble. Give evidence with numbers from this page.",
+       "lines": 2,
+       "answer": "[A⁺], which equals the AB dissolved, rose from 0.26 M to 0.40 M and the extra solid dissolved. Accept: Q fell below Ksp (0.029 < 0.10), so more solid dissolved."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "**pH Effect Free Explore**: set Solid present to 1000 mg and Acid added to 6. Does all the solid dissolve? Is Q equal to Ksp at the end, or less? What does that say about saturation?"
+    }
+   ]
+  }
+ ],
+ "conclusion": [
+  {
+   "prompt": "In every part of this lab, one comparison told you which way the reaction would go. Name it, and give one example with numbers from each part (aqueous, gaseous, solubility).",
+   "lines": 4,
+   "answer": "Compare Q with K. Aqueous: Q = 20 > K = 10 after adding C and D → reverse. Gaseous: Q = 0.53 < Kp = 10 after squeezing → forward. Solubility: Q = 0.029 < Ksp = 0.10 after adding H⁺ → dissolves. Accept any correct example per part."
+  },
+  {
+   "prompt": "List the changes you made in this lab. Which one changed the value of K, and which only changed Q?",
+   "lines": 3,
+   "answer": "Only heating changed K (Kp 10 → 1.0). Adding C and D, changing the volume, adding the common ion B⁻ and adding H⁺ changed only Q; K stayed the same."
+  },
+  {
+   "prompt": "Both the common ion and H⁺ change [B⁻]. Explain why one lowers the solubility of AB and the other raises it.",
+   "lines": 3,
+   "answer": "The common ion adds B⁻, so Q is larger and the equilibrium shifts left: s drops from 0.32 to 0.26 M. H⁺ removes B⁻ (as HB), so Q drops below Ksp and the equilibrium shifts right: s rises from 0.26 to 0.40 M."
+  }
+ ],
+ "key_notes": [
+  "All reactions are hypothetical (A, B, C, D; AB, XB). K = 10 for every aqueous reaction (features/lessons/aqueous/lesson.tsx:16), Kp = 10 at the start of every gaseous module (gaseous/lesson.tsx:22), Ksp = 0.1 (solubility/lesson.tsx:55). A real sparingly soluble salt has a far smaller Ksp; the worksheet calls this a made-up salt.",
+  "The sim shows no units. The worksheet uses M for concentrations and atm for partial pressures.",
+  "Each module loads its own saved starting state, even when students click Next from the module before. So the reaction picked in the Equilibrium module is reset to A + B ⇌ C + D in Reaction Quotient; Le Chatelier starts from [A] = 0.30, [B] = 0.263; Pressure Changes and Temperature Changes start from saved equilibria; pH Effect starts after the common-ion step (data/presets/index.ts:36–153, 291–298; useAqueousLessonController.tsx:201–218).",
+  "The Q panel rounds to 2 significant figures and then adjusts the second product term so the shown Q matches. Students can see [D] = 0.214 next to [C] = 0.21, P_D = 0.522, or [A⁺] = 0.32 next to [B⁻] = 0.313 in pure water (displayNumbers.ts:38–93). The worksheet has students copy the Table tab (2 decimals) instead, and only reads the panel where the value is not adjusted.",
+  "The Table tab shows the equilibrium answer as soon as the reactants are in. Have students finish the Calculate box first.",
+  "Shaking adds 0.02 M per shake up to 0.30 M (aqueous); the pump adds 0.043 atm per pump up to 1.5 atm; each solid shake adds 125 mg. \"Shake until it stops\" makes every student's numbers match.",
+  "Piston slider: all the way down gives 0.48 × the starting volume (pressures × 2.08); all the way up gives 1.52 × (worked out from AirBeaker.tsx:219–224, GaseousBeaker.tsx:126, 158 and the fixed width 280 in routes/…/gaseous.tsx:96). The sim never shows the volume.",
+  "Flame slider: Kp = 10 × 10^(−slider), slider 0–1 (useGaseousLessonController.tsx:531). The handle starts in the middle, but the sim counts the start as 0, so full right gives Kp = 1.0. Any position past 0.40 counts as a raise, even if a student dragged the handle left of where it started.",
+  "Water-level sliders (aqueous and solubility) are only visual; no number depends on them. In real life, more water dissolves more grams of salt.",
+  "The sim's 1875 mg and 1375 mg are not in the same ratio as the molar solubilities (73% vs. 83%), so the worksheet uses molar solubility (0.32 → 0.26 M) for the percent drop.",
+  "pH Effect: each H⁺ shake removes a fixed 0.045 M of B⁻ (made-up constant, solubility/lesson.tsx:63). No pH value is ever shown, and the Solubility vs. pH curve is a hand-drawn U shape, so ask only for shape.",
+  "Checking Q with 2-decimal table values gives 9.5–10.8 instead of exactly 10. Accept \"≈ 10\"."
+ ],
+ "lesson_plan": {
+  "period_minutes": 50,
+  "ap_topics": [
+   "7.1 Introduction to Equilibrium",
+   "7.2 Direction of Reversible Reactions",
+   "7.3 Reaction Quotient and Equilibrium Constant",
+   "7.4 Calculating the Equilibrium Constant",
+   "7.5 Magnitude of the Equilibrium Constant (partly: K is 10, 1.0 and 0.10 only)",
+   "7.7 Calculating Equilibrium Concentrations",
+   "7.8 Representations of Equilibrium",
+   "7.9 Introduction to Le Châtelier's Principle",
+   "7.10 Reaction Quotient and Le Châtelier's Principle",
+   "7.11 Introduction to Solubility Equilibria",
+   "7.12 Common-Ion Effect",
+   "7.13 pH and Solubility (qualitative only)"
+  ],
+  "sim_location": "ChemSims.app → Simulations → Equilibrium Lab (Aqueous, Gaseous and Solubility modules)",
+  "essential_question": "How does a reversible reaction \"know\" which way to go, and how does it respond when we disturb it?",
+  "objectives": [
+   "Write Q and K (Kc, Kp, Ksp) expressions, leaving out pure solids.",
+   "Compare Q with K to predict the direction of a reaction.",
+   "Use ICE tables to find equilibrium concentrations and partial pressures.",
+   "Explain shifts from concentration, volume and temperature changes with Le Châtelier's principle and Q.",
+   "Calculate molar solubility from Ksp, with and without a common ion, and explain the effect of pH."
+  ],
+  "materials": [
+   "Calculators (quadratic formula needed on pp. 9–10)"
+  ],
+  "prep": [
+   "Open each module from its ?subUnitId= link once. Note that every module starts from its own saved state (see Sim cautions).",
+   "Decide whether students may use the Table tab before the Calculate box; we recommend \"calculate first, then check.\"",
+   "The sim doesn't cover 7.6 Properties of the Equilibrium Constant (beyond the short calc on p. 1), 7.14 Free Energy of Dissolution, Kc–Kp conversion, or salts that aren't 1:1. Use your usual lesson for these."
+  ],
+  "vocabulary": [
+   "reversible reaction",
+   "dynamic equilibrium",
+   "reaction quotient (Q)",
+   "equilibrium constant (Kc, Kp)",
+   "ICE table",
+   "partial pressure",
+   "Le Châtelier's principle",
+   "solubility",
+   "solubility product (Ksp)",
+   "saturated",
+   "common-ion effect",
+   "molar solubility"
+  ],
+  "prior_knowledge": [
+   "Balanced equations and coefficients",
+   "Molarity",
+   "Partial pressure (Dalton's law)",
+   "Endothermic vs. exothermic",
+   "Solving a quadratic equation"
+  ],
+  "days": [
+   {
+    "day": 1,
+    "title": "Teacher demo: what equilibrium means",
+    "goal": "Students see that reversible reactions move toward a balance of equal rates, and write Q for the sim's three reactions.",
+    "worksheet_pages": "Cover + p. 1 (Equilibrium)",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: \"Can a reaction run backward?\" (pairs, 1 sentence)"
+     ],
+     [
+      "5–30",
+      "Demo of the Equilibrium module (script below); students fill in p. 1"
+     ],
+     [
+      "30–45",
+      "Whole class: Q expressions in the p. 1 table; K for the reverse reaction"
+     ],
+     [
+      "45–50",
+      "Hand out worksheets; preview the Reaction Quotient module"
+     ]
+    ],
+    "demo_script": [
+     {
+      "do": "Project ChemSims.app → Equilibrium Lab → Aqueous Reaction → Equilibrium (?subUnitId=eqm.aqueous.equilibrium). Read the first box aloud.",
+      "say": "\"Some reactions don't go to completion.\" What do you think happens instead?",
+      "students": "Guided notes 1–2: reversible, equilibrium, forward, reverse."
+     },
+     {
+      "do": "Before clicking Next, ask the Predict question.",
+      "say": "If I only put A and B in water, which reaction can start? (Expected: forward, since no products exist yet.)",
+      "students": "Predict box, p. 1."
+     },
+     {
+      "do": "Click Next. Open the **Choose a reaction!** menu and show all three reactions.",
+      "say": "These reactions are made up, but the coefficients matter. Which reaction has more reactant moles than product moles? (Expected: 3A + 2B ⇌ C + 2D.)",
+      "students": "Column 1 and the coefficient sums in the data table."
+     },
+     {
+      "do": "Write Q for A + B ⇌ C + D on the board: products over reactants.",
+      "say": "Products on top, reactants on the bottom, coefficients become powers. Try the other two with a partner.",
+      "students": "Q expressions for rows 2 and 3 of the table."
+     },
+     {
+      "do": "Check answers: [C][D]²/([A]³[B]²) and [C][D]⁴/([A]²[B]³).",
+      "say": "Why does D get a 4th power in the last one? (Expected: its coefficient is 4.)",
+      "students": "Correct the table in pen."
+     },
+     {
+      "do": "Click Next to the **Chemical equilibrium** box. Read it aloud.",
+      "say": "At equilibrium, are the reactions still running? (Expected: yes, at the same rate.)",
+      "students": "Guided note 3: same rate."
+     },
+     {
+      "do": "Tell students the sim uses K = 10 for these reactions. Work the reverse-reaction K together.",
+      "say": "If K forward = 10, what is K for C + D ⇌ A + B? (Expected: 1/10 = 0.10.) What if we double every coefficient? (Expected: 10² = 100.)",
+      "students": "Calculate box, p. 1."
+     },
+     {
+      "do": "Pose the Analyze question; take 2–3 answers.",
+      "say": "\"At equilibrium the reaction has stopped.\" True or false? Use the sim's words.",
+      "students": "Analyze box, p. 1: dynamic, equal rates."
+     }
+    ]
+   },
+   {
+    "day": 2,
+    "title": "Student sim work: aqueous Q, ICE and Le Châtelier",
+    "goal": "Use Q vs. K to predict direction and solve an ICE table; see a concentration disturbance.",
+    "worksheet_pages": "pp. 2–3 (Reaction Quotient, Le Chatelier's Principle)",
+    "agenda": [
+     [
+      "0–5",
+      "Review Q vs. K: Q < K forward, Q > K reverse"
+     ],
+     [
+      "5–28",
+      "p. 2 Reaction Quotient (calculate before opening Table)"
+     ],
+     [
+      "28–45",
+      "p. 3 Le Chatelier's Principle"
+     ],
+     [
+      "45–50",
+      "Checkpoint and clean-up"
+     ]
+    ],
+    "circulate": [
+     "Both A and B shaken all the way to 0.30 (the Q panel shows (0.30)).",
+     "The ICE calc is done before the Table tab is opened.",
+     "In Le Chatelier, C and D shaken until 0.30; Q after adding = 20.",
+     "Students copy the Table tab, not the Q panel (the panel can show 0.214 for D)."
+    ],
+    "checkpoint": "Reaction Quotient equilibrium: [A] = [B] = 0.072 M, [C] = [D] = 0.23 M; Le Chatelier Q after adding C and D = 20 > K.",
+    "early_finishers": "Both Free Explore runs on p. 2; then Le Chatelier Free Explore with Add A = 0.10."
+   },
+   {
+    "day": 3,
+    "title": "Student sim work: gaseous Kp, pressure and temperature",
+    "goal": "Use Kp and partial pressures; contrast a volume change (changes Q) with a temperature change (changes K).",
+    "worksheet_pages": "pp. 4–6 (Partial Pressure, Pressure Changes, Temperature Changes)",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: count gas moles on each side of 3A + 4B ⇌ C + 2D"
+     ],
+     [
+      "5–20",
+      "p. 4 Partial Pressure"
+     ],
+     [
+      "20–35",
+      "p. 5 Pressure Changes"
+     ],
+     [
+      "35–47",
+      "p. 6 Temperature Changes"
+     ],
+     [
+      "47–50",
+      "Checkpoint"
+     ]
+    ],
+    "circulate": [
+     "Reaction 3A + 4B ⇌ C + 2D picked; both A and B pumped to 1.5 (switch flipped to B).",
+     "Piston dragged all the way DOWN on p. 5 (Initial row 1.53, 0.75, 0.53, 1.06).",
+     "Flame slider all the way RIGHT on p. 6; Kp panel reads 1.0.",
+     "Students ignore the sim's line \"the forward reaction is being favored\" after heating; the reverse is favored."
+    ],
+    "checkpoint": "After squeezing: Q = 0.53 < Kp = 10 (forward). After heating: Kp = 1.0 < Q = 10 (reverse).",
+    "early_finishers": "Pressure Changes Free Explore with the piston all the way up (Q ≈ 53 > Kp, reverse)."
+   },
+   {
+    "day": 4,
+    "title": "Student sim work: Ksp and solubility",
+    "goal": "Write Ksp and find molar solubility from Ksp; see what saturation means.",
+    "worksheet_pages": "pp. 7–8 (Ionic Compounds, Solubility Product)",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: which is left out of Q: H₂O(l), CO₂(g), CaCO₃(s)?"
+     ],
+     [
+      "5–20",
+      "p. 7 Ionic Compounds"
+     ],
+     [
+      "20–43",
+      "p. 8 Solubility Product"
+     ],
+     [
+      "43–50",
+      "Checkpoint and Free Explore"
+     ]
+    ],
+    "circulate": [
+     "Q for a dissolving salt has no denominator.",
+     "s = √0.10 = 0.32 M is calculated before the Table tab is opened.",
+     "Extra solid is shaken in after equilibrium; Q stays on the K line.",
+     "Students say Ksp is a product of concentrations, not \"an amount of ions\"."
+    ],
+    "checkpoint": "Molar solubility in pure water: s = 0.32 M; 1875 mg dissolved.",
+    "early_finishers": "Solubility Product Free Explore at 1000 mg and 2500 mg: unsaturated vs. saturated."
+   },
+   {
+    "day": 5,
+    "title": "Student sim work: common ion and pH",
+    "goal": "Use the quadratic to find solubility with a common ion; explain why acid dissolves the precipitate.",
+    "worksheet_pages": "pp. 9–10 (Common Ion Effect, pH Effect) + Conclusion",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: Le Châtelier for AB(s) ⇌ A⁺ + B⁻ when B⁻ is added"
+     ],
+     [
+      "5–22",
+      "p. 9 Common Ion Effect"
+     ],
+     [
+      "22–40",
+      "p. 10 pH Effect"
+     ],
+     [
+      "40–50",
+      "Conclusion questions"
+     ]
+    ],
+    "circulate": [
+     "XB(s) shaken in all the way (4 shakes, [B⁻] = 0.12) before any AB(s).",
+     "Quadratic set up as s² + 0.12s − 0.10 = 0.",
+     "Q recorded after each of the first 5 H⁺ shakes (the 6th starts the animation).",
+     "Graph on p. 10: shape only, no values."
+    ],
+    "checkpoint": "With the common ion: s = 0.26 M ([B⁻] = 0.38). After 6 H⁺ shakes the new equilibrium is [A⁺] = 0.40 M, [B⁻] = 0.25 M.",
+    "early_finishers": "Common Ion Free Explore at 250 mg; pH Free Explore with 1000 mg solid and 6 acid additions."
+   },
+   {
+    "day": 6,
+    "title": "Grading and wrap-up",
+    "agenda": [
+     [
+      "0–25",
+      "Grading (self-grade with the answer key, or teacher-graded; see the shared grading section)"
+     ],
+     [
+      "25–40",
+      "Discussion: Which changes moved K, and which moved only Q? Link to real salts (CaF₂, Mg(OH)₂)"
+     ],
+     [
+      "40–50",
+      "Exit ticket"
+     ]
+    ]
+   }
+  ],
+  "misconceptions": [
+   {
+    "misconception": "At equilibrium the reaction stops.",
+    "sim_fix": "The sim's own words: at equilibrium both reactions run at the same rate. The concentration lines go flat because the two rates cancel, not because nothing happens."
+   },
+   {
+    "misconception": "At equilibrium the reactant and product concentrations are equal.",
+    "sim_fix": "Le Chatelier ends at [A] = 0.11, [C] = 0.28; the sim says they \"are not equal, just constant.\""
+   },
+   {
+    "misconception": "Adding product (or changing pressure) changes K.",
+    "sim_fix": "The K line and the Q = K panel stay at 10 after adding C and D or squeezing the gas; only heating changes Kp (10 → 1.0)."
+   },
+   {
+    "misconception": "Adding more solid makes more of it dissolve.",
+    "sim_fix": "After 1875 mg, extra AB(s) sits on the bottom and Q stays at Ksp = 0.10."
+   },
+   {
+    "misconception": "Ksp is the concentration of the dissolved ions.",
+    "sim_fix": "Ksp = 0.10, but each ion is 0.32 M: Ksp is the product [A⁺][B⁻]."
+   }
+  ],
+  "sim_cautions": [
+   "Every module starts from its own saved state. The reaction chosen in the first module does not carry into Reaction Quotient, and Pressure/Temperature Changes start from saved numbers, not the students' own.",
+   "After raising the temperature, one instruction box says \"the forward reaction is being favored.\" That's wrong: heat is a product here, so the reverse reaction is favored (the next box and the graphs show the reverse).",
+   "When the volume is increased, the box still says \"the system will consume moles to relieve pressure.\" With a bigger volume, the system makes more moles of gas.",
+   "The flame slider starts in the middle, but the sim treats that as no heat. Tell students to drag it all the way right.",
+   "The Q panel can show a 3-digit number for the second product (like 0.214) because it is adjusted to make Q round right. Copy numbers from the Table tab.",
+   "The Table tab gives away the equilibrium answer right away; calculate first.",
+   "In pH Effect, the Table tab still shows the common-ion numbers, not the pH result; use the Q panel. The red dot on the pH curve slides sideways, which does not mean the solubility stayed the same.",
+   "The 1875 mg and 1375 mg in the text don't match the molar solubility ratio; compare molarities, not milligrams."
+  ],
+  "differentiation": {
+   "support": [
+    "Give a blank ICE-table template with the 'x' rows filled in for p. 2.",
+    "Let students use the sim's Table tab to check each ICE row right after they write it.",
+    "Provide the quadratic formula on a card for pp. 9–10."
+   ],
+   "extension": [
+    "Find Kc for the p. 4 reaction from Kp (needs T; discuss why the sim can't give it).",
+    "Find the molar solubility of CaF₂ (Ksp = 3.9 × 10⁻¹¹) in water and in 0.10 M NaF.",
+    "Predict what squeezing would do to 2A(g) + 3B(g) ⇌ C(g) + 4D(g) (equal gas moles; not one of the sim's gas reactions) and explain why volume would not shift it."
+   ]
+  },
+  "exit_ticket": [
+   {
+    "question": "For A + B ⇌ C + D (K = 10), a mix has [A] = [B] = 0.10 M and [C] = [D] = 0.50 M. Which way will it go?",
+    "answer": "Q = 0.25/0.010 = 25 > 10, so reverse (toward A and B)."
+   },
+   {
+    "question": "For the exothermic reaction 3A + 4B ⇌ C + 2D, give one change that shifts it to the right without changing Kp.",
+    "answer": "Decrease the volume (increase pressure), or add A or B, or remove C or D."
+   },
+   {
+    "question": "Ksp of AB = 0.10. Is AB more or less soluble in a solution that already has 0.12 M B⁻? Give the molar solubility.",
+    "answer": "Less soluble: s = 0.26 M (vs. 0.32 M in pure water)."
+   }
+  ],
+  "ap_practice": [
+   {
+    "question": "The sim's reaction 3A(g) + 4B(g) ⇌ C(g) + 2D(g) + heat is at equilibrium with Kp = 10 and P_A = 0.74, P_B = 0.36, P_C = 0.25, P_D = 0.51 atm. (a) Show that the system is at equilibrium. (b) The volume is cut to 0.48 of its value at constant T. Calculate Q and predict the shift. (c) Instead, the temperature is raised. State whether Kp increases or decreases, and justify. (d) Explain why adding a catalyst would not change the equilibrium pressures.",
+    "answer": "(a) Q = 0.25(0.51)²/(0.74³·0.36⁴) = 0.0650/0.00681 ≈ 9.6 ≈ 10 (rounded data), so Q ≈ Kp. (b) Each P × 2.08: Q = 10 × 2.08⁻⁴ = 0.53 < Kp → shifts right (fewer gas moles, 3 vs. 7). (c) Kp decreases: the forward reaction is exothermic, so adding heat favors the reverse (the sim drops Kp from 10 to 1.0). (d) A catalyst speeds up the forward and reverse reactions equally; it does not change Kp or Q, so the system reaches the same equilibrium faster."
+   },
+   {
+    "question": "Multiple choice: A saturated solution of AB(s) ⇌ A⁺(aq) + B⁻(aq) (Ksp = 0.10) has extra solid on the bottom. Which change will dissolve more AB? (A) Add more AB(s). (B) Add XB, a soluble salt with B⁻. (C) Add H⁺, which reacts with B⁻ to form HB. (D) Add more AB(s) and stir.",
+    "answer": "(C). Removing B⁻ makes Q < Ksp, so more solid dissolves (in the sim, [A⁺] rises from 0.26 to 0.40 M). (A) and (D) do not change Q; (B) adds a common ion and lowers solubility."
+   }
+  ]
+ }
+}

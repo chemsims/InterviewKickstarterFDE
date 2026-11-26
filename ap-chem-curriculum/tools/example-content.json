@@ -1,0 +1,202 @@
+{
+ "unit": 6,
+ "unit_title": "Thermochemistry",
+ "worksheet_title": "Thermochemistry",
+ "sim_name": "Thermodynamics Lab",
+ "pages": [
+  {
+   "title": "Heat Transfer & Calorimetry",
+   "sim_screen": "Part 1 · Guided mode",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Part 1: Heat transfer & calorimetry** in **Guided** mode.",
+      "Choose **Iron**. Sample mass **50 g**, burner on the **highest** setting (metal at **100 °C**), water **60 g** at **20 °C**."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Will the water end up hotter or colder than 60 °C? Why?",
+       "lines": 2,
+       "answer": "Colder: iron's specific heat (0.45 J/g·°C) is much smaller than water's (4.2), so the water barely warms."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Heat flows from the {{hotter}} object to the {{colder}} object until both reach the same {{temperature}}.",
+      "Water's specific heat in the sim is {{4.2 J/g·°C}}; ΔH° and H₂O and 10⁻³ and ⇌ render."
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Metal",
+      "c (J/g·°C)",
+      "T_f (°C)",
+      "q (J)"
+     ],
+     "rows": [
+      [
+       "Iron",
+       "{{0.45}}",
+       "{{26.6}}",
+       "{{1652}}"
+      ],
+      [
+       "Aluminum",
+       "{{0.897}}",
+       "",
+       ""
+      ]
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Calculate q gained by the water.",
+       "answer": "q = m·c·ΔT = 60 g × 4.2 J/g·°C × (26.6 − 20) °C = **1652 J** (≈1.7 kJ)"
+      }
+     ]
+    },
+    {
+     "type": "graph",
+     "prompt": "Sketch temperature vs. time for the water and the metal.",
+     "x_label": "Time (s)",
+     "y_label": "Temperature (°C)",
+     "answer": "Metal curve falls from 100 °C, water rises from 20 °C; both level off at 26.6 °C."
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Why did the water's temperature change so little?",
+       "answer": "Water has a much larger specific heat and more mass."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Switch to lithium and predict before you run it."
+    }
+   ]
+  }
+ ],
+ "conclusion": [
+  {
+   "prompt": "Summarize the energy conservation idea.",
+   "answer": "−q_metal = q_water"
+  }
+ ],
+ "key_notes": [
+  "Sim uses c(water) = 4.2, not 4.184 (src/physics.ts:2)."
+ ],
+ "lesson_plan": {
+  "period_minutes": 50,
+  "ap_topics": [
+   "6.1 Endothermic and Exothermic Processes",
+   "6.4 Heat Capacity and Calorimetry"
+  ],
+  "sim_location": "ChemSims.app → Simulations → Thermodynamics Lab",
+  "essential_question": "Where does the energy go?",
+  "objectives": [
+   "Calculate q = mcΔT"
+  ],
+  "materials": [
+   "Calculators"
+  ],
+  "prep": [
+   "Set burner to high"
+  ],
+  "vocabulary": [
+   "system",
+   "surroundings"
+  ],
+  "prior_knowledge": [
+   "Units of energy"
+  ],
+  "days": [
+   {
+    "day": 1,
+    "title": "Teacher demo",
+    "goal": "Intro",
+    "worksheet_pages": "1",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up"
+     ],
+     [
+      "5–35",
+      "Demo"
+     ]
+    ],
+    "demo_script": [
+     {
+      "do": "Open Part 1",
+      "say": "What will happen?",
+      "students": "Prediction box p.1"
+     }
+    ]
+   },
+   {
+    "day": 2,
+    "title": "Student sim work",
+    "agenda": [
+     [
+      "0–45",
+      "Pages 1–2"
+     ]
+    ],
+    "circulate": [
+     "Units"
+    ],
+    "checkpoint": "T_f = 26.6"
+   },
+   {
+    "day": 3,
+    "title": "Grade",
+    "agenda": [
+     [
+      "0–25",
+      "Self-grade"
+     ]
+    ]
+   }
+  ],
+  "misconceptions": [
+   {
+    "misconception": "Cold flows",
+    "sim_fix": "Watch both curves"
+   }
+  ],
+  "sim_cautions": [
+   "Energy line shows −1652 J = 1652 J"
+  ],
+  "differentiation": {
+   "support": [
+    "Pairs"
+   ],
+   "extension": [
+    "Lithium"
+   ]
+  },
+  "exit_ticket": [
+   {
+    "question": "q?",
+    "answer": "1652 J"
+   }
+  ],
+  "ap_practice": [
+   {
+    "question": "FRQ",
+    "answer": "..."
+   }
+  ]
+ }
+}

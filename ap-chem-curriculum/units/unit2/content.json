@@ -1,0 +1,1654 @@
+{
+ "unit": 2,
+ "unit_title": "Compound Structure and Properties",
+ "worksheet_title": "Compound Structure and Properties",
+ "sim_name": "Compound Structure & Properties Sim",
+ "pages": [
+  {
+   "title": "Bonds",
+   "sim_screen": "Screen 1 · Bonds · Topic 2.1",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open the sim in **Guided** mode, click **1 · Bonds**, and load each pair with the quick-pair buttons (**Cl–Cl, H–Cl, H–F, Na–Cl, Mg–O, Na–Na, Cu–Zn**) or the **Atom 1** / **Atom 2** menus.",
+      "Drag the electrons where you think they spend their time (two metals: **Pool into an electron sea**), then **Check my model**. Bond type and Particles appear only after the check."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "In H–Cl, will the shared pair sit in the middle, closer to H, or closer to Cl? Why?",
+       "lines": 1,
+       "answer": "Closer to Cl. Cl has the higher electronegativity (3.16 vs. 2.20 for H), so it pulls the pair harder. Accept any answer that names Cl and higher EN."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Every chemical bond is the same basic attraction: positive {{nuclei}} pulling on negative {{electrons}}. What changes is where the bonding electrons spend their {{time}}.",
+      "{{Electronegativity (EN)}} is how hard an atom pulls on a shared pair. When two different {{nonmetals}} bond, the higher-EN atom pulls the pair closer and gets a partial {{negative}} charge (δ−). The other end is {{δ+}}.",
+      "A {{metal}} and a {{nonmetal}} don't share at all. The metal hands its valence electrons over to the nonmetal, leaving a {{cation}} (+) and an {{anion}} (−) that attract each other. That's an {{ionic}} bond.",
+      "When metal atoms bond to other metal atoms, none of them pulls electrons strongly (all have low EN). They pool their {{valence electrons}} into a {{sea}} shared by every atom. That's {{metallic}} bonding.",
+      "ΔEN is a {{continuum}}, not three boxes. On the sim's ΔEN bar, a pair with ΔEN under about {{0.4}} is shared equally (nonpolar). For ionic, the sim's better test is {{metal + nonmetal}}."
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Before you check: choose **Al** and **O**. Al gives 3 electrons and O takes 2. How many Al³⁺ for every O²⁻ make electrons given = electrons taken? Write the formula, then check it against the line above the atoms.",
+       "lines": 2,
+       "answer": "2 Al × 3 e⁻ = 6 = 3 O × 2 e⁻, so 2 Al³⁺ for every 3 O²⁻: **Al₂O₃** (the sim: \"2 Al³⁺ for every 3 O²⁻\", \"charges balance as Al₂O₃\")."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Pair",
+      "ΔEN (Evidence panel)",
+      "Metal or nonmetal?",
+      "Bond type (after Check)",
+      "Particles (after Check)"
+     ],
+     "col_widths": [
+      0.8,
+      1.1,
+      1.3,
+      1.3,
+      2.3
+     ],
+     "row_height": 0.36,
+     "rows": [
+      [
+       "Cl–Cl",
+       "{{0.00}}",
+       "{{nonmetal + nonmetal}}",
+       "{{Nonpolar covalent}}",
+       "{{Cl₂ molecule, pair shared equally}}"
+      ],
+      [
+       "H–Cl",
+       "{{0.96}}",
+       "{{nonmetal + nonmetal}}",
+       "{{Polar covalent}}",
+       "{{δ+ on H, δ− on Cl}}"
+      ],
+      [
+       "H–F",
+       "{{1.78}}",
+       "{{nonmetal + nonmetal}}",
+       "{{Polar covalent}}",
+       "{{δ+ on H, δ− on F}}"
+      ],
+      [
+       "Na–Cl",
+       "{{2.23}}",
+       "{{metal + nonmetal}}",
+       "{{Ionic}}",
+       "{{Na⁺ and Cl⁻ ions; NaCl}}"
+      ],
+      [
+       "Mg–O",
+       "{{2.13}}",
+       "{{metal + nonmetal}}",
+       "{{Ionic}}",
+       "{{Mg²⁺ and O²⁻ ions; MgO}}"
+      ],
+      [
+       "Na–Na",
+       "{{0.00}}",
+       "{{metal + metal}}",
+       "{{Metallic}}",
+       "{{Na⁺ cations in a sea of shared valence electrons}}"
+      ],
+      [
+       "Cu–Zn",
+       "{{0.25}}",
+       "{{metal + metal}}",
+       "{{Metallic}}",
+       "{{Cu⁺ and Zn²⁺ cations in one electron sea (an alloy)}}"
+      ]
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "H–F has ΔEN = 1.78, past the 1.7 often quoted as the cut-off for ionic. Is H–F ionic? Make a claim and give two pieces of evidence from the sim.",
+       "lines": 2,
+       "answer": "Polar covalent, not ionic. Both are nonmetals, so they share the pair (pulled toward F, δ− on F); the sim's check says polar covalent, and metal + nonmetal is the better test for ionic."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Energy",
+   "sim_screen": "Screen 2 · Energy · Topic 2.2",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Click **2 · Energy** and set **Compare:** to **H₂**. Read the **Readout** panel (distance, potential energy, net force).",
+      "Exact distances: click the graph once, press **Home** (well bottom), then **Shift + →** adds 10 pm and **Shift + ←** takes 10 pm away. **Pull apart** moves the atoms far apart."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "The H atoms start far apart (PE ≈ 0). As you drag them together, will the potential energy go up or down at first? What happens if you push them very close?",
+       "lines": 1,
+       "answer": "Down at first (attraction lowers PE). If pushed closer than the bond length, PE shoots back up (repulsion)."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "A bond forms because two atoms have lower {{potential}} {{energy}} together than apart. Zero energy on the graph means the atoms are {{far apart}}.",
+      "If the atoms are closer than the bond length, the curve shoots up. The two positive nuclei {{repel}} each other, and so do the two {{electron}} {{clouds}}.",
+      "The bottom of the well is where attraction and repulsion {{balance}}. Its distance is the bond {{length}}, and its {{depth}} is the bond energy: the energy it takes to pull the atoms apart.",
+      "Breaking bonds always {{absorbs}} energy; forming bonds {{releases}} it.",
+      "More shared electron pairs between the same two atoms make a {{shorter}}, {{stronger}} bond. {{Bigger}} atoms make longer, weaker bonds, because the shared electrons sit farther from both nuclei."
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table 1: H₂ readouts",
+     "columns": [
+      "Position",
+      "How to get there",
+      "r (pm)",
+      "PE (kJ/mol)",
+      "Net force readout"
+     ],
+     "col_widths": [
+      1.2,
+      2.0,
+      0.8,
+      1.0,
+      2.2
+     ],
+     "row_height": 0.36,
+     "rows": [
+      [
+       "Far apart",
+       "Press Pull apart",
+       "{{430}}",
+       "{{−1}}",
+       "{{≈ zero (too far apart to interact)}}"
+      ],
+      [
+       "Coming together",
+       "Home, then Shift + → 5 times",
+       "{{124}}",
+       "{{−268}}",
+       "{{attraction (pulls together)}}"
+      ],
+      [
+       "Well bottom",
+       "Home (or Go to well bottom)",
+       "{{74}}",
+       "{{−436}}",
+       "{{≈ zero (attraction and repulsion balance)}}"
+      ],
+      [
+       "Too close",
+       "Home, then Shift + ← 2 times",
+       "{{54}}",
+       "{{−338}}",
+       "{{repulsion (pushes apart)}}"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table 2: bond length and bond energy",
+     "subtitle": "Switch Compare: and click each bond, then press Mark bond length & bond energy",
+     "columns": [
+      "Bond",
+      "H–H",
+      "C–C",
+      "C=C",
+      "C≡C",
+      "Cl₂",
+      "Br₂",
+      "I₂"
+     ],
+     "col_widths": [
+      1.9,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8
+     ],
+     "row_height": 0.32,
+     "rows": [
+      [
+       "Bond order",
+       "1",
+       "1",
+       "{{2}}",
+       "{{3}}",
+       "1",
+       "1",
+       "1"
+      ],
+      [
+       "r₀ (pm)",
+       "{{74}}",
+       "{{154}}",
+       "{{134}}",
+       "{{120}}",
+       "{{199}}",
+       "{{228}}",
+       "{{267}}"
+      ],
+      [
+       "Bond energy (kJ/mol)",
+       "{{436}}",
+       "{{348}}",
+       "{{614}}",
+       "{{839}}",
+       "{{243}}",
+       "{{193}}",
+       "{{151}}"
+      ]
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Breaking 0.50 mol of H–H bonds: energy absorbed or released, and how much? Forming 2.0 mol of H₂ from atoms?",
+       "lines": 2,
+       "points": 2,
+       "answer": "Break: 0.50 mol × 436 kJ/mol = **218 kJ absorbed**. Form: 2.0 mol × 436 kJ/mol = **872 kJ released**."
+      },
+      {
+       "prompt": "Is C=C twice as strong as C–C? Find 614 ÷ 348 and the extra energy from the second bond (614 − 348).",
+       "lines": 1,
+       "points": 2,
+       "answer": "614 ÷ 348 = **1.76**; extra = 614 − 348 = **266 kJ/mol**. Stronger, but not twice as strong."
+      }
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Going down the group from Cl₂ to Br₂ to I₂, what happens to r₀ and the bond energy? Explain with atom size.",
+       "lines": 2,
+       "answer": "r₀ increases (199 → 228 → 267 pm) and bond energy decreases (243 → 193 → 151 kJ/mol). Bigger atoms put the shared pair farther from both nuclei, so the attraction is weaker."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Ionic",
+   "sim_screen": "Screen 3 · Ionic · Topic 2.3",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Click **3 · Ionic**, set **Crystal:** to **NaCl**, **State** to **Solid**, and press **Start over**. Pick **Na⁺** or **Cl⁻** next to Place and click empty spots (**Fill the rest** finishes it).",
+      "With the crystal complete, test it: **State** buttons, **3-D view**, **Hit it with a hammer** (**Reset** repairs it)."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "If you hit an ionic crystal with a hammer, will it bend or shatter? (Also try placing Cl⁻ next to Cl⁻.)",
+       "lines": 1,
+       "answer": "Shatter (ionic solids are brittle)."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "An ionic solid is a repeating pattern of {{cations}} and {{anions}}.",
+      "On this grid, the only pattern that works is a {{checkerboard}}: every ion is surrounded by {{opposite}} charges and never touches its own kind. That maximizes {{attraction}} and minimizes {{repulsion}}.",
+      "Each ion has {{4}} opposite-charge neighbours in the flat slice and {{6}} in the real 3-D crystal. A current needs charge that can {{move}}.",
+      "After the hammer blow, every ion in the second row sits on an ion of the {{same}} charge. Like charges repel, the layers push apart, and the crystal {{cracks}}."
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table 1: NaCl in three states",
+     "columns": [
+      "State",
+      "Ions (readout)",
+      "Conducts electricity? (readout)",
+      "Bulb"
+     ],
+     "col_widths": [
+      1.1,
+      2.6,
+      2.4,
+      0.9
+     ],
+     "row_height": 0.34,
+     "rows": [
+      [
+       "Solid",
+       "{{Locked in fixed positions}}",
+       "{{No: the ions can't move}}",
+       "{{off}}"
+      ],
+      [
+       "Molten",
+       "{{Free to move (liquid)}}",
+       "{{Yes: mobile ions carry the charge}}",
+       "{{on}}"
+      ],
+      [
+       "Dissolved",
+       "{{Free to move, each surrounded by water molecules}}",
+       "{{Yes: mobile ions carry the charge}}",
+       "{{on}}"
+      ]
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "The grid has 40 spots (5 rows × 8). How many Na⁺ and Cl⁻ fill it, and what is the total charge? Repeat for MgO.",
+       "lines": 2,
+       "answer": "Checkerboard → half of each: **20 Na⁺ and 20 Cl⁻**; total = 20(+1) + 20(−1) = **0**. MgO: **20 Mg²⁺ and 20 O²⁻**; total = +40 − 40 = **0**. The crystal is neutral."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table 2: compare three crystals",
+     "subtitle": "Change Crystal:, then read the Melting point line and try the Dissolved button",
+     "columns": [
+      "Crystal",
+      "Ions",
+      "Melting point (°C)",
+      "Dissolves in water?"
+     ],
+     "col_widths": [
+      1.0,
+      1.6,
+      1.6,
+      2.6
+     ],
+     "row_height": 0.34,
+     "rows": [
+      [
+       "NaCl",
+       "{{Na⁺ and Cl⁻}}",
+       "{{801}}",
+       "{{Yes}}"
+      ],
+      [
+       "KBr",
+       "{{K⁺ and Br⁻}}",
+       "{{734}}",
+       "{{Yes}}"
+      ],
+      [
+       "MgO",
+       "{{Mg²⁺ and O²⁻}}",
+       "{{2852}}",
+       "{{No (practically insoluble)}}"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Explain it: the particle-level reason",
+     "subtitle": "Pick a reason for each property under Explain it, then press Check reasons",
+     "columns": [
+      "Property",
+      "Particle-level reason"
+     ],
+     "col_widths": [
+      2.0,
+      5.0
+     ],
+     "row_height": 0.36,
+     "first_col_left": true,
+     "rows": [
+      [
+       "High melting point",
+       "{{Many strong attractions between opposite charges must be overcome}}"
+      ],
+      [
+       "No conduction as a solid",
+       "{{The ions are locked in place}}"
+      ],
+      [
+       "Conducts when molten or dissolved",
+       "{{The ions are free to move and carry charge}}"
+      ],
+      [
+       "Brittle",
+       "{{Sliding the layers lines up like charges, which repel}}"
+      ]
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "MgO melts at a much higher temperature than NaCl and does not dissolve. Use the sim's explanation (charges and distance) to say why.",
+       "lines": 3,
+       "answer": "Mg²⁺ and O²⁻ carry twice the charge of Na⁺ and Cl⁻ and sit closer together, so they hold each other far more strongly: more energy to separate (2852 °C vs. 801 °C), and water can't pull them apart."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Lattice",
+   "sim_screen": "Screen 4 · Lattice · Topics 2.2–2.3",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Click **4 · Lattice**. The **Compounds:** menu has three sets: **Same charges, different sizes**, **Charge vs. size**, **Close calls**. Each card shows r.",
+      "Order each set with ▲ ▼ (largest lattice energy first), then **Check ranking** to see the energies and melting points. Keep **Show Coulomb hint** OFF until the Calculate box is done."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Which will have the larger lattice energy, NaCl (+1/−1, r = 283 pm) or MgO (+2/−2, r = 212 pm)? Why?",
+       "lines": 2,
+       "answer": "MgO: its ions carry twice the charge (|q₊q₋| = 4 vs. 1) and sit closer together (212 vs. 283 pm). The sim gives 3791 vs. 786 kJ/mol."
+      }
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "Lattice energy ∝ |q₊ × q₋| ÷ r",
+      "q = {{the charge on each ion}}",
+      "r = {{the distance between the ion centres (r₊ + r₋)}}"
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Coulomb's law: the attraction between two ions grows with their {{charges}} and weakens as they get {{farther}} {{apart}}.",
+      "Lattice energy is the energy needed to {{separate}} one mole of the solid into {{gaseous}} ions. Stronger attraction means {{higher}} lattice energy.",
+      "{{Doubling}} both charges makes q₊ × q₋ {{four}} times bigger, far more than the size differences between real ions can make up."
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Find |q₊ × q₋| ÷ r for MgO (r = 212 pm) and KCl (r = 319 pm), each divided by NaCl's (1 ÷ 283 pm). Then turn on Show Coulomb hint to check.",
+       "lines": 2,
+       "answer": "NaCl: 1 ÷ 283 = 0.00353. MgO: (2 × 2) ÷ 212 = 0.0189 → 0.0189 ÷ 0.00353 = **5.34× NaCl**. KCl: 1 ÷ 319 = 0.00313 → **0.89× NaCl**. The hint bars show 5.34× and 0.89×."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Compound",
+      "Ion charges",
+      "r (pm)",
+      "|q₊q₋|/r (× NaCl, hint)",
+      "Lattice energy (kJ/mol)",
+      "Melts at (°C)"
+     ],
+     "col_widths": [
+      1.0,
+      1.0,
+      0.8,
+      1.4,
+      1.4,
+      1.1
+     ],
+     "row_height": 0.3,
+     "rows": [
+      [
+       "NaF",
+       "+1 / −1",
+       "{{235}}",
+       "{{1.20}}",
+       "{{923}}",
+       "{{993}}"
+      ],
+      [
+       "NaCl",
+       "+1 / −1",
+       "{{283}}",
+       "1.00",
+       "{{786}}",
+       "{{801}}"
+      ],
+      [
+       "NaBr",
+       "+1 / −1",
+       "{{298}}",
+       "{{0.95}}",
+       "{{747}}",
+       "{{747}}"
+      ],
+      [
+       "NaI",
+       "+1 / −1",
+       "{{322}}",
+       "{{0.88}}",
+       "{{704}}",
+       "{{661}}"
+      ],
+      [
+       "KCl",
+       "+1 / −1",
+       "{{319}}",
+       "{{0.89}}",
+       "{{715}}",
+       "{{770}}"
+      ],
+      [
+       "KBr",
+       "+1 / −1",
+       "{{334}}",
+       "{{0.85}}",
+       "{{682}}",
+       "{{734}}"
+      ],
+      [
+       "MgO",
+       "{{+2 / −2}}",
+       "{{212}}",
+       "{{5.34}}",
+       "{{3791}}",
+       "{{2852}}"
+      ],
+      [
+       "CaO",
+       "{{+2 / −2}}",
+       "{{240}}",
+       "{{4.72}}",
+       "{{3401}}",
+       "{{2613}}"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Rankings",
+     "subtitle": "The order the sim accepts, largest lattice energy first",
+     "columns": [
+      "Same charges, different sizes",
+      "Charge vs. size",
+      "Close calls"
+     ],
+     "row_height": 0.34,
+     "rows": [
+      [
+       "{{NaF > NaCl > NaBr > NaI}}",
+       "{{MgO > CaO > NaCl > KBr}}",
+       "{{NaBr > KCl > NaI > KBr}}"
+      ]
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "In the Charge vs. size set, r only ranges from 212 to 334 pm. Explain why MgO and CaO beat both +1/−1 compounds \"no matter the size.\"",
+       "lines": 2,
+       "answer": "MgO and CaO are +2/−2, so |q₊ × q₋| = 4, four times the +1/−1 compounds. Size changes r by much less than a factor of 4 (212–334 pm), so charge wins. Within each charge group, smaller r wins: MgO > CaO > NaCl > KBr."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Metals",
+   "sim_screen": "Screen 5 · Metals · Topic 2.4",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Click **5 · Metals**, choose **Pure copper**, and try **Connect battery** and **Hit it with a hammer** (or drag the top two rows). **Reset** slides them back.",
+      "**Brass (Cu + Zn)**: each **+ Zn** swaps one of the 50 atoms (2%). **Steel (Fe + C)**: click dotted holes; the darker ones sit in the slip gap between rows 2 and 3."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "NaCl shattered when its layers slid. Will copper shatter too? Why or why not?",
+       "lines": 2,
+       "answer": "No. The ion cores stay surrounded by the electron sea when the layers slide, so no like-charge repulsion builds up. Copper bends (malleable)."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "A metallic solid is a lattice of {{positive}} ion cores in a sea of delocalized {{valence electrons}}. The electrons belong to the whole {{crystal}}, not to any one atom.",
+      "Metals conduct electricity because the electron sea is already {{mobile}}. Connect a voltage and the electrons drift toward the {{+}} terminal. That drift is the {{current}}.",
+      "Metals are {{malleable}} and {{ductile}}: when layers slide, every ion is still surrounded by the electron sea.",
+      "An alloy is a {{mixture}}, not a compound, so it has no fixed ratio. In a {{substitutional}} alloy, atoms of similar size take the place of host atoms (brass).",
+      "In an {{interstitial}} alloy, much smaller atoms squeeze into the holes between host atoms (steel). The small atoms jam the layers so they can't slide: {{harder}} and {{stronger}}, but less {{malleable}}."
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "The sim's brass density = 8.96 × (fraction Cu) + 7.14 × (fraction Zn), by atoms. Predict it for 20% Zn (10 zinc atoms) and 40% Zn (20 atoms, the sim's maximum), then check the Density readout.",
+       "lines": 2,
+       "answer": "20% Zn: 8.96 × 0.80 + 7.14 × 0.20 = 7.17 + 1.43 = **8.60 g/cm³**. 40% Zn: 8.96 × 0.60 + 7.14 × 0.40 = 5.38 + 2.86 = **8.23 g/cm³**. Both are between Cu (8.96) and Zn (7.14)."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table 1: three solids",
+     "columns": [
+      "Solid (settings)",
+      "Composition (readout)",
+      "Density (g/cm³)",
+      "Malleability (readout)"
+     ],
+     "col_widths": [
+      2.0,
+      2.2,
+      1.1,
+      2.0
+     ],
+     "row_height": 0.36,
+     "first_col_left": true,
+     "rows": [
+      [
+       "Pure copper",
+       "{{100% Cu (an element)}}",
+       "{{8.96}}",
+       "{{High: layers slide}}"
+      ],
+      [
+       "Brass, + Zn pressed 10 times",
+       "{{Cu 80%, Zn 20% (by atoms)}}",
+       "{{≈ 8.60}}",
+       "{{High: still malleable, a bit harder than Cu}}"
+      ],
+      [
+       "Steel, no carbon yet",
+       "{{100% Fe (pure iron)}}",
+       "{{7.87}}",
+       "{{High (pure iron)}}"
+      ],
+      [
+       "Steel, carbon in a darker hole",
+       "{{Fe with C atoms in the holes}}",
+       "{{≈ 7.85}}",
+       "{{Low: carbon pegs pin the sliding layers}}"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table 2: which kind of alloy?",
+     "subtitle": "Work out the radius ratio first, then answer in the sim and press Next pair",
+     "columns": [
+      "Atoms and radii (from the sim)",
+      "Radius ratio (added ÷ host, %)",
+      "Type of alloy"
+     ],
+     "col_widths": [
+      2.6,
+      2.2,
+      2.0
+     ],
+     "row_height": 0.26,
+     "first_col_left": true,
+     "rows": [
+      [
+       "Ni (124 pm) into Cu (128 pm)",
+       "{{97%}}",
+       "{{substitutional}}"
+      ],
+      [
+       "C (77 pm) into Fe (126 pm)",
+       "{{61%}}",
+       "{{interstitial}}"
+      ],
+      [
+       "Sn (140 pm) into Cu (128 pm)",
+       "{{109%}}",
+       "{{substitutional}}"
+      ],
+      [
+       "N (71 pm) into Fe (126 pm)",
+       "{{56%}}",
+       "{{interstitial}}"
+      ],
+      [
+       "Ag (144 pm) into Au (144 pm)",
+       "{{100%}}",
+       "{{substitutional}}"
+      ]
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Your steel stopped sliding once carbon sat in the darker holes. Use the sim to explain why steel is harder but less malleable than pure iron.",
+       "lines": 2,
+       "answer": "The carbon atoms in the gap between the sliding rows act like pegs, so the layers can't slip. Harder and stronger, less malleable."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Lewis Structures",
+   "sim_screen": "Screen 6 · Lewis · Topics 2.5–2.6",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Click **6 · Lewis** in **Guided** mode (Free Explore fills in the count for you). Pick a molecule from **Molecule:**, type the total in **Step 1 — total valence electrons**, press **Check count**.",
+      "Build with the **Bond order** and **Lone pairs** controls, press **Check structure**, then read **Show formal charges**. Don't press **Show answer** before you check your own."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "SO₂ has 18 valence electrons. Will the S end up with a lone pair? Decide before you build it.",
+       "lines": 1,
+       "answer": "Yes: one lone pair on S (one double bond, one single bond)."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "A Lewis diagram is a map of the {{valence}} {{electrons}}.",
+      "Add the valence electrons of every atom, then add one for each {{−}} charge or subtract one for each {{+}} charge. Put the least {{electronegative}} atom in the centre (never {{H}}).",
+      "Give the outer atoms full {{octets}} first. If you are out of electrons but the central atom is short, turn a {{lone}} pair on an outer atom into a second bond.",
+      "{{Formal}} {{charge}} = valence electrons − lone-pair electrons − bonds. The best structure keeps every formal charge as close to {{zero}} as possible, with any negative charge on the most {{electronegative}} atom.",
+      "Equally good structures are {{resonance}} structures; every bond in the real ion is {{identical}}. Boron is stable with only {{6}} electrons; period-3-and-below atoms can hold {{more}} than 8."
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Count the total valence electrons before you press Check count: CO₂, NO₃⁻, SO₂ and SF₆.",
+       "lines": 2,
+       "points": 4,
+       "answer": "CO₂: 4 + 2(6) = **16**. NO₃⁻: 5 + 3(6) + 1 = **24**. SO₂: 6 + 2(6) = **18**. SF₆: 6 + 6(7) = **48**."
+      },
+      {
+       "prompt": "For CO₂ drawn as O≡C–O (one triple bond, one single bond), find the formal charge on each atom. Then build it and press Show formal charges to check.",
+       "lines": 3,
+       "answer": "C: 4 − 0 − 4 = **0**. O (triple, 1 lone pair): 6 − 2 − 3 = **+1**. O (single, 3 lone pairs): 6 − 6 − 1 = **−1**. Valid, but not the best: O=C=O has all formal charges 0."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Molecule",
+      "Total valence e⁻",
+      "Bonds to central atom",
+      "Lone pairs on central",
+      "Electrons around central",
+      "Formal charges",
+      "Exception or resonance?"
+     ],
+     "col_widths": [
+      0.9,
+      0.9,
+      1.4,
+      0.9,
+      1.0,
+      1.5,
+      1.4
+     ],
+     "row_height": 0.42,
+     "rows": [
+      [
+       "CO₂",
+       "{{16}}",
+       "{{2 double}}",
+       "{{0}}",
+       "{{8}}",
+       "{{all 0}}",
+       "{{none}}"
+      ],
+      [
+       "NO₃⁻",
+       "{{24}}",
+       "{{1 double, 2 single}}",
+       "{{0}}",
+       "{{8}}",
+       "{{N +1; two O −1}}",
+       "{{3 resonance structures}}"
+      ],
+      [
+       "BF₃",
+       "{{24}}",
+       "{{3 single}}",
+       "{{0}}",
+       "{{6}}",
+       "{{all 0}}",
+       "{{incomplete octet}}"
+      ],
+      [
+       "SO₂",
+       "{{18}}",
+       "{{1 double, 1 single}}",
+       "{{1}}",
+       "{{8}}",
+       "{{S +1; one O −1}}",
+       "{{2 resonance structures}}"
+      ],
+      [
+       "SF₆",
+       "{{48}}",
+       "{{6 single}}",
+       "{{0}}",
+       "{{12}}",
+       "{{all 0}}",
+       "{{expanded octet}}"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Draw it",
+     "subtitle": "Sketch the structure the sim accepts, with every lone pair",
+     "columns": [
+      "CO₂",
+      "NO₃⁻ (one resonance form)",
+      "BF₃",
+      "SO₂"
+     ],
+     "row_height": 1.15,
+     "rows": [
+      [
+       "{{O=C=O; 2 lone pairs on each O}}",
+       "{{[N with one =O and two –O; =O has 2 lone pairs, each –O has 3; brackets and − charge]}}",
+       "{{B with 3 single bonds to F; 3 lone pairs on each F; none on B}}",
+       "{{O=S–O; 1 lone pair on S; =O has 2, –O has 3}}"
+      ]
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Build O₃, OCN⁻ and PCl₅. Which ones does the sim call resonance, and which has an expanded octet?"
+    }
+   ]
+  },
+  {
+   "title": "VSEPR Theory",
+   "sim_screen": "Screen 7 · VSEPR · Topic 2.7",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Click **7 · VSEPR**. Left: **Reset**, then build with **+ bonding domain**, **+ lone pair**, **− remove a bond**, **− remove a lone pair**; read the four lines under the picture.",
+      "Right (**Predict a real molecule**): choose a molecule, pick all three answers, then **Check prediction**."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "A lone pair takes more room than a bonding pair. Will water's H–O–H angle be bigger or smaller than 109.5°?",
+       "lines": 1,
+       "answer": "Smaller (the sim shows about 104.5°)."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "VSEPR = Valence Shell {{Electron}} {{Pair}} {{Repulsion}}.",
+      "Every electron domain (a bond, or a lone pair) is a cloud of negative charge, and clouds push each other as {{far}} apart as they can get.",
+      "Four domains do NOT sit in a flat {{square}}; they point at the corners of a {{tetrahedron}} (109.5°).",
+      "The electron-domain geometry counts every {{domain}}. The molecular geometry (the shape) counts {{atoms}} only.",
+      "On a trigonal bipyramid, lone pairs always take {{equatorial}} spots. On an octahedron, two lone pairs sit {{opposite}} each other."
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table 1: build every shape",
+     "columns": [
+      "Bonding domains",
+      "Lone pairs",
+      "Electron-domain geometry",
+      "Molecular geometry",
+      "Bond angle(s) (readout)"
+     ],
+     "col_widths": [
+      0.8,
+      0.7,
+      1.6,
+      1.5,
+      2.6
+     ],
+     "row_height": 0.25,
+     "rows": [
+      [
+       "2",
+       "0",
+       "{{linear}}",
+       "{{linear}}",
+       "{{180°}}"
+      ],
+      [
+       "3",
+       "0",
+       "{{trigonal planar}}",
+       "{{trigonal planar}}",
+       "{{120°}}"
+      ],
+      [
+       "2",
+       "1",
+       "{{trigonal planar}}",
+       "{{bent}}",
+       "{{slightly less than 120°}}"
+      ],
+      [
+       "4",
+       "0",
+       "{{tetrahedral}}",
+       "{{tetrahedral}}",
+       "{{109.5°}}"
+      ],
+      [
+       "3",
+       "1",
+       "{{tetrahedral}}",
+       "{{trigonal pyramidal}}",
+       "{{≈107°}}"
+      ],
+      [
+       "2",
+       "2",
+       "{{tetrahedral}}",
+       "{{bent}}",
+       "{{≈104.5°}}"
+      ],
+      [
+       "5",
+       "0",
+       "{{trigonal bipyramidal}}",
+       "{{trigonal bipyramidal}}",
+       "{{90° and 120°}}"
+      ],
+      [
+       "4",
+       "1",
+       "{{trigonal bipyramidal}}",
+       "{{seesaw}}",
+       "{{slightly less than 90° and 120°}}"
+      ],
+      [
+       "3",
+       "2",
+       "{{trigonal bipyramidal}}",
+       "{{T-shaped}}",
+       "{{slightly less than 90°}}"
+      ],
+      [
+       "2",
+       "3",
+       "{{trigonal bipyramidal}}",
+       "{{linear}}",
+       "{{180°}}"
+      ],
+      [
+       "6",
+       "0",
+       "{{octahedral}}",
+       "{{octahedral}}",
+       "{{90°}}"
+      ],
+      [
+       "5",
+       "1",
+       "{{octahedral}}",
+       "{{square pyramidal}}",
+       "{{slightly less than 90°}}"
+      ],
+      [
+       "4",
+       "2",
+       "{{octahedral}}",
+       "{{square planar}}",
+       "{{90°}}"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table 2: predict a real molecule",
+     "subtitle": "Fill in each row BEFORE you press Check prediction, then correct it",
+     "columns": [
+      "Molecule",
+      "Domains (bonds + lone pairs)",
+      "Electron-domain geometry",
+      "Molecular geometry",
+      "Bond angle"
+     ],
+     "col_widths": [
+      0.8,
+      1.3,
+      1.6,
+      1.4,
+      2.1
+     ],
+     "row_height": 0.3,
+     "rows": [
+      [
+       "H₂O",
+       "{{2 + 2 = 4}}",
+       "{{tetrahedral}}",
+       "{{bent}}",
+       "{{less than 109.5°}}"
+      ],
+      [
+       "SF₄",
+       "{{4 + 1 = 5}}",
+       "{{trigonal bipyramidal}}",
+       "{{seesaw}}",
+       "{{slightly less than 90° and 120°}}"
+      ],
+      [
+       "XeF₄",
+       "{{4 + 2 = 6}}",
+       "{{octahedral}}",
+       "{{square planar}}",
+       "{{90°}}"
+      ],
+      [
+       "ClF₃",
+       "{{3 + 2 = 5}}",
+       "{{trigonal bipyramidal}}",
+       "{{T-shaped}}",
+       "{{slightly less than 90°}}"
+      ],
+      [
+       "CO₂",
+       "{{2 + 0 = 2}}",
+       "{{linear}}",
+       "{{linear}}",
+       "{{180°}}"
+      ]
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "XeF₄ has four bonds, like CH₄, but it is not tetrahedral. Use domains to explain its shape.",
+       "lines": 3,
+       "answer": "Xe has 4 bonds + 2 lone pairs = 6 domains, so the domains are octahedral. The two lone pairs sit opposite each other (trans), leaving the four F atoms in a flat square: square planar, 90°. CH₄ has only 4 domains (tetrahedral)."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Add 5 bonding domains, then trade them for lone pairs one at a time. Rotate: where do the lone pairs sit?"
+    }
+   ]
+  },
+  {
+   "title": "3-D Molecules",
+   "sim_screen": "Screen 8 · 3-D · Topic 2.7",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Click **8 · 3-D** and pick each molecule from **Molecule:**, then toggle **Lone pairs**, **Bond angle**, **Dipole**, **Wedge–dash view** and **Spin**; drag to rotate.",
+      "Record from the **Readout** panel (geometries, bond angle(s), polarity, hybridization, sigma / pi bonds)."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "XeF₄ has four very polar Xe–F bonds and two lone pairs. Polar or nonpolar? Commit before you turn on Dipole.",
+       "lines": 1,
+       "answer": "Nonpolar: square planar is symmetric, so the four bond dipoles cancel."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "A {{Lewis}} {{diagram}} is flat, but the molecule is not. Chemists draw 3-D on paper with the wedge–dash convention: a plain line lies in the page, a solid wedge comes {{toward}} you, a hashed wedge goes {{away}} from you.",
+      "{{Lone}} {{pairs}} are real. They take up a domain, occupy a corner of the shape, and squeeze the bonds together.",
+      "Each polar bond is a small arrow (a bond {{dipole}}). If the arrows cancel by symmetry the molecule is {{nonpolar}}; if they add up it is {{polar}}, with a δ+ end and a δ− end.",
+      "Hybridization is just another name for the domain count: 2 domains → {{sp}}, 3 → {{sp²}}, 4 → {{sp³}}."
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Before you choose HCN: from its Lewis structure (H–C≡N), count the σ and π bonds and the domains on C. Predict the hybridization. Then check the readout.",
+       "lines": 3,
+       "answer": "H–C single = 1 σ; C≡N triple = 1 σ + 2 π. Total **2 σ + 2 π**. C has 2 domains (no lone pairs) → linear, **sp**."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Formula",
+      "Electron-domain geometry",
+      "Molecular geometry",
+      "Bond angle (readout)",
+      "Polarity",
+      "Hybridization",
+      "σ / π"
+     ],
+     "col_widths": [
+      0.7,
+      1.5,
+      1.4,
+      1.3,
+      0.9,
+      1.0,
+      0.9
+     ],
+     "row_height": 0.34,
+     "rows": [
+      [
+       "CH₄",
+       "{{tetrahedral}}",
+       "{{tetrahedral}}",
+       "{{109.5°}}",
+       "{{nonpolar}}",
+       "{{sp³}}",
+       "{{4 σ}}"
+      ],
+      [
+       "NH₃",
+       "{{tetrahedral}}",
+       "{{trigonal pyramidal}}",
+       "{{≈107°}}",
+       "{{polar}}",
+       "{{sp³}}",
+       "{{3 σ}}"
+      ],
+      [
+       "H₂O",
+       "{{tetrahedral}}",
+       "{{bent}}",
+       "{{≈104.5°}}",
+       "{{polar}}",
+       "{{sp³}}",
+       "{{2 σ}}"
+      ],
+      [
+       "CO₂",
+       "{{linear}}",
+       "{{linear}}",
+       "{{180°}}",
+       "{{nonpolar}}",
+       "{{sp}}",
+       "{{2 σ + 2 π}}"
+      ],
+      [
+       "HCN",
+       "{{linear}}",
+       "{{linear}}",
+       "{{180°}}",
+       "{{polar}}",
+       "{{sp}}",
+       "{{2 σ + 2 π}}"
+      ],
+      [
+       "BF₃",
+       "{{trigonal planar}}",
+       "{{trigonal planar}}",
+       "{{120°}}",
+       "{{nonpolar}}",
+       "{{sp²}}",
+       "{{3 σ}}"
+      ],
+      [
+       "SF₄",
+       "{{trigonal bipyramidal}}",
+       "{{seesaw}}",
+       "{{just under 90° and 120°}}",
+       "{{polar}}",
+       "{{none at AP}}",
+       "{{4 σ}}"
+      ],
+      [
+       "XeF₄",
+       "{{octahedral}}",
+       "{{square planar}}",
+       "{{90°}}",
+       "{{nonpolar}}",
+       "{{none at AP}}",
+       "{{4 σ}}"
+      ]
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "CO₂ and H₂O both have two polar bonds. Why is CO₂ nonpolar and H₂O polar? Use the Dipole view as evidence.",
+       "lines": 2,
+       "answer": "CO₂ is linear: the two grey bond dipoles point in exactly opposite directions and cancel, so there is no purple net arrow. H₂O is bent (two lone pairs on O), so the bond dipoles add; the purple net arrow points toward O (δ−)."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Turn on Wedge–dash view for CH₄ and NH₃ and sketch them. Then choose O₃: why does the sim call it polar?"
+    }
+   ]
+  }
+ ],
+ "conclusion": [
+  {
+   "prompt": "Rank these by melting point and explain each with the particles and forces from the sim: Cl₂, NaCl (801 °C), MgO (2852 °C).",
+   "lines": 4,
+   "answer": "Cl₂ < NaCl < MgO. Cl₂ is molecular (the sim: low melting point); no ions to separate. NaCl is ions held by many strong attractions. MgO has +2/−2 ions that sit closer (r = 212 pm vs. 283 pm), so |q₊q₋|/r is 5.34× NaCl's and its lattice energy (3791 vs. 786 kJ/mol) and melting point are much higher."
+  },
+  {
+   "prompt": "CO₂ and SO₂ are both one central atom with two O atoms. Use their Lewis structures to explain why CO₂ is linear and nonpolar but SO₂ is bent and polar.",
+   "lines": 4,
+   "answer": "CO₂ (16 e⁻): two double bonds, no lone pair on C → 2 domains → linear, bond dipoles cancel → nonpolar. SO₂ (18 e⁻): one double, one single, one lone pair on S → 3 domains → bent (just under 120°), bond dipoles don't cancel → polar."
+  },
+  {
+   "prompt": "Solid copper conducts, solid NaCl doesn't, and molten NaCl does. Explain all three with one idea.",
+   "lines": 3,
+   "answer": "A current needs charged particles that can move. Copper's delocalized electron sea moves even in the solid. Solid NaCl's ions are locked in place. Molten NaCl's ions are free to move and carry charge."
+  }
+ ],
+ "key_notes": [
+  "Settings that change answers: Lewis screen in Free Explore (?mode=explore) shows the electron count before students type it, so use Guided mode for p. 6. The Energy readouts depend on position; Table 1 gives keyboard steps (Home, Shift + arrows) so everyone lands on 430, 124, 74 and 54 pm. Brass density depends on how many times + Zn is pressed (each Zn = 2% of 50 atoms; the sim stops at 20 Zn = 40%).",
+  "Sim values vs. textbooks: bond energies H–H 436, C–C 348, C=C 614, C≡C 839, Cl₂ 243, Br₂ 193, I₂ 151 kJ/mol (many tables give 347 for C–C, 242 for Cl₂). Lattice energies NaCl 786, MgO 3791, CaO 3401 kJ/mol (other tables give 787–790 and 3795–3850). Accept the sim's numbers.",
+  "Bond type rule in the sim: metal + metal = metallic, metal + nonmetal = ionic (even when ΔEN < 1.7, e.g. Al–Cl 1.55, with a covalent-character note), nonmetal + nonmetal = nonpolar if ΔEN < 0.4, otherwise polar. So C–H (0.35) reads nonpolar covalent and N–O (0.40) reads polar.",
+  "SO₂: the sim accepts only the octet structure (one double bond, S +1, O −1). If a student builds the expanded-octet structure (two double bonds, all formal charges 0), the sim says \"formal charges are higher than they need to be,\" which is wrong for that structure. Both structures are acceptable at AP; give credit for either on p. 6 if the student explains.",
+  "3-D screen: for 5- and 6-domain molecules with lone pairs (SF₄, ClF₃, BrF₅), the Bond angle arc shows the ideal 90° / 120° while the readout says \"slightly less than.\" Grade the readout wording. NH₃ arc reads 107°, H₂O 104.5°, SO₂ 119°.",
+  "VSEPR predictor counts the ideal parent angle as correct for lone-pair molecules (e.g. 109.5° for H₂O). The worksheet asks for the squeezed angle; accept either if the student notes the lone-pair squeeze.",
+  "This key follows the sim. The older Molecular Structure key lists HCN as nonpolar and square pyramidal as exactly 90°; the sim shows HCN polar and square pyramidal \"slightly less than 90°\".",
+  "Metals screen draws one sea electron per ion core for pure copper, brass and steel, while the Bonds screen's Cu–Zn sea gives Zn²⁺ two electrons. Don't ask students to count sea electrons on the Metals screen."
+ ],
+ "lesson_plan": {
+  "period_minutes": 50,
+  "ap_topics": [
+   "2.1 Types of Chemical Bonds",
+   "2.2 Intramolecular Force and Potential Energy",
+   "2.3 Structure of Ionic Solids",
+   "2.4 Structure of Metals and Alloys",
+   "2.5 Lewis Diagrams",
+   "2.6 Resonance and Formal Charge",
+   "2.7 VSEPR and Bond Hybridization"
+  ],
+  "sim_location": "ChemSims.app → Simulations → Compound Structure & Properties Sim (/sims/unit2), tabs 1 · Bonds through 8 · 3-D",
+  "essential_question": "How does where the bonding electrons go decide a substance's structure, shape and properties?",
+  "objectives": [
+   "Classify a bond as nonpolar covalent, polar covalent, ionic or metallic from the atoms and ΔEN, and predict ionic formulas from charges.",
+   "Read a potential-energy curve for bond length and bond energy, and relate both to bond order and atom size.",
+   "Explain the properties of ionic solids and metals with a particle model, and rank lattice energies with |q₊q₋|/r.",
+   "Draw Lewis structures, use formal charge to choose the best one, and recognise resonance and octet exceptions.",
+   "Use VSEPR to predict electron-domain geometry, molecular geometry, bond angles, polarity, hybridization and σ/π counts."
+  ],
+  "materials": [
+   "Calculators (pp. 1, 2, 4, 5)",
+   "Two pen colours for grading day",
+   "Optional: ball-and-stick model kits for p. 8"
+  ],
+  "prep": [
+   "Open the sim in Guided mode on the projector and click 1 · Bonds; check that the Evidence panel is readable from the back of the room.",
+   "Try the Energy keyboard steps yourself (click the graph, Home, Shift + →) so you can show them on Day 2.",
+   "Tell students to use Guided mode on the Lewis tab: Free Explore shows the electron count for them.",
+   "The sim covers all seven Unit 2 topics, but not Lewis structures with more than one central atom (C₂H₄, CH₃OH, organic molecules) or delocalized π bonding beyond resonance. The sim doesn't cover those; use your usual lesson for them."
+  ],
+  "vocabulary": [
+   "electronegativity (EN)",
+   "ΔEN",
+   "nonpolar / polar covalent",
+   "ionic bond",
+   "metallic bond",
+   "electron sea",
+   "bond length (r₀)",
+   "bond energy",
+   "lattice energy",
+   "Coulomb's law",
+   "alloy (substitutional, interstitial)",
+   "formal charge",
+   "resonance",
+   "expanded / incomplete octet",
+   "electron domain",
+   "electron-domain geometry",
+   "molecular geometry",
+   "dipole",
+   "hybridization",
+   "σ and π bonds"
+  ],
+  "prior_knowledge": [
+   "Valence electrons from group number (Unit 1)",
+   "Electronegativity and atomic radius trends (1.7)",
+   "Ion charges of main-group elements",
+   "Coulomb's law idea: opposite charges attract, more charge and less distance = stronger"
+  ],
+  "days": [
+   {
+    "day": 1,
+    "title": "Teacher demo: Bonds",
+    "goal": "Students see that every bond is nuclei attracting electrons, and that the atoms (metal or nonmetal) and ΔEN decide where the electrons go.",
+    "worksheet_pages": "Cover + p. 1 (Bonds)",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: \"Salt and sugar are both white solids. Why does salt water conduct and sugar water doesn't?\" Collect ideas, don't answer yet."
+     ],
+     [
+      "5–35",
+      "Projected demo of 1 · Bonds (script below). Students fill in p. 1 Predict, Guided notes and the data table with you."
+     ],
+     [
+      "35–45",
+      "Pairs finish the p. 1 Calculate box (Al–O) and the H–F question on their own devices or from the projector, then check in the sim."
+     ],
+     [
+      "45–50",
+      "Return to the warm-up: salt is ionic (ions), sugar is molecular. Preview tomorrow: the Energy screen."
+     ]
+    ],
+    "demo_script": [
+     {
+      "do": "Open the sim in Guided mode and click 1 · Bonds. Point to the Atom 1 / Atom 2 menus, the quick-pair buttons and the Evidence panel.",
+      "say": "Every bond is the same attraction: positive nuclei pulling on negative electrons. Today's question is where the bonding electrons spend their time.",
+      "students": "First Guided-notes bullet: nuclei, electrons, time."
+     },
+     {
+      "do": "Click Cl–Cl. Point to \"EN 3.16\" under both atoms and the ΔEN line (0.00). Drag the pair to the middle and press Check my model.",
+      "say": "Same atom, same pull. Where should the pair sit? (Expected: in the middle.)",
+      "students": "Cl–Cl row: 0.00, nonmetal + nonmetal, nonpolar covalent, Cl₂ molecule."
+     },
+     {
+      "do": "Ask the H–Cl Predict question before loading. Then click H–Cl.",
+      "say": "H has EN 2.20, Cl has 3.16. Where does the pair go? Why? (Expected: closer to Cl, it pulls harder.)",
+      "students": "Predict box 1."
+     },
+     {
+      "do": "Drag the pair partway toward Cl and check. Point to δ+ on H, δ− on Cl and the purple arrow.",
+      "say": "The higher-EN atom gets the partial negative charge. That's a polar covalent bond.",
+      "students": "Second notes bullet; H–Cl row (0.96, polar covalent)."
+     },
+     {
+      "do": "Click H–F. Drag the pair toward F and check. Point to H–F on the ΔEN bar (1.78).",
+      "say": "1.78 is past the 1.7 some books use for ionic. Is it ionic? (Expected: no, both nonmetals.) The sim says metal + nonmetal is the better test.",
+      "students": "H–F row; fifth notes bullet (continuum, 0.4, metal + nonmetal)."
+     },
+     {
+      "do": "Ask: will sodium's electron be shared or handed over? Then click Na–Cl. Drag sodium's electron all the way onto Cl and check. Let the animation finish.",
+      "say": "Watch the sizes: Na shrinks into Na⁺, Cl grows into Cl⁻. Nothing is shared: an ionic bond.",
+      "students": "Third notes bullet; Na–Cl row."
+     },
+     {
+      "do": "Click Mg–O, drag both electrons onto O and check. Read the line above the atoms: \"+ and − ions attract\" and the Particles line.",
+      "say": "Mg gives 2, O takes 2: one of each, MgO. What would Al and O need? (Hold that for the Calculate box.)",
+      "students": "Mg–O row (2.13, ionic, Mg²⁺ and O²⁻; MgO)."
+     },
+     {
+      "do": "Click Na–Na. Press Pool into an electron sea, then check. Then click Cu–Zn and do the same.",
+      "say": "Two metals: neither wants the electrons, so they pool into a sea shared by every atom. That's metallic bonding, and a mix of metals is an alloy.",
+      "students": "Fourth notes bullet; Na–Na and Cu–Zn rows."
+     },
+     {
+      "do": "Show the Properties to expect line for Na–Cl, then for Cl–Cl.",
+      "say": "Bond type predicts properties. We'll test the ionic and metal ones ourselves on screens 3 and 5.",
+      "students": "Nothing new: a class discussion. (The Conclusion page comes back to it.)"
+     }
+    ]
+   },
+   {
+    "day": 2,
+    "title": "Student sim work: Energy and Ionic",
+    "goal": "Students read bond length and bond energy off the PE curve and build and test an ionic crystal.",
+    "worksheet_pages": "pp. 2–3",
+    "agenda": [
+     [
+      "0–5",
+      "Show the Energy keyboard trick once on the projector: click the graph, Home, Shift + →."
+     ],
+     [
+      "5–28",
+      "Pairs complete p. 2 (Energy)."
+     ],
+     [
+      "28–47",
+      "Pairs complete p. 3 (Ionic)."
+     ],
+     [
+      "47–50",
+      "Checkpoint question to the class."
+     ]
+    ],
+    "circulate": [
+     "Table 1 distances are 430, 124, 74, 54 pm. If a pair has odd numbers, they dragged instead of using Home + Shift + arrows.",
+     "PE is negative in the well (−436), not +436; bond energy is the positive depth.",
+     "Calculate box: break = absorbed, form = released; 614 ÷ 348 = 1.76, not 2.",
+     "On p. 3, the crystal must be complete before the State buttons or hammer work.",
+     "MgO \"Dissolved\" is refused by the sim: that IS the answer (does not dissolve)."
+    ],
+    "checkpoint": "Breaking 1 mol of H–H bonds absorbs 436 kJ; solid NaCl does not conduct because its ions are locked in place.",
+    "early_finishers": "Explore boxes: compare C≡C with C–C wells; count neighbours in the 3-D NaCl view; hammer KBr."
+   },
+   {
+    "day": 3,
+    "title": "Student sim work: Lattice and Metals",
+    "goal": "Students rank lattice energies with Coulomb's law and compare metals and alloys with ionic solids.",
+    "worksheet_pages": "pp. 4–5",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: \"Which matters more for lattice energy, doubling the charges or a 10% change in size?\""
+     ],
+     [
+      "5–27",
+      "Pairs complete p. 4 (Lattice). Hint stays off until the Calculate box is done."
+     ],
+     [
+      "27–47",
+      "Pairs complete p. 5 (Metals)."
+     ],
+     [
+      "47–50",
+      "Checkpoint question to the class."
+     ]
+    ],
+    "circulate": [
+     "Calculate on p. 4 is done before Show Coulomb hint is pressed; MgO should come out 5.34× NaCl.",
+     "Rankings written largest first.",
+     "Brass row: + Zn pressed exactly 10 times (Cu 80%, Zn 20%, ≈ 8.60 g/cm³).",
+     "Steel: at least one carbon in a darker hole (rows 2–3 gap) before sliding, or it still slides.",
+     "Radius ratio is small ÷ host × 100 (C/Fe = 61%)."
+    ],
+    "checkpoint": "MgO > CaO > NaCl > KBr; copper stays in one piece when the layers slide because the ions stay surrounded by the electron sea.",
+    "early_finishers": "Rank a set wrong on purpose and read the sim's reason; put carbon only in light holes and slide."
+   },
+   {
+    "day": 4,
+    "title": "Student sim work: Lewis structures",
+    "goal": "Students count electrons, build Lewis structures, use formal charge to pick the best one, and spot resonance and exceptions.",
+    "worksheet_pages": "p. 6",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: count valence electrons for H₂O and NH₄⁺ on paper."
+     ],
+     [
+      "5–40",
+      "Pairs complete p. 6 (Lewis) in Guided mode."
+     ],
+     [
+      "40–47",
+      "Whole class: why O=C=O beats O≡C–O (formal charges)."
+     ],
+     [
+      "47–50",
+      "Checkpoint question to the class."
+     ]
+    ],
+    "circulate": [
+     "Guided mode, not Free Explore (Explore shows the count).",
+     "Count checked before building: NO₃⁻ is 24, not 23 (extra electron for the − charge).",
+     "No one pressed Show answer before checking their own.",
+     "Formal charges read with Show formal charges after each check.",
+     "SO₂: if a student built two double bonds, the sim's message is misleading; their structure is also fine at AP (see Sim cautions)."
+    ],
+    "checkpoint": "NO₃⁻ has 24 valence electrons, 3 resonance structures, N +1 and each single-bonded O −1.",
+    "early_finishers": "Build O₃, OCN⁻ and PCl₅ (Explore box); for OCN⁻, find which structure the sim calls best and why."
+   },
+   {
+    "day": 5,
+    "title": "Student sim work: VSEPR and 3-D",
+    "goal": "Students predict shapes, angles, polarity and hybridization from domain counts and check them in 3-D.",
+    "worksheet_pages": "pp. 7–8",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: \"Four domains: flat square or something else?\""
+     ],
+     [
+      "5–27",
+      "Pairs complete p. 7 (VSEPR)."
+     ],
+     [
+      "27–47",
+      "Pairs complete p. 8 (3-D)."
+     ],
+     [
+      "47–50",
+      "Checkpoint question to the class."
+     ]
+    ],
+    "circulate": [
+     "Table 1: molecular geometry named by atoms only (3 bonds + 1 lone pair = trigonal pyramidal, not tetrahedral).",
+     "Data table 2 filled in BEFORE Check prediction.",
+     "On p. 8, angles from the readout, not the arc, for SF₄.",
+     "HCN is polar (different ends); CO₂ is nonpolar.",
+     "SF₄ and XeF₄ hybridization: \"not assigned at AP\"."
+    ],
+    "checkpoint": "XeF₄ is square planar and nonpolar; H₂O is bent (≈104.5°) and polar; HCN is sp with 2 σ + 2 π.",
+    "early_finishers": "O₃ in the 3-D viewer: why is it polar? Then start the Conclusion page."
+   },
+   {
+    "day": 6,
+    "title": "Grading and wrap-up",
+    "goal": "Students grade their worksheet, correct errors and connect bonding to properties across the unit.",
+    "worksheet_pages": "Conclusion + Self-grading record",
+    "agenda": [
+     [
+      "0–10",
+      "Students finish the Conclusion page."
+     ],
+     [
+      "10–35",
+      "Grading (self, peer or teacher; see the shared grading section). Corrections in a second colour."
+     ],
+     [
+      "35–45",
+      "Discussion: the three Conclusion questions; take a vote on Cl₂ < NaCl < MgO and have pairs give the evidence."
+     ],
+     [
+      "45–50",
+      "Exit ticket."
+     ]
+    ]
+   }
+  ],
+  "misconceptions": [
+   {
+    "misconception": "Breaking a bond releases energy.",
+    "sim_fix": "Energy screen: Pull apart from the well bottom; the PE readout climbs from −436 to about 0 kJ/mol, so energy must be added."
+   },
+   {
+    "misconception": "Any ΔEN above 1.7 means ionic.",
+    "sim_fix": "Bonds screen: H–F (ΔEN 1.78) checks as polar covalent because both atoms are nonmetals; Al–Cl (1.55) checks as ionic."
+   },
+   {
+    "misconception": "Ionic solids conduct because they are made of ions.",
+    "sim_fix": "Ionic screen: the bulb stays off for the solid and lights only when Molten or Dissolved."
+   },
+   {
+    "misconception": "Four bonds always means tetrahedral, and lone pairs don't affect the shape.",
+    "sim_fix": "VSEPR/3-D: XeF₄ (4 bonds + 2 lone pairs) is square planar; NH₃'s lone pair squeezes the angle to ≈107°."
+   },
+   {
+    "misconception": "A molecule with polar bonds is always polar.",
+    "sim_fix": "3-D screen Dipole view: CO₂, BF₃ and XeF₄ have polar bonds whose arrows cancel, so there is no net dipole."
+   }
+  ],
+  "sim_cautions": [
+   "On the Lewis tab, Free Explore mode shows the total electron count automatically. Use Guided mode for the counting questions.",
+   "For SO₂ the sim accepts only the structure with one double bond. If a student builds two double bonds (all formal charges 0), the sim wrongly says the formal charges are higher than needed. Both are acceptable at AP.",
+   "On the 3-D screen, the bond-angle arc for SF₄, ClF₃ and BrF₅ shows exact 90° and 120°, but the readout says \"slightly less than.\" Use the readout.",
+   "The VSEPR predictor marks the ideal angle (like 109.5° for water) as correct for molecules with lone pairs. Remind students the real angle is a little smaller.",
+   "The Metals screen gives every ion core one sea electron, even zinc in brass; the Bonds screen gives zinc two. Don't use the Metals screen to count electrons.",
+   "Small radius mismatches between screens (copper 132 pm on Bonds, 128 pm in the alloy check; carbon 76 vs. 77 pm). Use the number on the screen the question is about.",
+   "Brass density in the sim is a simple average by atom percent, a model, not a measured value.",
+   "Show answer on the Lewis tab gives away the structure. Ask students to check their own first."
+  ],
+  "differentiation": {
+   "support": [
+    "Pair a strong reader with a student who needs support; the reader reads the Beaky step text aloud.",
+    "Allow a VSEPR shape chart for p. 8.",
+    "For p. 1 Calculate, give the hint: find the smallest number of electrons both atoms can agree on."
+   ],
+   "extension": [
+    "Explain with the Energy screen why C≡C (839) is less than 3 × C–C (348) and what that says about π bonds.",
+    "Predict where KF and CaS would fall in the lattice-energy order, and justify with |q₊q₋|/r (no sim check)."
+   ]
+  },
+  "exit_ticket": [
+   {
+    "question": "Classify Mg–Cl, N–H and Cu–Al bonds as nonpolar covalent, polar covalent, ionic or metallic.",
+    "answer": "Mg–Cl ionic (metal + nonmetal); N–H polar covalent (ΔEN 0.84); Cu–Al metallic (two metals)."
+   },
+   {
+    "question": "Which has the larger lattice energy, NaF or MgO? Give the reason in one sentence.",
+    "answer": "MgO (3791 vs. 923 kJ/mol): its ions carry +2/−2, so |q₊q₋| is 4 times larger, and they are also closer (212 vs. 235 pm)."
+   },
+   {
+    "question": "Give the molecular geometry and polarity of NH₃ and of BF₃.",
+    "answer": "NH₃ trigonal pyramidal, polar. BF₃ trigonal planar, nonpolar."
+   }
+  ],
+  "ap_practice": [
+   {
+    "question": "Multiple choice. The sim gives these bond energies: C–C 348, C=C 614, C≡C 839 kJ/mol, and bond lengths 154, 134, 120 pm. Which statement is best supported? (A) A π bond is stronger than a σ bond. (B) Bond length decreases and bond energy increases as bond order increases. (C) A triple bond is exactly three times as strong as a single bond. (D) Longer bonds are stronger.",
+    "answer": "(B). As bond order goes 1 → 2 → 3, r₀ falls 154 → 134 → 120 pm and energy rises 348 → 614 → 839 kJ/mol. (A) is wrong: each added π bond adds less than 348. (C) is wrong: 839 < 3 × 348 = 1044."
+   },
+   {
+    "question": "FRQ. (a) Draw the Lewis structure of SO₂ that keeps every atom at an octet, and give the formal charge on each atom. (b) Explain why SO₂ has resonance structures. (c) Predict the electron-domain geometry, molecular geometry and approximate O–S–O bond angle. (d) Is SO₂ polar? Justify. (e) Compare with CO₂, and explain why CO₂ is nonpolar.",
+    "answer": "(a) O=S–O with one lone pair on S, 2 lone pairs on =O and 3 on –O (18 e⁻); formal charges S +1, =O 0, –O −1. (b) The double bond could sit on either O; the two structures are equivalent, and the real molecule is their average with two identical S–O bonds. (c) 3 domains on S (2 bonds + 1 lone pair): trigonal planar electron domains, bent molecule, slightly less than 120°. (d) Polar: the bent shape means the two S–O bond dipoles don't cancel. (e) CO₂ has two double bonds and no lone pair on C: 2 domains, linear, so the equal bond dipoles point opposite ways and cancel."
+   }
+  ]
+ }
+}
