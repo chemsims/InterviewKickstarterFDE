@@ -1,0 +1,1232 @@
+{
+ "unit": 9,
+ "unit_title": "Applications of Thermodynamics",
+ "worksheet_title": "Applications of Thermodynamics",
+ "sim_name": "Thermodynamics Lab (Unit 9 parts)",
+ "pages": [
+  {
+   "title": "Entropy and Melting",
+   "sim_screen": "Part 91 · Sim 1 · Guided",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **chemsims.app/sims/thermodynamics?part=91**. Keep the **Guided** tab selected (top right).",
+      "Read slides 1–12 with **Next**. On slide 9, open **Choose a Substance** and pick **Water**.",
+      "Check that **Ice mass** (under the flame slider) reads **7 g**. Do not press ◄◄ or ►► yet.",
+      "Move the **Heat** (flame) slider slowly to the right until the ice has completely melted. Stop there."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "When ice melts at 0 °C, will its entropy go up or down? Explain with particles.",
+       "lines": 2,
+       "answer": "Up. Molecules in the liquid can move and arrange themselves in many more ways than in the solid. Accept: more disorder / more dispersed / more possible arrangements."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "The First Law: energy cannot be created or {{destroyed}}, only transferred.",
+      "The Second Law: the disorder of the universe is always {{increasing}}. In practice, energy cannot be transferred with {{100%}} efficiency.",
+      "{{Entropy}} is the disorder of a system. It is related to the number of different {{ways}} the system can arrange its particles.",
+      "Balls in a box: making the box smaller, so the balls have fewer places to be, is a {{decrease}} in entropy.",
+      "Entropy has the symbol {{S}}. Standard entropy, S°, is based on the {{mole}}.",
+      "The sim writes entropy units as {{J/°C}}. AP uses J/K. A kelvin and a degree Celsius are the same size, so the numbers are the same.",
+      "For a reversible process, ΔS = {{q / T}}, where q is the heat added and T is the temperature in {{kelvin}}.",
+      "When melting begins, the entropy change is {{positive}}. Molecules {{disperse}} a little in the liquid state."
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "ΔSₘₑₗₜ = q / T(melt) = m(ΔH of fusion) / T(melt)",
+      "T(K) = T(°C) + {{273}}"
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "The sim says water's heat of fusion is 333 J/g. Before the ΔSₘₑₗₜ box fills in, calculate q and ΔSₘₑₗₜ for melting 7 g of ice at 0 °C.",
+       "answer": "q = m·ΔH(fusion) = 7 g × 333 J/g = **2331 J**. T(melt) = 0 + 273 = **273 K**. ΔSₘₑₗₜ = 2331 J / 273 K = 8.5 → **9 J/K** (the sim shows 9 J/°C).",
+       "lines": 4,
+       "points": 3
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Process (7 g water)",
+      "q (J)",
+      "T (K)",
+      "ΔS (J/K)",
+      "Sign of ΔS"
+     ],
+     "rows": [
+      [
+       "Melting at 0 °C",
+       "{{2331}}",
+       "{{273}}",
+       "{{9}}",
+       "{{+}}"
+      ]
+     ],
+     "col_widths": [
+      2.0,
+      1.2,
+      1.0,
+      1.1,
+      1.2
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "The temperature stayed at 0 °C the whole time the ice melted, yet the entropy went up. Use the sim to explain where the entropy increase came from.",
+       "answer": "Heat (2331 J) went into breaking the solid's order, not into raising T. The molecules went from a fixed lattice to a liquid where they disperse, so there are more ways to arrange them. Accept: q > 0 at constant T so ΔS = q/T > 0; solid → liquid = more disorder.",
+       "lines": 3,
+       "points": 2
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Press ►► until Ice mass reads 15 g (go back to the start of the heat slider first if the buttons are gone). Predict ΔSₘₑₗₜ, then check. (Answer: 15 × 333 / 273 = 18 J/K. Doubling the mass about doubles ΔS: entropy is extensive.)"
+    }
+   ]
+  },
+  {
+   "title": "Heating, Boiling and Total Entropy",
+   "sim_screen": "Part 91 · Sim 1 · Guided",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Continue from the previous section: **Water**, **Ice mass 7 g**.",
+      "Keep moving the **Heat** slider to the right, slowly, all the way to the end (vapor at 120 °C). Watch the equation panel change from fusion, to heating, to vaporization.",
+      "At the end, press **Next** to load **Ethanol**, then **Acetone**. Each time, check Ice mass still reads **7 g** and run the slider to the end again."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Which step will give water the biggest ΔS: melting, heating the liquid, boiling, or heating the vapor? Why?",
+       "lines": 2,
+       "answer": "Boiling. Liquid → gas spreads the molecules out the most, and it takes the most heat (2230 J/g). Accept any answer with a reason; this is a prediction."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "To heat the liquid, the sim uses the {{average}} of the initial and final temperatures (in K) as T.",
+      "The heat for a temperature change is the {{Sensible Heat}}: q = m·Cw·(T₂ − T₁), where Cw is the {{specific heat}}.",
+      "When heating the vapor, Cw is the specific heat in the {{gaseous}} state.",
+      "Water's heat of vaporization in the sim is {{2230}} J/g.",
+      "During vaporization, molecules spread all over the place, so disorder and entropy {{increase}}.",
+      "Entropy increases with {{temperature}} and with a change of state from solid to liquid to {{gas}}. It would {{decrease}} if the reverse happened."
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "ΔS = q / T(avg) = m·Cw·(T₂ − T₁) / ((T₂ + T₁)/2)",
+      "ΔSᵥₐₚ = q / T(boil) = m(ΔH of vaporization) / T(boil)",
+      "ΔSₜₒₜₐₗ = ΔSₘₑₗₜ + ΔSᵥₐₚ + ΔS (heating legs)"
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Before the sim shows them, calculate for 7 g of water: (a) ΔS for heating the liquid from 273 K to 373 K (Cw = 4.2 J/g·°C), and (b) ΔSᵥₐₚ for boiling at 373 K.",
+       "answer": "(a) q = 7 × 4.2 × (373 − 273) = **2940 J**; T(avg) = (373 + 273)/2 = **323 K**; ΔS = 2940/323 = 9.1 → **9 J/K**. (b) q = 7 × 2230 = **15 610 J**; ΔSᵥₐₚ = 15 610 / 373 = 41.8 → **42 J/K**.",
+       "lines": 4,
+       "points": 4
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Substance (7 g)",
+      "ΔSₘₑₗₜ",
+      "ΔS liquid",
+      "ΔSᵥₐₚ",
+      "ΔS vapor",
+      "ΔSₜₒₜₐₗ"
+     ],
+     "rows": [
+      [
+       "Water",
+       "{{9}}",
+       "{{9}}",
+       "{{42}}",
+       "{{0.7}}",
+       "{{61}}"
+      ],
+      [
+       "Ethanol",
+       "{{5}}",
+       "{{13}}",
+       "{{17}}",
+       "{{0.7}}",
+       "{{36}}"
+      ],
+      [
+       "Acetone",
+       "{{4}}",
+       "{{9}}",
+       "{{11}}",
+       "{{0.7}}",
+       "{{25}}"
+      ]
+     ],
+     "col_widths": [
+      1.6,
+      1.0,
+      1.1,
+      1.0,
+      1.1,
+      1.1
+     ],
+     "note": "All values in J/K (the sim prints J/°C). Read ΔS liquid at the end of the liquid leg (or from the ( ) in the ΔSₜₒₜₐₗ row) and ΔS vapor at 120 °C. The ΔSₜₒₜₐₗ row rounds the vapor value to 1."
+    },
+    {
+     "type": "graph",
+     "prompt": "Shape only: sketch the entropy of the 7 g of water as it is heated from 273 K to 393 K. Mark where it melts and where it boils.",
+     "x_label": "Temperature (K)",
+     "y_label": "Entropy, S",
+     "answer": "A curve that rises gently while each phase heats, with a vertical jump at 273 K (melting, small) and a much taller vertical jump at 373 K (boiling, about 4–5 times bigger). It never goes down.",
+     "height": 1.8
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Claim and evidence: which process raises entropy the most, for every substance in your table? Explain why at the particle level.",
+       "answer": "Vaporization (ΔSᵥₐₚ is the largest number in each row: 42, 17, 11 J/K). Going from liquid to gas spreads the molecules over a much larger volume, so the number of possible arrangements increases the most.",
+       "lines": 3
+      },
+      {
+       "prompt": "Water's total ΔS (61 J/K) is much larger than acetone's (25 J/K) for the same mass. Use the table to say which step causes most of the difference.",
+       "answer": "Vaporization: 42 vs 11 J/K. Water's heat of vaporization (2230 J/g) is much larger than acetone's (518 J/g) because of its hydrogen bonds. Accept: stronger IMFs → more heat per gram → bigger ΔS.",
+       "lines": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Absolute Entropy and Entropy of Reaction",
+   "sim_screen": "Part 92 · Sim 2 · Guided",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **chemsims.app/sims/thermodynamics?part=92** in **Guided**. Press **Next** past the two slides about Gibbs Free Energy.",
+      "Open **Choose a Compound** and pick **NH3** (N₂ + 3H₂ ⟶ 2NH₃). Press **Next** until the atoms can move.",
+      "Drag each atom toward its partner (follow the ▶▶▶ arrows) to make N₂ and three H₂. Then drag one reactant molecule toward another to make NH₃.",
+      "After NH₃, use **Choose a Compound** again for **HCl**, then **NaOH**, and build each one the same way."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "N₂(g) + 3H₂(g) → 2NH₃(g). Will ΔS° be positive or negative? Count moles of gas.",
+       "lines": 2,
+       "answer": "Negative: 4 mol of gas → 2 mol of gas, so fewer particles and fewer arrangements."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Same as enthalpy, every compound has an {{Entropy}} of formation and a {{Gibbs Free Energy}} of formation. (AP calls the table's entropy values standard molar entropies, S°.)",
+      "The Gibbs Free Energy of formation of a pure element such as N₂ or H₂ is {{0}}.",
+      "When you make the second and third H₂, the S° value is multiplied by the number of {{moles}}, so the equation shows 3(130.6).",
+      "The difference between the products' and the reactants' values is the entropy (and Gibbs) of {{reaction}}.",
+      "For NH₃, entropy decreases because all components are {{gaseous}} and there are more {{molecules}} on the reactant side.",
+      "Entropy changes with the number of {{molecules}} in gaseous reactions, with the {{temperature}}, and with the change of physical state."
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "ΔS°rx = Σ n·S°(products) − Σ n·S°(reactants)",
+      "ΔG°rx = Σ n·ΔG°f(products) − Σ n·ΔG°f(reactants)"
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "After you make the reactants (but before NH₃), use the table: S°(N₂) = 191.5 and S°(H₂) = 130.6 J/K·mol. The sim will show S°(NH₃) = 192.5 and ΔG°f(NH₃) = −16.7 kJ/mol. Calculate ΔS°rx and ΔG°rx.",
+       "answer": "ΔS°rx = 2(192.5) − [191.5 + 3(130.6)] = 385.0 − 583.3 = **−198.3 J/K**. ΔG°rx = 2(−16.7) − [0 + 0] = **−33.4 kJ**.",
+       "lines": 3,
+       "points": 4
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Reaction",
+      "Σ n·S° products",
+      "Σ n·S° reactants",
+      "ΔS°rx (J/K)",
+      "ΔG°rx (kJ)"
+     ],
+     "rows": [
+      [
+       "N₂ + 3H₂ → 2NH₃",
+       "{{385.0}}",
+       "{{583.3}}",
+       "{{−198.3}}",
+       "{{−33.4}}"
+      ],
+      [
+       "H₂ + Cl₂ → 2HCl",
+       "{{373.8}}",
+       "{{353.7}}",
+       "{{+20.1}}",
+       "{{−190.6}}"
+      ],
+      [
+       "2Na + O₂ + H₂ → 2NaOH (2Na = 102.6)",
+       "{{129.0}}",
+       "{{438.4}}",
+       "{{−309.4}}",
+       "{{−759.4}}"
+      ]
+     ],
+     "col_widths": [
+      2.0,
+      1.3,
+      1.3,
+      1.1,
+      1.1
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "ΔS° for NaOH is the most negative in your table. Na(s) and NaOH(s) are solids. Explain the sign using the states of matter.",
+       "answer": "Reactants include 2 mol of gas (O₂ and H₂); the only product is a solid. Losing all the gas means far fewer arrangements, so ΔS° is very negative (−309.4 J/K). Accept: gas → solid.",
+       "lines": 2
+      },
+      {
+       "prompt": "H₂ + Cl₂ → 2HCl has 2 mol of gas on each side. Why is its ΔS° so small (+20.1 J/K)?",
+       "answer": "The number of gas molecules does not change, so the disorder changes only a little. Accept: same moles of gas → ΔS near zero.",
+       "lines": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Gibbs Free Energy and Favorability",
+   "sim_screen": "Part 93 · Sim 3 · Guided",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **chemsims.app/sims/thermodynamics?part=93** in **Guided**. The temperature starts at **298 K**. Read the two intro slides with **Next**.",
+      "Each round: click bottle **A**, set the **ΔH°** slider and let go to lock it, set the **ΔS°** slider and let go, then click bottle **B**.",
+      "Use these values. Each slider starts on them; click the slider knob and let go without moving it. Round 1: ΔH° **−2500 J/mol**, ΔS° **+25 J/(mol·K)**. Round 2: **+5000**, **+16**. Round 3: **−5000**, **−16**. Round 4: **+2500**, **−25**.",
+      "Round 2: drag **Temperature** up to **320 K**. Round 3 starts at 320 K: drag it down to **298 K**. Then press **Next** to watch the reaction."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Round 1 has ΔH° < 0 and ΔS° > 0. Will ΔG° be positive or negative? Does the temperature matter?",
+       "lines": 2,
+       "answer": "Negative at every temperature: ΔH° is negative and −TΔS° is also negative, so both terms push ΔG° below zero."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "ΔG° = ΔH° − {{TΔS°}}, where T is the temperature in kelvin.",
+      "ΔG° tells you which direction is {{thermodynamically favored}} under standard conditions. A favored reaction is also called {{spontaneous}}.",
+      "ΔG° does not tell you how {{fast}} a reaction occurs. Even a favorable reaction can be very {{slow}}.",
+      "A reaction with a negative ΔG° is called {{exergonic}}. A reaction with a positive ΔG° is called {{endergonic}}.",
+      "In rounds 2 and 3, ΔH° and ΔS° stay {{fixed}}. Only {{T}} changes.",
+      "The crossover temperature is specific to the model reaction. With ΔG° this close to zero, a real mixture would stop partway, at {{equilibrium}}."
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Round 1, before you click B: calculate ΔG° at 298 K.",
+       "answer": "ΔG° = −2500 − (298)(+25) = −2500 − 7450 = **−9950 J/mol**",
+       "lines": 2,
+       "points": 2
+      },
+      {
+       "prompt": "Round 2, before you click B: calculate ΔG° at 298 K, and the temperature where ΔG° = 0.",
+       "answer": "ΔG° = 5000 − (298)(16) = 5000 − 4768 = **+232 J/mol** (not favored). ΔG° = 0 when T = ΔH°/ΔS° = 5000/16 = **312.5 K**.",
+       "lines": 3,
+       "points": 3
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "#",
+      "ΔH° (J/mol)",
+      "ΔS° (J/mol·K)",
+      "ΔG° when B added",
+      "Final T (K)",
+      "Final ΔG° (J/mol)",
+      "Forward direction"
+     ],
+     "rows": [
+      [
+       "1",
+       "−2500",
+       "+25",
+       "{{−9950}}",
+       "298",
+       "{{−9950}}",
+       "{{Favorable at all T}}"
+      ],
+      [
+       "2",
+       "+5000",
+       "+16",
+       "{{+232}}",
+       "320",
+       "{{−120}}",
+       "{{Favorable at high T}}"
+      ],
+      [
+       "3",
+       "−5000",
+       "−16",
+       "{{+120}}",
+       "298",
+       "{{−232}}",
+       "{{Favorable at low T}}"
+      ],
+      [
+       "4",
+       "+2500",
+       "−25",
+       "{{+9950}}",
+       "298",
+       "{{+9950}}",
+       "{{Unfavorable at all T}}"
+      ]
+     ],
+     "col_widths": [
+      0.4,
+      1.0,
+      1.1,
+      1.1,
+      0.9,
+      1.1,
+      1.7
+     ],
+     "row_height": 0.42,
+     "note": "In round 1 the sim keeps the ΔG° box empty until the reaction is complete; it is the same value as your calculation. Rounds 2 and 3 show a Start / Now strip under the equation."
+    },
+    {
+     "type": "graph",
+     "prompt": "Using your round 2 numbers (+232 J/mol at 298 K, −120 J/mol at 320 K), sketch ΔG° vs. T. Mark where the line crosses zero and label the favorable side.",
+     "x_label": "Temperature (K)",
+     "y_label": "ΔG° (J/mol)",
+     "answer": "A straight line sloping down (slope = −ΔS° = −16 J/mol·K), crossing ΔG° = 0 at 312.5 K. Above 312.5 K (ΔG° < 0) is labeled favorable.",
+     "height": 1.8
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Round 3 is exothermic (ΔH° < 0), but at 320 K it was not favored. Use ΔG° = ΔH° − TΔS° to explain why cooling made it favorable.",
+       "answer": "ΔS° is negative, so −TΔS° is positive and grows with T. At 320 K, +5120 outweighs −5000, so ΔG° = +120. Cooling to 298 K shrinks the −TΔS° term to +4768, so ΔG° = −232 J/mol. Accept: the entropy term wins at high T, the enthalpy term wins at low T.",
+       "lines": 2
+      },
+      {
+       "prompt": "Explain why no temperature can make round 4 favorable.",
+       "answer": "ΔH° is positive and ΔS° is negative, so −TΔS° is also positive. Both terms are positive at every positive T, so ΔG° is always positive.",
+       "lines": 2
+      }
+     ]
+    },
+    {
+     "type": "calc",
+     "title": "CALCULATE: FREE ENERGY AND K (9.5)",
+     "items": [
+      {
+       "prompt": "The sim does not show K here. Use K = e^(−ΔG°/RT), R = 8.314 J/(mol·K), to find K for round 1 (−9950 J/mol, 298 K) and round 3 (−232 J/mol, 298 K). What does K ≈ 1 mean?",
+       "answer": "Round 1: K = e^(9950 / (8.314 × 298)) = e^4.02 = **55**. Round 3: K = e^(232 / 2478) = e^0.094 = **1.10**. K ≈ 1 means reactants and products are both present in similar amounts at equilibrium; the reaction is barely favored and would not go to completion.",
+       "lines": 3,
+       "points": 3
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Free Explore: set ΔH° = +5000 and ΔS° = +16, then move the temperature back and forth across 312.5 K."
+    }
+   ]
+  },
+  {
+   "title": "Building a Galvanic Cell",
+   "sim_screen": "Part 94 · Sim 4 · Guided, screens 1–19",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **chemsims.app/sims/thermodynamics?part=94** in **Guided**.",
+      "Open **Choose a Reaction** and pick **Zn(s) + Cu+2(aq) ⇌ Zn+2(aq) + Cu(s)**. Use only this reaction for the rest of the worksheet.",
+      "Press **Next** to read. When asked: click the **Zn²⁺** bottle (first beaker), then the **Cu²⁺** bottle, then click the **Cu electrode** to push it down. Stop when the sim asks you to plug in the Voltmeter."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "In this cell, which metal do you think will lose electrons (be oxidized)? Which electrode will gain mass?",
+       "lines": 2,
+       "answer": "Zn is oxidized (Zn → Zn²⁺), so the zinc electrode loses mass; Cu²⁺ is reduced onto the copper electrode, so it gains mass. Accept any answer with a reason; this is a prediction."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "An electrochemical cell is, in other words, a {{battery}}.",
+      "{{Reduction}} happens when a species gains electrons. {{Oxidation}} happens when a species loses electrons.",
+      "Redox reactions are {{reversible}} reactions, so they go towards {{equilibrium}}.",
+      "Q = [Zn²⁺] / [Cu²⁺]. After both solutions are poured, each is {{1.00}} M, so Q = {{1.00}}.",
+      "The {{anode}} is the zinc bar because it is oxidized. The {{cathode}} is the copper bar because it is reduced.",
+      "The salt bridge keeps both solutions {{neutral}}, so the reaction lasts longer.",
+      "Electrons flow from the {{negative}} side (anode) to the positive side (cathode)."
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "Anode (oxidation): Zn(s) → Zn²⁺(aq) + {{2e⁻}}",
+      "Cathode (reduction): Cu²⁺(aq) + 2e⁻ → {{Cu(s)}}",
+      "Cell notation: {{Zn | Zn²⁺ || Cu²⁺ | Cu}}"
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Electrode",
+      "Metal",
+      "Oxidized or reduced?",
+      "Charge change",
+      "Mass: gains or loses?"
+     ],
+     "rows": [
+      [
+       "Anode",
+       "{{Zn}}",
+       "{{oxidized}}",
+       "{{0 → +2}}",
+       "{{loses}}"
+      ],
+      [
+       "Cathode",
+       "{{Cu}}",
+       "{{reduced}}",
+       "{{+2 → 0}}",
+       "{{gains}}"
+      ]
+     ],
+     "col_widths": [
+      1.1,
+      0.9,
+      1.6,
+      1.3,
+      1.6
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "The Q expression on screen has only [Zn²⁺] and [Cu²⁺]. Why are Zn(s) and Cu(s) left out?",
+       "answer": "They are pure solids; their activity is constant (1), so they do not appear in Q or K.",
+       "lines": 2
+      },
+      {
+       "prompt": "What would happen to the cell if the salt bridge were removed? Use the sim's description of what the bridge does.",
+       "answer": "The anode beaker would build up positive charge (Zn²⁺) and the cathode beaker negative charge, so electron flow would quickly stop. The salt bridge keeps both solutions neutral. Accept: the battery wouldn't last / current stops.",
+       "lines": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Cell Potential, Free Energy and K",
+   "sim_screen": "Part 94 · Sim 4 · Guided, screens 20–33",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Continue with **Zn/Cu**. Drag the **Voltmeter** onto the middle of the cable. Later, drag the **Thermometer** into the solution.",
+      "When the sim says to run the reaction, press **▶ Play the reaction** (under the graph) or drag the dot along the curve. Stop at \"Equilibrium has been reached!\"."
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Before you plug in the voltmeter: the sim uses E°(Cu²⁺/Cu) = +0.34 V and E°(Zn²⁺/Zn) = −0.76 V. Calculate E°cell.",
+       "answer": "E°cell = E°cathode − E°anode = 0.34 − (−0.76) = **+1.10 V**",
+       "lines": 2,
+       "points": 2
+      },
+      {
+       "prompt": "Calculate ΔG° in kJ (n = 2, F = 96485 C/mol).",
+       "answer": "ΔG° = −nFE° = −(2)(96485)(1.10) = −212 267 J = **−212 kJ**",
+       "lines": 2,
+       "points": 2
+      },
+      {
+       "prompt": "Before you add the thermometer: calculate K at 298 K from ΔG° = −RT ln K (R = 8.314 J/(mol·K)).",
+       "answer": "ln K = −ΔG°/RT = 212 267 / (8.314 × 298) = 85.7; K = e^85.7 = **1.6 × 10³⁷**",
+       "lines": 3,
+       "points": 3
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "The voltmeter measures the {{Cell Potential}} (Ecell). Under standard conditions it is called the Standard Cell Potential, E°cell.",
+      "F is Faraday's constant, the charge in one mole of electrons: {{96485}} C/mol.",
+      "When ΔG = 0 the reaction is at {{equilibrium}}. When ΔG < 0 the {{forward}} reaction proceeds; when ΔG > 0 the {{reverse}} reaction proceeds.",
+      "The thermometer reads {{298}} K. K is huge, so at equilibrium there are many more {{products}} than reactants.",
+      "Nernst equation: right now Ecell equals E°cell because the conditions are still {{standard}}.",
+      "On the graph, the slope of the curve at each point is ΔG. At the bottom (Q = K) the slope is {{0}}."
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "ΔG° = −nFE°cell",
+      "ΔG° = −RT ln K",
+      "ΔG = ΔG° + RT ln Q",
+      "Ecell = E°cell − (RT/nF) ln Q"
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Moment",
+      "Q",
+      "Voltmeter (V)",
+      "ΔG (kJ)",
+      "Q vs. K"
+     ],
+     "rows": [
+      [
+       "Before the run",
+       "{{1}}",
+       "{{1.10}}",
+       "{{−212}}",
+       "{{Q < K}}"
+      ],
+      [
+       "Equilibrium",
+       "{{1.6×10³⁷}}",
+       "{{0.00}}",
+       "{{0}}",
+       "{{Q = K}}"
+      ]
+     ],
+     "col_widths": [
+      1.6,
+      1.3,
+      1.3,
+      1.1,
+      1.2
+     ]
+    },
+    {
+     "type": "graph",
+     "prompt": "Shape only (the sim's graph is not to scale): sketch free energy G as the reaction runs from reactants to products. Mark where Q = K.",
+     "x_label": "Reactants → Products",
+     "y_label": "Free energy, G",
+     "answer": "A curve that falls steeply from the reactant side to a minimum close to the products side, then rises a little. The minimum is Q = K, where the slope (ΔG) is zero.",
+     "height": 1.7
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "At equilibrium the voltmeter read 0.00 V. Explain, using Q and K, why a battery \"dies\".",
+       "answer": "As the cell runs, [Zn²⁺] rises and [Cu²⁺] falls, so Q grows toward K. At Q = K, ΔG = 0 and Ecell = 0: no more driving force, no current. A dead battery is a cell at equilibrium.",
+       "lines": 3
+      },
+      {
+       "prompt": "E°cell, ΔG° and K all point the same way for this cell. Give the sign or size of each and say what they mean.",
+       "answer": "E°cell = +1.10 V (positive), ΔG° = −212 kJ (negative), K = 1.6 × 10³⁷ (much greater than 1). All three say the forward reaction is thermodynamically favored and strongly product-favored.",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "type": "calc",
+     "title": "CALCULATE: NONSTANDARD CONDITIONS (9.9)",
+     "items": [
+      {
+       "prompt": "Hypothetical (not in the sim): a Zn/Cu cell has [Zn²⁺] = 2.0 M and [Cu²⁺] = 0.010 M. Use the Nernst equation to find Ecell at 298 K. Is it more or less than 1.10 V?",
+       "answer": "Q = 2.0/0.010 = 200. Ecell = 1.10 − (8.314 × 298)/(2 × 96485) × ln 200 = 1.10 − (0.01284)(5.30) = **1.03 V**, less than 1.10 V because Q > 1 (closer to equilibrium).",
+       "lines": 3,
+       "points": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Disturbing Equilibrium and Electrolysis",
+   "sim_screen": "Part 94 · Sim 4 · Guided, screens 33–49",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Continue with **Zn/Cu** at equilibrium. When asked, click the **Zn²⁺** bottle to shake more Zn²⁺ into the first beaker.",
+      "When asked to run the reverse reaction, press **▶ Play the reaction** or drag the dot back to equilibrium.",
+      "Drag the **Power Source** onto the cell. Set the **I — current** slider to **5.0 A**. **Stop and do the calculation below.** Then set the **t — time** slider to **1800 s**."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Zn²⁺ is a product. If you add more Zn²⁺ at equilibrium, which way will the reaction go?",
+       "lines": 2,
+       "answer": "Backward (toward reactants): adding product makes Q > K, so the reverse reaction is favored (Le Châtelier)."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "After shaking in more Zn²⁺, ΔG is {{positive}} and Ecell is {{negative}}: the forward reaction is not favored right now.",
+      "Looking at it as the reverse reaction, the electrodes swap roles: Cu(s) is now the {{anode}} and Zn(s) the cathode, and E°cell = {{−1.10}} V.",
+      "A cell where a redox reaction happens spontaneously and produces an electric current is a {{Galvanic}} or Voltaic cell.",
+      "In an {{Electrolytic}} cell, an electric current has to be supplied so the {{non-spontaneous}} reaction proceeds.",
+      "Knowing I (current) and t (time), we can calculate q, the {{charge}} in coulombs. Dividing q by Faraday's constant gives the moles of {{e⁻}}.",
+      "In electrolysis the zinc electrode gets {{coated}} with zinc instead of being consumed. This is often used for coating one metal with another."
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Just after adding Zn²⁺",
+      "Ecell (V)",
+      "ΔG (kJ)",
+      "Which reaction is favored?"
+     ],
+     "rows": [
+      [
+       "Forward view (screens 34–35)",
+       "{{−0.01}}",
+       "{{+2}}",
+       "{{reverse}}"
+      ],
+      [
+       "Reverse view (screens 36–37)",
+       "{{+0.01}}",
+       "{{−2}}",
+       "{{reverse}}"
+      ]
+     ],
+     "col_widths": [
+      2.3,
+      1.1,
+      1.1,
+      2.3
+     ],
+     "note": "Read Ecell and ΔG from the equation strip. The voltmeter itself keeps reading −0.01 V until the reverse run reaches equilibrium."
+    },
+    {
+     "type": "equations",
+     "items": [
+      "q = I × t",
+      "moles e⁻ = q / F",
+      "moles Zn = moles e⁻ / {{2}}",
+      "mass Zn = M × moles Zn   (M = 65.38 g/mol)"
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Before you set the time: calculate the mass of Zn plated by 5.0 A for 1800 s.",
+       "answer": "q = 5.0 A × 1800 s = **9000 C**. moles e⁻ = 9000 / 96485 = **0.0933 mol**. moles Zn = 0.0933 / 2 = **0.0466 mol**. mass = 0.0466 × 65.38 = **3.05 g Zn** (the sim shows 0.093, 0.047 and 3.05).",
+       "lines": 4,
+       "points": 4
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "I (A)",
+      "t (s)",
+      "q (C)",
+      "mol e⁻",
+      "mol Zn",
+      "mass Zn (g)"
+     ],
+     "rows": [
+      [
+       "5.0",
+       "1800",
+       "{{9000}}",
+       "{{0.093}}",
+       "{{0.047}}",
+       "{{3.05}}"
+      ]
+     ],
+     "col_widths": [
+      0.9,
+      0.9,
+      1.1,
+      1.1,
+      1.1,
+      1.3
+     ]
+    },
+    {
+     "type": "graph",
+     "prompt": "Shape only (the sim's graph is not to scale): sketch the mass of each electrode during electrolysis.",
+     "x_label": "Time",
+     "y_label": "Electrode mass",
+     "answer": "Zn electrode: straight line going up. Cu electrode: straight line going down. Both linear, because a constant current moves electrons at a constant rate.",
+     "height": 1.6
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "The same number of moles of Cu dissolves as Zn plates (0.047 mol). Cu's molar mass is 63.55 g/mol. Is the mass of Cu lost the same as the mass of Zn gained? Show your work.",
+       "answer": "No. Cu lost = 0.0466 × 63.55 = **2.96 g**, Zn gained = 3.05 g. Equal moles (both 2e⁻ per atom), but different molar masses, so different grams.",
+       "lines": 3
+      },
+      {
+       "prompt": "Compare the galvanic cell you built earlier with the electrolytic cell. For each, give the direction of the reaction and the sign of ΔG.",
+       "answer": "Galvanic: forward reaction Zn + Cu²⁺ → Zn²⁺ + Cu, ΔG < 0, the cell produces current. Electrolytic: reverse reaction Zn²⁺ + Cu → Zn + Cu²⁺, ΔG > 0, an outside power source must push it.",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Free Explore: pick Sn(s) + Cu+2(aq). Predict E°cell (0.34 − (−0.14) = 0.48 V) and ΔG° (−93 kJ) before you check. Then try 5.0 A for 1800 s: Sn has M = 118.71 g/mol, so more grams (5.54 g) plate for the same charge."
+    }
+   ]
+  }
+ ],
+ "conclusion": [
+  {
+   "prompt": "Link the unit together: for the Zn/Cu cell, E°cell = +1.10 V. What does this tell you about ΔG°, K and thermodynamic favorability? Does it tell you how fast the cell reacts? Use a sentence from the Gibbs lab.",
+   "answer": "E° > 0 → ΔG° = −nFE° = −212 kJ < 0 → K = 1.6 × 10³⁷ ≫ 1: the forward reaction is thermodynamically favored and product-favored. It says nothing about rate: \"ΔG° does not tell you how fast it occurs; even a favorable reaction can be very slow.\"",
+   "lines": 3
+  },
+  {
+   "prompt": "Use the sim's NH₃ numbers: ΔS°rx = −198.3 J/K and ΔG°rx = −33.4 kJ at 298 K. Find ΔH°rx. Then find the temperature above which making NH₃ is no longer favored (assume ΔH° and ΔS° stay constant). Which sign case from the Gibbs lab is this?",
+   "answer": "ΔH° = ΔG° + TΔS° = −33.4 + (298)(−0.1983) = **−92.5 kJ**. ΔG° = 0 at T = ΔH°/ΔS° = −92.5 / −0.1983 = **466 K**; above that it is unfavorable. ΔH° < 0, ΔS° < 0: the round 3 case, favorable at low T.",
+   "lines": 4
+  },
+  {
+   "prompt": "Every lab in this unit had something increasing or decreasing toward a limit: entropy during heating, ΔG° during a temperature change, Ecell during the run. Explain why the voltmeter reached 0.00 V while the entropy of the heated water kept rising.",
+   "answer": "The cell reaction moves toward equilibrium, where ΔG = 0 and Ecell = 0, and then stops. The water was being given heat from outside at every step, so its entropy kept increasing (ΔS = q/T > 0 for each step). Accept: the cell is a closed reaction reaching equilibrium; the heating is driven by an outside energy source.",
+   "lines": 3
+  }
+ ],
+ "key_notes": [
+  "**Unit 9 is not in the site catalog.** The four labs ship in the deployed Thermodynamics Lab bundle but appear only by direct URL: chemsims.app/sims/thermodynamics?part=91 … ?part=94 (add &mode=freeExplore for Free Explore). They are not on the sim's home page or its menu drawer, and the site's AP Unit 9 list is empty.",
+  "**Units:** Part 91 writes entropy in J/°C (same numbers as J/K). Part 92's narration says ΔG°f is in J and the beaker callout shows S° values as \"kJ\"; the table values are really S° in J/K·mol and ΔG°f in kJ/mol. Part 93 uses J/mol and J/(mol·K) (AP problems usually give ΔH° in kJ: remind students to convert). The worksheet uses J/K and kJ/mol.",
+  "**Part 91 mass setting changes every answer.** Ice mass defaults to 7 g (range 5–20 g). All Part 91 answers are for 7 g. The original slide deck's 18 / 90 / 130 J/°C are for 15 g.",
+  "**Part 91 uses T(K) = T(°C) + 273** (not 273.15) and ΔS = q/T(avg) for heating legs. The exact value is m·c·ln(T₂/T₁): 9.18 J/K for the water liquid leg, versus the sim's 9.10. Accept the sim's 9.",
+  "**Part 91 water data:** c(liquid) 4.2, c(vapor) 1.9 J/g·°C, ΔH(vap) 2230 J/g (textbooks: 4.184, 2.0, 2260).",
+  "**Part 92 S° and ΔG°f values match standard tables** to within 0.3. 2Na is one row with S° = 102.6 (2 × 51.3). The table heads the S° column \"ΔS°f\"; AP calls these standard molar entropies.",
+  "**Part 93 values are invented model numbers** for a hypothetical A + B → C (the worksheet says so). In Guided mode students choose the slider magnitudes; the Set Up box names the default values so everyone's table matches. Round 2 accepts only ΔS° = 15 or 16 at ΔH° = +5000; round 3 accepts 16–17.",
+  "**Part 93 temperature carries over** from round 2 into round 3. If a student stops round 2 at 313 K instead of 320 K, round 3 starts at +8 J/mol and their round-2 final ΔG° is −8 J/mol. Both are correct for their T.",
+  "**Part 94: use only Zn/Cu for graded work.** The Al/Ag option labels Ag⁺ as \"Ag+3\" / [Ag³⁺], writes Q without the cube on [Ag⁺], and the half-reaction text uses n = 3 as each ion's charge.",
+  "**Part 94 numbers:** E° = 1.10 V, ΔG° = −212 kJ, K shown as 1.6×10³⁷ (R = 8.314, T = 298 K). The disturbance multiplies Q by 2.5, giving Ecell −0.01 V and ΔG +2 kJ. Electrolysis: I = 1–10 A (0.5 A steps), t = 100–3600 s (100 s steps).",
+  "**Part 94 Faraday rounding:** for 5.0 A × 1800 s the strip prints 3.05 = 65.38 x 0.047, but 65.38 × 0.047 = 3.07. The sim multiplies the unrounded moles (0.04664). Accept 3.05–3.07 g.",
+  "**The free-energy graph (Part 94) and the mass–time graph are schematic.** The worksheet asks only for their shapes.",
+  "AP topics 9.4 (kinetic control) and 9.6 (coupled reactions) are not covered by the sim; see the lesson plan's prep."
+ ],
+ "lesson_plan": {
+  "period_minutes": 50,
+  "ap_topics": [
+   "9.1 Introduction to Entropy",
+   "9.2 Absolute Entropy and Entropy Change",
+   "9.3 Gibbs Free Energy and Thermodynamic Favorability",
+   "9.4 Thermodynamic and Kinetic Control (one sentence only: ΔG° does not give the rate)",
+   "9.5 Free Energy and Equilibrium (ΔG° = −RT ln K in Part 94; K from ΔG° as a worksheet calculation)",
+   "9.7 Galvanic (Voltaic) and Electrolytic Cells",
+   "9.8 Cell Potential and Free Energy",
+   "9.9 Cell Potential Under Nonstandard Conditions",
+   "9.10 Electrolysis and Faraday's Law"
+  ],
+  "sim_location": "Thermodynamics Lab, Unit 9 parts, by direct link only: chemsims.app/sims/thermodynamics?part=91 (entropy), ?part=92 (absolute entropy), ?part=93 (Gibbs), ?part=94 (electrochemistry). Add &mode=freeExplore for Free Explore.",
+  "essential_question": "How do entropy, enthalpy and temperature decide whether a reaction is thermodynamically favored, and how does a battery turn that free energy into electrical work?",
+  "objectives": [
+   "Calculate ΔS for phase changes and heating with ΔS = q/T, and explain the sign at the particle level.",
+   "Calculate ΔS°rxn from standard molar entropies and ΔG°rxn from ΔG°f values.",
+   "Use ΔG° = ΔH° − TΔS° to decide when a reaction is favored, and find the crossover temperature.",
+   "Relate E°cell, ΔG° and K (ΔG° = −nFE°, ΔG° = −RT ln K) and use the Nernst equation.",
+   "Distinguish galvanic and electrolytic cells and use q = It and Faraday's constant to find the mass plated."
+  ],
+  "materials": [
+   "Calculators (with eˣ and ln)",
+   "A short table of standard reduction potentials (optional)"
+  ],
+  "prep": [
+   "**The Unit 9 labs are not on the ChemSims site's sim list, the sim's home page, or its menu**, so they can't be assigned through the site. Post these four links for students: chemsims.app/sims/thermodynamics?part=91, ?part=92, ?part=93, ?part=94. If a student presses Home or uses the ☰ menu, they land in the Unit 6 labs; they must reopen the link.",
+   "Run each lab once in Guided mode with the worksheet's settings: Part 91 with water at 7 g; Part 93 with the four slider values in the Set Up box; Part 94 with Zn/Cu, 5.0 A and 1800 s.",
+   "Part 94 has 49 screens and three drag steps (voltmeter, thermometer, power source). Check that dragging works on your students' devices; on a touchscreen the drag can be fiddly.",
+   "The sim doesn't cover 9.4 kinetic control (beyond one sentence) or 9.6 coupled reactions. Use your usual lesson for them (e.g., diamond → graphite for kinetic control; ATP hydrolysis or the smelting of metal oxides with carbon for coupling).",
+   "Decide before day 6 whether students self-grade or you grade (see the shared grading section)."
+  ],
+  "vocabulary": [
+   "entropy (S)",
+   "Second Law of Thermodynamics",
+   "standard molar entropy (S°)",
+   "Gibbs free energy (ΔG°)",
+   "thermodynamically favored",
+   "exergonic / endergonic",
+   "crossover temperature",
+   "anode / cathode",
+   "salt bridge",
+   "cell potential (E°cell)",
+   "Faraday's constant (F)",
+   "Nernst equation",
+   "galvanic (voltaic) cell",
+   "electrolytic cell"
+  ],
+  "prior_knowledge": [
+   "q = mcΔT, heat of fusion/vaporization and heating curves (Unit 6).",
+   "Enthalpy of reaction from formation values (Unit 6).",
+   "Q vs. K and Le Châtelier's principle (Unit 7).",
+   "Oxidation numbers and half-reactions (Unit 4)."
+  ],
+  "days": [
+   {
+    "day": 1,
+    "title": "Teacher demo: entropy and melting",
+    "goal": "Introduce entropy and ΔS = q/T, and model how to record sim data on the worksheet.",
+    "worksheet_pages": "Cover + pp. 1–2",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: \"Which has more ways to arrange its particles: an ice cube or a puddle?\""
+     ],
+     [
+      "5–35",
+      "Demo of Part 91, slides 1–17 (script below); students fill in pp. 1–2"
+     ],
+     [
+      "35–45",
+      "Pairs finish the calculation and question"
+     ],
+     [
+      "45–50",
+      "Exit check: ΔSₘₑₗₜ for 15 g (18 J/K)"
+     ]
+    ],
+    "demo_script": [
+     {
+      "do": "Project chemsims.app/sims/thermodynamics?part=91. Point out the tab title \"Unit 9: Applications of Thermodynamics\" and the Guided tab.",
+      "say": "This lab is only reachable by this link, so bookmark it.",
+      "students": "Write the URL on the cover."
+     },
+     {
+      "do": "Press Next through slides 1–3 (First Law, Second Law).",
+      "say": "What does \"cannot be transferred with 100% efficiency\" mean for a car engine? (Expected: some energy always ends up as waste heat.)",
+      "students": "p. 1 notes, blanks 1–2."
+     },
+     {
+      "do": "Press Next through slides 4–7 (balls in a box).",
+      "say": "If the box gets smaller, do the balls have more or fewer places to be? (Fewer → entropy decreases.)",
+      "students": "p. 1 notes, blanks 3–4."
+     },
+     {
+      "do": "Show slide 8 (units).",
+      "say": "The sim writes J/°C. We'll write J/K. Why are the numbers the same? (A kelvin and a degree Celsius are the same size.)",
+      "students": "Units blanks."
+     },
+     {
+      "do": "On slide 9, open Choose a Substance and pick Water. Press Next through slides 10–12.",
+      "say": "ΔS = q/T. Why must T be in kelvin? (Dividing by 0 °C would be impossible; entropy is measured from absolute zero.)",
+      "students": "ΔS = q/T blank."
+     },
+     {
+      "do": "Point to Ice mass: 7 g. Ask students to predict the sign of ΔS for melting.",
+      "say": "Write your prediction before I touch the flame. (Expected: positive.)",
+      "students": "PREDICT box."
+     },
+     {
+      "do": "Show the fusion equation (2331 / 273 = 7(333) / 273). Pause: have students calculate ΔSₘₑₗₜ.",
+      "say": "The sim says the heat of fusion is 333 J/g. Calculate q and ΔSₘₑₗₜ now. (2331 J, 273 K, 9 J/K.)",
+      "students": "CALCULATE box."
+     },
+     {
+      "do": "Move the Heat slider slowly through the melting plateau. Stop when the bubble reads \"Entropy increased by 9 J/°C\".",
+      "say": "The thermometer never moved. So where did the entropy come from? (Heat broke up the solid's order.)",
+      "students": "Data table row; check calc."
+     },
+     {
+      "do": "Point at the graph at the top: it shows temperature vs. energy, not entropy.",
+      "say": "The bubble says the change is noticeable in the graph, but this graph shows temperature. The entropy number is in the equation panel.",
+      "students": "ANALYZE question."
+     },
+     {
+      "do": "Stop at the end of melting. Do not go on to heating the liquid.",
+      "say": "Tomorrow you'll finish the heating curve yourselves and compare three substances.",
+      "students": "Self-check box, p. 2."
+     }
+    ]
+   },
+   {
+    "day": 2,
+    "title": "Student sim work: entropy of heating and of reactions",
+    "goal": "Finish Part 91 and calculate ΔS°rxn and ΔG°rxn in Part 92.",
+    "worksheet_pages": "pp. 3–7",
+    "agenda": [
+     [
+      "0–5",
+      "Review: ΔSₘₑₗₜ = 9 J/K for 7 g; why positive?"
+     ],
+     [
+      "5–30",
+      "Part 91: pp. 3–5 (water, ethanol, acetone)"
+     ],
+     [
+      "30–47",
+      "Part 92: pp. 6–7 (NH₃, HCl, NaOH)"
+     ],
+     [
+      "47–50",
+      "Checkpoint"
+     ]
+    ],
+    "circulate": [
+     "Ice mass reads 7 g for every substance.",
+     "Kelvin temperatures in T(avg) (323 K, not 50 °C).",
+     "Calculation done before the sim shows ΔSᵥₐₚ.",
+     "In Part 92, students multiply S°(H₂) by 3.",
+     "ΔG°rx in kJ, not J."
+    ],
+    "checkpoint": "Water total ΔS = 61 J/K; NH₃ ΔS°rx = −198.3 J/K.",
+    "early_finishers": "Part 91 Free Explore with 20 g: predict each ΔS first."
+   },
+   {
+    "day": 3,
+    "title": "Student sim work: Gibbs free energy",
+    "goal": "Use ΔG° = ΔH° − TΔS° across the four sign cases.",
+    "worksheet_pages": "pp. 8–10",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: is every exothermic reaction favored?"
+     ],
+     [
+      "5–40",
+      "Part 93: four rounds, pp. 8–10"
+     ],
+     [
+      "40–47",
+      "K from ΔG° calculation (9.5)"
+     ],
+     [
+      "47–50",
+      "Checkpoint"
+     ]
+    ],
+    "circulate": [
+     "Slider values match the Set Up box (−2500/+25, +5000/+16, −5000/−16, +2500/−25).",
+     "Round 2 heated to 320 K, round 3 cooled to 298 K.",
+     "Calculations written before clicking B.",
+     "Signs on ΔG°, and J/mol units.",
+     "Students can say why round 3 needed cooling."
+    ],
+    "checkpoint": "Round 2: ΔG° = +232 J/mol at 298 K, crossover 312.5 K, −120 J/mol at 320 K.",
+    "early_finishers": "Free Explore: find a ΔH°/ΔS° pair whose crossover is exactly 300 K (e.g. +4500 and +15)."
+   },
+   {
+    "day": 4,
+    "title": "Student sim work: galvanic cell, E°, ΔG° and K",
+    "goal": "Build the Zn/Cu cell and connect E°cell to ΔG°, K and the Nernst equation.",
+    "worksheet_pages": "pp. 11–15",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: oxidation numbers in Zn + Cu²⁺ → Zn²⁺ + Cu"
+     ],
+     [
+      "5–25",
+      "Part 94 screens 1–19: pp. 11–12"
+     ],
+     [
+      "25–45",
+      "Screens 20–33: pp. 13–15"
+     ],
+     [
+      "45–50",
+      "Checkpoint"
+     ]
+    ],
+    "circulate": [
+     "Zn/Cu chosen (not Al/Ag).",
+     "E°anode written as −0.76 V with its sign.",
+     "ΔG° converted to kJ (−212).",
+     "K calculated before dragging in the thermometer.",
+     "The run stopped at \"Equilibrium has been reached!\""
+    ],
+    "checkpoint": "E°cell = 1.10 V, ΔG° = −212 kJ, K = 1.6 × 10³⁷; voltmeter 0.00 V at equilibrium.",
+    "early_finishers": "Nernst calculation for [Zn²⁺] = 2.0 M, [Cu²⁺] = 0.010 M (1.03 V)."
+   },
+   {
+    "day": 5,
+    "title": "Student sim work: disturbing equilibrium and electrolysis",
+    "goal": "Interpret the reverse reaction and use Faraday's law.",
+    "worksheet_pages": "pp. 16–20 (incl. Conclusion)",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: what makes a battery dead?"
+     ],
+     [
+      "5–30",
+      "Part 94 screens 33–49: pp. 16–18"
+     ],
+     [
+      "30–45",
+      "Conclusion questions"
+     ],
+     [
+      "45–50",
+      "AP practice FRQ, part (a)–(b)"
+     ]
+    ],
+    "circulate": [
+     "I set to 5.0 A and calculation done before t is set.",
+     "Moles of Zn = moles e⁻ ÷ 2.",
+     "Students don't copy \"grams of Cu consumed = grams of Zn\".",
+     "Galvanic vs. electrolytic: direction and sign of ΔG."
+    ],
+    "checkpoint": "5.0 A × 1800 s → 9000 C → 0.0933 mol e⁻ → 3.05 g Zn.",
+    "early_finishers": "Free Explore with Sn/Cu: predict E°, ΔG° and the mass of Sn plated."
+   },
+   {
+    "day": 6,
+    "title": "Grading and wrap-up",
+    "goal": "Grade the worksheet and tie the unit together.",
+    "agenda": [
+     [
+      "0–25",
+      "Grading (self-grade with the key, or teacher grades; see the shared section)"
+     ],
+     [
+      "25–40",
+      "Discussion: the four ΔH°/ΔS° sign cases, and E° ↔ ΔG° ↔ K"
+     ],
+     [
+      "40–50",
+      "Exit ticket"
+     ]
+    ]
+   }
+  ],
+  "misconceptions": [
+   {
+    "misconception": "Exothermic reactions are always favored.",
+    "sim_fix": "Part 93 round 3 is exothermic (ΔH° = −5000 J/mol) but has ΔG° = +120 J/mol at 320 K; it only becomes favored when cooled."
+   },
+   {
+    "misconception": "A negative ΔG° means the reaction is fast.",
+    "sim_fix": "Part 93's second intro slide: \"That does not tell you how fast it occurs; even a favorable reaction can be very slow.\""
+   },
+   {
+    "misconception": "A negative ΔG° means the reaction goes to completion.",
+    "sim_fix": "Round 3's ΔG° = −232 J/mol gives K ≈ 1.1; the round 2–3 closer says a real mixture would stop partway, at equilibrium."
+   },
+   {
+    "misconception": "Temperature has no effect on entropy unless there is a phase change.",
+    "sim_fix": "Part 91's heating legs add entropy (9 J/K for heating 7 g of liquid water from 0 to 100 °C) with no change of state."
+   },
+   {
+    "misconception": "The anode is always positive.",
+    "sim_fix": "Part 94 says electrons flow from the negative side (anode) to the positive side (cathode) in the galvanic cell."
+   }
+  ],
+  "sim_cautions": [
+   "The Unit 9 labs open only from the direct link. The ☰ menu and Home lead to the Unit 6 labs, and the \"Next chapter\" button at the end of Part 91 opens the Unit 6 bond enthalpy lab, not Part 92.",
+   "Part 91 calls water's heat of vaporization the \"Heat of Fusion\" at the start of boiling, and says the 42 J/°C was \"for the melting process\". Both are about boiling.",
+   "Part 91 says the entropy change is \"more noticeable in the graph at the top\", but that graph shows temperature, not entropy.",
+   "Part 92 says ΔG°f is in J and the beaker callout labels S° values (like 191.5) as kJ. Entropies are J/K·mol and Gibbs energies are kJ/mol.",
+   "Part 92's last slide says ΔG is negative \"because the reaction is spontaneous\". It's the other way around: a negative ΔG° is what tells us it is favored. For NaOH it also gives the reason \"all gaseous\", but Na and NaOH are solids.",
+   "Part 93's beaker shows all-or-nothing reactions. Rounds 2 and 3 have K ≈ 1.05–1.10, so a real mixture would be only partly converted.",
+   "In Part 94, use Zn/Cu. The Al/Ag reaction mislabels Ag⁺ as Ag³⁺ and leaves the cube off [Ag⁺] in Q.",
+   "Part 94 reads E° for zinc as \"0.76\" with no minus sign; the equation strip shows the correct −0.76.",
+   "Part 94's electrolysis text says the grams of Cu consumed equal the grams of Zn plated (only the moles are equal) and that the zinc electrode is coated \"with Zn²⁺ ions\" (it is coated with zinc metal)."
+  ],
+  "differentiation": {
+   "support": [
+    "Pair students; one drives the sim, one records, then swap at each new part.",
+    "Give the equations for each page on an index card.",
+    "For the Gibbs and electrolysis sections, pre-fill the first row of the table together."
+   ],
+   "extension": [
+    "Compare the sim's ΔS = q/T(avg) with the exact m·c·ln(T₂/T₁) for the liquid water leg (9.10 vs. 9.18 J/K).",
+    "Use Part 92's ΔS° and ΔG° for HCl to find ΔH° (−184.6 kJ) and compare with Unit 6's bond-enthalpy result (−184 kJ).",
+    "Find the time needed to plate 1.00 g of Zn at 5.0 A (590 s)."
+   ]
+  },
+  "exit_ticket": [
+   {
+    "question": "A reaction has ΔH° = +5000 J/mol and ΔS° = +16 J/(mol·K). Is it favored at 298 K? At 320 K?",
+    "answer": "No at 298 K (ΔG° = +232 J/mol); yes at 320 K (ΔG° = −120 J/mol). It is favored above 312.5 K."
+   },
+   {
+    "question": "A cell has E°cell = +1.10 V and n = 2. What is the sign of ΔG°, and is K greater or less than 1?",
+    "answer": "ΔG° = −212 kJ (negative), K ≫ 1 (1.6 × 10³⁷)."
+   },
+   {
+    "question": "How many grams of Zn are plated by 9000 C?",
+    "answer": "9000/96485 = 0.0933 mol e⁻ → 0.0466 mol Zn → 3.05 g."
+   }
+  ],
+  "ap_practice": [
+   {
+    "question": "Multiple choice. For a reaction, ΔH° = −5000 J/mol and ΔS° = −16 J/(mol·K). Which is true? (A) Favored at all temperatures. (B) Favored only below 312.5 K. (C) Favored only above 312.5 K. (D) Never favored.",
+    "answer": "(B). ΔG° = ΔH° − TΔS° is negative only while |ΔH°| > T|ΔS°|, i.e. T < 5000/16 = 312.5 K (Part 93, round 3)."
+   },
+   {
+    "question": "FRQ. A galvanic cell is built from Zn(s) in 1.00 M Zn²⁺ and Cu(s) in 1.00 M Cu²⁺ at 298 K. E°(Cu²⁺/Cu) = +0.34 V, E°(Zn²⁺/Zn) = −0.76 V. (a) Write the anode half-reaction. (b) Calculate E°cell. (c) Calculate ΔG° in kJ/mol rxn. (d) More Zn(NO₃)₂ is dissolved in the anode beaker. Does Ecell increase, decrease or stay the same? Justify with Q. (e) The cell is then recharged as an electrolytic cell at 5.0 A for 1800 s. Calculate the mass of Zn deposited.",
+    "answer": "(a) Zn(s) → Zn²⁺(aq) + 2e⁻. (b) 0.34 − (−0.76) = +1.10 V. (c) ΔG° = −(2)(96485)(1.10) = −2.12 × 10⁵ J = −212 kJ/mol rxn. (d) Decreases: [Zn²⁺] is in the numerator of Q = [Zn²⁺]/[Cu²⁺], so Q increases and Ecell = E° − (RT/nF) ln Q goes down. (e) q = 9000 C; 0.0933 mol e⁻; 0.0466 mol Zn; 3.05 g Zn."
+   }
+  ]
+ }
+}

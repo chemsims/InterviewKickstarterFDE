@@ -1,0 +1,1145 @@
+{
+ "unit": 4,
+ "unit_title": "Chemical Reactions",
+ "worksheet_title": "Chemical Reactions",
+ "sim_name": "Chemical Reactions + Redox Reactions Lab",
+ "pages": [
+  {
+   "title": "Balanced Reactions",
+   "sim_screen": "Chemical Reactions · Balanced Reactions · Guided",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Chemical Reactions → Balanced Reactions** in **Guided** mode (not Free Explore).",
+      "Open the menu at the top right and choose the first reaction, **CH₄ + O₂ → CO₂ + H₂O**. Read each message and press **Next**.",
+      "Add a molecule by dragging it into its beaker or by clicking it. Tap a molecule in a beaker to take it out."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Methane burns: CH₄ + O₂ → CO₂ + H₂O. How many O₂ molecules do you think one CH₄ molecule needs? Explain by counting atoms.",
+       "lines": 2,
+       "answer": "2 O₂. One CH₄ makes 1 CO₂ (2 O) and 2 H₂O (2 O, to hold the 4 H), so the products need 4 O atoms = 2 O₂. Accept any prediction with an atom-counting reason."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "A reaction has two parts: the left part, where the {{reactants}} are, and the right part, where the {{products}} are.",
+      "{{Stoichiometric Coefficients}} are written on the left of a compound. They tell how many {{molecules}} of it there are.",
+      "All chemical reactions have to be {{balanced}}: there has to be the same amount of {{atoms}} on each side of the equation.",
+      "Each balance scale tracks one {{element}}. A green check means that element has the same number of atoms on both sides.",
+      "If every coefficient is a multiple of the right answer, the sim says the atoms match, but each coefficient could be {{smaller}}.",
+      "You can only add or remove whole {{molecules}}. You can never change a formula, such as H₂O."
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table",
+     "subtitle": "Balance each reaction in the menu. Record the coefficients and the atom count on EACH side",
+     "columns": [
+      "Reaction (as the menu shows it)",
+      "Balanced coefficients",
+      "Atoms on each side",
+      "Molecules: left → right"
+     ],
+     "col_widths": [
+      2.3,
+      1.5,
+      1.7,
+      1.4
+     ],
+     "first_col_left": true,
+     "rows": [
+      [
+       "CH₄ + O₂ → CO₂ + H₂O",
+       "{{1, 2, 1, 2}}",
+       "{{C 1, H 4, O 4}}",
+       "{{3 → 3}}"
+      ],
+      [
+       "H₂O → H₂ + O₂",
+       "{{2, 2, 1}}",
+       "{{H 4, O 2}}",
+       "{{2 → 3}}"
+      ],
+      [
+       "N₂ + H₂ → NH₃",
+       "{{1, 3, 2}}",
+       "{{N 2, H 6}}",
+       "{{4 → 2}}"
+      ],
+      [
+       "N₂ + H₂O → NH₃ + O₂",
+       "{{2, 6, 4, 3}}",
+       "{{N 4, H 12, O 6}}",
+       "{{8 → 7}}"
+      ],
+      [
+       "NH₃ + O₂ → NO₂ + H₂O",
+       "{{4, 7, 4, 6}}",
+       "{{N 4, H 12, O 14}}",
+       "{{11 → 10}}"
+      ]
+     ],
+     "note": "Write the coefficients in order, left to right. A coefficient of 1 is not written in an equation, but write it here."
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "In N₂ + 3H₂ → 2NH₃, four molecules become two. Is matter still conserved? Use the balance scales as evidence.",
+       "lines": 3,
+       "answer": "Yes. Both scales balance: 2 N and 6 H on each side. Atoms are conserved (so mass is); the number of molecules is not. Accept: atoms are rearranged, not created or destroyed."
+      },
+      {
+       "prompt": "For NH₃ + O₂ → NO₂ + H₂O, why is the O₂ coefficient 7 and not 3.5?",
+       "lines": 2,
+       "answer": "The products have 4×2 + 6×1 = 14 O atoms, so 7 O₂. Coefficients count whole molecules (you can only add whole molecules), so use the smallest whole numbers: 4, 7, 4, 6."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "In Guided mode, build 2CH₄ + 4O₂ → 2CO₂ + 4H₂O. What does the sim tell you? Then take molecules out until it says the equation is balanced."
+    }
+   ]
+  },
+  {
+   "title": "Limiting Reagent",
+   "sim_screen": "Chemical Reactions · Limiting Reagent · Guided",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Limiting Reagent** in **Guided** mode. Choose **Oxalic Acid + Sodium Bicarbonate**. Press **Next** through the messages.",
+      "When the sim asks you to set the volume, drag the beaker slider **all the way to the top: 0.70 L**. Then press **Next**.",
+      "Click the **H₂C₂O₄** bottle **3 times**. Each click adds **5 molecules** (15 total). **Wait for the molecules to land before you click again**: fast clicks get lost.",
+      "Then follow the messages: shake in **NaHCO₃**, press **Next** to run the reaction, and add extra NaHCO₃ when asked."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "The sim shows 2NaHCO₃(s) + H₂C₂O₄(aq) → 2H₂O(l) + 2CO₂(g) + Na₂C₂O₄(aq). After all the H₂C₂O₄ has reacted, will shaking in more NaHCO₃ make more Na₂C₂O₄? Why?",
+       "lines": 1,
+       "answer": "No. The H₂C₂O₄ is used up, so there is nothing left for NaHCO₃ to react with. (The sim: NaHCO₃ \"is accumulating. But the reaction is not taking place.\") Accept any answer with a reason."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Using the relations between compounds in a reaction to find data is called {{Stoichiometry}}.",
+      "(aq) stands for {{aqueous}}: the compound is {{dissolved in water}}. (l) is liquid, (s) solid and (g) gaseous.",
+      "1 mol = {{6.02214076 × 10²³}} particles, the {{Avogadro}} number.",
+      "{{Molarity}} (M) expresses concentration in units of {{mol/L}}. Moles = {{V × M}}.",
+      "Yield Percentage = {{Actual}} Yield ÷ {{Theoretical}} Yield × 100.",
+      "The {{Limiting Reagent}} limits the reaction because there is a shortage of it. The other reactant is the {{Excess Reactant}}: it accumulates instead of reacting."
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table",
+     "subtitle": "Copy the sim's rounded numbers from the equation panel and the messages",
+     "columns": [
+      "Reaction",
+      "V (L)",
+      "M limiting (mol/L)",
+      "n limiting (mol)",
+      "n excess needed (mol)",
+      "Theoretical mass (g)",
+      "Actual mass (g)",
+      "Yield"
+     ],
+     "col_widths": [
+      1.75,
+      0.5,
+      0.8,
+      0.75,
+      0.85,
+      0.9,
+      0.75,
+      0.6
+     ],
+     "first_col_left": true,
+     "rows": [
+      [
+       "1. H₂C₂O₄ + NaHCO₃",
+       "{{0.70}}",
+       "{{0.08}}",
+       "{{0.06}}",
+       "{{0.11}}",
+       "{{7.41}}",
+       "{{7.26}}",
+       "{{98%}}"
+      ],
+      [
+       "2. HNO₃ + NaOH",
+       "{{0.70}}",
+       "{{0.08}}",
+       "{{0.06}}",
+       "{{0.06}}",
+       "{{4.70}}",
+       "{{4.51}}",
+       "{{96%}}"
+      ]
+     ],
+     "note": "Fill in row 2 after you run reaction 2 (choose **Nitric Acid + Sodium Hydroxide**, top of the slider again, 3 slow clicks)."
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Check reaction 1. The sim rounds M to 0.08; the unrounded value for its 15 molecules is 0.0789 mol/L. Calculate n(H₂C₂O₄) and the theoretical mass of Na₂C₂O₄ (molar mass 134 g/mol, 1 : 1 ratio).",
+       "lines": 2,
+       "answer": "n = V × M = 0.70 L × 0.0789 mol/L = **0.0553 mol** (sim shows 0.06). m = 0.0553 mol × 134 g/mol = **7.41 g** ✓ matches the sim."
+      },
+      {
+       "prompt": "BEFORE you run reaction 2: NaOH(aq) + HNO₃(aq) → H₂O(l) + NaNO₃(aq), with the same 0.70 L and 0.0789 M. Calculate the moles of NaOH needed and the theoretical mass of NaNO₃ (85 g/mol).",
+       "lines": 2,
+       "answer": "n(HNO₃) = 0.70 × 0.0789 = 0.0553 mol. Ratio 1 : 1, so NaOH needed = **0.0553 mol** (sim shows 0.06). m(NaNO₃) = 0.0553 × 85 = **4.70 g**."
+      },
+      {
+       "prompt": "AFTER reaction 2: use the sim's actual and theoretical masses to calculate the percent yield.",
+       "lines": 2,
+       "answer": "4.51 g ÷ 4.70 g × 100 = **96%** ✓ (reaction 1: 7.26 ÷ 7.41 × 100 = 98%)."
+      }
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "In reaction 1, which reactant is the limiting reagent? Give evidence from what happened when you shook in extra NaHCO₃, and say why the actual mass is still below the theoretical mass.",
+       "lines": 2,
+       "answer": "H₂C₂O₄. After it was used up, the extra NaHCO₃ just piled up, no more product formed and the yield stayed 98%. Actual < theoretical because in real life the ideal value is not obtained (some product is lost). Accept both ideas."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Precipitation",
+   "sim_screen": "Chemical Reactions · Precipitation · Guided",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Precipitation** in **Guided** mode. Choose **M₂CO₃(aq) + CaCl₂(aq) → CaCO₃(s) + 2MCl(aq)**. Drag the volume slider **to the top: 0.700 L**.",
+      "Click the **CaCl₂** shaker once to pick it up, then **4 more times**: **20 molecules** (point at it to check). Press **Next**.",
+      "Pick up the **M₂CO₃** shaker and pour **2 times only (10 molecules)**. Write down the grams it shows. M is random, so your partner may get a different metal."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Which product is the precipitate? How can you tell from the equation alone?",
+       "lines": 1,
+       "answer": "CaCO₃. It is the product marked (s), a solid, so it settles out of the solution as a precipitate."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "One way to know a reaction is a precipitation reaction: one of the products is a {{solid (s)}}.",
+      "M is not a real element. It stands for one of three metals in the table: {{Na}}, {{Li}} or {{K}}.",
+      "For the solution in the beaker, moles = V × M. For the solid precipitate, moles = mass ÷ {{molar mass}}. In a real lab you would extract the precipitate with a {{filter}} and {{weigh}} it to know its mass."
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table",
+     "subtitle": "Copy the sim's metal table for the carbonate reaction",
+     "columns": [
+      "Metal",
+      "M₂CO₃ compound",
+      "Molar mass (g/mol)"
+     ],
+     "col_widths": [
+      1.6,
+      2.6,
+      2.6
+     ],
+     "rows": [
+      [
+       "Na",
+       "{{Na₂CO₃}}",
+       "{{106}}"
+      ],
+      [
+       "Li",
+       "{{Li₂CO₃}}",
+       "{{74}}"
+      ],
+      [
+       "K",
+       "{{K₂CO₃}}",
+       "{{138}}"
+      ]
+     ],
+     "row_height": 0.34
+    },
+    {
+     "type": "table",
+     "title": "Measurements (carbonate reaction)",
+     "subtitle": "Grams depend on your metal (the key lists all three)",
+     "columns": [
+      "Quantity",
+      "Value from the sim"
+     ],
+     "col_widths": [
+      3.6,
+      3.1
+     ],
+     "first_col_left": true,
+     "rows": [
+      [
+       "Volume of solution (L)",
+       "{{0.700}}"
+      ],
+      [
+       "Moles of CaCl₂ (n = V × M)",
+       "{{0.07}}"
+      ],
+      [
+       "Grams of M₂CO₃ added (2 pours)",
+       "{{Na 3.91 · Li 2.73 · K 5.08}}"
+      ],
+      [
+       "Grams of CaCO₃ (the n = m/MM box, not the beaker label)",
+       "{{3.68}}"
+      ]
+     ],
+     "row_height": 0.36
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Find the moles of CaCO₃ (100 g/mol). Then use the equation's 1 : 1 ratio to find the moles of M₂CO₃ that reacted.",
+       "lines": 2,
+       "answer": "n(CaCO₃) = 3.68 g ÷ 100 g/mol = **0.0368 mol**. 1 M₂CO₃ : 1 CaCO₃, so n(M₂CO₃) = **0.0368 mol** (sim rounds to 0.04)."
+      },
+      {
+       "prompt": "Molar mass of M₂CO₃ = grams added ÷ moles. Calculate it and use the table to identify M. Do this before you press Next to reveal the metal.",
+       "lines": 2,
+       "answer": "Na: 3.91 ÷ 0.0368 = **106 g/mol → Na₂CO₃, M = Na**. Li: 2.73 ÷ 0.0368 = 74 → Li. K: 5.08 ÷ 0.0368 = 138 → K. Accept ±1 g/mol."
+      }
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Write the net ionic equation for the carbonate reaction. Which ions are spectators?",
+       "lines": 2,
+       "answer": "Ca²⁺(aq) + CO₃²⁻(aq) → CaCO₃(s). Spectators: M⁺ (Na⁺, Li⁺ or K⁺) and Cl⁻. Accept with or without states for 1 of 2 points."
+      },
+      {
+       "prompt": "The sim then runs 2MI(aq) + Pb(NO₃)₂(aq) → PbI₂(s) + 2MNO₃(aq). Use 20 Pb(NO₃)₂ and 2 pours of MI. Same 10 molecules, same 0.700 L, so n(MI) = 0.0368 mol. Find the molar mass of MI and check it against the sim's table.",
+       "lines": 2,
+       "points": 3,
+       "answer": "MM = grams ÷ 0.0368 mol. Na: 5.53 g → **150 g/mol, NaI**. Li: 4.94 g → 134, LiI. K: 6.12 g → 166, KI (the sim's table: NaI 150, LiI 134, KI 166)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Oxidation Numbers",
+   "sim_screen": "Redox Lab · Part 1 · Guided",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open the **Redox Reactions Lab → Part 1: Oxidation numbers** in **Guided** mode.",
+      "Choose **Zn(s) + Cu²⁺(aq) → Zn²⁺(aq) + Cu(s)** from **Choose a Reaction**.",
+      "To assign a number: tap the dashed box above an atom, set the slider (or ▲ ▼), and press **Check**."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Zinc metal, Zn, turns into Zn²⁺ ions. Does each zinc atom gain or lose electrons? How many?",
+       "lines": 1,
+       "answer": "Loses 2 electrons: a neutral atom becomes +2 only by giving away two negative electrons."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "An oxidation number is the {{charge}} an atom would have if all its bonds to other elements were {{ionic}}.",
+      "Rule 1: an element on its own is {{0}}. Rule 2: a single-atom ion equals its {{charge}}.",
+      "Rule 3: in compounds, O is usually {{−2}} and H is {{+1}}. Rule 4: the oxidation numbers add up to the species' {{overall charge}}.",
+      "Rule 5: in compounds, Group 1 is {{+1}}, Group 2 is {{+2}}, and F is always −1.",
+      "Losing electrons is {{oxidation}}; gaining electrons is {{reduction}} (OIL RIG). In any redox reaction, electrons lost and electrons gained are always {{equal}}. Every {{combustion}} reaction is a redox reaction."
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table",
+     "subtitle": "Record each element's oxidation number before and after (read the number line)",
+     "columns": [
+      "Reaction",
+      "Element",
+      "Before",
+      "After",
+      "Change"
+     ],
+     "col_widths": [
+      2.1,
+      1.3,
+      0.9,
+      0.9,
+      1.6
+     ],
+     "first_col_left": true,
+     "row_height": 0.3,
+     "rows": [
+      [
+       "Zn + Cu²⁺",
+       "Zn",
+       "{{0}}",
+       "{{+2}}",
+       "{{oxidized}}"
+      ],
+      [
+       "",
+       "Cu",
+       "{{+2}}",
+       "{{0}}",
+       "{{reduced}}"
+      ],
+      [
+       "CH₄ + 2O₂",
+       "C",
+       "{{−4}}",
+       "{{+4}}",
+       "{{oxidized}}"
+      ],
+      [
+       "",
+       "O",
+       "{{0}}",
+       "{{−2}}",
+       "{{reduced}}"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Electron tally",
+     "subtitle": "From the e⁻ lost / e⁻ gained boxes",
+     "columns": [
+      "Reaction",
+      "e⁻ lost",
+      "e⁻ gained",
+      "Type of reaction"
+     ],
+     "col_widths": [
+      2.4,
+      1.2,
+      1.2,
+      2.0
+     ],
+     "first_col_left": true,
+     "row_height": 0.3,
+     "rows": [
+      [
+       "Zn + Cu²⁺",
+       "{{2}}",
+       "{{2}}",
+       "{{Redox}}"
+      ],
+      [
+       "CH₄ + 2O₂",
+       "{{8}}",
+       "{{8}}",
+       "{{Redox}}"
+      ],
+      [
+       "AgNO₃ + NaCl",
+       "{{0}}",
+       "{{0}}",
+       "{{Precipitation}}"
+      ],
+      [
+       "HCl + NaOH",
+       "{{0}}",
+       "{{0}}",
+       "{{Acid–base}}"
+      ]
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Use Rule 4 before you set the boxes: find C in CH₄ and in CO₂, and N in the NO₃⁻ ion of AgNO₃.",
+       "lines": 3,
+       "answer": "CH₄: C + 4(+1) = 0 → **C = −4**. CO₂: C + 2(−2) = 0 → **C = +4**. NO₃⁻: N + 3(−2) = −1 → **N = +5**."
+      },
+      {
+       "prompt": "Each C atom loses 8 electrons. Each O atom gains 2. How many O atoms, and how many O₂ molecules, accept them? Answer before the sim asks.",
+       "lines": 2,
+       "answer": "8 ÷ 2 = **4 O atoms = 2 O₂**, the coefficient in CH₄ + 2O₂."
+      }
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Is AgNO₃ + NaCl → AgCl(s) + NaNO₃ a redox reaction? Make a claim and give evidence from the sim.",
+       "lines": 2,
+       "answer": "No. No oxidation number changed (nothing moved on the number line; 0 e⁻ lost and gained). It is precipitation: Ag⁺ and Cl⁻ swapped partners and left the solution as solid AgCl."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Half-Reactions",
+   "sim_screen": "Redox Lab · Part 2 · Guided + Free Explore",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Part 2: Electron transfer and half-reactions** in **Guided** mode. Choose **Zn(s) + Cu²⁺(aq)**.",
+      "Press **Next** to step through. To run a reaction, drag **Reaction progress** to **100 %** or press **▶ Play the reaction**.",
+      "Guided mode sets the starting amount of ions. Read the counts under the beaker at 100 %."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "A zinc strip sits in blue Cu²⁺ solution. What will happen to the blue color as the reaction runs? Why?",
+       "lines": 2,
+       "answer": "It fades. The blue Cu²⁺ ions take electrons from zinc and become copper metal on the strip; Zn²⁺ is colorless."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Ions that never change, like SO₄²⁻ here, are called {{spectator ions}}.",
+      "Leave the spectators out and you have the {{net ionic equation}}.",
+      "In the oxidation half-reaction, electrons are written as a {{product}} (right). In the reduction half-reaction, they are a {{reactant}} (left).",
+      "When the halves are multiplied so electrons match, the multiplier becomes the {{coefficient}} in the balanced equation.",
+      "A redox equation must balance in atoms and in {{charge}}."
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "Oxidation: Zn(s) → Zn²⁺(aq) + {{2e⁻|6}}",
+      "Reduction: Cu²⁺(aq) + {{2e⁻|6}} → Cu(s)",
+      "Cu(s) + {{2|4}}Ag⁺(aq) → Cu²⁺(aq) + {{2|4}}Ag(s)",
+      "{{2|4}}Al(s) + {{3|4}}Cu²⁺(aq) → {{2|4}}Al³⁺(aq) + {{3|4}}Cu(s)"
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Before you set the sliders for Al + Cu²⁺: each Al atom loses 3 e⁻ and each Cu²⁺ gains 2 e⁻. Find the smallest multipliers, the electrons transferred, and check the charge on each side.",
+       "lines": 3,
+       "answer": "LCM of 3 and 2 = **6 e⁻**: oxidation **× 2**, reduction **× 3**. Charge: left 3(+2) = **+6**, right 2(+3) = **+6** ✓."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table",
+     "subtitle": "Run each reaction to 100 % and copy the counts under the beaker",
+     "columns": [
+      "Reaction",
+      "Multipliers (ox, red)",
+      "Ion left",
+      "Metal ion formed",
+      "Metal plated",
+      "e⁻ transferred"
+     ],
+     "col_widths": [
+      1.4,
+      1.2,
+      1.0,
+      1.1,
+      1.0,
+      1.1
+     ],
+     "first_col_left": true,
+     "rows": [
+      [
+       "Zn + Cu²⁺",
+       "{{× 1, × 1}}",
+       "{{0 of 8}}",
+       "{{8 Zn²⁺}}",
+       "{{8 Cu}}",
+       "{{16}}"
+      ],
+      [
+       "Cu + Ag⁺",
+       "{{× 1, × 2}}",
+       "{{0 of 12}}",
+       "{{6 Cu²⁺}}",
+       "{{12 Ag}}",
+       "{{12}}"
+      ],
+      [
+       "Al + Cu²⁺",
+       "{{× 2, × 3}}",
+       "{{0 of 12}}",
+       "{{8 Al³⁺}}",
+       "{{12 Cu}}",
+       "{{24}}"
+      ]
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "For Cu + Ag⁺, the solution turned blue. Explain why, using the half-reactions.",
+       "lines": 1,
+       "answer": "Cu(s) is oxidized: Cu → Cu²⁺ + 2e⁻. The new Cu²⁺ ions are blue. Each Cu atom's 2 e⁻ reduce 2 Ag⁺ to Ag."
+      },
+      {
+       "prompt": "Why is Cu + Ag⁺ → Cu²⁺ + Ag wrong, even though the atoms balance?",
+       "lines": 1,
+       "answer": "The charge does not balance: left 0 + (+1) = +1, right +2 + 0 = +2. Electrons lost (2) ≠ gained (1). Accept either reason."
+      },
+      {
+       "prompt": "Switch to **Free Explore** and choose **Fe²⁺(aq) + MnO₄⁻(aq), acidic**. Set the multipliers. Write the balanced net ionic equation and the electrons transferred. (You need this in Part 3.)",
+       "lines": 2,
+       "points": 3,
+       "answer": "Oxidation × 5, reduction × 1, **5 e⁻**: 5Fe²⁺(aq) + MnO₄⁻(aq) + 8H⁺(aq) → 5Fe³⁺(aq) + Mn²⁺(aq) + 4H₂O(l)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Redox Titration",
+   "sim_screen": "Redox Lab · Part 3 · Guided + Free Explore",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Part 3: Redox titration**, **Guided**. Choose **Fe²⁺**: 25.00 mL of Fe²⁺ in the flask, **0.0200 M KMnO₄** in the burette.",
+      "Drag the purple burette level to about **5 mL**, then **19 mL**. Then press **+1 drop** one drop at a time and stop at the **first pale pink that stays** (overshot? press **−1 drop**)."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Purple MnO₄⁻ loses its color as soon as it lands in the Fe²⁺ solution. What will you see at the moment the Fe²⁺ runs out?",
+       "lines": 1,
+       "answer": "A pale pink that stays: the next drop of MnO₄⁻ has nothing left to react with, so its color remains."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "A {{titration}} finds an unknown concentration by reacting it with a solution whose concentration you know.",
+      "The flask holds the {{analyte}}. The burette holds the {{titrant}}.",
+      "One MnO₄⁻ takes 5 electrons, so it reacts with {{five}} Fe²⁺ ions: a {{5 : 1}} mole ratio.",
+      "Where the moles exactly match is the {{equivalence point}}. The color change you see is the {{endpoint}}. 1 drop = {{0.05}} mL. Volumes must be in {{liters}} for M × V."
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table",
+     "subtitle": "Guided row first. Then Free Explore with titrant 0.0200 M and sample 25.00 mL (do not press New mystery sample)",
+     "columns": [
+      "Analyte",
+      "Sample (mL)",
+      "KMnO₄ (M)",
+      "Endpoint (mL)",
+      "Ratio analyte : MnO₄⁻",
+      "Concentration (M)"
+     ],
+     "col_widths": [
+      1.6,
+      0.95,
+      0.95,
+      1.0,
+      1.25,
+      1.15
+     ],
+     "first_col_left": true,
+     "rows": [
+      [
+       "Fe²⁺ (Guided)",
+       "25.00",
+       "0.0200",
+       "{{20.00}}",
+       "{{5 : 1}}",
+       "{{0.0800}}"
+      ],
+      [
+       "H₂C₂O₄ (Free Explore)",
+       "25.00",
+       "0.0200",
+       "{{25.00}}",
+       "{{5 : 2}}",
+       "{{0.0500}}"
+      ],
+      [
+       "H₂O₂ (Free Explore)",
+       "25.00",
+       "0.0200",
+       "{{17.50}}",
+       "{{5 : 2}}",
+       "{{0.0350}}"
+      ]
+     ],
+     "row_height": 0.34
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Fe²⁺: at the endpoint, before you press Next, calculate (1) mol MnO₄⁻, (2) mol Fe²⁺, (3) [Fe²⁺] in the original sample.",
+       "lines": 3,
+       "answer": "(1) 0.0200 mol/L × 0.02000 L = **4.00 × 10⁻⁴ mol** MnO₄⁻. (2) × 5 = **2.00 × 10⁻³ mol** Fe²⁺. (3) 2.00 × 10⁻³ mol ÷ 0.02500 L = **0.0800 M**."
+      },
+      {
+       "prompt": "BEFORE you titrate the oxalic acid: 2MnO₄⁻ + 5H₂C₂O₄ + 6H⁺ → 2Mn²⁺ + 10CO₂ + 8H₂O. If the 25.00 mL sample is 0.0500 M, predict the endpoint volume of 0.0200 M KMnO₄. Then titrate to check.",
+       "lines": 2,
+       "answer": "mol H₂C₂O₄ = 0.0500 × 0.02500 = 1.25 × 10⁻³. × 2/5 = 5.00 × 10⁻⁴ mol MnO₄⁻. V = 5.00 × 10⁻⁴ ÷ 0.0200 = 0.0250 L = **25.00 mL** ✓."
+      },
+      {
+       "prompt": "H₂O₂ (same 5 : 2 ratio): use your endpoint to find [H₂O₂]. Then press Show answer to check.",
+       "lines": 2,
+       "answer": "0.0200 × 0.01750 L = 3.50 × 10⁻⁴ mol MnO₄⁻. × 5/2 = 8.75 × 10⁻⁴ mol H₂O₂. ÷ 0.02500 L = **0.0350 M**."
+      }
+     ]
+    },
+    {
+     "type": "graph",
+     "prompt": "Sketch the chart for the Fe²⁺ titration: both lines, up to about 25 mL. Mark the endpoint.",
+     "x_label": "KMnO₄ added (mL)",
+     "y_label": "moles in flask",
+     "height": 1.4,
+     "answer": "Fe²⁺ line falls in a straight line from its start to zero at 20.00 mL. Excess MnO₄⁻ line is zero until 20.00 mL, then rises in a straight line, less steeply (1/5 the slope). Endpoint marked at 20.00 mL."
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "A student stops at 20.50 mL, where the flask is purple. Is their [Fe²⁺] too high or too low? Explain.",
+       "lines": 2,
+       "answer": "Too high. Past the endpoint the extra MnO₄⁻ did not react, but the calculation counts it, so moles of Fe²⁺ come out too big (the sim: \"A reading taken here would make your answer too high\")."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "conclusion": [
+  {
+   "prompt": "In Balanced Reactions, 2N₂ + 6H₂O → 4NH₃ + 3O₂. Use oxidation numbers: which element is oxidized, which is reduced, and how many electrons move?",
+   "lines": 4,
+   "answer": "N goes 0 → −3: **reduced** (4 N × 3 = 12 e⁻ gained). O goes −2 → 0: **oxidized** (6 O × 2 = 12 e⁻ lost). H stays +1. 12 electrons move. Accept: it is a redox reaction because oxidation numbers change."
+  },
+  {
+   "prompt": "Oxalic acid, H₂C₂O₄, appeared twice: with NaHCO₃ (Limiting Reagent) and with MnO₄⁻ (titration). Classify each reaction and explain how the mole ratio was used in each.",
+   "lines": 4,
+   "answer": "With NaHCO₃: acid–base, no oxidation number changes (C stays +3 in C₂O₄²⁻, +4 in CO₂ from HCO₃⁻); ratio 1 H₂C₂O₄ : 2 NaHCO₃ gave the NaHCO₃ needed. With MnO₄⁻: redox (C +3 → +4, Mn +7 → +2); ratio 5 H₂C₂O₄ : 2 MnO₄⁻ turned titrant moles into analyte moles. Accept the two types + the ratio idea."
+  },
+  {
+   "prompt": "Name one reaction from these sims for each type: precipitation, acid–base, redox. For each, give the evidence you would see in a real lab.",
+   "lines": 3,
+   "answer": "Precipitation: CaCl₂ + M₂CO₃ (a solid forms). Acid–base: HNO₃ + NaOH or HCl + NaOH (water forms; no solid, no color change). Redox: Zn + Cu²⁺ (blue fades, copper coats the strip) or Mg + H⁺ (bubbles of H₂). Accept any correct examples."
+  }
+ ],
+ "key_notes": [
+  "Two sims. Chemical Reactions (chemsims.app/sims/chemical-reactions): /balanced, /limiting, /precipitation. Redox Reactions Lab (chemsims.app/sims/redox): ?part=1, 2, 3; add &mode=freeExplore for Free Explore.",
+  "Limiting Reagent: each click of a bottle adds 5 molecules. Guided mode moves on by itself once H₂C₂O₄ reaches 12, so 3 clicks = 15 molecules. Clicks less than about half a second apart can overwrite each other and lose 5 molecules. All key values assume 15 molecules and the slider at the top (0.70 L). The slider starts at 0.37 L.",
+  "Limiting Reagent model: the sim's molarity is molecules ÷ 190 (its beaker grid), so 15 molecules = 0.0789 M at any volume. It displays M and n to 2 decimals (0.08, 0.06); masses are worked from the unrounded values. The worksheet gives students 0.0789 so their masses match.",
+  "Limiting Reagent: the sim always treats H₂C₂O₄ / HNO₃ as limiting. Mass and yield come from the limiting reactant only, so in Free Explore adding too little NaHCO₃ still reports the full 98%. Yields are fixed constants: 98% and 96%.",
+  "Precipitation: the metal M is random (Na, Li or K) on every run. The key lists all three. Volume is the slider value itself (0.300–0.700 L); the CaCl₂ shaker's tooltip shows the molecule count; the M₂CO₃ shaker shows grams only.",
+  "Precipitation: after the first reaction, the Macroscopic beaker label shows 1.8 g (half of the mass) while the message and equation box say 3.68 g. Tell students to use the equation box. After the second pour the label and box agree (7.4 g / 7.37 g).",
+  "Precipitation, iodide reaction: the sim uses 334 g/mol for PbI₂ (real: 461) and computes n(PbI₂) = 2 × n(MI) (should be ½). The worksheet uses only the MI grams and molar mass, which are right.",
+  "The reaction named \"Nitrogen Oxidation\" (2N₂ + 6H₂O → 4NH₃ + 3O₂) actually reduces nitrogen. The worksheet uses only the menu equation; conclusion Q1 has students find this.",
+  "Balanced Reactions calls the formulas \"Empirical Formulas\"; they are molecular formulas (O₂, H₂, N₂ are not empirical). The worksheet avoids the term. The coefficient box above each formula turns green as soon as that one coefficient is right, which gives hints.",
+  "Redox Part 3 says \"You balanced this one in Part 2\", but Guided Part 2 never does MnO₄⁻ + Fe²⁺ (only Free Explore). Page 5's last question has students do it.",
+  "Redox Part 3 Free Explore fills in the three calculation lines live from the burette reading, so the answer is visible while titrating. The Free Explore starting samples are fixed until New mystery sample is pressed: Fe²⁺ endpoint 16.00 mL (0.0640 M), H₂C₂O₄ 25.00 mL (0.0500 M), H₂O₂ 17.50 mL (0.0350 M), all at 0.0200 M and 25.00 mL."
+ ],
+ "lesson_plan": {
+  "period_minutes": 50,
+  "ap_topics": [
+   "4.1 Introduction for Reactions (balanced equations; evidence such as a precipitate, color change, gas)",
+   "4.2 Net Ionic Equations (spectator ions, half-reactions)",
+   "4.3 Representations of Reactions (particle views, balance scales, half-reactions)",
+   "4.5 Stoichiometry (limiting reagent, percent yield, gravimetric analysis)",
+   "4.6 Introduction to Titration (redox titration only)",
+   "4.7 Types of Chemical Reactions (redox, precipitation, acid–base)",
+   "4.8 Introduction to Acid–Base Reactions (partial: classification and neutralization stoichiometry only)",
+   "4.9 Oxidation–Reduction (Redox) Reactions"
+  ],
+  "sim_location": "ChemSims.app → Chemical Reactions (Balanced Reactions, Limiting Reagent, Precipitation) and Redox Reactions Lab (Parts 1–3)",
+  "essential_question": "How does a balanced equation let us count atoms, moles and electrons, and use those counts to find an unknown?",
+  "objectives": [
+   "Balance equations by conserving atoms, using the smallest whole-number coefficients.",
+   "Use V × M, molar mass and mole ratios to find the limiting reagent, theoretical yield and percent yield.",
+   "Identify an unknown metal from the mass of a precipitate (gravimetric analysis).",
+   "Assign oxidation numbers and classify reactions as redox, precipitation or acid–base.",
+   "Write half-reactions and a balanced net ionic equation that balances atoms, charge and electrons.",
+   "Calculate an unknown concentration from a redox titration endpoint."
+  ],
+  "materials": [
+   "Calculators",
+   "Links: chemsims.app/sims/chemical-reactions and chemsims.app/sims/redox"
+  ],
+  "prep": [
+   "Run Limiting Reagent once with 3 slow clicks at 0.70 L so you know what 15 molecules looks like, and see the 7.41 g / 98% result.",
+   "Run Precipitation once and notice the 1.8 g label versus the 3.68 g in the equation box after the first reaction.",
+   "Decide the teaching order in advance (it is the worksheet order): atoms (Balanced Reactions) → moles and grams (Limiting Reagent, Precipitation) → classifying reactions by oxidation numbers (Part 1) → electrons (Part 2) → titration (Part 3), which uses stoichiometry and redox together. Precipitation comes before Part 1 so students have seen a precipitation reaction before they classify one.",
+   "The sim doesn't cover 4.4 Physical and Chemical Changes, Brønsted–Lowry acids and bases (conjugate pairs), or acid–base titration with an indicator or pH curve; use your usual lesson for these."
+  ],
+  "vocabulary": [
+   "reactant, product, stoichiometric coefficient",
+   "stoichiometry, molarity, mole",
+   "limiting reagent, excess reactant, theoretical yield, actual yield, percent yield",
+   "precipitate, spectator ion, net ionic equation",
+   "oxidation number, oxidation, reduction, half-reaction",
+   "titration, analyte, titrant, equivalence point, endpoint"
+  ],
+  "prior_knowledge": [
+   "Chemical formulas and ion charges (Unit 1–2)",
+   "The mole and molar mass",
+   "Molarity = mol/L"
+  ],
+  "days": [
+   {
+    "day": 1,
+    "title": "Teacher demo: Balanced Reactions",
+    "goal": "Students see that balancing means conserving atoms, then balance the other four reactions themselves.",
+    "worksheet_pages": "Cover + p. 1",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: \"When a log burns, the ash weighs less than the log. Was matter destroyed?\""
+     ],
+     [
+      "5–30",
+      "Demo of Balanced Reactions, reaction 1 (script below). Students fill in p. 1 with you."
+     ],
+     [
+      "30–46",
+      "Students balance rows 2–5 of the table on their own devices and answer the questions."
+     ],
+     [
+      "46–50",
+      "Check: what is conserved, atoms or molecules? (Atoms.)"
+     ]
+    ],
+    "demo_script": [
+     {
+      "do": "Project ChemSims.app → Chemical Reactions → Balanced Reactions (guided).",
+      "say": "\"An equation is a recipe written in atoms. Today we check the recipe by counting atoms.\"",
+      "students": "Write their name on the cover; turn to p. 1."
+     },
+     {
+      "do": "Open the menu at the top right and choose CH₄ + O₂ → CO₂ + H₂O.",
+      "say": "Read the message. Ask: \"Which side are the reactants on?\" (The left.)",
+      "students": "Notes blank 1: reactants / products."
+     },
+     {
+      "do": "Press Next. The sim says CH₄ has 1 C and 4 H, and O₂ has 2 O.",
+      "say": "Ask: \"How many atoms are in one CH₄ molecule?\" (5.)",
+      "students": "Listen."
+     },
+     {
+      "do": "Press Next twice (coefficients, then \"balanced\").",
+      "say": "\"Stoichiometric Coefficients count molecules. A balanced equation has the same amount of atoms on each side.\"",
+      "students": "Notes blanks 2–3."
+     },
+     {
+      "do": "Stop. Ask for predictions before any molecules go in.",
+      "say": "\"How many O₂ does one CH₄ need? Count atoms.\" Take 2–3 answers; don't confirm.",
+      "students": "Predict box."
+     },
+     {
+      "do": "Press Next. Drag one CH₄ into the Reactants beaker.",
+      "say": "Point to the C and H scales. Ask: \"Why does the C scale tip?\" (1 C on the left, 0 on the right.)",
+      "students": "Notes blank 4: each scale tracks one element."
+     },
+     {
+      "do": "Add one O₂, one CO₂ and one H₂O.",
+      "say": "Ask: \"Which scales are balanced now?\" (C only. H is 4 vs 2; O is 2 vs 3.)",
+      "students": "Track the counts in the margin."
+     },
+     {
+      "do": "Add a second H₂O, then a second O₂. The sim says \"Equation is balanced!\"",
+      "say": "\"C 1, H 4, O 4 on each side. Three molecules in, three out.\"",
+      "students": "Table row 1: 1, 2, 1, 2 · C 1, H 4, O 4 · 3 → 3."
+     },
+     {
+      "do": "Add one more CH₄, 2 O₂, CO₂ and 2 H₂O (all doubled). Read the message, then remove them.",
+      "say": "\"The atoms match, but each coefficient could be smaller. Balanced means the smallest whole numbers.\"",
+      "students": "Notes blank 5: smaller."
+     },
+     {
+      "do": "Choose the next reaction, H₂O → H₂ + O₂, and hand over.",
+      "say": "\"Two molecules become three here. Is that allowed?\" Let them find out.",
+      "students": "Begin rows 2–5 on their own devices."
+     }
+    ]
+   },
+   {
+    "day": 2,
+    "title": "Student sim work: Limiting Reagent",
+    "goal": "Use V × M, mole ratios and molar mass to find the theoretical and actual yield, and identify the limiting reagent.",
+    "worksheet_pages": "p. 2",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: \"A recipe needs 2 eggs per cup of flour. You have 6 eggs and 2 cups. What runs out first?\""
+     ],
+     [
+      "5–10",
+      "Show the two set-up rules on the projector: slider to the top (0.70 L), and 3 slow clicks."
+     ],
+     [
+      "10–42",
+      "Students run reaction 1, do calc 1–2, then run reaction 2 and do calc 3 and the questions."
+     ],
+     [
+      "42–50",
+      "Share answers: why did extra NaHCO₃ not raise the yield?"
+     ]
+    ],
+    "circulate": [
+     "Slider at the very top: the beaker label reads 0.70L. If someone forgot, Reset and redo.",
+     "3 slow clicks of H₂C₂O₄ = 15 molecules. If their n is not 0.06 mol, they clicked too fast.",
+     "They use 0.0789 M (not 0.08) in calc 1, so they get 7.41 g, not 7.50 g.",
+     "Calc 2 is written BEFORE they select Nitric Acid + Sodium Hydroxide.",
+     "Units on every number: L, mol/L, mol, g/mol, g."
+    ],
+    "checkpoint": "Reaction 1: theoretical Na₂C₂O₄ = 7.41 g, actual 7.26 g, yield 98%.",
+    "early_finishers": "Free Explore: 30 H₂C₂O₄ molecules at 0.70 L. Predict the theoretical mass (14.81 g), then check."
+   },
+   {
+    "day": 3,
+    "title": "Student sim work: Precipitation",
+    "goal": "Identify the unknown metal M from the mass of a precipitate, and write a net ionic equation.",
+    "worksheet_pages": "p. 3",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: \"How could you find out which metal is in a white powder without a label?\""
+     ],
+     [
+      "5–40",
+      "Students run the carbonate reaction, do the calcs, finish the second pour, then the iodide run."
+     ],
+     [
+      "40–50",
+      "Groups compare metals (they differ, by design) and check that every group's molar mass matched its table row."
+     ]
+    ],
+    "circulate": [
+     "Volume 0.700 L; CaCl₂ tooltip says 20 molecules; only 2 pours of M₂CO₃.",
+     "They copy 3.68 g from the n = m/MM box, not the 1.8 g label in the Macroscopic beaker.",
+     "Molar mass is grams ÷ 0.0368 mol, and it lands on 106, 74 or 138.",
+     "Net ionic equation leaves out M⁺ and Cl⁻ and keeps (s) on CaCO₃."
+    ],
+    "checkpoint": "CaCO₃ 3.68 g → 0.0368 mol, and their M₂CO₃ molar mass matches one row of the table.",
+    "early_finishers": "Predict the CaCO₃ mass if they had poured 3 times (15 molecules): 0.700 × 15/190 × 100 = 5.53 g. Test it after Reset."
+   },
+   {
+    "day": 4,
+    "title": "Mini-demo + student sim work: Oxidation Numbers",
+    "goal": "Assign oxidation numbers and use them to classify reactions as redox, precipitation or acid–base.",
+    "worksheet_pages": "p. 4 (start p. 5 if time)",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: \"A zinc strip in blue copper(II) sulfate turns copper-colored. What happened to the electrons?\""
+     ],
+     [
+      "5–15",
+      "Mini-demo of the Redox Reactions Lab (script below), stopping after the first box is set."
+     ],
+     [
+      "15–42",
+      "Students finish p. 4 in Guided mode, then the Free Explore challenges."
+     ],
+     [
+      "42–50",
+      "Class vote: is AgNO₃ + NaCl redox? Students give number-line evidence. Start p. 5 if time."
+     ]
+    ],
+    "demo_script": [
+     {
+      "do": "Project ChemSims.app → Redox Reactions Lab → Part 1, Guided. Point out the Guided / Free Explore switch.",
+      "say": "\"New sim, same idea: we count something. Today it's electrons.\"",
+      "students": "Turn to p. 4."
+     },
+     {
+      "do": "Choose Zn(s) + Cu²⁺(aq) from Choose a Reaction. Press Next.",
+      "say": "Ask: \"Zn turns into Zn²⁺. Did it gain or lose electrons?\" (Lose 2.)",
+      "students": "Predict box."
+     },
+     {
+      "do": "Tap the dashed box above Zn(s), set the slider to 0, press Check.",
+      "say": "\"Rule 1: an element on its own is 0.\" Show what a wrong value does: the sim gives the rule, not the answer.",
+      "students": "Notes: Rule 1 blank."
+     },
+     {
+      "do": "Point at the oxidation-number line and the e⁻ lost / gained boxes. Hand over.",
+      "say": "\"Up the line means electrons lost. Watch what Cu does.\"",
+      "students": "Continue p. 4 on their own devices."
+     }
+    ],
+    "circulate": [
+     "They read Rule 4 sums aloud: C + 4(+1) = 0 for CH₄.",
+     "Electron tally for CH₄ is 8 lost = 8 gained; 2 O₂ = 4 O atoms.",
+     "Before-and-after numbers for AgNO₃ + NaCl are the same: no change means not redox.",
+     "Peroxide H₂O₂ in Free Explore: O is −1."
+    ],
+    "checkpoint": "Zn: 0 → +2 (oxidized, lost 2 e⁻); Cu: +2 → 0 (reduced); CH₄: C −4 → +4.",
+    "early_finishers": "Free Explore ion challenges: MnO₄⁻ (Mn +7) and Cr₂O₇²⁻ (Cr +6). Then preview Part 2."
+   },
+   {
+    "day": 5,
+    "title": "Student sim work: Half-Reactions and Redox Titration",
+    "goal": "Balance redox equations with half-reactions, then use the MnO₄⁻/Fe²⁺ equation in a titration.",
+    "worksheet_pages": "pp. 5–6",
+    "agenda": [
+     [
+      "0–3",
+      "Warm-up: \"Al loses 3 e⁻, Cu²⁺ gains 2. What is the smallest number both can share?\" (6.)"
+     ],
+     [
+      "3–22",
+      "Students finish p. 5, ending with Fe²⁺ + MnO₄⁻ in Free Explore."
+     ],
+     [
+      "22–46",
+      "Students do p. 6: Guided Fe²⁺ titration, then oxalic acid and H₂O₂ in Free Explore."
+     ],
+     [
+      "46–50",
+      "Quick share: what does the first permanent pink mean?"
+     ]
+    ],
+    "circulate": [
+     "The Fe²⁺ + MnO₄⁻ equation from p. 5 is done before p. 6 (Part 3 assumes it).",
+     "Endpoint is exactly 20.00 mL: first pink that stays. If purple, they press −1 drop.",
+     "mL changed to L: 20.00 mL = 0.02000 L.",
+     "Fe²⁺ moles = 5 × MnO₄⁻ moles (not ÷ 5); divide by 25.00 mL, not 45.00 mL.",
+     "In Free Explore, titrant stays 0.0200 M and sample 25.00 mL; no New mystery sample until the table is done."
+    ],
+    "checkpoint": "4.00 × 10⁻⁴ mol MnO₄⁻ → 2.00 × 10⁻³ mol Fe²⁺ → 0.0800 M.",
+    "early_finishers": "New mystery sample: titrate, calculate, then check with Show answer. Try a 0.0400 M titrant and explain why the endpoint volume halves."
+   },
+   {
+    "day": 6,
+    "title": "Grading and wrap-up",
+    "goal": "Grade the worksheet, discuss sim cautions and gaps, and check understanding.",
+    "worksheet_pages": "All + Self-Grading Record",
+    "agenda": [
+     [
+      "0–25",
+      "Grading (self, peer or teacher; see the grading options section)."
+     ],
+     [
+      "25–40",
+      "Discussion: conclusion questions; why the sim's \"Nitrogen Oxidation\" is really a reduction of N; what's missing (physical vs. chemical change, acid–base titration)."
+     ],
+     [
+      "40–50",
+      "Exit ticket."
+     ]
+    ]
+   }
+  ],
+  "misconceptions": [
+   {
+    "misconception": "The number of molecules is conserved in a reaction.",
+    "sim_fix": "In N₂ + 3H₂ → 2NH₃, four molecules become two, but every balance scale has a green check. Atoms are conserved."
+   },
+   {
+    "misconception": "Adding more of a reactant always makes more product.",
+    "sim_fix": "In Limiting Reagent, extra NaHCO₃ just piles up after the H₂C₂O₄ is gone and the yield stays 98%."
+   },
+   {
+    "misconception": "Oxidation means gaining oxygen.",
+    "sim_fix": "Zn + Cu²⁺ has no oxygen at all, yet Zn is oxidized: its number goes 0 → +2 because it loses 2 electrons (OIL RIG)."
+   },
+   {
+    "misconception": "A balanced equation only needs equal atoms.",
+    "sim_fix": "In Part 2, Cu + Ag⁺ → Cu²⁺ + Ag balances atoms but the charge check fails (+1 vs +2) and the reaction stays locked."
+   },
+   {
+    "misconception": "At the endpoint the flask turns colorless, and you divide by the total volume.",
+    "sim_fix": "The flask is nearly colorless the whole time; the endpoint is the first pink that stays. The sim's 0.0444 M wrong answer is what you get from 45.00 mL."
+   }
+  ],
+  "sim_cautions": [
+   "Limiting Reagent: clicking a bottle fast can lose molecules. Tell students to wait for each batch to land.",
+   "Limiting Reagent shows M and n rounded to 2 decimals (0.08 M, 0.06 mol). Masses are worked from unrounded values, so students should use 0.0789 M.",
+   "In the Limiting Reagent sim, molarity does not change when you change the volume (only moles do). That is a simplification of the sim; don't use it to teach dilution.",
+   "Limiting Reagent says \"the solid H₂C₂O₄\" (and \"solid HNO₃\") although the equation shows (aq).",
+   "Precipitation picks the metal at random, so groups get different answers. All three are in the key.",
+   "Precipitation: right after the first reaction the beaker label says 1.8 g, but the real answer in the equation box is 3.68 g.",
+   "Precipitation, iodide reaction: the PbI₂ numbers are wrong in the sim (it uses 334 g/mol and the wrong mole ratio). Use only the MI grams.",
+   "Balanced Reactions calls the formulas \"Empirical Formulas\"; they are molecular formulas. The menu placeholder says \"Choose a Compound\" but it lists reactions.",
+   "The reaction named \"Nitrogen Oxidation\" actually reduces nitrogen (0 → −3). Use it as a discussion question.",
+   "Redox Part 3 says \"You balanced this one in Part 2\", but only Free Explore in Part 2 has MnO₄⁻ + Fe²⁺. Page 5 makes sure they do it."
+  ],
+  "differentiation": {
+   "support": [
+    "Pair students: one drives the sim, one records; switch each page.",
+    "Give a fill-in calculation frame: n = V × M → ratio → mass = n × MM.",
+    "For p. 4, let students use the rule list on screen and check one box at a time."
+   ],
+   "extension": [
+    "Find the oxidation number of Mn in MnO₄⁻ and Cr in Cr₂O₇²⁻, then write the half-reaction for MnO₄⁻ → Mn²⁺ in acid.",
+    "Design a titration in Free Explore that ends near 25 mL for an H₂O₂ sample, by choosing the titrant concentration.",
+    "Explain why a wet CaCO₃ precipitate would make the calculated molar mass of M₂CO₃ too low."
+   ]
+  },
+  "exit_ticket": [
+   {
+    "question": "Balance Al(s) + Cu²⁺(aq) → Al³⁺(aq) + Cu(s). How many electrons are transferred?",
+    "answer": "2Al + 3Cu²⁺ → 2Al³⁺ + 3Cu; 6 electrons."
+   },
+   {
+    "question": "0.0553 mol of H₂C₂O₄ reacts with NaHCO₃ (1 : 2). How many moles of NaHCO₃ are needed?",
+    "answer": "0.111 mol (the sim shows 0.11)."
+   },
+   {
+    "question": "AgNO₃(aq) + NaCl(aq) → AgCl(s) + NaNO₃(aq). Redox, precipitation or acid–base? Give one piece of evidence.",
+    "answer": "Precipitation: no oxidation numbers change and a solid (AgCl) forms."
+   }
+  ],
+  "ap_practice": [
+   {
+    "question": "A 25.00 mL sample of Fe²⁺(aq) in acid is titrated with 0.0200 M KMnO₄. The endpoint is 16.00 mL. 5Fe²⁺ + MnO₄⁻ + 8H⁺ → 5Fe³⁺ + Mn²⁺ + 4H₂O. What is [Fe²⁺]? (A) 0.0128 M (B) 0.0256 M (C) 0.0640 M (D) 0.320 M",
+    "answer": "(C). 0.0200 × 0.01600 = 3.20 × 10⁻⁴ mol MnO₄⁻; × 5 = 1.60 × 10⁻³ mol Fe²⁺; ÷ 0.02500 L = 0.0640 M. (This is the sim's Free Explore Fe²⁺ sample.) (A) leaves out the 5 : 1 mole ratio."
+   },
+   {
+    "question": "FRQ. A student dissolves 3.91 g of an unknown carbonate, M₂CO₃ (M is Li, Na or K), in water and adds excess CaCl₂(aq). The dried CaCO₃ precipitate (100. g/mol) has a mass of 3.68 g. (a) Write the net ionic equation. (b) Calculate the moles of CaCO₃. (c) Calculate the molar mass of M₂CO₃ and identify M. (d) Is this a redox reaction? Justify with oxidation numbers. (e) If the precipitate were still wet when weighed, would the calculated molar mass be too high or too low? Explain.",
+    "answer": "(a) Ca²⁺(aq) + CO₃²⁻(aq) → CaCO₃(s). (b) 3.68 ÷ 100. = 0.0368 mol. (c) 1 : 1, so 0.0368 mol M₂CO₃; 3.91 ÷ 0.0368 = 106 g/mol → Na₂CO₃, M = Na. (d) No: Ca +2, C +4, O −2 and Na +1 are unchanged; it is precipitation. (e) Too low: extra water raises the CaCO₃ mass, so moles look larger and grams ÷ moles is smaller."
+   }
+  ]
+ }
+}

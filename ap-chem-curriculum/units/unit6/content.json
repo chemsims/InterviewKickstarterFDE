@@ -1,0 +1,917 @@
+{
+ "unit": 6,
+ "unit_title": "Thermochemistry",
+ "worksheet_title": "Thermochemistry",
+ "sim_name": "Thermodynamics Lab",
+ "pages": [
+  {
+   "title": "Heat Transfer & Calorimetry",
+   "sim_screen": "Part 1 · Guided mode",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open the **Thermodynamics Lab** menu: **Part 1 · Simulation 1: Heat transfer and calorimetry**. Click **Guided** (top right).",
+      "Metal: **Iron**. Sample mass: **50 g** (◀ ▶ buttons, 5 g per click). Water: leave the vertical slider at **60 g** (water starts at **20 °C**).",
+      "Burner fire slider: **all the way right** (3 flames) = metal at **100 °C**. It goes back to the lowest setting (40 °C) every time the metal changes, so set it again. Check the formula line reads **−50 × 0.45 × ( □ − 100) = 60 × 4.2 × ( □ − 20)**."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Iron starts at 100 °C and the water at 20 °C. Will the final temperature be closer to 20 °C or to 100 °C? Why?",
+       "lines": 2,
+       "answer": "Closer to 20 °C (the sim gives 26.6 °C). Water has a much larger specific heat (4.2 vs. 0.45 J/g·°C) and more mass, so it takes far more energy to warm the water. Accept any answer with a reason; the reason is what earns the point."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Energy cannot be {{destroyed}} or {{created}}. Energy is {{transferred}}.",
+      "Specific heat in the sim (J/g·°C): iron {{0.45}}, aluminum {{0.897}}, lithium {{3.58}}, water {{4.2}}.",
+      "Heat is transferred from the metal, the {{system}}, to the cold water, the {{surroundings}}.",
+      "Energy is conserved: heat goes from {{hot}} to {{cold}}. The metal {{loses}} heat and the water {{gains}} it until both reach T_f."
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "−q_system = q_surrounding",
+      "−mₛ × Cₛ × (T_f − T_i,s) = m_w × C_w × (T_f − T_i,w)"
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "**Before you drag the tweezers,** calculate T_f for the iron run. Solving the equation above for T_f gives T_f = (mₛCₛT_i,s + m_wC_wT_i,w) ÷ (mₛCₛ + m_wC_w).",
+       "lines": 3,
+       "points": 3,
+       "answer": "T_f = (50 × 0.45 × 100 + 60 × 4.2 × 20) ÷ (50 × 0.45 + 60 × 4.2) = (2250 + 5040) ÷ (22.5 + 252) = 7290 ÷ 274.5 = **26.6 °C**"
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "subtitle": "Drag the tweezers onto the sample, then drop it into the calorimeter. The run starts by itself. Tap Next for the next metal (and reset the burner!).",
+     "columns": [
+      "Metal",
+      "Cₛ (J/g·°C)",
+      "mₛ (g)",
+      "T_i,s (°C)",
+      "m_w (g)",
+      "T_f (°C)",
+      "q of water (J)"
+     ],
+     "col_widths": [
+      1.0,
+      0.95,
+      0.7,
+      0.85,
+      0.75,
+      0.85,
+      1.1
+     ],
+     "rows": [
+      [
+       "Iron",
+       "{{0.45}}",
+       "50",
+       "100",
+       "60",
+       "{{26.6}}",
+       "{{1652}}"
+      ],
+      [
+       "Aluminum",
+       "{{0.897}}",
+       "50",
+       "100",
+       "60",
+       "{{32.1}}",
+       "{{3046}}"
+      ],
+      [
+       "Lithium",
+       "{{3.58}}",
+       "50",
+       "100",
+       "60",
+       "{{53.2}}",
+       "{{8373}}"
+      ],
+      [
+       "Your choice",
+       "",
+       "",
+       "",
+       "",
+       "",
+       ""
+      ]
+     ],
+     "note": "T_f appears in the boxes of the formula line. Read q from the **right-hand box** of the bottom line (… J = ____ J). Fill the last row in Free Explore with your own settings."
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Use q = m × c × ΔT and your T_f to calculate the heat gained by the water in the iron run. Then give q for the iron.",
+       "lines": 2,
+       "points": 3,
+       "answer": "q_water = 60 g × 4.2 J/g·°C × (26.6 − 20) °C = **1663 J ≈ 1.66 kJ**. q_iron = **−1663 J** (same size, opposite sign). Accept 1650–1665 J: the sim shows 1652 J because it uses the unrounded T_f (26.56 °C)."
+      }
+     ]
+    },
+    {
+     "type": "graph",
+     "x_label": "Time (s)",
+     "y_label": "Temperature (°C)",
+     "height": 1.3,
+     "answer": "Iron curve falls from 100 °C; water curve rises from 20 °C. Both change fast at first, then level off together at T_f = 26.6 °C.",
+     "subtitle": "Sketch the temperature vs. time graph for the iron run. Label both curves and T_f."
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Rank the three metals by T_f. Explain the ranking using specific heat. (Claim + evidence)",
+       "lines": 2,
+       "answer": "Lithium (53.2 °C) > aluminum (32.1 °C) > iron (26.6 °C). Same mass and starting temperature, but lithium has the largest specific heat (3.58 vs. 0.897 vs. 0.45 J/g·°C), so it holds and gives up the most heat (8373 J vs. 3046 J vs. 1652 J) and warms the water most."
+      },
+      {
+       "prompt": "In the iron run, the iron cooled by 73.4 °C but the water warmed by only 6.6 °C. The heat was the same size. Why are the temperature changes so different?",
+       "lines": 2,
+       "answer": "m × c is much larger for the water: 60 × 4.2 = 252 J/°C vs. 50 × 0.45 = 22.5 J/°C for iron. The same amount of heat changes the water's temperature about 11 times less. Accept: water has a higher specific heat and more mass."
+      },
+      {
+       "prompt": "Is the heat flow exothermic or endothermic for the iron (the system)? For the water? Use the sign of q.",
+       "lines": 2,
+       "answer": "Exothermic for the iron: it loses heat, q_iron is negative (−1652 J). Endothermic for the water: it gains heat, q_water is positive (+1652 J). Heat stops flowing at thermal equilibrium (both at 26.6 °C)."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Switch to **Free Explore**. Set the burner to the **lowest** setting (1 flame = 40 °C), or try 100 g of iron or 120 g of water. Predict T_f, run it, and fill in the last table row."
+    }
+   ]
+  },
+  {
+   "title": "Heating Curves & Phase Changes",
+   "sim_screen": "Part 2 · Guided mode",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open the menu: **Part 2 · Simulation 2: Energy diagrams, phases, and reaction enthalpy**. Click **Guided**. Choose a Substance: **Water**.",
+      "Every number in this part is for **1 g** of substance. The sim never shows the mass, but it is always 1 g.",
+      "Move the **heat slider** under the burner slowly right. Watch the thermometer, the speech bubble and the **Equations** box. **Stop** when the water boils at 100 °C and do the Calculate box before you slide further."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "You keep adding heat to ice that is melting at 0 °C. What happens to the temperature while it melts? Why?",
+       "lines": 2,
+       "answer": "It stays at 0 °C until all the ice has melted. The energy goes into breaking intermolecular forces, not into raising the temperature."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Enthalpy change under constant pressure is ΔH = Cₚ × (T₂ − T₁), where T₁ is the {{initial}} temperature and T₂ is the {{current}} temperature.",
+      "Cₚ depends on both the {{substance}} and its {{physical state}}. Solid water: Cₚ ≈ {{2.1}} J/g·°C. Liquid water: Cₚ = {{4.2}} J/g·°C.",
+      "ΔH_f, the enthalpy of {{fusion}}, accounts for the energy needed to {{melt}} the substance. For water, ΔH_f = {{333}} J.",
+      "During a change of phase, temperature stays {{constant}}, so ΔH = Cₚ × (T₂ − T₁) is {{zero}}. All the energy goes into breaking {{intermolecular forces}}.",
+      "ΔH_v, the enthalpy of {{vaporization}}, is {{2230}} J for water. Once fully vaporized, Cₚ becomes {{1.9}} J/g·°C."
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "ΔH = Cₚ × (T₂ − T₁)    (for 1 g; for m grams: q = m × Cₚ × ΔT)",
+      "ΔH_total = ΔH_f + ΔH_v + ΔH (one ΔH for each heating leg)"
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Use the sim's values in your notes to calculate the total heat needed to take 1 g of water from −10 °C to 120 °C. Show all five legs. Then slide to 120 °C and check your total against the last line of the Equations box.",
+       "lines": 4,
+       "points": 4,
+       "answer": "Solid: 2.1 × (0 − (−10)) = 21 J. Melting: 333 J. Liquid: 4.2 × (100 − 0) = 420 J. Boiling: 2230 J. Vapor: 1.9 × (120 − 100) = 38 J. Total = 21 + 333 + 420 + 2230 + 38 = **3042 J**."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "subtitle": "Choose Ethanol, then Acetone, and slide through each curve. Read melting and boiling points from the thermometer on the flat parts.",
+     "columns": [
+      "Substance",
+      "Melts at (°C)",
+      "Boils at (°C)",
+      "Liquid Cₚ (J/g·°C)",
+      "ΔH_f (J)",
+      "ΔH_v (J)",
+      "ΔH_total (J)"
+     ],
+     "col_widths": [
+      1.0,
+      0.85,
+      0.85,
+      1.0,
+      0.8,
+      0.8,
+      0.95
+     ],
+     "rows": [
+      [
+       "Water",
+       "0",
+       "100",
+       "4.2",
+       "333",
+       "2230",
+       "3042"
+      ],
+      [
+       "Ethanol",
+       "{{−114}}",
+       "{{78}}",
+       "{{2.44}}",
+       "{{104}}",
+       "{{841}}",
+       "{{1475.5}}"
+      ],
+      [
+       "Acetone",
+       "{{−95}}",
+       "{{56}}",
+       "{{2.18}}",
+       "{{98}}",
+       "{{518}}",
+       "{{999.7}}"
+      ]
+     ],
+     "note": "Read liquid Cₚ once the substance has melted (the speech bubble and the Equations box both show it then)."
+    },
+    {
+     "type": "graph",
+     "x_label": "Heat (J)",
+     "y_label": "Temperature (°C)",
+     "height": 1.3,
+     "answer": "Rising line (solid), flat at 0 °C (melting), rising line (liquid), flat at 100 °C (boiling), rising line (vapor). Accept any sketch with three rising legs, two flat legs, and correct labels.",
+     "subtitle": "Sketch the heating curve for water. Label the five legs and the two plateau temperatures. Draw the shape only: the sim's curve is not to scale."
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Boiling 1 g of water takes 2230 J, but melting it takes only 333 J. Use the molecule view to explain why.",
+       "lines": 2,
+       "answer": "Melting only loosens the solid so molecules can slide past each other; most attractions remain. Boiling pulls the molecules completely apart into a gas, so it must overcome nearly all intermolecular forces: about 6.7 times more energy."
+      },
+      {
+       "prompt": "Which substance has the strongest intermolecular forces? Give two pieces of evidence from your table.",
+       "lines": 2,
+       "answer": "Water: it has the highest boiling point (100 °C vs. 78 °C and 56 °C) and the largest ΔH_v (2230 J vs. 841 J and 518 J). Accept: water has hydrogen bonding."
+      },
+      {
+       "prompt": "Is each leg of the heating curve endothermic or exothermic? What would ΔH be for condensing 1 g of steam at 100 °C?",
+       "lines": 2,
+       "answer": "Every leg is endothermic: heat is absorbed and every ΔH is positive. Condensing is the reverse of boiling, so ΔH = **−2230 J** (exothermic)."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Tap **Run simulation** to watch water go from solid to vapor in one run. Then run acetone. Which leg takes the biggest share of the total heat for each substance?"
+    }
+   ]
+  },
+  {
+   "title": "Bond Enthalpies",
+   "sim_screen": "Part 3 · Guided mode",
+   "blocks": [
+    {
+     "type": "setup",
+     "title": "Set up, part A",
+     "items": [
+      "Open the menu: **Part 3 · Simulation 3: Bond enthalpies, formation, and Hess's law**. Click **Guided**. Choose a compound: **HCl**.",
+      "**Swipe sideways** across each molecule to break it. Then **swipe up or down** in each column to form an H—Cl bond. **Stop after the first H—Cl bond forms** and do the first Calculate box.",
+      "Bond energies are per mole of bonds: write them in **kJ/mol** (the sim writes only \"kJ\")."
+     ],
+     "subtitle": "H₂ + Cl₂ → 2HCl"
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Does breaking a bond absorb energy or release energy? What about forming a bond?",
+       "lines": 1,
+       "answer": "Breaking a bond absorbs energy (endothermic). Forming a bond releases energy (exothermic)."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Energy is involved in the {{breaking}} of atoms' bonds.",
+      "Breaking H—H cost about {{436}} kJ per mole of bonds. Breaking Cl—Cl took {{242}} kJ.",
+      "Forming an H—Cl bond {{released}} {{431}} kJ.",
+      "Breaking bonds {{costs}} energy; forming bonds {{returns}} it."
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "ΔH°rxn = ΣΔH°(bonds broken) − ΣΔH°(bonds formed)"
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Calculate ΔH°rxn for H₂ + Cl₂ → 2HCl. Then give ΔH for making **1 mole** of HCl.",
+       "lines": 3,
+       "points": 3,
+       "answer": "ΔH°rxn = (436 + 242) − 2(431) = 678 − 862 = **−184 kJ**. For 1 mol HCl: −184 ÷ 2 = **−92 kJ/mol**."
+      }
+     ]
+    },
+    {
+     "type": "setup",
+     "title": "Set up, part B",
+     "items": [
+      "Form the second H—Cl bond. In the end-of-tour popup tap **Next** (or choose **C2H6**).",
+      "**Tap** each C(s) block, **swipe** each H₂, then **swipe** the two carbon groups together. **Stop after the C—C bond forms** and do the second Calculate box **before** you tap Next."
+     ],
+     "subtitle": "2C(s) + 3H₂ → C₂H₆"
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Energy is required to change the {{physical state}} of molecules.",
+      "About {{719}} kJ per mole went into turning the first carbon from C(s) into C(g).",
+      "Forming the C—C bond released {{347}} kJ."
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Each C—H bond formed releases **414 kJ** (the sim shows this in the next step). Carbon starts as a solid, so add the sublimation energy: ΔH°rxn = ΣΔH°(bonds broken) − ΣΔH°(bonds formed) + ΣΔH°(sublimation). Calculate ΔH°rxn for 2C(s) + 3H₂ → C₂H₆.",
+       "lines": 3,
+       "points": 4,
+       "answer": "Broken: 3 H—H = 3 × 436 = 1308 kJ. Formed: 1 C—C + 6 C—H = 347 + 6 × 414 = 2831 kJ. Sublimation: 2 × 719 = 1438 kJ. ΔH°rxn = 1308 − 2831 + 1438 = **−85 kJ**."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "subtitle": "Finish the C₂H₆ tour, then fill in the table from the sim's bond tables.",
+     "columns": [
+      "Bond or change",
+      "Energy (kJ/mol)",
+      "Broken, formed, or sublimed?"
+     ],
+     "col_widths": [
+      2.0,
+      1.8,
+      2.4
+     ],
+     "rows": [
+      [
+       "H—H",
+       "{{436}}",
+       "{{broken}}"
+      ],
+      [
+       "Cl—Cl",
+       "{{242}}",
+       "{{broken}}"
+      ],
+      [
+       "H—Cl",
+       "{{431}}",
+       "{{formed}}"
+      ],
+      [
+       "C(s) → C(g)",
+       "{{719}}",
+       "{{sublimed}}"
+      ],
+      [
+       "C—C",
+       "{{347}}",
+       "{{formed}}"
+      ],
+      [
+       "C—H",
+       "{{414}}",
+       "{{formed}}"
+      ]
+     ],
+     "row_height": 0.32
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Is the formation of HCl exothermic or endothermic? Use the energy absorbed and released as evidence.",
+       "lines": 2,
+       "answer": "Exothermic. Breaking bonds absorbs 436 + 242 = 678 kJ; forming two H—Cl bonds releases 862 kJ. More energy is released than absorbed, so ΔH°rxn = −184 kJ (−92 kJ per mole of HCl)."
+      },
+      {
+       "prompt": "Why does the C₂H₆ reaction need a sublimation term but the HCl reaction does not?",
+       "lines": 2,
+       "answer": "Bond enthalpies are for atoms in the gas phase. Carbon starts as a solid, so 719 kJ per mole of C must first turn C(s) into C(g). H₂ and Cl₂ are already gases."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Look at the enthalpy diagram after the last C—H bond. Match every up arrow and down arrow to a row of your table. Which total is larger: up or down?"
+    }
+   ]
+  },
+  {
+   "title": "Enthalpy of Formation",
+   "sim_screen": "Part 4 · Guided mode",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open the menu: **Part 4: Formation Enthalpies**. Click **Guided**. Reaction type: **Exothermic** (the sim starts here). Reaction: C₂H₆ + Cl₂ → C₂H₅Cl + HCl.",
+      "The ΔH°f table is on screen from the start (values in **kJ/mol**; the sim leaves off the unit). Copy it and do the Calculate box **before** you add the reactants.",
+      "Then tap each dispenser twice (move, then pour), use the **flame slider** to reach the activation energy, and tap **Next** to run. Then tap **Next: Endothermic** and repeat. The endothermic values are **hypothetical**: made up to show what an endothermic reaction looks like."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "If you turn the flame up higher, will ΔH°rxn change? Predict before you run.",
+       "lines": 2,
+       "answer": "No. The flame only supplies the energy to get over the activation energy; ΔH°rxn depends only on the ΔH°f values of products and reactants. Accept any prediction with a reason."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "subtitle": "ΔH°f values in kJ/mol, copied from the sim's table for each reaction type. Compare C₂H₆ and HCl with your Part 3 results.",
+     "columns": [
+      "Data set",
+      "C₂H₆",
+      "Cl₂",
+      "C₂H₅Cl",
+      "HCl"
+     ],
+     "col_widths": [
+      2.2,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "rows": [
+      [
+       "Exothermic",
+       "{{−85}}",
+       "{{0}}",
+       "{{−113}}",
+       "{{−92}}"
+      ],
+      [
+       "Endothermic (hypothetical)",
+       "{{−85}}",
+       "{{0}}",
+       "{{+15}}",
+       "{{+20}}"
+      ]
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "ΔH°rxn = ΣΔH°f(products) − ΣΔH°f(reactants)"
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Calculate ΔH°rxn for the **Exothermic** data set.",
+       "lines": 2,
+       "points": 3,
+       "answer": "ΔH°rxn = (−113 + −92) − (−85 + 0) = −205 + 85 = **−120 kJ/mol**"
+      },
+      {
+       "prompt": "Calculate ΔH°rxn for the **Endothermic (hypothetical)** data set.",
+       "lines": 2,
+       "points": 3,
+       "answer": "ΔH°rxn = (+15 + +20) − (−85 + 0) = 35 + 85 = **+120 kJ/mol**"
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "With sufficient {{energy}}, reactants will turn into products!",
+      "Use the flame slider to reach the {{Activation Energy}} and make the reaction happen.",
+      "The burner never moves the reactant or product {{plateaus}}; those come only from the tabulated {{ΔH°f}} values.",
+      "Cl₂ is listed with ΔH°f = {{0}}, because it is an {{element}} in its standard state."
+     ],
+     "subtitle": "Fill in the blanks while you run the simulation"
+    },
+    {
+     "type": "graph",
+     "x_label": "Reaction progress",
+     "y_label": "Energy",
+     "height": 1.3,
+     "answer": "Reactant plateau, a hump up to the transition state, then down to a product plateau **below** the reactants. Eₐ = arrow from reactants up to the peak. ΔH°rxn = downward arrow from reactants to products. (Endothermic: products end **above** reactants.)",
+     "subtitle": "Sketch the energy diagram for the exothermic run: reactants, transition state, products. Label Eₐ and ΔH°rxn. Shape only: the sim gives no number for Eₐ and its diagram is not to scale."
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "In Part 3 you found ΔH°f of HCl = −92 kJ/mol. Use this to explain why the endothermic data set must be hypothetical.",
+       "lines": 2,
+       "answer": "A substance has only one ΔH°f. The endothermic set gives HCl +20 (and C₂H₅Cl +15), which contradicts −92 from Part 3 and the exothermic set. The values were made up to show an endothermic diagram."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "conclusion": [
+  {
+   "prompt": "Name one endothermic process and one exothermic process from this unit. Give a number from the sim for each.",
+   "lines": 3,
+   "answer": "Endothermic examples: water absorbing 1652 J from iron (Part 1); boiling 1 g of water, +2230 J (Part 2); breaking H—H, 436 kJ (Part 3). Exothermic examples: iron losing 1652 J (Part 1); forming H—Cl, −431 kJ (Part 3); C₂H₆ + Cl₂ → C₂H₅Cl + HCl, −120 kJ/mol (Part 4). Any correct pair with numbers."
+  },
+  {
+   "prompt": "Part 3 (bond enthalpies) and Part 4 (ΔH°f table) both give the enthalpy of forming 1 mole of HCl. Compare the two values and explain why two different methods can give the same ΔH.",
+   "lines": 3,
+   "answer": "Both give −92 kJ/mol. Enthalpy is a state function: ΔH depends only on the starting and ending substances, not on the path taken. This is the idea behind Hess's law."
+  },
+  {
+   "prompt": "Melting 1 g of ice takes 333 J; breaking 1 mole of H—H bonds takes 436 kJ. Convert water's ΔH_f to kJ/mol (H₂O = 18.0 g/mol) and compare. Which are stronger: intermolecular forces or covalent bonds?",
+   "lines": 3,
+   "answer": "333 J/g × 18.0 g/mol = 5994 J/mol ≈ **6.0 kJ/mol**, far smaller than 436 kJ/mol. Covalent bonds are much stronger than intermolecular forces."
+  }
+ ],
+ "key_notes": [
+  "Sim values vs. textbooks: water c = 4.2 J/g·°C (textbooks 4.184); ice 2.1 and steam 1.9 (textbooks about 2.09 and 2.01); water ΔH_vap = 2230 J/g (textbooks about 2260); C(s) → C(g) = 719 kJ/mol (textbooks about 717). The worksheet uses the sim's numbers so answers match the screen. Tell students textbooks round these a little differently.",
+  "Part 1: the burner starts on the lowest setting (40 °C) when the sim first opens and resets to lowest whenever the metal changes, including the Next → aluminum and Next → lithium steps. Guided-mode Reset and switching back to Guided set it to the highest (100 °C). The worksheet names the setting; check that the formula line shows \"− 100\".",
+  "Part 1: the bottom formula line shows \"− 1652 J = 1652 J\". The minus sign is the one in −q_system, and the box holds +1652. Students should read q from the right-hand box.",
+  "Part 1: a student who uses the rounded T_f (26.6 °C) gets q = 1663 J; the sim shows 1652 J because it uses T_f = 26.56 °C. Accept 1650–1665 J (similar for Al: 3046–3049 J; Li: 8366–8377 J).",
+  "Part 1: masses show only in the formula line (the slider readouts are hidden). The mass buttons move 5 g at a time; the water slider moves 1 g at a time, so leaving it at the 60 g default is easiest.",
+  "Part 2: every value is for 1 g and the sim never says so. The equations box labels the heat capacity \"Cw\" for every substance and phase; the worksheet uses Cₚ. Energies are in J (for 1 g).",
+  "Part 2: while the substance is still solid, the speech bubble says liquid Cₚ will be 4.2 J/g·°C for every substance. That is only true for water (ethanol 2.44, acetone 2.18). The correct value appears once the substance melts.",
+  "Parts 2, 3 and 4: none of the graphs are to scale (equal-size heating-curve legs; schematic bond-energy arrows; Part 4 diagram with no Eₐ number and different plateau gaps for −120 and +120). The worksheet asks only for shapes.",
+  "Part 3: the ΔH° result appears on screen the moment the last bond of each type forms (−184 when the second H—Cl forms; −85 as soon as Next is tapped after C—C). The worksheet puts each Calculate box before that point and gives C—H = 414 kJ in the prompt, because the sim shows it only in the step that also reveals −85.",
+  "Part 4: the sim calls the exothermic set \"hypothetical\" and does not label the endothermic set. In fact the exothermic values (C₂H₅Cl −113, HCl −92) are close to real data, and the endothermic values (+15, +20) are invented and contradict Part 3. The worksheet labels the endothermic set hypothetical.",
+  "The sim uses both ΔH°rx and ΔH°rxn; the worksheet uses ΔH°rxn throughout. The sim writes reaction enthalpies as \"kJ\"; the worksheet uses kJ/mol for bond energies and ΔH°f values.",
+  "Hess's law (6.9) is listed in the Part 3 and Part 4 menus but the sim has no Hess's law activity. Conclusion question 2 introduces the state-function idea; teach Hess's law with your usual lesson (Day 4)."
+ ],
+ "lesson_plan": {
+  "period_minutes": 50,
+  "ap_topics": [
+   "6.1 Endothermic and Exothermic Processes",
+   "6.2 Energy Diagrams",
+   "6.3 Heat Transfer and Thermal Equilibrium",
+   "6.4 Heat Capacity and Calorimetry",
+   "6.5 Energy of Phase Changes",
+   "6.6 Introduction to Enthalpy of Reaction",
+   "6.7 Bond Enthalpies",
+   "6.8 Enthalpy of Formation"
+  ],
+  "sim_location": "ChemSims.app → Simulations → Thermodynamics Lab (Parts 1–4; Parts 91–94 are Unit 9)",
+  "essential_question": "Where does the energy go when things heat up, change phase, or react, and how can we calculate how much?",
+  "objectives": [
+   "Use −q_system = q_surroundings and q = mcΔT to find a final temperature and the heat transferred in a calorimeter.",
+   "Explain why temperature stays constant during a phase change and calculate the total heat on a heating curve.",
+   "Estimate ΔH°rxn from bond enthalpies (bonds broken − bonds formed), including a sublimation term for solid carbon.",
+   "Calculate ΔH°rxn from enthalpies of formation and connect the sign of ΔH to an energy diagram."
+  ],
+  "materials": [
+   "Calculators",
+   "Colored pens for self-grading (Day 5)"
+  ],
+  "prep": [
+   "Run Parts 1–4 once in Guided mode. In Part 1, notice the burner starts on the lowest setting (40 °C) and resets whenever the metal changes.",
+   "Practice the Part 3 gestures: sideways swipes break molecules, up/down swipes in the HCl columns form bonds, taps sublime carbon.",
+   "The sim doesn't cover 6.9 Hess's Law (the menu lists it, but there is no Hess's law activity). Use your usual Hess's law lesson for it; Day 4 has 20 minutes set aside.",
+   "Decide whether students will self-grade or you will grade on Day 5."
+  ],
+  "vocabulary": [
+   "system",
+   "surroundings",
+   "specific heat (c)",
+   "thermal equilibrium",
+   "calorimeter",
+   "enthalpy (ΔH)",
+   "enthalpy of fusion (ΔH_f)",
+   "enthalpy of vaporization (ΔH_v)",
+   "sublimation",
+   "bond enthalpy",
+   "enthalpy of formation (ΔH°f)",
+   "activation energy (Eₐ)",
+   "exothermic",
+   "endothermic"
+  ],
+  "prior_knowledge": [
+   "Temperature vs. heat; units J and kJ",
+   "Intermolecular forces and phases of matter (Unit 3)",
+   "Covalent bonds and Lewis structures (Unit 2)",
+   "Balanced equations and moles"
+  ],
+  "days": [
+   {
+    "day": 1,
+    "title": "Teacher demo: heat transfer and calorimetry",
+    "goal": "Students see that heat flows from hot to cold until thermal equilibrium, and use −q_system = q_surroundings to predict T_f.",
+    "worksheet_pages": "Cover + pp. 1–3 (Heat Transfer & Calorimetry): set-up, prediction, notes, both Calculate boxes, iron row, graph",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: \"A hot metal spoon goes into cold water. What happens to each temperature?\""
+     ],
+     [
+      "5–40",
+      "Projected demo of Part 1 with iron (script below). Students fill Section 1 as you go."
+     ],
+     [
+      "40–47",
+      "Pairs: second Calculate box (q of water) and the graph sketch."
+     ],
+     [
+      "47–50",
+      "Quick check: \"Which lost heat, the iron or the water? What is the sign of q for the iron?\""
+     ]
+    ],
+    "demo_script": [
+     {
+      "do": "Open the Thermodynamics Lab. Open the menu and choose Part 1 · Simulation 1: Heat transfer and calorimetry. Click Guided (top right).",
+      "say": "Read the bubble aloud: \"Energy cannot be destroyed or created. Energy is transferred.\" Ask: where could energy go in a cup of water?",
+      "students": "First Guided Notes line: destroyed, created, transferred."
+     },
+     {
+      "do": "Leave Choose a Metal on Iron. Tap Next.",
+      "say": "The bubble gives iron's specific heat, 0.45 J/g·°C. Point to the formula line: water's value is the 4.2. Ask: which needs more energy to warm by 1 °C, 1 g of iron or 1 g of water? (Water.)",
+      "students": "Specific heat blanks for iron and water."
+     },
+     {
+      "do": "Step 1 (sample mass). Point out the ◀ ▶ buttons under the burner beaker (the bubble says \"slider\", but they are buttons, 5 g per click). Leave it at 50 g. Tap Next.",
+      "say": "Where can we see the mass? Only in the formula line: the −50.",
+      "students": "Set Up check: −50 in the formula line."
+     },
+     {
+      "do": "Step 2 (burner). Drag the Burner fire slider all the way right (3 flames). Show that the formula line changes from − 40 to − 100. Tap Next.",
+      "say": "The burner has three settings: 40, 70 and 100 °C. We use 100 °C. Warn: it drops back to 40 °C every time you change the metal.",
+      "students": "Circle the burner instruction in the Set Up box."
+     },
+     {
+      "do": "Step 3 (water). Leave the vertical slider at 60 g; point to \"60 × 4.2\" and \"− 20\" in the formula line. Tap Next.",
+      "say": "The metal is the system; the water is the surroundings. The water starts at 20 °C.",
+      "students": "Notes: system, surroundings."
+     },
+     {
+      "do": "Stop before dragging the tweezers. Give 2 minutes for the Predict box, then take a hand vote: closer to 20 °C or to 100 °C?",
+      "say": "Expected: closer to 20 °C, because water has the larger specific heat and more mass. Ask for a reason with every vote.",
+      "students": "Predict box."
+     },
+     {
+      "do": "Walk through the first Calculate box on the board: T_f = (50 × 0.45 × 100 + 60 × 4.2 × 20) ÷ (50 × 0.45 + 60 × 4.2).",
+      "say": "Expected answer 7290 ÷ 274.5 = 26.6 °C. Now let's test it.",
+      "students": "First Calculate box: 26.6 °C."
+     },
+     {
+      "do": "Drag the tweezers onto the iron until it highlights, carry it to the calorimeter, and drop it in. The graph starts by itself.",
+      "say": "Watch both curves. Which way does heat flow? (Hot iron to cold water.) When does it stop? (When both are at the same temperature: thermal equilibrium.)",
+      "students": "Notes: loses, gains, hot, cold. Graph sketch."
+     },
+     {
+      "do": "Point to the formula boxes: T_f = 26.6 and the bottom line \"− 1652 J = 1652 J\".",
+      "say": "The minus sign belongs to −q_system: the iron lost 1652 J and the water gained 1652 J. Read q from the right-hand box.",
+      "students": "Iron row of the table: 0.45, 26.6, 1652."
+     },
+     {
+      "do": "Stop here. Do not tap Next to aluminum.",
+      "say": "Tomorrow you'll run aluminum and lithium yourselves. When you tap Next, set the burner back to 3 flames first!",
+      "students": "Nothing new; finish the second Calculate box in pairs."
+     }
+    ]
+   },
+   {
+    "day": 2,
+    "title": "Student sim work: calorimetry and heating curves",
+    "goal": "Students finish Part 1 with aluminum and lithium, then use Part 2 to measure the heat for each leg of a heating curve.",
+    "worksheet_pages": "Finish pp. 1–3 (aluminum, lithium, Analyze, Explore); pp. 4–6 (Heating Curves & Phase Changes)",
+    "agenda": [
+     [
+      "0–5",
+      "Recap: what does T_f depend on? Remind: reset the burner to 3 flames for each metal."
+     ],
+     [
+      "5–20",
+      "Part 1: aluminum and lithium rows, analysis questions, Explore."
+     ],
+     [
+      "20–47",
+      "Part 2: water first (stop at 100 °C for the Calculate box), then ethanol and acetone."
+     ],
+     [
+      "47–50",
+      "Checkpoint and clean-up."
+     ]
+    ],
+    "circulate": [
+     "Formula line reads \"− 100\" for every metal (burner on 3 flames). If a student has T_f = 23.0 °C for aluminum, the burner was left on 40 °C.",
+     "q values come from the right-hand box, not \"−1652\".",
+     "Part 2 calculations use 1 g and the sim's values (4.2, 2230, not 4.184 or 2260).",
+     "Students stopped at 100 °C and did the Calculate box before sliding to the end.",
+     "Liquid Cₚ for ethanol and acetone read after melting (2.44 and 2.18, not 4.2)."
+    ],
+    "checkpoint": "Lithium T_f = 53.2 °C, and the total for 1 g of water from −10 °C to 120 °C = 3042 J.",
+    "early_finishers": "Part 1 Explore (burner on 40 °C, or 100 g iron) and Part 2 Explore (Run simulation with acetone)."
+   },
+   {
+    "day": 3,
+    "title": "Student sim work: bond enthalpies",
+    "goal": "Students estimate ΔH°rxn from bond enthalpies for H₂ + Cl₂ → 2HCl and 2C(s) + 3H₂ → C₂H₆.",
+    "worksheet_pages": "pp. 7–9 (Bond Enthalpies)",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: \"Does breaking a bond release energy?\" (Predict box.)"
+     ],
+     [
+      "5–20",
+      "HCl tour: break, stop after the first H—Cl, calculate, then finish."
+     ],
+     [
+      "20–40",
+      "C₂H₆ tour: sublime, break, form C—C, stop and calculate, then finish. Fill the bond table."
+     ],
+     [
+      "40–48",
+      "Enthalpy diagram sketch and analysis questions."
+     ],
+     [
+      "48–50",
+      "Checkpoint."
+     ]
+    ],
+    "circulate": [
+     "Students stop and calculate before forming the second H—Cl bond (the sim shows −184 right after).",
+     "Students stop after C—C and calculate before tapping Next (the sim shows −85 right after).",
+     "Signs: bonds broken are added, bonds formed are subtracted; sublimation is added.",
+     "2 × 431 (two H—Cl bonds) and 6 × 414 (six C—H bonds), not 1 of each.",
+     "Units: kJ/mol for bond energies."
+    ],
+    "checkpoint": "H₂ + Cl₂ → 2HCl: ΔH°rxn = −184 kJ (−92 kJ/mol HCl); 2C(s) + 3H₂ → C₂H₆: −85 kJ.",
+    "early_finishers": "Section 3 Explore: match each arrow on the C₂H₆ diagram to the bond table."
+   },
+   {
+    "day": 4,
+    "title": "Student sim work: enthalpy of formation, then Hess's law",
+    "goal": "Students calculate ΔH°rxn from ΔH°f values and relate its sign to the energy diagram; teacher introduces Hess's law (not in the sim).",
+    "worksheet_pages": "pp. 10–11 (Enthalpy of Formation) and p. 12 (Conclusion)",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: \"In Part 3 you got −92 kJ/mol for HCl. Where might you see that number again?\""
+     ],
+     [
+      "5–25",
+      "Part 4: copy the table and calculate before running; exothermic run, then endothermic (hypothetical) run; questions."
+     ],
+     [
+      "25–45",
+      "Teacher mini-lesson: Hess's law with your usual examples. Link it to Conclusion question 2 (the same −92 from two paths)."
+     ],
+     [
+      "45–50",
+      "Conclusion questions (finish for homework if needed)."
+     ]
+    ],
+    "circulate": [
+     "Calculate boxes done before pouring the reactants.",
+     "Subtraction order: products minus reactants; −(−85) becomes +85.",
+     "Students wrote \"hypothetical\" for the endothermic set and can say why (HCl +20 contradicts −92).",
+     "Diagram sketches show shapes only, with Eₐ and ΔH°rxn labelled."
+    ],
+    "checkpoint": "Exothermic set ΔH°rxn = −120 kJ/mol; endothermic (hypothetical) set = +120 kJ/mol.",
+    "early_finishers": "Section 4 Explore, then a Hess's law practice problem from your usual set.",
+    "homework": "Finish the Conclusion questions."
+   },
+   {
+    "day": 5,
+    "title": "Grading and wrap-up",
+    "goal": "Students check their work against the key, discuss common errors, and show what they learned.",
+    "worksheet_pages": "All pages + Self-Grading Record (pp. 12–13)",
+    "agenda": [
+     [
+      "0–25",
+      "Grading: self-grade in a second pen color with the answer key, or collect for teacher grading (see the grading section)."
+     ],
+     [
+      "25–38",
+      "Discussion: the most-missed items (sign of q, the burner reset, broken − formed vs. products − reactants)."
+     ],
+     [
+      "38–45",
+      "AP practice question (FRQ) in pairs."
+     ],
+     [
+      "45–50",
+      "Exit ticket."
+     ]
+    ]
+   }
+  ],
+  "misconceptions": [
+   {
+    "misconception": "Cold flows from the water into the metal.",
+    "sim_fix": "Part 1 graph: the metal curve only falls and the water curve only rises; the bubble says heat goes from the metal (system) to the water (surroundings)."
+   },
+   {
+    "misconception": "The same amount of heat gives the same temperature change to both objects.",
+    "sim_fix": "Iron run: 1652 J lowers the iron by 73.4 °C but raises the water by only 6.6 °C (m × c of 22.5 vs. 252 J/°C)."
+   },
+   {
+    "misconception": "Adding heat always raises the temperature.",
+    "sim_fix": "Part 2: the thermometer stays at 0 °C and 100 °C while 333 J and 2230 J are added; the bubble says ΔH = Cₚ × (T₂ − T₁) is zero there."
+   },
+   {
+    "misconception": "Breaking bonds releases energy.",
+    "sim_fix": "Part 3: breaking H—H costs 436 kJ; only forming H—Cl releases energy (431 kJ). The arrows go up for breaking and down for forming."
+   },
+   {
+    "misconception": "More heat from the burner makes the reaction release more energy.",
+    "sim_fix": "Part 4: the plateaus never move with the flame; ΔH°rxn stays −120 kJ/mol. The flame only helps reach the activation energy."
+   }
+  ],
+  "sim_cautions": [
+   "Part 1: the burner starts on the lowest setting (40 °C) and goes back to it every time the metal changes, even when you tap Next to go to aluminum. Have students check that the formula line shows \"− 100\".",
+   "Part 1: the bottom line reads \"− 1652 J = 1652 J\". The minus sign is part of −q_system; the number in the box is positive. Read q from the right-hand box.",
+   "Part 1: the bubble says \"Pinch the slider\" for the sample mass, but the control is a pair of ◀ ▶ buttons. It also says \"press play\", but the graph starts on its own after the drop.",
+   "Part 1: there are no number readouts for the masses or burner; they show only in the formula line.",
+   "Part 2: every number is for 1 g, but the sim never shows the mass. The heat capacity is labelled \"Cw\" for every substance.",
+   "Part 2: before melting, the bubble says the liquid Cₚ will be 4.2 J/g·°C for every substance. That is only right for water (ethanol 2.44, acetone 2.18).",
+   "Parts 2–4: the graphs are not to scale. Use the numbers, not the size of the graph features.",
+   "Part 3: some bubbles say \"Breakind\" (typo) and one says \"Forming the ___ bond\" with the word missing (it should say C—C).",
+   "Part 3: the HCl diagram draws one 431 arrow although two H—Cl bonds form. The −184 and −85 answers appear right after the last bond forms, so calculate first.",
+   "Part 3 menu lists 6.9 Hess's law, but that link only opens the intro screen. There is no Hess's law activity.",
+   "Part 4: the sim calls the exothermic data set \"hypothetical\". It is the endothermic set (+15, +20) that is made up; tell students to treat the endothermic set as hypothetical.",
+   "Part 4: before the run, the calculation row shows −205 (the products' sum) in the ΔH spot, and later writes the reactants as \"(0 − 85)\", meaning 0 + (−85). In the endothermic run, the bubble announces \"120 kJ (absorbed)\" before the activation energy is reached."
+  ],
+  "differentiation": {
+   "support": [
+    "Give the rearranged T_f formula with the numbers already placed for iron; students repeat it for aluminum.",
+    "For Part 2, give a five-box leg diagram (solid, melt, liquid, boil, vapor) to fill in before adding.",
+    "Pair students for Part 3 so one swipes and one records each bond energy as it appears.",
+    "Provide a sign reminder card: bonds broken (+), bonds formed (−), sublimation (+); products − reactants."
+   ],
+   "extension": [
+    "Part 1: find the mass of lithium that gives T_f = 40 °C with 60 g of water (algebra with the same equation), then test it in Free Explore.",
+    "Part 2: calculate the heat to turn 18 g (1 mol) of ice at −10 °C into steam at 120 °C, in kJ.",
+    "Part 3: use the C₂H₆ result and textbook ΔH°f values to judge how good the bond-enthalpy estimate is.",
+    "Part 4: write the formation equations for C₂H₆, C₂H₅Cl and HCl and use Hess's law to add them into the Part 4 reaction."
+   ]
+  },
+  "exit_ticket": [
+   {
+    "question": "60 g of water (c = 4.2 J/g·°C) warms from 20.0 °C to 32.1 °C. How much heat did it gain?",
+    "answer": "q = 60 × 4.2 × 12.1 = 3049 J ≈ 3.0 kJ"
+   },
+   {
+    "question": "Why does the temperature stay at 100 °C while water boils, even though heat is still being added?",
+    "answer": "The energy goes into overcoming intermolecular forces to turn liquid into gas, not into raising the temperature."
+   },
+   {
+    "question": "Using ΔH°f values C₂H₆ −85, Cl₂ 0, C₂H₅Cl −113, HCl −92 kJ/mol, find ΔH°rxn for C₂H₆ + Cl₂ → C₂H₅Cl + HCl. Exothermic or endothermic?",
+    "answer": "(−113 + −92) − (−85 + 0) = −120 kJ/mol; exothermic."
+   }
+  ],
+  "ap_practice": [
+   {
+    "question": "FRQ. A 50.0 g sample of aluminum (c = 0.897 J/g·°C) is heated to 100.0 °C and placed in 60.0 g of water (c = 4.2 J/g·°C) at 20.0 °C in an insulated calorimeter. The final temperature is 32.1 °C. (a) Calculate the heat gained by the water. (b) Calculate q for the aluminum and state whether the process is exothermic or endothermic for the aluminum. (c) Explain, in terms of particle motion, why heat stops flowing at 32.1 °C. (d) If the calorimeter were not insulated and lost heat to the room, would the specific heat of aluminum calculated from these data be too high or too low? Justify.",
+    "answer": "(a) q_water = 60.0 × 4.2 × (32.1 − 20.0) = 3049 J ≈ 3.05 kJ. (b) q_Al = 50.0 × 0.897 × (32.1 − 100.0) = −3045 J; exothermic for the aluminum (it loses heat). (c) At 32.1 °C the metal and water particles have the same average kinetic energy, so there is no net transfer of energy: thermal equilibrium. (d) Too low: heat lost to the room makes T_f lower, so q_water is smaller and ΔT of the aluminum is larger; c = q ÷ (m × ΔT) comes out smaller."
+   },
+   {
+    "question": "MCQ. Bond enthalpies (kJ/mol): H—H 436, Cl—Cl 242, H—Cl 431. What is ΔH° for H₂(g) + Cl₂(g) → 2HCl(g)? (A) +247 kJ (B) −184 kJ (C) −92 kJ (D) +184 kJ",
+    "answer": "(B) −184 kJ: (436 + 242) − 2(431) = 678 − 862. (A) forgets the 2; (C) is per mole of HCl, not for the equation as written; (D) has bonds formed minus bonds broken."
+   }
+  ]
+ }
+}

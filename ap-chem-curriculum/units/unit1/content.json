@@ -1,0 +1,1583 @@
+{
+ "unit": 1,
+ "unit_title": "Atomic Structure and Properties",
+ "worksheet_title": "Atomic Structure and Properties",
+ "sim_name": "Atomic Structure Sim",
+ "pages": [
+  {
+   "title": "Moles and Molar Mass",
+   "sim_screen": "Topic 1.1 · Guided steps 1–6 + Free Explore",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Topic 1.1 Moles and Molar Mass** in **Guided** mode. Use **Next** to move through the 6 steps.",
+      "Leave **Substance** on **H₂O (Water)** (starts at **18.0 g**). The mass control works only on step 6 and in Free Explore; a new substance resets the mass to one molar mass."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "If you double the mass of the water sample, what happens to the number of moles and the number of molecules?",
+       "lines": 1,
+       "answer": "Both double. For the same substance, moles and particles change in proportion to the mass."
+      }
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "n = {{m / M|10}}      N = {{n × Nₐ|10}}      Nₐ = {{6.022 × 10²³ mol⁻¹|18}}",
+      "n = {{moles|10}}   N = {{particles|10}}   m = {{mass|8}}   M = {{molar mass|12}}"
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "We cannot count atoms one by one. We measure {{mass}}, then use the {{mole}} to connect mass to amount of substance.",
+      "The {{molar mass}} tells how many grams correspond to {{one}} mole of the substance.",
+      "The same numerical value connects one particle mass in {{amu}} to one mole mass in {{grams}}.",
+      "To find moles, {{divide}} the sample mass by the {{molar mass}}.",
+      "One mole always contains {{6.022 × 10²³}} particles (Avogadro's number). Ionic NaCl is counted in {{formula units}}, not molecules.",
+      "Each conversion factor {{cancels}} the previous unit until only the desired unit remains."
+     ]
+    },
+    {
+     "type": "table",
+     "row_height": 0.32,
+     "title": "Data table: Step 2 molar-mass breakdown",
+     "columns": [
+      "Element in H₂O",
+      "Number of atoms",
+      "Atomic mass shown (g/mol)",
+      "Atoms × atomic mass (g/mol)"
+     ],
+     "rows": [
+      [
+       "H",
+       "{{2}}",
+       "{{1.0}}",
+       "{{2.0}}"
+      ],
+      [
+       "O",
+       "{{1}}",
+       "{{16.0}}",
+       "{{16.0}}"
+      ],
+      [
+       "**Molar mass of H₂O**",
+       "",
+       "",
+       "{{18.0}}"
+      ]
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Do this BEFORE you click to step 3: how many moles are in the 18.0 g H₂O sample?",
+       "lines": 2,
+       "answer": "n = m / M = 18.0 g ÷ 18.0 g/mol = **1.00 mol** H₂O (step 3 shows 1.00 mol)."
+      },
+      {
+       "prompt": "Do this BEFORE step 6: 36.0 g of NaCl (M = 58.4 g/mol). Find moles and formula units. Round to 3 significant figures.",
+       "lines": 2,
+       "answer": "n = 36.0 g ÷ 58.4 g/mol = 0.616 mol (sim shows 0.62 mol). N = 0.616 mol × 6.022 × 10²³ = **3.71 × 10²³ formula units** (sim: 3.71 × 10²³)."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "row_height": 0.32,
+     "title": "Data table: Step 6 / Free Explore",
+     "subtitle": "Pick the substance, type the mass in the Mass box, and record the Measurements panel",
+     "columns": [
+      "Substance",
+      "Mass (g)",
+      "Molar mass (g/mol)",
+      "Moles (mol)",
+      "Particles",
+      "Particle type"
+     ],
+     "col_widths": [
+      1.1,
+      0.9,
+      1.1,
+      1,
+      1.4,
+      1.3
+     ],
+     "rows": [
+      [
+       "H₂O",
+       "18.0",
+       "{{18.0}}",
+       "{{1.00}}",
+       "{{6.022 × 10²³}}",
+       "{{molecules}}"
+      ],
+      [
+       "H₂O",
+       "36.0",
+       "{{18.0}}",
+       "{{2.00}}",
+       "{{1.203 × 10²⁴}}",
+       "{{molecules}}"
+      ],
+      [
+       "NaCl",
+       "36.0",
+       "{{58.4}}",
+       "{{0.62}}",
+       "{{3.71 × 10²³}}",
+       "{{formula units}}"
+      ]
+     ],
+     "note": "Row 1: the starting mass. Row 2: slide the H₂O mass to the top of its scale (36.0 g)."
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "36.0 g of H₂O and 36.0 g of NaCl have the same mass. Which sample has more particles? Use your data and molar mass to explain.",
+       "lines": 2,
+       "answer": "H₂O: 1.203 × 10²⁴ molecules vs. 3.71 × 10²³ formula units of NaCl. Water's molar mass (18.0 g/mol) is smaller than NaCl's (58.4 g/mol), so each gram holds more moles and more particles. Accept: smaller molar mass → more moles per gram."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Free Explore: set CO₂ to one molar mass and predict the moles first; double a mass and watch the particles."
+    }
+   ]
+  },
+  {
+   "title": "Mass Spectra of Elements",
+   "sim_screen": "Topic 1.2 · Guided steps 1–6 + Free Explore",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Topic 1.2 Mass Spectra of Elements** in **Guided** mode. Steps 1–5 always use **neon (Ne)** at natural abundance.",
+      "On step 6, the **Element** buttons (Neon, Magnesium, Boron, Silicon) and the **Abundance Controls** sliders turn on. Moving one slider changes the others so the total stays 100%; clicking an element resets natural abundances."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Neon has isotopes with mass numbers 20, 21 and 22. Neon's atomic mass is about 20.18. Which isotope do you predict is the most abundant? Why?",
+       "lines": 1,
+       "answer": "Neon-20, because the average (20.18) is very close to 20. Accept any answer that uses the average being near 20."
+      }
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "Relative abundance = {{amount of one isotope ÷ total amount|32}} × 100",
+      "Average atomic mass = Σ ( {{isotope mass × fractional abundance|34}} )"
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "The sample contains only neon, but its atoms do not all have the same {{mass}}. These different masses come from {{isotopes}}.",
+      "Each isotope appears at a different {{m/z}} value because each isotope has a different mass.",
+      "For singly charged ions, m/z is approximately the {{isotope mass}}.",
+      "The tallest peak is not the heaviest isotope. It is the {{most abundant}} isotope. Peak height tracks {{abundance}}, not isotope mass.",
+      "The atomic mass on the periodic table is a {{weighted average}} of isotope masses. It is usually not a whole number because it is an {{average}}."
+     ]
+    },
+    {
+     "type": "table",
+     "row_height": 0.32,
+     "title": "Data table: Neon isotope data (steps 2–4)",
+     "columns": [
+      "Isotope",
+      "Peak at m/z",
+      "Abundance (%)",
+      "Fractional abundance"
+     ],
+     "rows": [
+      [
+       "²⁰Ne",
+       "{{20}}",
+       "{{90.5}}",
+       "{{0.9048}}"
+      ],
+      [
+       "²¹Ne",
+       "{{21}}",
+       "{{0.3}}",
+       "{{0.0027}}"
+      ],
+      [
+       "²²Ne",
+       "{{22}}",
+       "{{9.3}}",
+       "{{0.0925}}"
+      ]
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Do this BEFORE step 5: the isotope masses are 19.992, 20.994 and 21.991 amu. Use your fractional abundances to calculate neon's average atomic mass.",
+       "lines": 2,
+       "answer": "19.992(0.9048) + 20.994(0.0027) + 21.991(0.0925) = 18.089 + 0.057 + 2.034 = **20.180 amu** (step 5 shows 20.180 amu)."
+      },
+      {
+       "prompt": "Do this BEFORE you click Boron on step 6: boron is 19.9% ¹⁰B (10.013 amu) and 80.1% ¹¹B (11.009 amu). Calculate boron's average atomic mass.",
+       "lines": 2,
+       "answer": "10.013(0.199) + 11.009(0.801) = 1.993 + 8.818 = **10.811 amu** (sim: 10.811 amu)."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "row_height": 0.32,
+     "title": "Data table: Step 6 natural abundance",
+     "subtitle": "Click each element button and record the Isotope Data panel",
+     "columns": [
+      "Element",
+      "Dominant isotope",
+      "Average atomic mass (amu)"
+     ],
+     "rows": [
+      [
+       "Neon",
+       "{{²⁰Ne}}",
+       "{{20.180}}"
+      ],
+      [
+       "Magnesium",
+       "{{²⁴Mg}}",
+       "{{24.305}}"
+      ],
+      [
+       "Boron",
+       "{{¹¹B}}",
+       "{{10.811}}"
+      ]
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "On step 6 (Boron), drag the sliders until the two peaks are about the same height. What average atomic mass does the sim show? Explain why.",
+       "lines": 2,
+       "answer": "About 10.51 amu, halfway between 10.013 and 11.009, because equal abundances give each isotope equal weight. Accept 10.4–10.6 amu with the equal-weight reasoning."
+      },
+      {
+       "prompt": "Choose Magnesium. Increase the ²⁶Mg slider. Which way does the average atomic mass move, and why?",
+       "lines": 2,
+       "answer": "It increases toward 26, because more of the heaviest isotope adds more weight to the high-mass value in the weighted average."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Free Explore: select magnesium and find the isotope with the tallest peak."
+    }
+   ]
+  },
+  {
+   "title": "Elemental Composition of Pure Substances",
+   "sim_screen": "Topic 1.3 · Guided steps 1–6 + Free Explore",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Topic 1.3 Elemental Composition of Pure Substances** in **Guided** mode. Keep the toggle on **Molecular** (the example compound: C 40.0 g, H 6.7 g, O 53.3 g).",
+      "**Do not move the Sample mass slider.** Keep it at **100.0 g**. (The sim rounds each element to 0.1 g every time the slider moves, so the percentages drift.)",
+      "If the slider was moved, click **Formula unit**, then **Molecular**, to reset the example."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "A 50 g sample and a 100 g sample of the same pure compound: will the percent by mass of carbon be different? Why?",
+       "lines": 1,
+       "answer": "No. A pure compound has a fixed composition by mass (law of definite proportions), so % C is the same for any sample size."
+      }
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "% by mass = {{mass of element ÷ total mass of compound|36}} × 100",
+      "mass of element = {{% ÷ 100|10}} × total sample mass      n = {{m ÷ M|8}}",
+      "ratio = {{moles of each element ÷ smallest mole value|38}}",
+      "multiplier = {{molecular molar mass ÷ empirical formula mass|38}}"
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "A pure compound has a fixed {{mass composition}}. This is the law of {{definite proportions}}.",
+      "A {{100.0 g}} sample makes each percent value read directly as grams.",
+      "Masses do not directly give atom counts. Convert grams to {{moles}} so the elements can be compared by amount.",
+      "Divide every mole amount by the {{smallest}} mole amount.",
+      "Empirical formula = {{lowest whole-number}} ratio of atoms.",
+      "For a molecular compound, compare {{molecular molar mass}} with empirical-formula mass to find the multiplier.",
+      "Ionic compounds stay as {{formula units}}; they are not scaled into molecules."
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Do this BEFORE step 3: how many moles of hydrogen are in 6.7 g H? (H = 1.008 g/mol)",
+       "lines": 2,
+       "answer": "n = 6.7 g ÷ 1.008 g/mol = **6.65 mol H** (step 3 shows 6.65 mol)."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "row_height": 0.32,
+     "title": "Data table: Steps 2–5 (Molecular example)",
+     "columns": [
+      "Element",
+      "% by mass",
+      "Mass in 100.0 g (g)",
+      "Atomic mass (g/mol)",
+      "Moles (mol)",
+      "Moles ÷ smallest",
+      "Whole number"
+     ],
+     "rows": [
+      [
+       "C",
+       "{{40.0}}",
+       "{{40.0}}",
+       "12.011",
+       "{{3.33}}",
+       "{{1.00}}",
+       "{{1}}"
+      ],
+      [
+       "H",
+       "{{6.7}}",
+       "{{6.7}}",
+       "1.008",
+       "{{6.65}}",
+       "{{2.00}}",
+       "{{2}}"
+      ],
+      [
+       "O",
+       "{{53.3}}",
+       "{{53.3}}",
+       "15.999",
+       "{{3.33}}",
+       "{{1.00}}",
+       "{{1}}"
+      ]
+     ],
+     "note": "Empirical formula: {{CH₂O}}"
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Do this BEFORE step 5: glucose has empirical formula CH₂O and molar mass 180.16 g/mol. Find the empirical formula mass, the multiplier and the molecular formula.",
+       "lines": 2,
+       "answer": "CH₂O = 12.011 + 2(1.008) + 15.999 = 30.026 g/mol. n = 180.16 ÷ 30.026 = 6.00 → 6. Molecular formula **C₆H₁₂O₆** (sim: “6.00 rounds to 6”)."
+      },
+      {
+       "prompt": "Click **Formula unit**: Mg 60.3 g and O 39.7 g. Calculate the moles of each and the empirical formula. Then check the sim.",
+       "lines": 2,
+       "answer": "Mg: 60.3 ÷ 24.305 = 2.48 mol. O: 39.7 ÷ 15.999 = 2.48 mol. Ratio 1 : 1 → **MgO**."
+      }
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "A student says the mass data C 40.0 g, H 6.7 g, O 53.3 g means the formula is C₄₀H₇O₅₃. Use the sim's steps to explain the mistake.",
+       "lines": 2,
+       "answer": "Masses do not give atom counts. You must divide each mass by its atomic mass to get moles (3.33, 6.65, 3.33), then divide by the smallest (1 : 2 : 1), giving CH₂O."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Step 6 / Free Explore: type C 80.0, H 13.4, O 106.6 (all doubled). Is the formula still CH₂O? Adjust C, H and O to a 1 : 2 : 1 mole ratio and confirm CH₂O."
+    }
+   ]
+  },
+  {
+   "title": "Composition of Mixtures",
+   "sim_screen": "Topic 1.4 · Guided steps 1–6 + Free Explore",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Topic 1.4 Composition of Mixtures** in **Guided** mode. It starts with **CO 14.0 g**; from step 2, **CO₂ 22.0 g** is added (the “50-50 mol example”).",
+      "Leave both mass sliders at these starting values for steps 1–5.",
+      "This topic uses **C = 12** and **O = 16** g/mol exactly. On step 6, use the preset buttons: **50-50 mol example, Pure CO, Pure CO₂, Mystery sample**."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "When CO₂ is mixed into pure CO, will the percent oxygen of the sample go up, go down or stay the same? Why?",
+       "lines": 1,
+       "answer": "Go up, because CO₂ has a higher percent oxygen than CO (72.7% vs. 57.1%)."
+      }
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "m(element) = {{mass of substance|16}} × {{element mass ÷ molar mass|24}}",
+      "% composition = {{mass of element ÷ total mass|28}} × 100",
+      "f(CO₂) = (%O sample − %O CO) ÷ ({{%O CO₂ − %O CO|18}})"
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Step 1 contains one kind of molecule: {{carbon monoxide}}. A pure substance has a fixed {{composition}} by mass, even when the sample size changes.",
+      "Adding carbon dioxide creates a {{mixture}} because two particle types are present. The relative amounts can {{vary}}.",
+      "When the mass of carbon stays the same, CO₂ has {{twice}} as much oxygen as CO: {{32}} g O vs. 16 g O per 12 g C. This shows the Law of {{Multiple Proportions}}.",
+      "A mixture gives an {{intermediate}} composition between the pure CO and pure CO₂ endpoints."
+     ]
+    },
+    {
+     "type": "table",
+     "row_height": 0.32,
+     "title": "Data table: Steps 1–3",
+     "columns": [
+      "Substance",
+      "Mass (g)",
+      "Molar mass (g/mol)",
+      "% C in substance",
+      "Mass of C (g)",
+      "Mass of O (g)"
+     ],
+     "rows": [
+      [
+       "CO",
+       "14.0",
+       "{{28.00}}",
+       "{{42.9}}",
+       "{{6.0}}",
+       "{{8.0}}"
+      ],
+      [
+       "CO₂",
+       "22.0",
+       "{{44.00}}",
+       "{{27.3}}",
+       "{{6.0}}",
+       "{{16.0}}"
+      ],
+      [
+       "**Total sample**",
+       "{{36.0}}",
+       "—",
+       "—",
+       "{{12.0}}",
+       "{{24.0}}"
+      ]
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Do this BEFORE step 4: calculate the percent C and percent O of the whole mixture.",
+       "lines": 2,
+       "answer": "%C = 12.0 ÷ 36.0 × 100 = **33.3%**; %O = 24.0 ÷ 36.0 × 100 = **66.7%** (step 4 shows the same)."
+      },
+      {
+       "prompt": "Do this BEFORE you read step 5: pure CO is 57.1% O and pure CO₂ is 72.7% O. What mass fraction of the sample is CO₂?",
+       "lines": 2,
+       "answer": "f = (66.7 − 57.1) ÷ (72.7 − 57.1) = 0.615 ≈ **0.61** (sim shows 0.611 from unrounded percents; check: 22.0 g ÷ 36.0 g = 0.611). Accept 0.61–0.62."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "row_height": 0.32,
+     "title": "Data table: Step 6 presets",
+     "subtitle": "Click each preset and record the Live Chart (Composition by element) and the Analysis Workspace",
+     "columns": [
+      "Preset",
+      "% C",
+      "% O",
+      "Is the sample pure?",
+      "Likely composition CO : CO₂"
+     ],
+     "rows": [
+      [
+       "50-50 mol example",
+       "{{33.3}}",
+       "{{66.7}}",
+       "{{No}}",
+       "{{38.9 : 61.1}}"
+      ],
+      [
+       "Pure CO",
+       "{{42.9}}",
+       "{{57.1}}",
+       "{{Yes}}",
+       "{{100.0 : 0.0}}"
+      ],
+      [
+       "Pure CO₂",
+       "{{27.3}}",
+       "{{72.7}}",
+       "{{Yes}}",
+       "{{0.0 : 100.0}}"
+      ],
+      [
+       "Mystery sample",
+       "{{31.2}}",
+       "{{68.8}}",
+       "{{No}}",
+       "{{25.0 : 75.0}}"
+      ]
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Is the mystery sample pure or a mixture? Give a claim and use its % O as evidence.",
+       "lines": 2,
+       "answer": "Mixture. Its 68.8% O is between pure CO (57.1%) and pure CO₂ (72.7%), so it cannot be either pure compound. It is about 75% CO₂ by mass."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Free Explore: compare pure CO and pure CO₂ and watch the oxygen percent. Set your own blend between the endpoints and predict the % O before you look."
+    }
+   ]
+  },
+  {
+   "title": "Atomic Structure and Electron Configuration",
+   "sim_screen": "Topic 1.5 · Guided steps 1–6 + Free Explore",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Topic 1.5 Atomic Structure and Electron Configuration** in **Guided** mode. It starts on **chlorine (Cl, Z = 17)**, neutral.",
+      "Step 2 has two sliders: **Electron shell distance** (n = 1 to 3) and **Nuclear charge for comparison**. Moving the nuclear-charge slider changes the atom, so put it back on **17 (Cl)** before step 3.",
+      "Steps 3–5 use the **Atom identity** slider; step 5 adds charge buttons (for example Cl⁻)."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Chlorine has 17 electrons. Predict how many are in its outermost shell.",
+       "lines": 1,
+       "answer": "7 (2 in n = 1, 8 in n = 2, 7 in n = 3)."
+      }
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "Z = {{number of protons|18}}      Neutral atom: e⁻ = {{p⁺|6}}",
+      "Nucleus = {{protons + neutrons|20}}      F(Coulombic) ∝ {{q₁q₂ ÷ r²|10}}"
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "The element is defined by its {{proton}} count. A neutral atom has the same number of {{electrons}} as protons.",
+      "Opposite charges {{attract}}. Electrons {{closer}} to a positive nucleus feel a stronger pull.",
+      "Shells are broad energy levels. {{Subshells}} divide those shells into smaller regions with fixed capacities.",
+      "The Aufbau principle says electrons fill the {{lowest}} available energy subshells first.",
+      "Capacities: s = {{2}}, p = {{6}}, d = {{10}}, f = {{14}} electrons.",
+      "The {{superscript}} on each subshell tells how many electrons were placed there.",
+      "Core electrons are {{inner}} electrons. Valence electrons are in the {{highest occupied}} shell.",
+      "Ion formation changes the {{electron}} count, but the {{proton}} count in the nucleus stays the same."
+     ]
+    },
+    {
+     "type": "table",
+     "row_height": 0.32,
+     "title": "Data table: Step 2 Coulomb attraction (Cl, Z = 17)",
+     "columns": [
+      "Selected shell",
+      "Relative pull",
+      "Attraction label"
+     ],
+     "rows": [
+      [
+       "n = 1",
+       "{{17.00}}",
+       "{{strong}}"
+      ],
+      [
+       "n = 2",
+       "{{4.25}}",
+       "{{moderate}}"
+      ],
+      [
+       "n = 3",
+       "{{1.89}}",
+       "{{weaker}}"
+      ]
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Do this BEFORE step 4: fill 17 electrons into 1s, 2s, 2p, 3s, 3p in order. Write chlorine's configuration.",
+       "lines": 2,
+       "points": 3,
+       "answer": "**1s² 2s² 2p⁶ 3s² 3p⁵** (2 + 2 + 6 + 2 + 5 = 17)."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "row_height": 0.32,
+     "title": "Data table: Steps 4–6",
+     "subtitle": "Use the Atom identity slider and charge buttons; read the atom model and Electron Summary",
+     "columns": [
+      "Species",
+      "Protons",
+      "Neutrons",
+      "Electrons",
+      "Configuration",
+      "Core e⁻",
+      "Valence e⁻"
+     ],
+     "col_widths": [
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      2.2,
+      0.7,
+      0.8
+     ],
+     "rows": [
+      [
+       "Cl",
+       "{{17}}",
+       "{{18}}",
+       "{{17}}",
+       "{{1s² 2s² 2p⁶ 3s² 3p⁵}}",
+       "{{10}}",
+       "{{7}}"
+      ],
+      [
+       "Cl⁻",
+       "{{17}}",
+       "{{18}}",
+       "{{18}}",
+       "{{1s² 2s² 2p⁶ 3s² 3p⁶}}",
+       "{{10}}",
+       "{{8}}"
+      ],
+      [
+       "Mg",
+       "{{12}}",
+       "{{12}}",
+       "{{12}}",
+       "{{1s² 2s² 2p⁶ 3s²}}",
+       "{{10}}",
+       "{{2}}"
+      ],
+      [
+       "S",
+       "{{16}}",
+       "{{16}}",
+       "{{16}}",
+       "{{1s² 2s² 2p⁶ 3s² 3p⁴}}",
+       "{{10}}",
+       "{{6}}"
+      ]
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Use your step 2 data and Coulomb's law to explain why chlorine's n = 3 electrons are held less strongly than its n = 1 electrons.",
+       "lines": 2,
+       "answer": "Same nuclear charge (17), but n = 3 electrons are farther away (larger r). Force ∝ q₁q₂/r², so the pull drops from 17.00 (n = 1) to 1.89 (n = 3). Accept: greater distance → weaker attraction."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Step 6 / Free Explore: build Mg with a 2+ charge. Find sulfur's valence electron count. Identify the atom with 1s² 2s² 2p⁶ 3s² 3p⁵. Compare the Shells, Core / valence and Subshells views."
+    }
+   ]
+  },
+  {
+   "title": "Photoelectron Spectroscopy",
+   "sim_screen": "Topic 1.6 · Guided steps 1–6 + Free Explore",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Topic 1.6 Photoelectron Spectroscopy** in **Guided** mode. It starts on **neutral sodium (Na)**. Click a peak to select it.",
+      "The **Species** buttons (Na, Na⁺, Mg, Mg²⁺, Al, Ne) are always on screen: keep **Na** for steps 1–4. Step 5 adds **Na (neutral) / Na⁺ (positive ion)** buttons; step 6 adds a **single / overlay** toggle.",
+      "The binding-energy axis is **relative**: peaks are evenly spaced, so compare order, not distances."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Sodium is 1s² 2s² 2p⁶ 3s¹. Predict how many PES peaks it has and which peak is tallest.",
+       "lines": 1,
+       "answer": "4 peaks (one per occupied subshell: 1s, 2s, 2p, 3s). The 2p peak is tallest (6 electrons)."
+      }
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "atom + hν → ion + {{e⁻|6}}          peak height ∝ {{number of electrons|20}}",
+      "Binding energy = {{energy required to remove an electron|36}}"
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "PES removes electrons from atoms and measures the {{energy pattern}} that comes back.",
+      "Those signals reveal how the electrons are {{arranged}} and how strongly they {{interact}} with the nucleus.",
+      "A PES spectrum gives a peak for each occupied {{subshell}}, not one peak for each shell.",
+      "Peak {{height}} is proportional to the number of electrons in that subshell.",
+      "Peak {{position}} shows binding energy: the energy required to {{remove}} an electron.",
+      "Inner electrons are closer to the nucleus and are usually held {{more}} strongly.",
+      "When sodium forms a positive ion, the outer {{3s}} electron is removed. The remaining electrons feel less {{shielding}}, so their peaks shift to {{higher}} binding energy."
+     ]
+    },
+    {
+     "type": "graph",
+     "prompt": "Sketch the Na spectrum from step 3. Put higher binding energy on the LEFT, as the sim does. Label each peak.",
+     "x_label": "← Higher binding energy",
+     "y_label": "Relative intensity",
+     "height": 1.4,
+     "answer": "Four peaks, left to right: 1s (height 2), 2s (height 2), 2p (tallest, height 6), 3s (smallest, height 1). Shape and order only."
+    },
+    {
+     "type": "table",
+     "row_height": 0.32,
+     "title": "Data table: Steps 5–6 (Species buttons)",
+     "subtitle": "Record the Live Summary for each species",
+     "columns": [
+      "Species",
+      "Peak list (highest binding energy first)",
+      "Number of peaks",
+      "Tallest peak",
+      "Lowest binding peak"
+     ],
+     "col_widths": [
+      0.9,
+      2.0,
+      1.0,
+      1.0,
+      1.2
+     ],
+     "rows": [
+      [
+       "Na",
+       "{{1s, 2s, 2p, 3s}}",
+       "{{4}}",
+       "{{2p}}",
+       "{{3s}}"
+      ],
+      [
+       "Na⁺",
+       "{{1s, 2s, 2p}}",
+       "{{3}}",
+       "{{2p}}",
+       "{{2p}}"
+      ],
+      [
+       "Mg",
+       "{{1s, 2s, 2p, 3s}}",
+       "{{4}}",
+       "{{2p}}",
+       "{{3s}}"
+      ],
+      [
+       "Al",
+       "{{1s, 2s, 2p, 3s, 3p}}",
+       "{{5}}",
+       "{{2p}}",
+       "{{3p}}"
+      ],
+      [
+       "Ne",
+       "{{1s, 2s, 2p}}",
+       "{{3}}",
+       "{{2p}}",
+       "{{2p}}"
+      ]
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Why is the 2p peak taller than the 2s peak? Why is the 1s peak at the highest binding energy?",
+       "lines": 2,
+       "answer": "2p holds 6 electrons and 2s holds 2; height ∝ number of electrons. 1s electrons are closest to the nucleus and least shielded, so they need the most energy to remove."
+      },
+      {
+       "prompt": "Why does Na⁺ lose the 3s peak, and what happens to the remaining peaks? (Step 5 shows “Ion shift”.)",
+       "lines": 2,
+       "answer": "Forming Na⁺ removes the single 3s electron, so that subshell is empty and its peak disappears. The 10 remaining electrons feel less shielding, so all 3 remaining peaks shift to higher binding energy (“3 peaks higher”)."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Free Explore challenge prompts: Which peak represents the valence electrons? Why is 2p taller than 2s? Why does the sodium ion lose the 3s peak? Which electrons are held most strongly? Try overlay with Mg and Mg²⁺."
+    }
+   ]
+  },
+  {
+   "title": "Periodic Trends",
+   "sim_screen": "Topic 1.7 · Guided steps 1–6 + Free Explore",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Topic 1.7 Periodic Trends** in **Guided** mode. Path: **Across Period 3** (other buttons: **Down Group 1**, **Down Group 17**).",
+      "On step 1, click an element button to make it active; the **Property preview** shows its atomic radius, first ionization energy and electronegativity.",
+      "Step 3 has **Atom / Cation / Anion** tabs. Step 5 has an **Electron affinity / Electronegativity** toggle."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Rank Na, Mg and Cl from largest to smallest atomic radius. Give one reason.",
+       "lines": 1,
+       "answer": "Na > Mg > Cl. Same number of shells, but more protons (higher Zeff) pull the electrons closer across the period."
+      }
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "Zeff ≈ {{Z − S|8}}   (S = core-electron shielding)",
+      "First ionization: M(g) → M⁺(g) + {{e⁻|6}}    Electron affinity: X(g) + e⁻ → {{X⁻(g)|8}}"
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Zeff is the effective nuclear charge felt by valence electrons. It is approximately {{nuclear}} charge minus core-electron {{shielding}}.",
+      "Across a period, protons {{increase}} while the main shielding shell stays similar, so Zeff usually {{increases}}.",
+      "Across a period, higher Zeff pulls the same main shell {{closer}}, so atoms usually get {{smaller}}.",
+      "Down a group, new shells and more distance usually dominate, so atoms get {{bigger}}. Cations {{shrink}}; anions {{expand}}.",
+      "First ionization energy is the energy needed to {{remove}} the first electron from a neutral atom.",
+      "Electron affinity describes attracting an added {{electron}}. Electronegativity describes pulling shared electrons in a {{bond}}.",
+      "Both become {{stronger}} when Zeff is high and the attracted electron is close to the nucleus."
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Do this BEFORE step 2: chlorine has Z = 17 and 10 core electrons. Estimate Zeff. Then do the same for sodium (Z = 11).",
+       "lines": 2,
+       "answer": "Cl: Zeff ≈ 17 − 10 = **7**. Na: Zeff ≈ 11 − 10 = **1** (sim: “Zeff pull” 7 and 1)."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "row_height": 0.32,
+     "title": "Data table: Period 3 (steps 1, 4 and 5)",
+     "subtitle": "Radius, ionization energy and electronegativity from step 1; electron affinity from step 5",
+     "columns": [
+      "Element",
+      "Zeff",
+      "Atomic radius (pm)",
+      "First IE (kJ/mol)",
+      "Electron affinity (kJ/mol)",
+      "Electronegativity"
+     ],
+     "rows": [
+      [
+       "Na",
+       "{{1}}",
+       "{{190}}",
+       "{{496}}",
+       "{{53}}",
+       "{{0.93}}"
+      ],
+      [
+       "Mg",
+       "{{2}}",
+       "{{145}}",
+       "{{738}}",
+       "{{0}}",
+       "{{1.31}}"
+      ],
+      [
+       "Al",
+       "{{3}}",
+       "{{118}}",
+       "{{578}}",
+       "{{42}}",
+       "{{1.61}}"
+      ],
+      [
+       "P",
+       "{{5}}",
+       "{{98}}",
+       "{{1012}}",
+       "{{72}}",
+       "{{2.19}}"
+      ],
+      [
+       "S",
+       "{{6}}",
+       "{{88}}",
+       "{{1000}}",
+       "{{200}}",
+       "{{2.58}}"
+      ],
+      [
+       "Cl",
+       "{{7}}",
+       "{{79}}",
+       "{{1251}}",
+       "{{349}}",
+       "{{3.16}}"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "row_height": 0.32,
+     "title": "Data table: Step 3 radius tabs and Down Group 1",
+     "columns": [
+      "Atom",
+      "Atom radius (pm)",
+      "Ion",
+      "Ion radius (pm)"
+     ],
+     "rows": [
+      [
+       "Na",
+       "190",
+       "Na⁺",
+       "{{102}}"
+      ],
+      [
+       "Mg",
+       "145",
+       "Mg²⁺",
+       "{{72}}"
+      ],
+      [
+       "Cl",
+       "79",
+       "Cl⁻",
+       "{{181}}"
+      ],
+      [
+       "Li",
+       "{{167}}",
+       "Li⁺",
+       "{{76}}"
+      ],
+      [
+       "K",
+       "{{243}}",
+       "K⁺",
+       "{{138}}"
+      ]
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Na (190 pm) is much larger than Cl (79 pm) even though Cl has more electrons. Explain with Zeff and shells.",
+       "lines": 2,
+       "answer": "Both have 3 occupied shells and the same 10 core electrons, but Cl's Zeff (7) is much higher than Na's (1), so Cl pulls its valence shell much closer."
+      },
+      {
+       "prompt": "First IE generally increases across Period 3, but Mg (738) > Al (578) and P (1012) > S (1000). Which electron is removed in Al? Suggest why it is easier to remove.",
+       "lines": 2,
+       "answer": "Al loses a 3p electron; it is higher in energy and partly shielded by the 3s² electrons, so it is easier to remove than Mg's 3s electron. (For S, the paired 3p electron repels its partner.) The sim shows these values but does not explain them; accept either reason with evidence."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Step 6 Try it: Strongest attraction: Na, Mg or Cl? More electronegative: F or Br? Larger radius: Li or K? Justify each with shells, shielding and Zeff before you click."
+    }
+   ]
+  },
+  {
+   "title": "Valence Electrons and Ionic Compounds",
+   "sim_screen": "Topic 1.8 · Guided steps 1–6 + Free Explore",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Topic 1.8 Valence Electrons and Ionic Compounds** in **Guided** mode. It starts with **Metal: Na** and **Nonmetal: Cl**.",
+      "From step 2, choose a **Metal** (Li, Na, K, Mg, Ca, Al) and a **Nonmetal** (F, Cl, Br, O, S, N, P). Al with Cl or Br is greyed out.",
+      "Step 5 has **Change metal / Change nonmetal**. Step 6 has **Shells / Charges / Formula / Trends** views."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Predict the formula of the compound of magnesium and chlorine. Explain using valence electrons.",
+       "lines": 1,
+       "answer": "MgCl₂: Mg has 2 valence electrons and loses them (Mg²⁺); each Cl gains 1 (Cl⁻), so two Cl⁻ balance one Mg²⁺."
+      }
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "Na → Na⁺ + {{e⁻|6}}          Cl + e⁻ → {{Cl⁻|6}}",
+      "(cations × cation charge) + (anions × anion charge) = {{0|6}}"
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Periodic table position predicts the {{outer}} electrons that control {{reactivity}}.",
+      "Bonding starts with {{attraction}} between valence electrons and {{nuclei}}.",
+      "Metals on the {{left}} usually reach stability by {{losing}} valence electrons. Nonmetals on the {{right}} usually reach stability by {{gaining}} electrons.",
+      "Losing electrons makes a {{positive}} ion. Gaining electrons makes a {{negative}} ion.",
+      "Ionic compounds are {{neutral}} overall, so total positive charge must {{equal}} total negative charge.",
+      "The {{formula}} records the smallest whole-number ion ratio.",
+      "Elements in the same column have related {{valence}} patterns, which produce analogous ionic compounds."
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Do this BEFORE you build it in the sim: aluminum forms Al³⁺ and oxygen forms O²⁻. Find the ion ratio, the formula, and how many electrons move in one formula unit.",
+       "lines": 2,
+       "answer": "LCM of 3 and 2 is 6: 2 Al³⁺ (+6) and 3 O²⁻ (−6). Ratio 2 : 3, **Al₂O₃**; 2(+3) + 3(−2) = 0. **6 electrons** move (sim: “Transferred 6”)."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "row_height": 0.32,
+     "title": "Data table: Steps 1–4",
+     "columns": [
+      "Metal + nonmetal",
+      "Valence e⁻ (metal / nonmetal)",
+      "Cation",
+      "Anion",
+      "Ratio",
+      "Formula",
+      "Name"
+     ],
+     "col_widths": [
+      1.2,
+      1.2,
+      0.8,
+      0.8,
+      0.7,
+      0.9,
+      1.7
+     ],
+     "rows": [
+      [
+       "Na + Cl",
+       "{{1 / 7}}",
+       "{{Na⁺}}",
+       "{{Cl⁻}}",
+       "{{1:1}}",
+       "{{NaCl}}",
+       "{{sodium chloride}}"
+      ],
+      [
+       "Mg + Cl",
+       "{{2 / 7}}",
+       "{{Mg²⁺}}",
+       "{{Cl⁻}}",
+       "{{1:2}}",
+       "{{MgCl₂}}",
+       "{{magnesium chloride}}"
+      ],
+      [
+       "Na + O",
+       "{{1 / 6}}",
+       "{{Na⁺}}",
+       "{{O²⁻}}",
+       "{{2:1}}",
+       "{{Na₂O}}",
+       "{{sodium oxide}}"
+      ],
+      [
+       "Al + O",
+       "{{3 / 6}}",
+       "{{Al³⁺}}",
+       "{{O²⁻}}",
+       "{{2:3}}",
+       "{{Al₂O₃}}",
+       "{{aluminum oxide}}"
+      ],
+      [
+       "Ca + N",
+       "{{2 / 5}}",
+       "{{Ca²⁺}}",
+       "{{N³⁻}}",
+       "{{3:2}}",
+       "{{Ca₃N₂}}",
+       "{{calcium nitride}}"
+      ]
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Step 5, Change metal, with Cl: the sim lists LiCl, NaCl and KCl. Why do they all have the same 1 : 1 pattern?",
+       "lines": 2,
+       "answer": "Li, Na and K are all in Group 1 with 1 valence electron, so each forms a 1+ ion that balances one Cl⁻."
+      },
+      {
+       "prompt": "The sim names K as the most reactive Group 1 metal. Use its first ionization energy and atomic structure to justify this.",
+       "lines": 2,
+       "answer": "K has the lowest first IE in the group (419 kJ/mol vs. 496 for Na and 520 for Li) because its valence electron is in the 4th shell, farther from the nucleus and more shielded, so it is lost most easily."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Step 6 / Free Explore challenges: find a 1:1 compound, an MX₂ compound and an M₂X compound; build MgCl₂ and Al₂O₃; find the strongest halogen."
+    }
+   ]
+  }
+ ],
+ "conclusion": [
+  {
+   "prompt": "Use Topics 1.5–1.7: explain why sodium's 3s electron has the lowest binding energy in its PES spectrum AND why sodium has a large atomic radius and low first ionization energy.",
+   "lines": 4,
+   "answer": "Na's 3s electron is in the outermost shell (n = 3), shielded by 10 core electrons (Zeff ≈ 1), so Coulomb attraction is weak. That gives the lowest-energy PES peak (3s), a large radius (190 pm) and a low first IE (496 kJ/mol). Accept any answer that links shell distance + shielding/Zeff to all three."
+  },
+  {
+   "prompt": "Use Topics 1.5 and 1.8: explain why magnesium forms Mg²⁺ (not Mg⁺ or Mg³⁺) and why the formula with chlorine is MgCl₂.",
+   "lines": 2,
+   "answer": "Mg is 1s² 2s² 2p⁶ 3s²: losing the two 3s valence electrons leaves a full previous shell (like Ne). Removing a third electron would take a core electron. Two Cl⁻ ions are needed to balance one 2+ charge: MgCl₂."
+  },
+  {
+   "prompt": "Use Topics 1.1–1.4: a 36.0 g sample contains only carbon and oxygen and is 66.7% O. Can you tell from this alone whether it is a pure compound or a mixture? What would you compare it to?",
+   "lines": 2,
+   "answer": "Not from one percent alone; compare it to the fixed compositions of the pure substances. 66.7% O matches neither CO (57.1%) nor CO₂ (72.7%), so if only those two are possible it must be a mixture (the 50-50 mol example: 14.0 g CO + 22.0 g CO₂)."
+  }
+ ],
+ "key_notes": [
+  "**Topic 1.1:** molar masses use the sim's atomic masses (H 1.008, C 12.011, O 15.999, Na 22.99, Cl 35.45; domain/chemistry/periodic-table.ts). The screen rounds molar mass to 0.1 g/mol, but the sim divides by the unrounded value. So 36.0 g H₂O shows 2.00 mol but 1.203 × 10²⁴ molecules (2.00 × 6.022 × 10²³ would give 1.204). Accept 1.20 × 10²⁴ (3 significant figures).",
+  "**Topic 1.1:** the starting mass of each substance is exactly one molar mass (18.015 g for H₂O, shown as 18.0 g). The mass box, the − / + buttons (±1.0 g) and the scale only work on step 6 and in Free Explore. The H₂O scale runs 0–36.0 g.",
+  "**Topic 1.2:** isotope data: ²⁰Ne 19.992 amu 90.48%, ²¹Ne 20.994 0.27%, ²²Ne 21.991 9.25%; Mg 23.985/24.986/25.983 at 78.99/10.0/11.01%; B 10.013/11.009 at 19.9/80.1%; Si 27.977/28.976/29.974 at 92.23/4.67/3.1% (domain/chemistry/isotopes.ts:8-28). The sim shows abundance to 0.1% (90.5, 0.3, 9.3) and fractions to 4 places. Si's average shows 28.086 (the periodic table in the sim uses 28.085).",
+  "**Topic 1.3:** do NOT let students drag or type in the Sample mass control on steps 2–4. Each move rescales and rounds every element to 0.1 g, and the errors pile up: dragging 100 → 50 g gives H 5.0% and formula CHO; dragging 100 → 200 g gives CH₃O. Reset by clicking Formula unit, then Molecular. Glucose molar mass is fixed at 180.16 g/mol in the sim.",
+  "**Topic 1.4** uses C = 12 and O = 16 exactly (calculations.ts:95-98), unlike the other topics (12.011, 15.999). So M(CO) = 28.00 and M(CO₂) = 44.00 g/mol. Pure CO: 42.9% C / 57.1% O; pure CO₂: 27.3% C / 72.7% O. The CO₂ fraction is computed from unrounded percents (0.611); students using rounded percents get 0.615.",
+  "**Topic 1.5:** the step 2 “relative pull” is the sim's model Z ÷ n² (17.00, 4.25, 1.89 for Cl), not a measured force; the worksheet asks only for the values shown. Neutrons are the rounded atomic mass minus Z (Cl: 35 − 17 = 18). The sim counts all electrons in the highest occupied shell as valence, so it reports Mg²⁺ as 8 valence electrons; many textbooks would say Mg²⁺ has none. Cl's charge buttons include +1, +5 and +7 (oxidation states, not simple ions).",
+  "**Topic 1.6:** binding energies are a model (Z ÷ n² + a small subshell offset; ions scaled up 10% per + charge), labelled “relative.” Do not use them as real values (real Na: 1s ≈ 104, 3s ≈ 0.50 MJ/mol). Peaks are evenly spaced, and in overlay mode the ion's peaks are drawn in the same place as the atom's, so students see the shift only in the “Ion shift: 3 peaks higher” readout. The worksheet asks only for order and height.",
+  "**Topic 1.7:** atomic radii are the sim's values (Na 190, Mg 145, Al 118, Si 111, P 98, S 88, Cl 79, Ar 71, Li 167, K 243 pm), which are calculated radii and are larger for metals than many textbook tables (e.g. Na 186 pm). Ionic radii: Na⁺ 102, Mg²⁺ 72, Al³⁺ 54, Cl⁻ 181, S²⁻ 184, P³⁻ 212, Li⁺ 76, K⁺ 138, F⁻ 133, Br⁻ 196 pm. EA is shown as a positive number (energy released) and Mg, N and Ar show 0. Ar's electronegativity shows “0” on step 5 (it has no value). The sim's Zeff = Z − core electrons (so Zeff = number of valence electrons).",
+  "**Topic 1.8:** charges come from each element's first common ion (N³⁻, P³⁻, O²⁻, S²⁻). Al–Cl and Al–Br are blocked on purpose (state.ts:27). “Most reactive metal” = lowest first IE in the group; “strongest nonmetal attraction” = highest electronegativity. The pattern line reads “Group 1 metals repeat a + charge pattern” (the 1 is missing); say “1+”.",
+  "Settings that change answers: the substance (1.1), the element and slider positions (1.2), the Sample mass slider (1.3), the mass sliders and presets (1.4), the nuclear-charge slider (1.5, it changes the atom), the species button (1.6), the path, radius tab and property toggle (1.7), and the metal/nonmetal pair (1.8)."
+ ],
+ "lesson_plan": {
+  "period_minutes": 50,
+  "ap_topics": [
+   "1.1 Moles and Molar Mass",
+   "1.2 Mass Spectroscopy of Elements",
+   "1.3 Elemental Composition of Pure Substances",
+   "1.4 Composition of Mixtures",
+   "1.5 Atomic Structure and Electron Configuration",
+   "1.6 Photoelectron Spectroscopy",
+   "1.7 Periodic Trends",
+   "1.8 Valence Electrons and Ionic Compounds"
+  ],
+  "sim_location": "chemsims.app/sims/unit1 → Unit 1 Atomic Structure and Properties → Topics 1.1–1.8 (each has Guided mode and Free Explore)",
+  "essential_question": "How do the masses, counts and arrangement of particles in atoms explain the composition of substances, the periodic trends and the formulas of ionic compounds?",
+  "objectives": [
+   "Convert between mass, moles and particles with n = m/M and N = n × N_A (1.1).",
+   "Read a mass spectrum and calculate an average atomic mass as a weighted average (1.2).",
+   "Find an empirical formula from mass data and a molecular formula from molar mass (1.3).",
+   "Use elemental composition to decide whether a sample is pure or a mixture (1.4).",
+   "Write ground-state electron configurations and relate them to Coulomb attraction (1.5).",
+   "Interpret PES peak height and position, including for ions (1.6).",
+   "Explain atomic radius, ionization energy, electron affinity and electronegativity trends with Zeff and shells (1.7).",
+   "Predict ion charges and ionic formulas from valence electrons (1.8)."
+  ],
+  "materials": [
+   "Calculators",
+   "A periodic table for each student (for checking, not for blanks)",
+   "Colored pens for grading day"
+  ],
+  "prep": [
+   "Run Topic 1.1 Guided once on the projector; the sim opens full screen. Know where Next, the Substance buttons and the step-6 mass box are.",
+   "Open Topic 1.3 and practise the reset: Formula unit → Molecular. Warn students not to move the Sample mass slider.",
+   "Read the Answer Key's Teacher Notes page (sim values that differ from textbooks).",
+   "The sim doesn't cover orbital diagrams/Hund's rule, transition-metal configurations and ions (4s removed first), real PES energies in MJ/mol, or combustion/experimental empirical-formula analysis; use your usual lesson for these."
+  ],
+  "vocabulary": [
+   "mole",
+   "molar mass",
+   "Avogadro's number",
+   "isotope",
+   "m/z",
+   "relative abundance",
+   "weighted average",
+   "percent by mass",
+   "empirical formula",
+   "molecular formula",
+   "law of definite proportions",
+   "law of multiple proportions",
+   "mixture",
+   "Coulomb's law",
+   "shell / subshell",
+   "Aufbau principle",
+   "core and valence electrons",
+   "binding energy",
+   "effective nuclear charge (Zeff)",
+   "shielding",
+   "ionization energy",
+   "electron affinity",
+   "electronegativity",
+   "cation / anion",
+   "formula unit"
+  ],
+  "prior_knowledge": [
+   "Protons, neutrons and electrons and their charges",
+   "Scientific notation and significant figures",
+   "Reading the periodic table (groups and periods)",
+   "Unit conversion with dimensional analysis"
+  ],
+  "days": [
+   {
+    "day": 1,
+    "title": "Teacher demo: Moles and Molar Mass (Topic 1.1)",
+    "goal": "Students see how the sim works and connect mass → moles → particles.",
+    "worksheet_pages": "Cover + Topic 1.1 (first half)",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: “How would you count the molecules in a glass of water?”"
+     ],
+     [
+      "5–10",
+      "Hand out packets. Students fill the 1.1 Set Up and Predict boxes."
+     ],
+     [
+      "10–40",
+      "Projected demo of Topic 1.1 steps 1–6 (script below)."
+     ],
+     [
+      "40–47",
+      "Students finish the 1.1 Guided notes and equations with a partner."
+     ],
+     [
+      "47–50",
+      "Quick check: “How many moles in 36.0 g of water?” (2.00 mol)"
+     ]
+    ],
+    "demo_script": [
+     {
+      "do": "Open chemsims.app/sims/unit1, choose Topic 1.1 Moles and Molar Mass, Guided mode. Point to the four panels: Sample, Conversion Pathway, Measurements, Equation and Working.",
+      "say": "“We can't count atoms one at a time. What CAN we measure in the lab?” (Expected: mass.)",
+      "students": "Set Up box; Predict: doubling the mass doubles moles and molecules."
+     },
+     {
+      "do": "Step 1 “Why do we use the mole?”: point to the balance (18.0 g H₂O) and the grey Molar Mass, Moles and Particles boxes.",
+      "say": "“Only mass is lit up. The mole is the bridge from mass to amount.”",
+      "students": "First notes line: measure mass, use the mole."
+     },
+     {
+      "do": "Point to the muted equations: n = m/M, N = n × N_A, N_A = 6.022 × 10²³ mol⁻¹.",
+      "say": "“What does each letter stand for?” (n moles, m mass, M molar mass, N particles.)",
+      "students": "Equations band and variable list."
+     },
+     {
+      "do": "Click Next → step 2 “Building the molar mass”. Show the molecule view (2 H atoms, 1 O atom) and “2 x 1.0 + 16.0 = 18.0 g mol⁻¹”.",
+      "say": "“Why do we multiply hydrogen by 2?” (Two H atoms in each molecule.) “What does 18.0 g/mol mean?” (One mole of water has a mass of 18.0 g.)",
+      "students": "Step 2 data table; molar mass notes line; amu ↔ grams line."
+     },
+     {
+      "do": "Do NOT click Next yet. Give 1 minute for Calculate #1.",
+      "say": "“How many moles are in 18.0 g of water? Show the units cancelling.”",
+      "students": "Calculate #1: 18.0 g ÷ 18.0 g/mol = 1.00 mol."
+     },
+     {
+      "do": "Click Next → step 3. Point to Moles: 1.00 mol and the note “The grams cancel, leaving moles.”",
+      "say": "“Did your answer match? Which unit cancelled?” (grams)",
+      "students": "Notes: divide the sample mass by the molar mass."
+     },
+     {
+      "do": "Click Next → step 4. Read “1.00 mol × 6.022 × 10²³ = 6.022 × 10²³ molecules.”",
+      "say": "“How many molecules would 2 moles hold?” (1.204 × 10²⁴.) “Is a mole a mass or a number?” (a number)",
+      "students": "Notes: one mole always contains 6.022 × 10²³ particles."
+     },
+     {
+      "do": "Click Next → step 5. Trace the dimensional-analysis chain left to right.",
+      "say": "“Each factor cancels the unit before it. What is left at the end?” (molecules)",
+      "students": "Notes: each factor cancels the previous unit."
+     },
+     {
+      "do": "Click Next → step 6. Drag the H₂O mass scale to the right end (36.0 g).",
+      "say": "“Check your prediction. What happened to moles and particles?” (2.00 mol, 1.203 × 10²⁴ — both doubled. The last digit is 1.203, not 1.204, because the sim uses 18.015 g/mol.)",
+      "students": "Step 6 table rows 1–2."
+     },
+     {
+      "do": "Click NaCl. Point out that the mass jumps to 58.4 g (one molar mass) and the particles are “formula units”.",
+      "say": "“Why not molecules?” (NaCl is ionic, no separate molecules.) Stop here: students do the rest on Day 2.",
+      "students": "Start Analyze #2 (formula units vs molecules)."
+     }
+    ]
+   },
+   {
+    "day": 2,
+    "title": "Student sim work: Topics 1.1–1.3",
+    "goal": "Finish moles, then mass spectra and empirical formulas.",
+    "worksheet_pages": "Topic 1.1 (finish), 1.2, 1.3",
+    "agenda": [
+     [
+      "0–5",
+      "Review: n = m/M; students say the units of M."
+     ],
+     [
+      "5–15",
+      "Finish 1.1: Calculate #2 (NaCl), step 6 table, Analyze."
+     ],
+     [
+      "15–32",
+      "Topic 1.2 Mass Spectra: neon steps 1–5, then step 6 elements."
+     ],
+     [
+      "32–47",
+      "Topic 1.3 Elemental Composition: steps 1–5 and the MgO check."
+     ],
+     [
+      "47–50",
+      "Checkpoint and clean-up."
+     ]
+    ],
+    "circulate": [
+     "1.1: NaCl mass is typed as 36.0 g and moles read 0.62 mol.",
+     "1.2: neon calculation done BEFORE step 5 (20.180 amu).",
+     "1.2: fractions written as decimals (0.9048), not percents, in the weighted average.",
+     "1.3: Sample mass is still 100.0 g. If not, reset with Formula unit → Molecular.",
+     "1.3: students divide by the smallest mole value (3.33), not by the largest."
+    ],
+    "checkpoint": "Neon's average atomic mass is 20.180 amu, and the example compound's mole ratio is 1 : 2 : 1 (CH₂O).",
+    "early_finishers": "1.2 Free Explore: make the three Mg peaks as equal as possible and predict the average before reading it (≈ 24.985 amu if all three are 33.3%)."
+   },
+   {
+    "day": 3,
+    "title": "Student sim work: Topics 1.4–1.5",
+    "goal": "Use composition to judge purity; build electron configurations.",
+    "worksheet_pages": "Topics 1.4 and 1.5",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: “What is the difference between a compound and a mixture?”"
+     ],
+     [
+      "5–25",
+      "Topic 1.4 Composition of Mixtures: steps 1–5, then the four presets."
+     ],
+     [
+      "25–45",
+      "Topic 1.5 Electron Configuration: steps 1–5, data table, then step 6."
+     ],
+     [
+      "45–50",
+      "Checkpoint."
+     ]
+    ],
+    "circulate": [
+     "1.4: CO 14.0 g and CO₂ 22.0 g on steps 1–5.",
+     "1.4: % C and % O calculated BEFORE step 4.",
+     "1.4: “Likely composition” is a MASS percent, not a mole percent.",
+     "1.5: nuclear-charge slider put back to 17 (Cl) after step 2.",
+     "1.5: superscripts in configurations add up to the electron count (17 for Cl, 18 for Cl⁻)."
+    ],
+    "checkpoint": "The 50-50 mol mixture is 33.3% C and 66.7% O; chlorine is 1s² 2s² 2p⁶ 3s² 3p⁵ with 7 valence electrons.",
+    "early_finishers": "1.5 Free Explore: build every element from Na to Ar and record how the number of valence electrons changes."
+   },
+   {
+    "day": 4,
+    "title": "Student sim work: Topics 1.6–1.7",
+    "goal": "Read PES spectra and explain periodic trends with Zeff.",
+    "worksheet_pages": "Topics 1.6 and 1.7",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: “Which electron in Na is easiest to remove? Why?”"
+     ],
+     [
+      "5–22",
+      "Topic 1.6 PES: steps 1–5 for Na, then species table on step 6."
+     ],
+     [
+      "22–45",
+      "Topic 1.7 Periodic Trends: step 1 property preview for each Period 3 element, steps 2–5."
+     ],
+     [
+      "45–50",
+      "Checkpoint."
+     ]
+    ],
+    "circulate": [
+     "1.6: graph has higher binding energy on the LEFT and the 2p peak tallest.",
+     "1.6: students compare order and height only (the energy axis is not to scale).",
+     "1.7: Zeff calculated before step 2 (Cl 7, Na 1).",
+     "1.7: on step 1, students click each element to fill the Period 3 table.",
+     "1.7: electron affinity taken from step 5 with the toggle on Electron affinity."
+    ],
+    "checkpoint": "Na⁺ has 3 PES peaks (3s gone, others shift higher); in Period 3 radius falls from Na 190 pm to Cl 79 pm as Zeff rises from 1 to 7.",
+    "early_finishers": "1.7 Down Group 17: record F, Cl and Br electronegativity (3.98, 3.16, 2.96) and electron affinity (328, 349, 325 kJ/mol). Why is F's electron affinity lower than Cl's?"
+   },
+   {
+    "day": 5,
+    "title": "Student sim work: Topic 1.8 + Conclusion",
+    "goal": "Predict ionic formulas and pull the unit together.",
+    "worksheet_pages": "Topic 1.8 + Conclusion",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: “What charge does Mg form? Why?”"
+     ],
+     [
+      "5–30",
+      "Topic 1.8: steps 1–5 and the data table; Free Explore challenges."
+     ],
+     [
+      "30–45",
+      "Conclusion questions (pairs, then individually)."
+     ],
+     [
+      "45–50",
+      "Catch-up on any blank pages."
+     ]
+    ],
+    "circulate": [
+     "1.8: Al₂O₃ calculated before it is built (6 electrons transferred).",
+     "1.8: subscripts reduce to the smallest whole-number ratio (Ca₃N₂).",
+     "1.8: ion charges written with number then sign (Mg²⁺, O²⁻).",
+     "Conclusion: answers cite numbers from earlier pages (e.g. 190 pm, 496 kJ/mol)."
+    ],
+    "checkpoint": "Al + O gives Al₂O₃ (2 : 3) with 6 electrons transferred; Ca + N gives Ca₃N₂.",
+    "early_finishers": "Free Explore 1.8 Trends view: rank Li, Na and K by first ionization energy and connect it to reactivity."
+   },
+   {
+    "day": 6,
+    "title": "Grading and wrap-up",
+    "goal": "Students check their work, correct errors and review misconceptions.",
+    "worksheet_pages": "Whole packet + Self-Grading Record",
+    "agenda": [
+     [
+      "0–25",
+      "Grading (self, peer or teacher; see the grading section)."
+     ],
+     [
+      "25–40",
+      "Discussion: the misconceptions below; students explain one correction to the class."
+     ],
+     [
+      "40–50",
+      "Exit ticket."
+     ]
+    ]
+   }
+  ],
+  "misconceptions": [
+   {
+    "misconception": "The tallest peak in a mass spectrum is the heaviest isotope.",
+    "sim_fix": "Topic 1.2 step 3 says “The tallest peak is not the heaviest isotope. It is the most abundant isotope.” Show ²⁰Ne (90.5%) vs ²²Ne (9.3%)."
+   },
+   {
+    "misconception": "Mass percents can be used directly as subscripts (C₄₀H₇O₅₃).",
+    "sim_fix": "Topic 1.3 step 3: “Masses do not directly give atom counts.” Students see 40.0 g C become 3.33 mol."
+   },
+   {
+    "misconception": "Equal masses mean equal numbers of particles.",
+    "sim_fix": "Topic 1.1 step 6: 36.0 g H₂O has 1.203 × 10²⁴ molecules but 36.0 g NaCl has only 3.71 × 10²³ formula units."
+   },
+   {
+    "misconception": "PES shows one peak per shell.",
+    "sim_fix": "Topic 1.6 step 2: sodium has separate 2s and 2p peaks, so 4 peaks for 3 shells."
+   },
+   {
+    "misconception": "Atoms with more electrons are always bigger.",
+    "sim_fix": "Topic 1.7: Cl (17 electrons) is 79 pm but Na (11 electrons) is 190 pm; Zeff 7 vs 1."
+   }
+  ],
+  "sim_cautions": [
+   "Topic 1.3: tell students not to move the Sample mass slider. The sim rounds every element mass each time it moves, so the percentages drift and the formula can change (CHO or CH₃O). To fix it, click Formula unit, then Molecular.",
+   "Topic 1.1: the sim divides by the unrounded molar mass (18.015), so 36.0 g of water shows 2.00 mol but 1.203 × 10²⁴ molecules, not 1.204. Both are right to 3 significant figures.",
+   "Topic 1.4 uses C = 12 and O = 16 exactly, but the other topics use 12.011 and 15.999. Tell students to use the numbers on that screen.",
+   "Topic 1.6: the binding energies are model numbers, not real ones, and the peaks are evenly spaced. In overlay mode the ion's peaks sit on top of the atom's; the shift to higher energy is only in the “Ion shift” readout.",
+   "Topic 1.5 step 2: the “Nuclear charge for comparison” slider changes the element. Put it back on 17 for chlorine.",
+   "Topic 1.5: the sim counts Mg²⁺'s eight n = 2 electrons as “valence electrons.” Tell students many textbooks say a cation like Mg²⁺ has a noble-gas core and no valence electrons left.",
+   "Topic 1.7 step 5: argon shows an electronegativity of “0”. That means there is no value, not that it is zero. Mg and Ar also show an electron affinity of 0.",
+   "Topic 1.8: the pattern line says “repeat a + charge pattern” for Group 1; read it as “1+”.",
+   "Topic 1.3 Free Explore: the first Try-it says to change the sample mass, but Free Explore only has element mass boxes. Have students double every element mass instead."
+  ],
+  "differentiation": {
+   "support": [
+    "Pair students; one drives the sim, the other records, then swap each topic.",
+    "Give a blank Aufbau order strip (1s 2s 2p 3s 3p 4s) for Topic 1.5.",
+    "For calculations, provide the formula with blanks for the numbers.",
+    "Allow students to finish one Free Explore item instead of the full Explore box."
+   ],
+   "extension": [
+    "1.2: set ²⁴Mg, ²⁵Mg and ²⁶Mg to one-third each and predict the average first.",
+    "1.4: find the CO and CO₂ masses that give exactly 65.0% O.",
+    "1.7: explain why F's electron affinity (328) is lower than Cl's (349).",
+    "1.8: predict the formulas of all Group 2 + Group 15 compounds and check them in Free Explore."
+   ]
+  },
+  "exit_ticket": [
+   {
+    "question": "How many moles and molecules are in 9.0 g of water (M = 18.0 g/mol)?",
+    "answer": "0.50 mol; 0.50 × 6.022 × 10²³ = 3.01 × 10²³ molecules (the sim shows 3.009 × 10²³)."
+   },
+   {
+    "question": "Boron is 19.9% ¹⁰B (10.013 amu) and 80.1% ¹¹B (11.009 amu). Which peak is taller, and what is the average atomic mass?",
+    "answer": "¹¹B is taller (more abundant); average = 10.811 amu."
+   },
+   {
+    "question": "Write the formula for the compound of calcium and nitrogen and show the charge balance.",
+    "answer": "Ca₃N₂: 3(+2) + 2(−3) = 0."
+   }
+  ],
+  "ap_practice": [
+   {
+    "question": "Multiple choice. Na and Mg²⁺ have PES spectra. Which is true? (A) Mg²⁺ has a 3s peak. (B) Both have a 2p peak with height 6, but Mg²⁺ has one fewer peak. (C) Na has fewer peaks than Mg²⁺. (D) The 1s peak of Na is at a higher binding energy than the 1s peak of Mg²⁺.",
+    "answer": "(B). Na: 1s, 2s, 2p, 3s (4 peaks); Mg²⁺: 1s, 2s, 2p (3 peaks); both 2p⁶. Mg²⁺ has more protons (12 vs 11) and fewer electrons, so its 1s binding energy is higher, which rules out (D)."
+   },
+   {
+    "question": "FRQ. A 100.0 g sample of a compound contains 40.0 g C, 6.7 g H and 53.3 g O. (a) Find the moles of each element. (b) Find the empirical formula. (c) The molar mass is 180.16 g/mol; find the molecular formula. (d) A second 50.0 g sample of the same compound is analyzed. Predict its percent by mass of carbon and name the law that justifies your answer.",
+    "answer": "(a) C 40.0/12.011 = 3.33 mol; H 6.7/1.008 = 6.65 mol; O 53.3/15.999 = 3.33 mol. (b) ÷ 3.33 → 1 : 2 : 1, CH₂O. (c) 180.16 ÷ 30.026 = 6.00 → C₆H₁₂O₆. (d) 40.0% C; law of definite proportions (a pure compound has a fixed mass composition)."
+   }
+  ]
+ }
+}

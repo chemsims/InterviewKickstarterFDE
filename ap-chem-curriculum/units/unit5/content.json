@@ -1,0 +1,1087 @@
+{
+ "unit": 5,
+ "unit_title": "Kinetics",
+ "worksheet_title": "Reaction Rates",
+ "sim_name": "Reaction Rates Lab",
+ "pages": [
+  {
+   "title": "Zero Order Reactions",
+   "sim_screen": "Part 1 · Zero order reaction",
+   "blocks": [
+    {
+     "type": "setup",
+     "title": "Set up: run 1 (A to B), step 1",
+     "items": [
+      "Open **Reaction Rates Lab → Zero order reaction**. You change values only with the arrow buttons: **▲ ▼** change a concentration by **0.10 M** per click, and **◀ ▶** change a time by **1 s** per click.",
+      "Step 1: set [A] to **0.90 M** (▲ twice from 0.70 M) and the start time to **0.0 s** (◀ ten times from 10.0 s). Click **Next**.",
+      "Step 2 asks for the end of the reaction. **Stop here** and do the Predict and Calculate boxes first."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "You will make [A] fall from 0.90 M to 0.25 M in 13 s. For a zero order reaction, will the [A] vs. time graph be a straight line or a curve? Why?",
+       "lines": 2,
+       "answer": "A straight line: a zero order rate does not depend on [A], so [A] drops by the same amount every second. Accept: straight line + constant rate."
+      }
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Calculate the rate constant k = −Δ[A]/Δt for c₁ = 0.90 M at t₁ = 0 s and c₂ = 0.25 M at t₂ = 13 s. Include units.",
+       "lines": 3,
+       "answer": "k = −(0.25 − 0.90) M / (13 − 0) s = 0.65 / 13 = **0.050 M/s**. The sim shows Rate = 0.05 and \"k=0.050M/s\"."
+      },
+      {
+       "prompt": "Calculate the half-life with the sim's formula t½ = [A]₀ / (2k).",
+       "lines": 3,
+       "answer": "t½ = 0.90 M / (2 × 0.050 M/s) = **9.0 s**. The sim shows t½ = 9.00 s."
+      }
+     ]
+    },
+    {
+     "type": "setup",
+     "title": "Set up: run 1, step 2",
+     "subtitle": "Now finish setting the reaction and check your answers",
+     "items": [
+      "Set the final [A] to **0.25 M** (▼ once from 0.35 M) and the end time to **13.0 s** (◀ twice from 15.0 s). Click **Next** through the steps and watch the reaction.",
+      "Check: the values button (top right corner) shows c **0.90 0.25** and t **– 13.0** (the sim shows a dash for 0 s)."
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "The order of a reaction has to do with the {{rate}} of it. Rate is the rate of change in the {{concentration}} per unit {{time}}.",
+      "The rate constant {{k}} is a value on which the rate depends. For this reaction, k = {{0.050}} M/s.",
+      "{{Half-life}} (t½) is the point in time at which the concentration of the reactant is {{half}} of what the initial concentration was. For this reaction, t½ = {{9.00}} s.",
+      "For this zero order reaction, rate is {{constant}} and it's equal to {{k}}. That's why a graph of [A] vs. t is a {{straight line}}: [A] = −kt + [A]₀, where {{−k}} is the slope."
+     ]
+    },
+    {
+     "type": "equations",
+     "subtitle": "Copy the numbers from the equation panel on the right",
+     "items": [
+      "Rate = k = −Δc/Δt:   Rate = {{0.05|8}} = −({{0.25|8}} − {{0.90|8}}) / ({{13.00|8}} − {{0.00|8}})",
+      "t½ = [A₀]/(2k):   {{9.00|8}} = {{0.90|8}} / (2 × {{0.05|8}})",
+      "Rate = k[A]⁰:   rate does not depend on [A], because any number to the power {{0|6}} is 1."
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table: run 1 (A to B)",
+     "subtitle": "At \"Let's take a snapshot!\", each ◀ click moves the time indicator back 1 s from 13 s. Read [A] inside ( )⁰ in the bottom row of the panel",
+     "columns": [
+      "Time (s)",
+      "◀ clicks from the end",
+      "[A] (M)",
+      "Rate (M/s)"
+     ],
+     "rows": [
+      [
+       "13",
+       "0",
+       "{{0.25}}",
+       "{{0.05}}"
+      ],
+      [
+       "9",
+       "4",
+       "{{0.45}}",
+       "{{0.05}}"
+      ],
+      [
+       "6",
+       "7",
+       "{{0.60}}",
+       "{{0.05}}"
+      ],
+      [
+       "3",
+       "10",
+       "{{0.75}}",
+       "{{0.05}}"
+      ],
+      [
+       "0",
+       "13",
+       "{{0.90}}",
+       "{{0.05}}"
+      ]
+     ],
+     "row_height": 0.34
+    },
+    {
+     "type": "graph",
+     "prompt": "Plot [A] vs. time from your table (this one you can draw to scale). Label [A]₀, the end point and t½.",
+     "x_label": "Time (s)",
+     "y_label": "[A] (M)",
+     "height": 1.9,
+     "answer": "Straight line from (0 s, 0.90 M) down to (13 s, 0.25 M); slope = −0.05 M/s; t½ marked at 9 s where [A] = 0.45 M."
+    },
+    {
+     "type": "setup",
+     "title": "Set up: runs 2 and 3",
+     "subtitle": "These settings also prepare the next screen. Do them exactly",
+     "items": [
+      "Run 2: at \"Choose a reaction above\", tap the arrow at the top right and pick **C to D**. Keep [C] **0.90 M** and start time **0.0 s** (click Next). Set the end time to **20.0 s** (▶ seven times). Watch, then continue.",
+      "Run 3: pick **E to F**. Set [E] to **1.00 M** (▲ once); keep start time 0.0 s (Next). Keep the final [E] **0.25 M** and end time **20.0 s**. Watch, then continue."
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table: three runs",
+     "columns": [
+      "Run",
+      "Start [ ] (M)",
+      "End [ ] (M)",
+      "Δt (s)",
+      "k from the panel (M/s)",
+      "t½ from the panel (s)"
+     ],
+     "rows": [
+      [
+       "1: A to B",
+       "0.90",
+       "0.25",
+       "13",
+       "{{0.05}}",
+       "{{9.00}}"
+      ],
+      [
+       "2: C to D",
+       "0.90",
+       "0.25",
+       "{{20}}",
+       "{{0.03}}",
+       "{{13.85}}"
+      ],
+      [
+       "3: E to F",
+       "{{1.00}}",
+       "0.25",
+       "20",
+       "{{0.04}}",
+       "{{13.33}}"
+      ]
+     ],
+     "col_widths": [
+      1.3,
+      1,
+      1,
+      0.8,
+      1.3,
+      1.3
+     ],
+     "row_height": 0.34
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Use your run 1 table: by how much does [A] drop in each 3-second interval? What does this tell you about the rate of a zero order reaction?",
+       "lines": 2,
+       "answer": "0.15 M every 3 s (0.90 → 0.75 → 0.60 → 0.45). The drop is the same each interval, so the rate is constant (0.05 M/s) and does not depend on [A]."
+      },
+      {
+       "prompt": "Runs 1 and 2 lose the same 0.65 M, but run 2 takes 20 s instead of 13 s. What happened to k, and why?",
+       "lines": 2,
+       "answer": "k got smaller (0.05 → 0.03 M/s): the same change in concentration spread over a longer time is a slower rate, and for zero order rate = k. Accept: smaller k because Δt is larger."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Open Explore mode (🧪 button in the top-left menu). Choose Order: Zero (0). Change only the Time slider. How does k change when the time doubles?"
+    }
+   ]
+  },
+  {
+   "title": "First Order Reactions",
+   "sim_screen": "Part 2 · First order reaction",
+   "blocks": [
+    {
+     "type": "setup",
+     "title": "Set up: step 1",
+     "items": [
+      "Click **Next** to the end of Zero order to open **First order reaction** (screens unlock in order). On this screen the time you set is **how long the reaction lasts (t)**.",
+      "Step 1: set [A] to **0.60 M** (▼ four times from 1.00 M) and Time to **10.0 s** (▶ ten times from 0.0 s). Click **Next**.",
+      "Step 2 asks for [A] at the end. **Stop here**: the panel shows k as soon as you change it. Do the Predict and Calculate boxes first."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "[A] will fall from 0.60 M to 0.15 M (one quarter) in 10 s. How many half-lives is that, and what do you predict t½ is?",
+       "lines": 2,
+       "answer": "Two half-lives (0.60 → 0.30 → 0.15 M), so t½ = 10 s / 2 = 5 s."
+      }
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Calculate k with the sim's formula k = (ln[A]₀ − ln[A]ₜ) / t. Include units.",
+       "lines": 3,
+       "answer": "k = (ln 0.60 − ln 0.15) / 10 s = (−0.51 − (−1.90)) / 10 = **0.139 s⁻¹**. The sim shows k = 0.14 in the panel and \"k=0.139\" in the text."
+      },
+      {
+       "prompt": "Calculate t½ = ln 2 / k, and the rate at the start, rate = k[A]₀.",
+       "lines": 3,
+       "answer": "t½ = 0.693 / 0.139 s⁻¹ = **5.0 s** (sim: 5.00). Rate = 0.139 s⁻¹ × 0.60 M = **0.083 M/s** (sim: 0.08)."
+      }
+     ]
+    },
+    {
+     "type": "setup",
+     "title": "Set up: step 2",
+     "subtitle": "Now finish setting the reaction and check your answers",
+     "items": [
+      "Set the final [A] to **0.15 M** (▼ once from 0.25 M). Keep Time at 10.0 s. Click **Next** through the steps.",
+      "Check: the values button shows c **0.60 0.15** and t **10.00 20.0**. The second time (20.0) comes from run 3 on the last screen. If it is different, your [A] readings below will not match; tell your teacher."
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Rate laws are mathematical expressions that describe the relationship between the {{rate}} of a chemical reaction and the {{concentration}} of its reactants.",
+      "For this first order reaction, rate = {{k[A]¹}}. For this reaction, t½ = {{5.00}} s.",
+      "Plotting [A] vs. t for a first order reaction gives a {{curve}}, given how the rate is proportional to the concentration of {{A}}.",
+      "[A] drops {{faster}} at the beginning because there is {{more}} A present, making the rate {{higher}}.",
+      "Plotting ln[A] vs. time gives a {{straight line}} where the slope is {{−k}}."
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table: [A] vs. time",
+     "subtitle": "At \"Let's take a snapshot!\", each ◀ click moves back 1 s. Read [A] inside ( )¹ in the bottom row. Then calculate ln[A]",
+     "columns": [
+      "Elapsed time (s)",
+      "◀ clicks from the end",
+      "[A] (M)",
+      "ln[A]"
+     ],
+     "rows": [
+      [
+       "0",
+       "10",
+       "{{0.60}}",
+       "{{−0.51}}"
+      ],
+      [
+       "2",
+       "8",
+       "{{0.45}}",
+       "{{−0.80}}"
+      ],
+      [
+       "5",
+       "5",
+       "{{0.30}}",
+       "{{−1.20}}"
+      ],
+      [
+       "8",
+       "2",
+       "{{0.20}}",
+       "{{−1.61}}"
+      ],
+      [
+       "10",
+       "0",
+       "{{0.15}}",
+       "{{−1.90}}"
+      ]
+     ],
+     "note": "The sim's clock runs from 10 s to 20 s on this screen, so elapsed time = clock time − 10 s. Use only the number inside the parentheses; the rate number in that row does not change as you scrub.",
+     "row_height": 0.34
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Use the first and last rows of your table to find the slope of ln[A] vs. time. Compare it with k.",
+       "lines": 3,
+       "answer": "slope = (−1.90 − (−0.51)) / (10 − 0) s = **−0.139 s⁻¹**, so k = 0.139 s⁻¹, the same as the panel."
+      }
+     ]
+    },
+    {
+     "type": "graph",
+     "prompt": "Sketch [A] vs. time AND ln[A] vs. time from your table (two lines on one set of axes, or split the box). Label which is which.",
+     "x_label": "Elapsed time (s)",
+     "y_label": "[A] (M)  /  ln[A]",
+     "height": 1.9,
+     "answer": "[A]: curve falling from 0.60 to 0.15 M, steep at first, flatter later (0.30 M at 5 s). ln[A]: straight line from −0.51 to −1.90, slope −0.139 s⁻¹."
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "How long did [A] take to go from 0.60 to 0.30 M? From 0.30 to 0.15 M? What does this show about the half-life of a first order reaction?",
+       "lines": 2,
+       "answer": "5 s each time. A first order half-life is constant: it does not depend on the concentration (t½ = ln 2 / k)."
+      }
+     ]
+    },
+    {
+     "type": "setup",
+     "title": "Set up: runs 2 and 3",
+     "subtitle": "Finish the screen",
+     "items": [
+      "Runs 2 and 3 (C to D, then E to F): pick each one when asked, keep every value the same, and just click **Next** to the end of the screen. This keeps the second time at 20 s for the next screen."
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "In Explore mode choose Order: First (1). Keep the Time slider at 10 s and move [A] end until it is half of [A]₀. What is t½? Now change [A]₀: does t½ change?"
+    }
+   ]
+  },
+  {
+   "title": "Second Order Reactions",
+   "sim_screen": "Part 3 · Second order reaction",
+   "blocks": [
+    {
+     "type": "setup",
+     "title": "Set up: step 1",
+     "items": [
+      "Open **Second order reaction**. Again, the time you set is how long the reaction lasts.",
+      "Step 1: set [A] to **1.00 M** (▲ four times from 0.60 M). Keep Time at **10.0 s**. Click **Next**.",
+      "Step 2 asks for [A] at the end. **Stop here** and do the Predict and Calculate boxes first."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "[A] will fall from 1.00 M to 0.25 M (two halvings) in 10 s. Will the two half-lives be equal, like in the first order reaction? Why or why not?",
+       "lines": 2,
+       "answer": "No. The second half-life will be longer, because a second order rate (k[A]²) drops a lot as [A] gets smaller. Accept any reasoned prediction."
+      }
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Calculate k with the sim's formula k = (1/[A]ₜ − 1/[A]₀) / t. Include units.",
+       "lines": 3,
+       "answer": "k = (1/0.25 − 1/1.00) / 10 s = (4.00 − 1.00) / 10 = **0.30 M⁻¹s⁻¹**. The sim shows 0.30 in the panel and \"k=0.300\" in the text."
+      },
+      {
+       "prompt": "Calculate the first half-life, t½ = 1/(k[A]₀). Then calculate the second half-life, starting from [A] = 0.50 M. Do they add up to 10 s?",
+       "lines": 4,
+       "answer": "First: 1/(0.30 × 1.00) = **3.33 s** (sim: t½ = 3.33 s). Second: 1/(0.30 × 0.50) = **6.67 s**. 3.33 + 6.67 = 10.0 s. Yes."
+      }
+     ]
+    },
+    {
+     "type": "setup",
+     "title": "Set up: step 2",
+     "subtitle": "Now finish setting the reaction and check your answers",
+     "items": [
+      "Set the final [A] to **0.25 M** (▲ once from 0.15 M). Click **Next** through the steps.",
+      "Check: the values button shows c **1.00 0.25** and t **10.00 20.0**."
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "The rate equation for a second order reaction with one reactant is written as rate = {{k[A]²}}.",
+      "Plotting [A] vs. t is a {{steeper curve}}, given how the rate is proportional to the concentration of {{A}} squared.",
+      "[A] drops {{a lot faster}} at the beginning because there is more A present, making the rate {{much higher}}.",
+      "The sim's example (with k = 1): if [A] = 0.9, [A]² = {{0.81}}; if [A] = 0.8, [A]² = {{0.64}}. Dropping [A] by 0.1 drops a first order rate by {{0.1}} and a second order rate by {{0.17}}.",
+      "Plotting 1/[A] vs. t is a {{straight line}} where the slope is {{k}}."
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table: [A] vs. time",
+     "subtitle": "At \"Let's take a snapshot!\", each ◀ click moves back 1 s. Read [A] inside ( )² in the bottom row. Then calculate 1/[A]",
+     "columns": [
+      "Elapsed time (s)",
+      "◀ clicks from the end",
+      "[A] (M)",
+      "1/[A] (M⁻¹)"
+     ],
+     "rows": [
+      [
+       "0",
+       "10",
+       "{{1.00}}",
+       "{{1.00}}"
+      ],
+      [
+       "2",
+       "8",
+       "{{0.63}}",
+       "{{1.59}}"
+      ],
+      [
+       "5",
+       "5",
+       "{{0.40}}",
+       "{{2.50}}"
+      ],
+      [
+       "8",
+       "2",
+       "{{0.29}}",
+       "{{3.45}}"
+      ],
+      [
+       "10",
+       "0",
+       "{{0.25}}",
+       "{{4.00}}"
+      ]
+     ],
+     "note": "Elapsed time = clock time − 10 s, as on the first order screen.",
+     "row_height": 0.34
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Use the first and last rows to find the slope of 1/[A] vs. time. Compare it with k.",
+       "lines": 3,
+       "answer": "slope = (4.00 − 1.00) M⁻¹ / 10 s = **0.30 M⁻¹s⁻¹** = k."
+      }
+     ]
+    },
+    {
+     "type": "graph",
+     "prompt": "Sketch [A] vs. time AND 1/[A] vs. time from your table (not from the small 1/[A] box in the sim). Label which is which.",
+     "x_label": "Elapsed time (s)",
+     "y_label": "[A] (M)  /  1/[A] (M⁻¹)",
+     "height": 1.9,
+     "answer": "[A]: curve falling from 1.00 to 0.25 M, steeper at the start than the first order curve (0.40 M already at 5 s). 1/[A]: straight line RISING from 1.00 to 4.00 M⁻¹, slope +0.30."
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Compare the half-lives you found on this page with the first order page. Explain the difference using the rate laws.",
+       "lines": 3,
+       "answer": "First order: both half-lives 5 s (constant). Second order: 3.33 s then 6.67 s (each one doubles). For second order t½ = 1/(k[A]), so as [A] falls the half-life gets longer; rate = k[A]² drops faster than k[A] as [A] falls."
+      }
+     ]
+    },
+    {
+     "type": "setup",
+     "title": "Set up: runs 2 and 3",
+     "subtitle": "Finish the screen",
+     "items": [
+      "Runs 2 and 3 (C to D, then E to F): pick each one when asked, keep every value the same, and click **Next** to the end of the screen."
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "In Explore mode, set [A]₀ = 0.70 M, [A] end = 0.35 M, Time = 10 s. Click Zero, First and Second in turn. Which order gives the largest k for the same data? Which straight-line plot (y-axis label) goes with each order?"
+    }
+   ]
+  },
+  {
+   "title": "Reaction Comparison",
+   "sim_screen": "Part 4 · Reaction comparison",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Reaction comparison**. This screen has its own fixed reactions: you cannot change them. All three graphs start at the same [A] and finish at the same time.",
+      "Click **Next** until the text says \"Play the button.\" Do the Predict box, then press **▶ play** on any graph."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Which reaction order will make [A] drop the fastest at the very start? Why?",
+       "lines": 2,
+       "answer": "Second order: its rate depends on [A]², so it is fastest while [A] is high. Accept: second order, because rate ∝ [A]²."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Identify the graphs",
+     "subtitle": "Match each graph (top to bottom) to its order. Use the cards on the right for the equations",
+     "columns": [
+      "Graph",
+      "Shape of [A] vs. t",
+      "Order",
+      "Rate =",
+      "[A]ₜ ="
+     ],
+     "rows": [
+      [
+       "Top",
+       "{{straight line}}",
+       "{{0}}",
+       "{{k[A]⁰ (= k)}}",
+       "{{[A]₀ − kt}}"
+      ],
+      [
+       "Middle",
+       "{{curve}}",
+       "{{1}}",
+       "{{k[A]¹}}",
+       "{{[A]₀·e^(−kt)}}"
+      ],
+      [
+       "Bottom",
+       "{{steeper curve}}",
+       "{{2}}",
+       "{{k[A]²}}",
+       "{{[A]₀/([A]₀kt + 1)}}"
+      ]
+     ],
+     "col_widths": [
+      0.8,
+      1.4,
+      0.7,
+      1.3,
+      1.9
+     ],
+     "row_height": 0.42
+    },
+    {
+     "type": "notes",
+     "subtitle": "After the reaction ends, click the time ◀ ▶ buttons under the graphs (1 s per click). Time is shown under the buttons",
+     "items": [
+      "At the start (Time 0.0 s) all three moving dots are at the {{same}} [A]. At Time 20.0 s they are at the {{same}} [A] again.",
+      "At Time 5.0 s, the dot that is lowest (least A left) is on the {{bottom}} graph, which is {{second}} order.",
+      "At Time 5.0 s, the dot that is highest (most A left) is on the {{top}} graph, which is {{zero}} order."
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "All three reactions use up the same amount of A in the same 20 s. Use the rate laws to explain why the second order reaction is fastest at the start but slowest near the end.",
+       "lines": 3,
+       "answer": "Rate = k[A]²: when [A] is large, [A]² makes the rate very high, so [A] drops fast at first. When [A] is small, [A]² is tiny, so the rate becomes very low and the curve flattens. Zero order keeps the same rate the whole time."
+      },
+      {
+       "prompt": "A lab gives you [A] vs. time data for an unknown reaction. Explain how you would find its order using the three kinds of graphs from this unit.",
+       "lines": 3,
+       "answer": "Plot [A] vs. t, ln[A] vs. t and 1/[A] vs. t. Whichever is a straight line gives the order: [A] → zero, ln[A] → first, 1/[A] → second. The slope gives k (−k, −k, +k)."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Explore mode: click 🎲 New reaction. Before you look at the Order buttons, decide the order from the shape of the [A] curve. Then check. Repeat three times."
+    }
+   ]
+  },
+  {
+   "title": "Energy Profiles and Catalysts",
+   "sim_screen": "Part 5 · Energy profile (Kinetics)",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Energy profile** (the Kinetics screen). Tap the button at the top right and choose **Zero Order Reactions**. (This choice sets Eₐ = 9 × 10³ J in the panel and an exothermic diagram. The other choices change both.)",
+      "Click **Next** through the text up to \"Let's try that out!\" (collision theory, Arrhenius equation, energy diagram). Fill in the notes as you go."
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "{{Collision theory}} states that the reaction rate is equal to the frequency of effective collisions between reactants.",
+      "For a collision to be effective, the molecules must collide with sufficient {{energy}} and in the proper {{orientation}}.",
+      "The minimum amount of energy needed to start a chemical reaction is called the {{activation energy}} ({{Eₐ}}).",
+      "The equation that shows how temperature is related to the rate is the {{Arrhenius equation}}. The higher the temperature, the {{higher}} the rate constant will be.",
+      "In k = A·e^(−Eₐ/RT): A is the {{frequency factor}} (it accounts for molecular orientation), e is the {{natural logarithm base}}, R = {{8.314}} J mol⁻¹K⁻¹, and T is the {{Kelvin}} temperature.",
+      "We show activation energy with an {{energy diagram}} or {{reaction profile}}. This reaction is {{exothermic}}: it starts at a {{higher}} energy than where it ends, because energy is {{released}}.",
+      "The hump in the graph represents the {{activation energy}}. {{Catalysts}} make reactions faster because they {{lower}} the activation energy."
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Before the step \"Take a look at the linear graph of ln(k) vs 1/T\": the panel shows Eₐ = 9e3 J (9000 J) and uses R = 8.31. Calculate the slope (−Eₐ/R) of the ln(k) vs. 1/T line.",
+       "lines": 3,
+       "answer": "slope = −9000 J / 8.31 J K⁻¹ = **−1083 K**. The sim says \"a slope of -1083\"."
+      },
+      {
+       "prompt": "Before you turn up the burner: how many times larger is k at 550 K than at 400 K for Eₐ = 9000 J? Use ln(k₂/k₁) = (Eₐ/R)(1/T₁ − 1/T₂) with R = 8.31.",
+       "lines": 4,
+       "answer": "ln(k₂/k₁) = (9000/8.31)(1/400 − 1/550) = 1083 × 6.82 × 10⁻⁴ = 0.738, so k₂/k₁ = e^0.738 = **2.09**. Check in the panel: k₂ = 1.8 and k₁ = 0.9, ratio ≈ 2."
+      }
+     ]
+    },
+    {
+     "type": "setup",
+     "title": "Set up: catalyst runs",
+     "subtitle": "Do the same thing for all three catalysts",
+     "items": [
+      "When asked, tap any catalyst to pick it, then tap it again to drop it into the beaker. Record its color.",
+      "When the burner turns on (\"Use the flame slider\"), quickly click the burner's **▶** button **5 times** (each click is 25 K: 425 K → **550 K**). T₂ in the equation panel shows the temperature.",
+      "The burner goes back to 425 K for each new catalyst, so set 550 K every run."
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table: catalyst runs",
+     "subtitle": "Panel: ln(k₁/k₂) = (Eₐ/R)((T₁ − T₂)/(T₁T₂)), with T₁ = 400 K and T₂ = burner temperature",
+     "columns": [
+      "Run",
+      "Catalyst color",
+      "T₂ (K)",
+      "k₂ (at T₂)",
+      "k₁ (at 400 K)",
+      "Eₐ the panel uses (J)"
+     ],
+     "rows": [
+      [
+       "1",
+       "",
+       "{{550}}",
+       "{{1.8}}",
+       "{{0.9}}",
+       "{{9e3}}"
+      ],
+      [
+       "2",
+       "",
+       "{{550}}",
+       "{{2.1}}",
+       "{{1.0}}",
+       "{{9e3}}"
+      ],
+      [
+       "3",
+       "",
+       "{{550}}",
+       "{{3.7}}",
+       "{{1.8}}",
+       "{{9e3}}"
+      ]
+     ],
+     "col_widths": [
+      0.6,
+      1.2,
+      0.8,
+      1.1,
+      1.2,
+      1.5
+     ],
+     "row_height": 0.36
+    },
+    {
+     "type": "notes",
+     "items": [
+      "After the 2nd catalyst the sim says Eₐ was reduced to {{8000}} J; after the 3rd, to {{6000}} J.",
+      "The horizontal line on the energy diagram represents the average {{kinetic energy}} of the molecules. Right after a catalyst drops in (425 K) the line is {{below}} the hump.",
+      "Increasing the temperature increases the {{kinetic}} energy of the molecules, so the line moves {{up}}."
+     ]
+    },
+    {
+     "type": "graph",
+     "prompt": "Sketch the energy diagram at 550 K: reactants, products, the gray original hump, the orange catalyzed hump, the Eₐ arrow and the horizontal kinetic energy line.",
+     "x_label": "Reaction progress",
+     "y_label": "Energy",
+     "height": 2.0,
+     "answer": "Reactants start higher than products (exothermic). Orange catalyzed hump lower than gray hump. At 550 K the kinetic energy line is ABOVE the orange hump but BELOW the gray hump. Eₐ arrow from reactants to the top of the hump."
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Use your diagram: at 550 K, could the reaction go over the original (gray) hump? The catalyzed (orange) hump? Explain how the catalyst and the temperature each make more collisions effective.",
+       "lines": 3,
+       "answer": "Not the gray hump (line is below it), but yes the orange hump (line is above it). The catalyst lowers Eₐ, so more collisions have enough energy; raising T raises the average kinetic energy, so more molecules reach Eₐ."
+      },
+      {
+       "prompt": "k₂ went from 1.8 to 2.1 to 3.7 across the three runs at the same temperature. Use the Arrhenius equation and the sim's Eₐ values to explain this trend.",
+       "lines": 3,
+       "answer": "In k = Ae^(−Eₐ/RT), a smaller Eₐ makes −Eₐ/RT less negative, so k is larger. The sim says each catalyst lowered Eₐ (to 8000 J, then 6000 J), so k increased at the same T."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Run the third catalyst again (Back button) at 600 K instead of 550 K. Time how long the beaker takes to turn into C. Compare with your 550 K run."
+    }
+   ]
+  }
+ ],
+ "conclusion": [
+  {
+   "prompt": "Make a summary table for zero, first and second order: rate law, the straight-line plot, the slope of that plot, and the half-life formula. Use one number from your own runs for each order.",
+   "lines": 5,
+   "answer": "Zero: rate = k; [A] vs t; slope −k; t½ = [A]₀/2k (run 1: k = 0.050 M/s, t½ = 9.0 s). First: rate = k[A]; ln[A] vs t; slope −k; t½ = ln2/k (k = 0.139 s⁻¹, t½ = 5.0 s). Second: rate = k[A]²; 1/[A] vs t; slope +k; t½ = 1/(k[A]₀) (k = 0.30 M⁻¹s⁻¹, t½ = 3.33 s)."
+  },
+  {
+   "prompt": "Concentration, temperature and a catalyst can all make a reaction faster. Which of these change k, and which change only the rate? Use evidence from at least two screens.",
+   "lines": 4,
+   "answer": "Concentration changes the rate but not k (first order: k stayed 0.139 s⁻¹ while the rate fell as [A] fell). Temperature changes k (k at 550 K ≈ 2 × k at 400 K). A catalyst changes k by lowering Eₐ (k₂ 1.8 → 3.7 at 550 K)."
+  },
+  {
+   "prompt": "Use collision theory to explain why a reaction slows down as it runs (pages 2–3) but speeds up when it is heated (page 5).",
+   "lines": 4,
+   "answer": "As A is used up there are fewer A particles, so fewer collisions per second and a lower rate. Heating makes particles move faster: more collisions per second and a larger fraction with energy ≥ Eₐ, so more effective collisions and a higher rate."
+  }
+ ],
+ "key_notes": [
+  "Settings chain: the values carry from screen to screen. Zero order runs 2–3 end with t₂ = 20 s; the first and second order screens never let students change t₂ in run 1, so they inherit 20 s. That makes the panel (which divides by the first time, 10 s) agree with the graph (which runs from 10 s to 20 s). If a student's values button does not show t = 10.00 20.0, their panel answers are still right but their [A] scrub readings will differ.",
+  "On the first and second order screens the sim treats the first time value as the reaction length t (k = (ln[A]₀ − ln[A]ₜ)/t). The graph instead runs from the first time to the second time. Only when t₂ = 2t₁ do they agree (first/index.tsx:169; ChartTime.tsx:83).",
+  "The \"fixed rate constant\" reactions C to D and E to F are not fixed: k is always computed from the student's settings (the constants 0.04 and 0.07 in ConcentrationPlotView/constants.ts are never used). The worksheet records the panel k for runs 2–3 on the zero order page only.",
+  "Rounding: the panel shows k to 2 decimals (0.05, 0.14, 0.30) and the step text to 3 decimals (0.050, 0.139, 0.300). Accept either.",
+  "ln and 1/[A] columns are calculated from the 2-decimal [A] readings, so accept ±0.02.",
+  "Kinetics screen: the panel uses R = 8.31, while the step text says 8.314. The panel's Eₐ stays 9e3 J for all three catalysts (it depends on the reaction choice, not the catalyst); only k₂ (1.8, 2.1, 3.7) changes with each catalyst. The k₂ values go by the order the catalysts are used, not by color, so the color column is not graded.",
+  "Kinetics screen: the beaker's speed depends only on the burner temperature, not on the catalyst. At 550 K the beaker reaches the \"Perfect!\" step in about 3.5 s and finishes in about 10.5 s.",
+  "The 0.17 example on page 3 is the sim's own hypothetical (it assumes k = 1).",
+  "Comparison screen values (teacher only, not on screen): all three reactions go from 1.00 to 0.10 M in 20 s (k = 0.045, 0.115, 0.45). At 5.0 s: zero 0.78, first 0.56, second 0.31 M."
+ ],
+ "lesson_plan": {
+  "period_minutes": 50,
+  "ap_topics": [
+   "5.1 Reaction Rates",
+   "5.2 Introduction to Rate Law (single-reactant rate laws only)",
+   "5.3 Concentration Changes Over Time",
+   "5.5 Collision Model",
+   "5.6 Reaction Energy Profile",
+   "5.11 Catalysis (partial: catalyst lowers Eₐ only)"
+  ],
+  "sim_location": "ChemSims.app → Simulations → Reaction Rates Lab (Zero order, First order, Second order, Reaction comparison, Energy profile; Explore mode from the menu)",
+  "essential_question": "How do concentration, temperature and a catalyst change how fast a reaction goes, and how can a graph tell us the order?",
+  "objectives": [
+   "Calculate k and t½ for zero, first and second order reactions from concentration–time data.",
+   "Identify reaction order from which plot ([A], ln[A] or 1/[A] vs. t) is linear, and get k from its slope.",
+   "Explain with collision theory and an energy diagram why temperature and catalysts increase k.",
+   "Use the two-temperature Arrhenius equation to compare rate constants."
+  ],
+  "materials": [
+   "Scientific calculators (ln and eˣ keys)",
+   "Rulers for the to-scale graphs on pages 1–3",
+   "A stopwatch or phone timer per pair (optional, page 5 Explore box)"
+  ],
+  "prep": [
+   "Run the whole sim once using the exact settings in the Set Up boxes, in order. The values carry from screen to screen; check that the values button reads t = 10.00 20.0 when you start First order.",
+   "Make sure every device opens the sim fresh (reload the page), so the zero order screen starts at the defaults 0.70 M, 0.35 M, 10 s, 15 s.",
+   "The sim doesn't cover 5.4 Elementary Reactions, 5.7 Introduction to Reaction Mechanisms, 5.8 Reaction Mechanism and Rate Law, 5.9 Steady-State Approximation, 5.10 Multistep Reaction Energy Profile, or catalysis by new pathways/intermediates (rest of 5.11), or the method of initial rates (5.2). Use your usual lessons for these (about 2–3 extra periods), for example AP Classroom Topic Questions 5.4–5.11 and a worked mechanism such as NO₂ + CO (step 1: 2NO₂ → NO₃ + NO, slow; step 2: NO₃ + CO → NO₂ + CO₂, fast).",
+   "Print the packet single-sided if students will need to see the tables and the graph boxes side by side."
+  ],
+  "vocabulary": [
+   "rate",
+   "rate constant (k)",
+   "order",
+   "rate law",
+   "integrated rate law",
+   "half-life (t½)",
+   "collision theory",
+   "orientation",
+   "activation energy (Eₐ)",
+   "Arrhenius equation",
+   "frequency factor",
+   "energy diagram (reaction profile)",
+   "exothermic",
+   "catalyst"
+  ],
+  "prior_knowledge": [
+   "Molarity (M) and reading a graph's slope",
+   "Natural log (ln) and eˣ on a calculator",
+   "Kelvin temperature; exothermic vs. endothermic (from Unit 6 or a short preview)"
+  ],
+  "days": [
+   {
+    "day": 1,
+    "title": "Teacher demo: zero order reactions",
+    "goal": "Students see what rate, k and half-life mean on a reaction where the rate never changes, and learn the sim's buttons.",
+    "worksheet_pages": "Cover + p. 1 (run 1 only)",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: \"A bath tub drains at 2 L per minute no matter how full it is. How long until a 100 L tub is half empty?\" (25 min)"
+     ],
+     [
+      "5–35",
+      "Demo, zero order run 1 (script below). Students fill page 1 with you."
+     ],
+     [
+      "35–45",
+      "Students finish the run 1 table, graph and first Analyze question in pairs."
+     ],
+     [
+      "45–50",
+      "Quick check: \"What is the rate when [A] = 0.45 M?\" (0.05 M/s, the same as always)."
+     ]
+    ],
+    "demo_script": [
+     {
+      "do": "Open Reaction Rates Lab → Zero order reaction. Point at the ▲ ▼ and ◀ ▶ buttons and the equation panel.",
+      "say": "\"Every value here changes with arrows: 0.10 M or 1 s per click. A turns into B. How could we measure how fast?\" (Watch how fast [A] changes.)",
+      "students": "Read Set Up step 1."
+     },
+     {
+      "do": "Click ▲ twice ([A] 0.90 M) and ◀ ten times (Time 0.0 s). Click Next.",
+      "say": "\"This is our starting point: 0.90 M at 0 s. Now step 2 asks for the end. Before I set it, predict the graph's shape.\" (Straight line or curve; take both.)",
+      "students": "Predict box."
+     },
+     {
+      "do": "Pause. Do not change anything yet.",
+      "say": "\"We'll end at 0.25 M at 13 s. Calculate k = −Δ[A]/Δt and t½ = [A]₀/2k.\" Give 3 minutes. (0.050 M/s; 9.0 s)",
+      "students": "Calculate box, both items."
+     },
+     {
+      "do": "Click ▼ once (0.25 M) and ◀ twice (Time 13.0 s). Click Next.",
+      "say": "\"The panel says Rate = 0.05. The text says k = 0.050 M/s. Did you match?\"",
+      "students": "Check calc; Guided notes 1–2; first equation line."
+     },
+     {
+      "do": "Click Next (half-life step).",
+      "say": "\"t½ = 9.00 s. Notice it uses [A]₀/2k.\"",
+      "students": "Notes bullet 3; second equation line."
+     },
+     {
+      "do": "Click Next and let the reaction play.",
+      "say": "\"Watch the graph. Is [A] falling at the same speed at the start and the end?\" (Yes, same speed.) \"The sim text says 'variable rate' here, but for zero order the rate is constant.\"",
+      "students": "Watch only."
+     },
+     {
+      "do": "On \"For this zero order reaction…\" read the straight-line equation aloud.",
+      "say": "\"[A] = −kt + [A]₀. What is the slope?\" (−k)",
+      "students": "Notes bullet 4."
+     },
+     {
+      "do": "Click Next; tap the values button (top right).",
+      "say": "\"It shows c 0.90 0.25 and t – 13.0. The dash means 0 s.\"",
+      "students": "Tick the check line in Set Up step 2."
+     },
+     {
+      "do": "Click Next to \"Let's take a snapshot!\". Click ◀ four times and point to the number in ( )⁰ in the bottom row.",
+      "say": "\"Four clicks back is 9 s. What is [A]?\" (0.45 M, half of 0.90: the half-life.)",
+      "students": "Run 1 table rows 13 s and 9 s."
+     },
+     {
+      "do": "Click ◀ three more times (6 s), then three more (3 s).",
+      "say": "\"How much does [A] drop every 3 s?\" (0.15 M every time.)",
+      "students": "Finish the table; start the graph."
+     }
+    ]
+   },
+   {
+    "day": 2,
+    "title": "Student sim work: zero order runs 2–3 and first order",
+    "worksheet_pages": "p. 1 (runs 2–3) and p. 2",
+    "agenda": [
+     [
+      "0–5",
+      "Reload the sim. Redo run 1 quickly (settings from p. 1) so the screen is in the right state."
+     ],
+     [
+      "5–15",
+      "Zero order runs 2 and 3; three-run table and Analyze question 2."
+     ],
+     [
+      "15–42",
+      "First order page: step 1, Predict, Calculate, step 2, notes, scrub table, slope, graph."
+     ],
+     [
+      "42–50",
+      "Analyze questions; pairs compare t½ answers."
+     ]
+    ],
+    "circulate": [
+     "Run 2 end time is 20.0 s and run 3 [E] is 1.00 M: these set up the first order screen.",
+     "On First order, values button reads c 0.60 0.15, t 10.00 20.0 before they scrub.",
+     "Students calculate k before they set step 2 (the panel shows k as soon as [A] final changes).",
+     "Students read [A] from inside the parentheses, not the rate number (which does not change when scrubbing).",
+     "Units: M/s for zero order k, s⁻¹ for first order k."
+    ],
+    "checkpoint": "First order: k = 0.139 s⁻¹ and t½ = 5.0 s; the table shows [A] = 0.30 M at 5 s and 0.15 M at 10 s (two half-lives).",
+    "early_finishers": "Explore box on p. 2: show that t½ stays the same in Explore mode when [A]₀ changes for first order."
+   },
+   {
+    "day": 3,
+    "title": "Student sim work: second order and reaction comparison",
+    "worksheet_pages": "pp. 3–4",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: \"First order t½ was 5 s both times. Predict second order.\""
+     ],
+     [
+      "5–30",
+      "Second order page (open the screen straight from the end of First order so t stays 10 / 20 s)."
+     ],
+     [
+      "30–45",
+      "Reaction comparison page."
+     ],
+     [
+      "45–50",
+      "Share: how do you find the order from data?"
+     ]
+    ],
+    "circulate": [
+     "Values button reads c 1.00 0.25, t 10.00 20.0 on Second order. If the device was reloaded: open Zero order, click Next once, click ▶ five times (end time 20.0 s), then use the top-left menu to open Second order and set [A] 1.00 M, final [A] 0.25 M, Time 10.0 s.",
+     "Students sketch 1/[A] from their table, rising; the small 1/[A] box in the sim shows a falling line.",
+     "On Comparison, students scrub with the ◀ ▶ under the graphs and read Time below them.",
+     "Rate laws in the identification table use the correct second order form [A]₀/([A]₀kt + 1)."
+    ],
+    "checkpoint": "Second order: k = 0.30 M⁻¹s⁻¹, half-lives 3.33 s then 6.67 s; 1/[A] rises from 1.00 to 4.00 M⁻¹.",
+    "early_finishers": "Explore box on p. 4: 🎲 New reaction, guess the order from the curve, check."
+   },
+   {
+    "day": 4,
+    "title": "Student sim work: energy profiles and catalysts",
+    "worksheet_pages": "p. 5",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: \"Why does food spoil more slowly in the fridge?\""
+     ],
+     [
+      "5–20",
+      "Steps 1–13: notes, slope calculation, ratio calculation."
+     ],
+     [
+      "20–42",
+      "Three catalyst runs at 550 K; table, energy diagram sketch."
+     ],
+     [
+      "42–50",
+      "Analyze questions; class discussion of the gray vs. orange hump."
+     ]
+    ],
+    "circulate": [
+     "Reaction choice is Zero Order Reactions (other choices change Eₐ and the diagram).",
+     "Burner set to 550 K every run (T₂ in the panel). It resets to 425 K each time.",
+     "Students use R = 8.31 in the calculation to match the panel's numbers.",
+     "Energy sketch: kinetic energy line between the orange and gray humps at 550 K."
+    ],
+    "checkpoint": "Slope = −1083 K; k at 550 K is about 2 times k at 400 K (panel 1.8 vs 0.9).",
+    "early_finishers": "Explore box on p. 5 (600 K run with a timer)."
+   },
+   {
+    "day": 5,
+    "title": "Explore mode and synthesis",
+    "worksheet_pages": "Explore boxes on pp. 1–5 + Conclusion page",
+    "agenda": [
+     [
+      "0–20",
+      "Explore mode: finish the Explore boxes in pairs (order guessing with 🎲 New reaction)."
+     ],
+     [
+      "20–40",
+      "Conclusion questions, individually."
+     ],
+     [
+      "40–50",
+      "AP practice question 1 together; bridge to mechanisms: \"A rate law k[A]² could come from a slow step where two A collide.\""
+     ]
+    ],
+    "circulate": [
+     "Conclusion table uses students' own numbers from pp. 1–3.",
+     "In Explore mode, k is shown to 3 decimals; students note which y-axis label (ln[A] or 1/[A]) appears for each order."
+    ],
+    "checkpoint": "Each student can say which plot is linear for each order and what its slope is.",
+    "early_finishers": "AP practice question 2 (FRQ) on their own."
+   },
+   {
+    "day": 6,
+    "title": "Grading and wrap-up",
+    "agenda": [
+     [
+      "0–25",
+      "Grading (self, peer or teacher; see the shared grading section)."
+     ],
+     [
+      "25–40",
+      "Discuss the most-missed items: units of k by order, second order half-life, catalyst vs. temperature."
+     ],
+     [
+      "40–50",
+      "Exit ticket."
+     ]
+    ]
+   }
+  ],
+  "misconceptions": [
+   {
+    "misconception": "The rate constant k changes as the reactant is used up.",
+    "sim_fix": "On First order, k stays 0.139 s⁻¹ in the panel while scrubbing changes [A]. The rate (k[A]) falls; k does not."
+   },
+   {
+    "misconception": "Every reaction has a constant half-life.",
+    "sim_fix": "Compare p. 2 (5 s and 5 s) with p. 3 (3.33 s then 6.67 s). Only first order is constant."
+   },
+   {
+    "misconception": "Zero order means the reaction doesn't happen or has no rate.",
+    "sim_fix": "Zero order run 1: rate = k = 0.05 M/s the whole time; [A] still falls 0.15 M every 3 s."
+   },
+   {
+    "misconception": "Heating lowers the activation energy.",
+    "sim_fix": "On Energy profile, the panel's Eₐ stays 9e3 J when the burner changes; only the horizontal kinetic energy line moves up."
+   },
+   {
+    "misconception": "A catalyst gives molecules more energy.",
+    "sim_fix": "After a catalyst drops in at 425 K the kinetic energy line does not move; the hump gets lower (orange vs. gray)."
+   }
+  ],
+  "sim_cautions": [
+   "Values carry from screen to screen. Have students follow the Set Up boxes in order; a reload resets everything to the defaults.",
+   "The arrows are the only way to change values: 0.10 M and 1 s per click on the order screens, 25 K per click on the burner. The pointer marks on the sliders cannot be dragged.",
+   "The sim says C to D and E to F have a \"fixed rate constant\", but they don't: k is always worked out from the student's settings. The message \"You picked a reaction with a rate constant…\" repeats the old k.",
+   "Zero order step text says the rate is \"variable\". For zero order it is constant.",
+   "On First and Second order, the time students set is used as the reaction length in the panel, but the graph runs from that time to a second, hidden time. They only agree when the hidden time is twice the first, which is why the worksheet uses 10 s and 20 s.",
+   "First order: the equations and the graph label say \"In\" (capital i) for ln, and the half-life text says \"In(1)/k\"; the number shown is ln 2/k. The rate number in the bottom row stays at the starting rate while the [A] beside it changes as you scrub.",
+   "Second order: the small 1/[A] box shows the reactant line going down; a real 1/[A] plot goes up with slope k.",
+   "Reaction comparison: the cards' k values (0.07, 0.07, 0.14) are fixed and do not match the graphs, and are not \"from the previous reactions\". The first order card is missing the minus sign in e^(−kt), and the second order card is missing the \"/\" in [A]₀/([A]₀kt + 1).",
+   "Energy profile step 9 reads \"Eₐ is 9J and k is -0.16 when the temperature is undefinedK\". Tell students to skip that sentence. Step 18 says k = 1.3 at 400 K, which the panel does not show.",
+   "Energy profile: the text says each catalyst lowers Eₐ (to 8000 J, 6000 J), but the panel keeps Eₐ = 9e3 J and the diagram's lowered hump is the same for all three catalysts. The beaker always finishes, even when the kinetic energy line is below the hump; its speed depends only on the burner.",
+   "Energy profile: choosing \"First Order Reactions\" draws products above reactants (endothermic), but the text still calls it exothermic. Use Zero Order Reactions.",
+   "The values button shows \"-\" for a time of 0 s."
+  ],
+  "differentiation": {
+   "support": [
+    "Pair students: one clicks, one records; switch each screen.",
+    "Give a half-filled ln and 1/[A] column (first row done) on pp. 2–3.",
+    "Allow t½ to be read from the tables (the time when [A] is half) before using formulas."
+   ],
+   "extension": [
+    "Explain why the panel's k on First order would be wrong if the hidden second time were 15 s instead of 20 s.",
+    "Use the catalyst data: if Eₐ really dropped from 9000 J to 6000 J, how many times larger should k be at 550 K? (e^((3000/8.31)/550) ≈ 1.93)",
+    "Write a two-step mechanism whose slow step gives rate = k[A]² for A → B."
+   ]
+  },
+  "exit_ticket": [
+   {
+    "question": "A first order reaction has k = 0.139 s⁻¹. How long does it take [A] to fall from 0.80 M to 0.40 M? From 0.40 M to 0.20 M?",
+    "answer": "5.0 s both times (t½ = ln 2 / 0.139)."
+   },
+   {
+    "question": "For a second order reaction, which graph is a straight line, and what is its slope?",
+    "answer": "1/[A] vs. t; slope = +k."
+   },
+   {
+    "question": "Name one way to increase k and explain it with the energy diagram.",
+    "answer": "Raise T (more molecules have energy above Eₐ: the kinetic energy line rises) or add a catalyst (lower hump, smaller Eₐ)."
+   }
+  ],
+  "ap_practice": [
+   {
+    "question": "A → B is first order. [A] falls from 0.60 M to 0.15 M in 10 s. (a) What is the half-life? (b) What is k? (c) What is [A] after 15 s?",
+    "answer": "(a) 0.60 → 0.30 → 0.15 is two half-lives in 10 s, so t½ = 5.0 s. (b) k = ln 2 / 5.0 s = 0.139 s⁻¹. (c) 15 s is three half-lives: 0.60/8 = 0.075 M."
+   },
+   {
+    "question": "FRQ. For A → B, a student records: t (s) = 0, 2, 5, 8, 10; [A] (M) = 1.00, 0.63, 0.40, 0.29, 0.25. (a) Show that the reaction is second order. (b) Find k with units. (c) Calculate the rate when [A] = 0.50 M. (d) Calculate the first half-life and explain why the second half-life is longer. (e) A proposed mechanism is: step 1, A + A → A₂ (slow); step 2, A₂ → 2B (fast). Is it consistent with the rate law? Explain.",
+    "answer": "(a) 1/[A] = 1.00, 1.59, 2.50, 3.45, 4.00 M⁻¹ rises linearly with t (ln[A] does not), so second order. (b) slope = (4.00 − 1.00)/10 = 0.30 M⁻¹s⁻¹. (c) rate = 0.30 × (0.50)² = 0.075 M/s. (d) t½ = 1/(k[A]₀) = 1/(0.30 × 1.00) = 3.3 s; the next t½ = 1/(0.30 × 0.50) = 6.7 s, longer because t½ depends on 1/[A] and [A] is now smaller. (e) Yes: the slow step is bimolecular in A, so rate = k[A]², and adding the steps gives 2A → 2B (A → B)."
+   },
+   {
+    "question": "Eₐ = 9000 J/mol. By what factor does k increase from 400 K to 550 K? (R = 8.31 J mol⁻¹K⁻¹)",
+    "answer": "ln(k₂/k₁) = (9000/8.31)(1/400 − 1/550) = 0.738; k₂/k₁ = 2.09."
+   }
+  ]
+ }
+}

@@ -1,0 +1,1633 @@
+{
+ "unit": 3,
+ "unit_title": "Properties of Substances and Mixtures",
+ "worksheet_title": "Properties of Substances and Mixtures",
+ "sim_name": "Properties of Substances & Mixtures Sim",
+ "pages": [
+  {
+   "title": "3.1 Intermolecular Forces",
+   "sim_screen": "Topic 3.1 · Guided · Screens 1–6",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Topic 3.1 Intermolecular and Interparticle Forces** in **Guided** mode. Screen 1: **Macroscopic property** = **Boiling point**.",
+      "Screens 3 and 4: use the **Particle A** and **Particle B** buttons to choose each pair named below."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Methane (CH₄) and methanol (CH₃OH) are both small molecules. Which one has the higher boiling point? Why?",
+       "lines": 2,
+       "answer": "Methanol. It has an O–H group, so it can hydrogen bond; methane only has weak London dispersion forces. Accept any prediction with a reason."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "London dispersion forces come from {{temporary}} fluctuating dipoles in electron clouds. They exist in {{all}} atoms and molecules.",
+      "More polarizable electron clouds and larger {{contact area}} usually strengthen dispersion.",
+      "A polar bond does not guarantee a polar molecule. Molecular {{geometry}} decides whether bond dipoles cancel.",
+      "Hydrogen bonding requires a donor H directly bonded to {{N, O, or F}} and an N, O, or F {{acceptor}}.",
+      "For vapor pressure, invert the reasoning: weaker attractions usually mean {{higher}} vapor pressure."
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Screen",
+      "Substance or pair",
+      "What the sim shows"
+     ],
+     "col_widths": [
+      1.1,
+      2.2,
+      2.7
+     ],
+     "rows": [
+      [
+       "1",
+       "Methane boiling point",
+       "{{−161.5 °C}}"
+      ],
+      [
+       "1",
+       "Methanol boiling point",
+       "{{64.7 °C}}"
+      ],
+      [
+       "2",
+       "Dispersion score: methane / chlorine / iodine",
+       "{{3.8 / 5.9 / 9.9}}"
+      ],
+      [
+       "3",
+       "Dominant force, chloromethane + chloromethane",
+       "{{Dipole-dipole}}"
+      ],
+      [
+       "4",
+       "Dominant force, methanol + water",
+       "{{H bonding}}"
+      ],
+      [
+       "5",
+       "Boiling point: n-pentane / neopentane",
+       "{{36.1 °C / 9.5 °C}}"
+      ]
+     ],
+     "note": "The dispersion score is the sim's own model number (a relative scale), not a measured value."
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Screen 4: set Particle A and B to **fluoromethane** (CH₃F). It contains H and F. Can it hydrogen bond with itself? Use the sim's donor rule.",
+       "lines": 2,
+       "answer": "No. Its H atoms are bonded to C, not to F, so there is no N–H, O–H or F–H donor. The sim shows dipole-dipole as the dominant force. Accept: no donor H on N/O/F."
+      },
+      {
+       "prompt": "n-pentane and neopentane have the same formula, C₅H₁₂. Explain why n-pentane boils higher.",
+       "lines": 2,
+       "answer": "Its longer, extended shape gives more surface contact, so London dispersion forces are stronger (36.1 °C vs 9.5 °C). Accept: shape / contact area → stronger LDF."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Screen 6: pick a challenge (try “Explain why sodium chloride dissolves in water”) and check which end of water faces each ion."
+    }
+   ]
+  },
+  {
+   "title": "3.2 Properties of Solids",
+   "sim_screen": "Topic 3.2 · Guided · Screens 1–6",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Topic 3.2 Properties of Solids** in **Guided** mode. On each screen, pick the solid and **Property focus** named in the table.",
+      "For sodium chloride, the **Ionic condition** buttons are **Solid**, **Molten** and **Aqueous**. Start on **Solid**."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Solid NaCl is made of ions. Will solid NaCl conduct electricity? Will molten NaCl?",
+       "lines": 2,
+       "answer": "Solid: no (ions are locked in the lattice). Molten: yes (ions can move). Accept any prediction with a reason."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Ionic solids have charged particles, but solid ions are {{fixed}} in the crystal lattice.",
+      "Brittleness comes from a layer shift that places {{like charges}} next to each other.",
+      "Graphite is softer because layers {{slide}}; the covalent bonds inside each layer are still {{strong}}.",
+      "Melting a molecular solid usually overcomes attractions {{between}} molecules, not covalent bonds inside molecules.",
+      "Mobile valence {{electrons}} explain conductivity in metals. Alloy atoms can {{block}} metal-core sliding."
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Solid",
+      "Classification (sim)",
+      "Property focus",
+      "Value shown"
+     ],
+     "col_widths": [
+      1.4,
+      2.0,
+      1.5,
+      2.1
+     ],
+     "rows": [
+      [
+       "Sodium chloride (Solid)",
+       "{{Ionic solid}}",
+       "Conductivity",
+       "{{no conductivity}}"
+      ],
+      [
+       "Sodium chloride (Molten)",
+       "Ionic solid",
+       "Conductivity",
+       "{{conducts}}"
+      ],
+      [
+       "Diamond",
+       "{{Covalent network solid}}",
+       "Hardness",
+       "{{very high}}"
+      ],
+      [
+       "Graphite",
+       "Covalent network solid",
+       "Hardness",
+       "{{low along layers}}"
+      ],
+      [
+       "Sucrose",
+       "{{Molecular solid}}",
+       "Melting point",
+       "{{moderate for a molecular solid}}"
+      ],
+      [
+       "Copper (Pure metal)",
+       "{{Metallic solid}}",
+       "Malleability",
+       "{{high}}"
+      ],
+      [
+       "Steel (Interstitial alloy)",
+       "{{Alloy}}",
+       "Ductility",
+       "{{reduced}}"
+      ]
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Copper and solid NaCl both contain charged particles. Why does copper conduct but solid NaCl does not?",
+       "lines": 2,
+       "answer": "Copper has mobile (delocalized) valence electrons in the solid. NaCl has ions, but they are fixed in the lattice, so no charge can move. Accept: mobile charge carriers vs fixed ions."
+      },
+      {
+       "prompt": "Steel is iron with small carbon atoms in the gaps. Use the sim to explain why it is harder but less ductile than a pure metal.",
+       "lines": 2,
+       "answer": "The small interstitial atoms sit in gaps and block metal-core layers from sliding, so the lattice is more rigid (harder) and harder to draw into wire (less ductile)."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Screen 3: switch between diamond, graphite and silicon dioxide in Stress view. Which ones keep their shape?"
+    }
+   ]
+  },
+  {
+   "title": "3.3 Solids, Liquids, and Gases",
+   "sim_screen": "Topic 3.3 · Guided · Screens 1–5",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Topic 3.3 Solids, Liquids, and Gases** in **Guided** mode (5 screens).",
+      "Screen 4 starts with **argon**, **Gas temperature 50 T**, **Gas volume 20 V**. These slider units are relative, not kelvins or liters."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "If you shrink a gas's container but keep the temperature the same, what happens to how often particles hit the walls?",
+       "lines": 1,
+       "answer": "Collisions become more frequent (particles are closer together). Accept any prediction with a reason."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Crystalline solids show repeating {{long-range}} order; amorphous solids (the glass-like solid) do {{not}}.",
+      "Liquid particles stay {{close}} together while moving, colliding, and exchanging {{neighbors}}.",
+      "Solid and liquid molar volumes are often {{similar}} because particles remain close in both phases.",
+      "Water is the exception: the same amount of ice occupies {{more}} volume and is {{less}} dense than liquid water.",
+      "Gas particles are far apart and constantly moving through the available container {{volume}}."
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table 1",
+     "subtitle": "Screen 5: choose argon, then set Phase focus to each phase. Copy the Property tile",
+     "columns": [
+      "Phase",
+      "Property tile"
+     ],
+     "col_widths": [
+      1,
+      4
+     ],
+     "rows": [
+      [
+       "Solid",
+       "{{definite shape and definite volume}}"
+      ],
+      [
+       "Liquid",
+       "{{definite volume but shape changes with the container}}"
+      ],
+      [
+       "Gas",
+       "{{no definite shape or volume; fills the available container}}"
+      ]
+     ],
+     "row_height": 0.36
+    },
+    {
+     "type": "table",
+     "title": "Data table 2",
+     "subtitle": "Screen 4 (argon gas): set the sliders, then read the Speed, Spacing and Collisions bars",
+     "columns": [
+      "Temperature (T)",
+      "Volume (V)",
+      "Speed",
+      "Spacing",
+      "Collisions"
+     ],
+     "col_widths": [
+      1,
+      1,
+      1.1,
+      1.9,
+      2.0
+     ],
+     "rows": [
+      [
+       "50",
+       "20",
+       "{{moderate}}",
+       "{{shorter average spacing}}",
+       "{{moderate collision frequency}}"
+      ],
+      [
+       "50",
+       "90",
+       "moderate",
+       "{{larger average spacing}}",
+       "{{low collision frequency}}"
+      ],
+      [
+       "85",
+       "20",
+       "{{faster}}",
+       "shorter average spacing",
+       "{{high collision frequency}}"
+      ]
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Explain why a liquid flows but a solid keeps its shape, using particle motion.",
+       "lines": 2,
+       "answer": "Liquid particles stay close but move, collide and exchange neighbors; solid particles mostly vibrate in fixed positions."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Screen 3: switch the substance to water. How does the Solid card's label change?"
+    }
+   ]
+  },
+  {
+   "title": "3.4 Ideal Gas Law",
+   "sim_screen": "Topic 3.4 · Guided · Screens 1–6",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Topic 3.4 Ideal Gas Law** in **Guided** mode. Leave the pressure unit on **atm** unless a step says otherwise.",
+      "The sim uses **R = 0.08206 L·atm/(mol·K)** (it shows 8.314 for kPa and 62.36 for mmHg or torr). Temperatures must be in **K**."
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "Boyle (n, T constant): P₁V₁ = {{P₂V₂}}     Charles (P, n constant): V₁/T₁ = {{V₂/T₂}}",
+      "Gay-Lussac (V, n constant): P₁/T₁ = {{P₂/T₂}}     Ideal gas law: {{PV = nRT}}",
+      "Partial pressure: P_A = {{X_A}} × P_total, where X_A = n_A / n_total"
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "**Screen 1** (nitrogen, Unknown = **Solve P2**): P₁ = 1 atm, V₁ = 100 L. Type **Final volume V₂ = 50 L**. Calculate P₂ before you look.",
+       "lines": 2,
+       "answer": "P₂ = P₁V₁/V₂ = (1 atm)(100 L)/(50 L) = **2 atm**. (V₂ = 25 L gives 4 atm.)"
+      },
+      {
+       "prompt": "**Screen 2** (helium, Unknown = **Solve V2**): V₁ = 50 L, T₁ = 300 K, T₂ = 600 K. Calculate V₂.",
+       "lines": 2,
+       "answer": "V₂ = V₁T₂/T₁ = (50 L)(600 K)/(300 K) = **100 L**."
+      },
+      {
+       "prompt": "**Screen 3** (nitrogen, Unknown = **Solve P2**): P₁ = 1 atm, T₁ = 300 K. Type **Final temperature T₂ = 450 K**. Calculate P₂.",
+       "lines": 2,
+       "answer": "P₂ = P₁T₂/T₁ = (1 atm)(450 K)/(300 K) = **1.5 atm**."
+      },
+      {
+       "prompt": "**Screen 4** (helium, Unknown = **Solve P**): n = 1 mol, T = 298 K, V = 50 L. Calculate P in atm. Then switch the unit to **kPa** and predict the new number.",
+       "lines": 3,
+       "answer": "P = nRT/V = (1 mol)(0.08206 L·atm/mol·K)(298 K)/(50 L) = **0.489 atm**. In kPa: (1)(8.314)(298)/50 = **49.6 kPa** (sim shows 49.551 kPa)."
+      },
+      {
+       "prompt": "**Screen 5** (Mixture preset **Air-like**: 0.78 mol N₂, 0.21 mol O₂, 0.01 mol Ar; total pressure 1 atm). Find P_O₂. Then choose **Two gas** (2 mol N₂, 1 mol O₂) and type **Total pressure 3**. Find P_O₂ again.",
+       "lines": 3,
+       "answer": "Air-like: X_O₂ = 0.21/1.00 = 0.21, P_O₂ = **0.21 atm**. Two gas: X_O₂ = 1/3 = 0.333, P_O₂ = 0.333 × 3 atm = **1.0 atm** (P_N₂ = 2.0 atm; the partial pressures add to 3 atm)."
+      }
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Screen 2 says to use Kelvin for Charles' law. Explain why doubling 25 °C to 50 °C does **not** double the volume.",
+       "lines": 2,
+       "answer": "Volume is proportional to absolute (Kelvin) temperature. 25 °C = 298.15 K and 50 °C = 323.15 K, only about 1.08 times larger, so V rises by about 8 %, not 2×."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Screen 1: switch the graph from P vs V to P vs 1/V. Which one is a straight line?"
+    }
+   ]
+  },
+  {
+   "title": "3.5 Kinetic Molecular Theory",
+   "sim_screen": "Topic 3.5 · Guided · Screens 1–6",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Topic 3.5 Kinetic Molecular Theory** in **Guided** mode. Screen 2 starts with **He** and **Ar**, both at **800 m/s**, mass mode **Same speed**.",
+      "Screen 3 compares **N₂** at **400 K** with **800 K**. Screen 4 compares N₂ at **300 K** and **600 K** (Compare temperatures)."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "A helium atom and an argon atom move at the same speed. Which has more kinetic energy? About how many times more?",
+       "lines": 1,
+       "answer": "Argon, about 10 times more (its mass is about 10 times helium's). Accept any prediction with a reason."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "For a gas, speed scales with {{√T}}, not directly with T.",
+      "In KE = ½mv², speed is {{squared}}. A direction change alone does {{not}} change kinetic energy.",
+      "In the ideal-gas model, equal temperature means equal average translational {{KE}}, not equal average {{speed}}.",
+      "On the Maxwell-Boltzmann graph, peak height is not particle {{count}}. A hotter curve is lower and {{broader}} with a longer tail.",
+      "At constant temperature, changing {{volume}} does not shift the Maxwell-Boltzmann distribution."
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Screen 2: one He atom has m = (4.0026 g/mol ÷ 1000) ÷ 6.022 × 10²³ = 6.65 × 10⁻²⁷ kg. Calculate its KE at 800 m/s. Then find KE_Ar ÷ KE_He from the molar masses (39.95 and 4.00 g/mol).",
+       "lines": 3,
+       "answer": "KE = ½(6.65 × 10⁻²⁷ kg)(800 m/s)² = **2.13 × 10⁻²¹ J** (sim: 2.13 × 10⁻²¹ J). Ratio = 39.948/4.0026 = **9.98** (Ar shows 2.12 × 10⁻²⁰ J)."
+      },
+      {
+       "prompt": "Screen 3: average KE per mole = (3/2)RT with R = 8.314 J/(mol·K). Calculate it at 400 K and at 800 K, in kJ/mol.",
+       "lines": 2,
+       "answer": "400 K: 1.5 × 8.314 × 400 = 4989 J = **4.99 kJ/mol**. 800 K: **9.98 kJ/mol** (doubling T doubles average KE)."
+      },
+      {
+       "prompt": "Screen 4: v_rms = √(3RT/M), M in kg/mol. Calculate v_rms for N₂ (M = 0.02801 kg/mol) at 300 K and at 600 K.",
+       "lines": 3,
+       "answer": "300 K: √(3 × 8.314 × 300 / 0.02801) = **517 m/s**. 600 K: **731 m/s**. Ratio 731/517 = 1.41 = √2, not 2."
+      }
+     ]
+    },
+    {
+     "type": "graph",
+     "prompt": "Sketch the two N₂ curves from Screen 4 (300 K and 600 K). Label which is which, and mark each peak.",
+     "x_label": "Molecular speed (m/s)",
+     "y_label": "Fraction of molecules",
+     "answer": "600 K curve: peak farther right and lower, wider, longer high-speed tail. Both curves have the same total area.",
+     "height": 1.8
+    },
+    {
+     "type": "explore",
+     "text": "Screen 1: change only the container volume. Does the average KE change?"
+    }
+   ]
+  },
+  {
+   "title": "3.6 Deviation from Ideal Gas Law",
+   "sim_screen": "Topic 3.6 · Guided · Screens 1–5",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Topic 3.6 Deviation from Ideal Gas Law** in **Guided** mode (5 screens). Use the preset list to load each condition in the table.",
+      "Z is the compressibility factor: Z = P_real ÷ P_ideal. Use R = 0.08206 L·atm/(mol·K) (the sim uses 0.082057, same to 3 significant figures)."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Will a real gas squeezed into a very small volume have a pressure higher or lower than the ideal gas law predicts?",
+       "lines": 1,
+       "answer": "Either is accepted with a reason. The sim shows both: attractions lower P (Screen 2), particle volume raises P at extreme compression (Screen 3)."
+      }
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Before Screen 2: calculate P_ideal for **1 mol CO₂ at 320 K in 1 L**. The sim's modeled real pressure is 23.8 atm. Calculate Z.",
+       "lines": 3,
+       "answer": "P_ideal = nRT/V = (1)(0.08206)(320)/1 = **26.3 atm**. Z = 23.8/26.3 = **0.907** (below 1, so attractions dominate)."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Preset (Screen)",
+      "Conditions",
+      "Ideal P",
+      "Modeled real P",
+      "Z",
+      "Direction"
+     ],
+     "col_widths": [
+      1.5,
+      1.6,
+      0.9,
+      1.1,
+      0.8,
+      1.6
+     ],
+     "rows": [
+      [
+       "Ordinary conditions (1)",
+       "N₂, 1 mol, 300 K, 24.6 L",
+       "{{1 atm}}",
+       "{{1 atm}}",
+       "{{0.999}}",
+       "{{Approximately equal to ideal}}"
+      ],
+      [
+       "Attractions visible (2)",
+       "CO₂, 1 mol, 320 K, 1 L",
+       "26.3 atm",
+       "23.8 atm",
+       "{{0.907}}",
+       "{{Lower than ideal}}"
+      ],
+      [
+       "Extreme compression (3)",
+       "N₂, 1 mol, 300 K, 0.1 L",
+       "{{246 atm}}",
+       "{{266 atm}}",
+       "{{1.081}}",
+       "{{Higher than ideal}}"
+      ]
+     ],
+     "row_height": 0.5
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Near-ideal describes this {{state}}; it is not a permanent gas identity.",
+      "Attractions do not remove {{particles}}; they lower the momentum transfer at the {{wall}}.",
+      "Particles keep the same {{size}} during compression; the free volume for particle centers gets smaller.",
+      "On the Z graph, Z {{below}} 1 means attractions dominate. Z near 1 can also mean large opposing corrections {{cancel}}."
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Use the table: under which conditions does a real gas act most ideally? Give one particle-level reason for each kind of deviation.",
+       "lines": 3,
+       "answer": "Low pressure / large volume and high temperature (Z = 0.999 at 24.6 L). Z < 1: attractions pull particles inward and lower wall-collision force. Z > 1: particle volume takes up a large share of the container, so free volume is smaller and P is higher."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Load the “Competing effects” preset (methane, 459 K, 0.15 L). Z is near 1. Are the two corrections small?"
+    }
+   ]
+  },
+  {
+   "title": "3.7 Solutions and Mixtures",
+   "sim_screen": "Topic 3.7 · Guided · Screens 1–5",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Topic 3.7 Solutions and Mixtures** in **Guided** mode (5 screens). Screens 1–2: **Sucrose** (342.30 g/mol), **Mass of solute 85.575 g**, **Final solution volume 500 mL**.",
+      "Screen 3: **0.400 M**, **250 mL**. Screen 4: **Glucose**, **0.120 mol**, **Target molarity 0.300 M**. Screen 5: **Hold constant = molarity**, 0.500 M, A = 250 mL, B = 750 mL."
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "In M = n/V, the denominator is final {{solution}} volume, not {{solvent}} volume.",
+      "Convert {{mL}} to {{L}} before applying M = n/V.",
+      "To count particles: n = MV, then N = n × {{N_A}} (6.022 × 10²³ per mol).",
+      "Equal molarity does not require equal total {{moles}}."
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Screen 2: calculate the moles of sucrose and the molarity.",
+       "lines": 2,
+       "answer": "n = 85.575 g ÷ 342.3 g/mol = **0.250 mol**. M = 0.250 mol ÷ 0.500 L = **0.500 M**."
+      },
+      {
+       "prompt": "Predict, then test: keep the same mass but change the final volume to 250 mL. What is M now?",
+       "lines": 1,
+       "points": 2,
+       "answer": "Half the volume doubles the molarity: 0.250 mol ÷ 0.250 L = **1.000 M**."
+      },
+      {
+       "prompt": "Screen 3: calculate the moles and the number of sucrose molecules in 250 mL of 0.400 M solution.",
+       "lines": 2,
+       "answer": "n = (0.400 mol/L)(0.250 L) = **0.100 mol**. N = 0.100 × 6.022 × 10²³ = **6.02 × 10²² molecules**."
+      },
+      {
+       "prompt": "Screen 4: first type **Your predicted final volume** (try 300 mL). Then calculate the volume that gives 0.300 M.",
+       "lines": 2,
+       "answer": "V = n/M = 0.120 mol ÷ 0.300 mol/L = 0.400 L = **400 mL**. The 300 mL guess is too small."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table (Screen 5)",
+     "columns": [
+      "Sample",
+      "Volume (mL)",
+      "Molarity (M)",
+      "Moles (mol)",
+      "Molecules"
+     ],
+     "rows": [
+      [
+       "A",
+       "250",
+       "0.500",
+       "{{0.125}}",
+       "{{7.53 × 10²²}}"
+      ],
+      [
+       "B",
+       "750",
+       "0.500",
+       "{{0.375}}",
+       "{{2.26 × 10²³}}"
+      ]
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Samples A and B have the same molarity. Do they contain the same number of molecules? Use your table.",
+       "lines": 2,
+       "answer": "No. Same M, but B has 3× the volume, so it has 3× the moles (0.375 vs 0.125 mol) and 3× the molecules. Molarity is concentration, not total amount."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "3.8 Representations of Solutions",
+   "sim_screen": "Topic 3.8 · Guided · Screens 1–4",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Topic 3.8 Representations of Solutions** in **Guided** mode (4 screens). Screen 1: **Sodium chloride(aq)**, solute formula units at 4 model units = **6**, **Model volume = 2**.",
+      "The sim draws 16 water molecules per model-volume unit. The particle picture is schematic, not to scale."
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table 1",
+     "subtitle": "Screen 1: read the Current cue and the result tiles",
+     "columns": [
+      "Model volume",
+      "Represented NaCl units",
+      "Na⁺ ions",
+      "Cl⁻ ions",
+      "Water molecules",
+      "Net charge"
+     ],
+     "rows": [
+      [
+       "2",
+       "{{3}}",
+       "{{3}}",
+       "{{3}}",
+       "{{32}}",
+       "{{0}}"
+      ],
+      [
+       "4",
+       "{{6}}",
+       "6",
+       "6",
+       "{{64}}",
+       "0"
+      ]
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Around Na⁺, the {{O}} end of water (δ−) faces the ion. Around Cl⁻, one {{H}} (δ+) faces the ion.",
+      "Both of those are {{ion-dipole}} attractions.",
+      "In CaCl₂(aq), the represented Ca²⁺ : Cl⁻ ratio remains {{1:2}}.",
+      "With methanol, water can donate to methanol {{O}}, and methanol O–H can donate to water O. These are {{hydrogen}} bonds.",
+      "The six or eight water positions are a 2D orientation exercise, not a real hydration {{number}}."
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table 2",
+     "subtitle": "Screens 2–4: read “Water end toward site” and “Interaction type”",
+     "columns": [
+      "Screen",
+      "Selected site",
+      "Water end toward site",
+      "Interaction type"
+     ],
+     "rows": [
+      [
+       "2",
+       "Na⁺",
+       "{{O end, δ−}}",
+       "{{Ion-dipole}}"
+      ],
+      [
+       "2",
+       "Cl⁻",
+       "{{One H, δ+}}",
+       "Ion-dipole"
+      ],
+      [
+       "3",
+       "Ca²⁺",
+       "{{O end, δ−}}",
+       "Ion-dipole"
+      ],
+      [
+       "4",
+       "Methanol O atom",
+       "{{One H, δ+}}",
+       "{{Hydrogen bond}}"
+      ]
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Draw a particle diagram of CaCl₂(aq) with 2 formula units and some water molecules. Show the correct water orientation around one Ca²⁺ and one Cl⁻.",
+       "lines": 4,
+       "points": 3,
+       "answer": "2 Ca²⁺ and 4 Cl⁻, separated (not paired as a lattice). O ends of water point toward Ca²⁺; H ends point toward Cl⁻. Net charge 0."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Screen 2: rotate one water so the wrong end faces Na⁺. What does the cue say?"
+    }
+   ]
+  },
+  {
+   "title": "3.9 Separation of Solutions and Mixtures",
+   "sim_screen": "Topic 3.9 · Guided · Screens 1–4",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Topic 3.9 Separation of Solutions and Mixtures** in **Guided** mode (4 screens). Screen 1 uses the **Solid suspension comparator**.",
+      "Screen 2: record your first run as **sample 1**. Do not press reset first: each reset loads a new sample and shuffles which dye is which."
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table 1",
+     "subtitle": "Screen 1: choose each Paper grade, press Run separation, and read the result",
+     "columns": [
+      "Paper grade",
+      "Pores",
+      "Modeled capture",
+      "Filtrate"
+     ],
+     "rows": [
+      [
+       "Coarse",
+       "{{Large pores}}",
+       "{{45%}}",
+       "{{Cloudy}}"
+      ],
+      [
+       "Medium",
+       "Medium pores",
+       "{{75%}}",
+       "{{Slightly cloudy}}"
+      ],
+      [
+       "Fine",
+       "{{Small pores}}",
+       "{{100%}}",
+       "{{Clear}}"
+      ]
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Screen 2: the paper is polar. If you make the mobile phase compete more strongly (strength 3 → 5), will the spots move farther or less far?",
+       "lines": 1,
+       "answer": "Farther (less retention on the paper). Accept any prediction with a reason."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table 2",
+     "subtitle": "Screen 2 (paper, sample 1): run to completion, read each spot's relative movement, change strength, run again",
+     "columns": [
+      "Mobile competition",
+      "A",
+      "B",
+      "C"
+     ],
+     "rows": [
+      [
+       "3 (start)",
+       "{{80}}",
+       "{{50}}",
+       "{{29}}"
+      ],
+      [
+       "5",
+       "{{86}}",
+       "{{63}}",
+       "{{44}}"
+      ]
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Filtration retains insoluble {{solid}} particles; liquid and {{dissolved}} substances pass into the filtrate.",
+      "The least-retained analyte moves {{farthest}} on TLC and exits the column {{first}}.",
+      "In distillation, the component with weaker IMFs has the {{higher}} vapor pressure, so the early fraction is {{L}}-rich."
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "On sample 1, spot C moved least. What does that tell you about C's attraction to the polar paper and about C's polarity? State the condition.",
+       "lines": 2,
+       "answer": "C is attracted most strongly to the polar stationary phase, so on a polar stationary phase C is the most polar of the three. Accept: strongest stationary attraction → most polar (given a polar stationary phase)."
+      },
+      {
+       "prompt": "Screen 4: why can't a fine filter separate the two dissolved liquids L and H? What method works, and why?",
+       "lines": 2,
+       "answer": "Dissolved particles are molecule-sized and pass through filter pores. Distillation works: L has weaker IMFs, higher vapor pressure, so L-rich vapor forms first."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Screen 4: switch from Large ΔIMF to Small ΔIMF. How pure is the early fraction now?"
+    }
+   ]
+  },
+  {
+   "title": "3.10 Solubility",
+   "sim_screen": "Topic 3.10 · Guided · Screens 1–4",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Topic 3.10 Solubility** in **Guided** mode (4 screens). Drag the vial onto the beaker or press **Pour & mix**. Wait for the outcome before you record it.",
+      "Screen 2 starts with sodium chloride in **water** and **hexane**. Screen 3 starts with glucose. Screen 4 starts with **Water + ethanol**."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Will iodine (I₂, nonpolar) dissolve better in water or in hexane (C₆H₁₄, nonpolar)? Why?",
+       "lines": 1,
+       "answer": "Hexane: both are nonpolar and dispersion-dominated (“like dissolves like”). Accept any prediction with a reason."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Ask: which attractions are {{disrupted}}, and which new attractions {{form}}?",
+      "Water can stabilize separated ions through {{ion–dipole}} attractions; hexane cannot.",
+      "Interaction similarity is a {{tendency}}, not a complete numerical prediction.",
+      "Two layers are {{evidence}} of immiscibility, not its cause."
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Solute or liquid pair",
+      "Solvent",
+      "Outcome shown in the sim",
+      "New attraction"
+     ],
+     "col_widths": [
+      1.6,
+      1.0,
+      2.3,
+      2.1
+     ],
+     "rows": [
+      [
+       "Sodium chloride",
+       "Water",
+       "{{appreciable qualitative solubility}}",
+       "{{ion–dipole attractions}}"
+      ],
+      [
+       "Sodium chloride",
+       "Hexane",
+       "{{very low qualitative solubility}}",
+       "weak ion-induced dipole"
+      ],
+      [
+       "Glucose",
+       "Water",
+       "{{high qualitative solubility}}",
+       "{{glucose–water hydrogen bonds}}"
+      ],
+      [
+       "Iodine",
+       "Hexane",
+       "{{appreciable qualitative solubility}}",
+       "{{iodine–hexane dispersion forces}}"
+      ],
+      [
+       "Water + ethanol",
+       "(Screen 4)",
+       "{{one liquid phase (miscible)}}",
+       "water–ethanol hydrogen bonds"
+      ],
+      [
+       "Water + hexane",
+       "(Screen 4)",
+       "{{two liquid phases (immiscible)}}",
+       "weak water–hexane attractions"
+      ]
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Water and hexane form two layers. Explain why, in terms of the attractions broken and formed.",
+       "lines": 3,
+       "answer": "Mixing would break strong hydrogen bonds between water molecules, but only weak water–hexane attractions would form to replace them, so the liquids stay separate (hexane-rich layer on top, water-rich below)."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Screen 3: test iodine in water, ethanol and hexane. Which solvent does the sim rate best?"
+    }
+   ]
+  },
+  {
+   "title": "3.11 Spectroscopy and the EM Spectrum",
+   "sim_screen": "Topic 3.11 · Guided · Screens 1–4",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Topic 3.11 Spectroscopy and the Electromagnetic Spectrum** in **Guided** mode (4 screens). Process = **absorption**.",
+      "Use the region buttons (UV, visible, IR, microwave) or move the probe. Press **Run** to watch the transition."
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Region",
+      "Wavelength range (sim)",
+      "Transition family",
+      "What moves or changes"
+     ],
+     "col_widths": [
+      1.2,
+      1.7,
+      1.5,
+      2.6
+     ],
+     "rows": [
+      [
+       "Microwave",
+       "{{1 mm–1 m}}",
+       "{{rotational}}",
+       "{{orientation changes; bond length stays fixed}}"
+      ],
+      [
+       "Infrared",
+       "{{780 nm–1 mm}}",
+       "{{vibrational}}",
+       "{{bond length (stretch) or bond angle (bend)}}"
+      ],
+      [
+       "Visible",
+       "{{400–780 nm}}",
+       "{{electronic}}",
+       "{{occupancy changes between levels}}"
+      ],
+      [
+       "Ultraviolet",
+       "{{100–400 nm}}",
+       "electronic",
+       "occupancy changes between levels"
+      ]
+     ],
+     "row_height": 0.5
+    },
+    {
+     "type": "notes",
+     "items": [
+      "A region does not guarantee absorption by {{every}} molecule.",
+      "In absorption the species goes from the {{lower}} level to the {{upper}} level. In emission it goes upper → lower and the radiation is {{outgoing}}.",
+      "In the IR examples the molecule stays {{intact}} and electronically unchanged.",
+      "UV and visible belong to the same transition family. Electronic excitation is not automatic {{ionization}}."
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "A chemist shines microwave radiation on HCl gas and sees absorption. Which kind of molecular motion changed, and what stayed the same?",
+       "lines": 2,
+       "answer": "Rotation: the molecule's orientation (rotational energy level) changed; the bond length stayed fixed."
+      },
+      {
+       "prompt": "Rank microwave, infrared, visible and UV photons from lowest to highest energy. Use the wavelength ranges in your table and your Topic 3.12 work.",
+       "lines": 2,
+       "answer": "Microwave < infrared < visible < UV. Shorter wavelength means higher frequency and higher photon energy (E = hc/λ)."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Screen 3: switch from stretch to bend. Watch the faint reference: what changes?"
+    }
+   ]
+  },
+  {
+   "title": "3.12 Properties of Photons",
+   "sim_screen": "Topic 3.12 · Guided · Screens 1–4",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Topic 3.12 Properties of Photons** in **Guided** mode (4 screens). Screen 1 starts at **500 nm**, Screen 2 at **600 nm**, Screen 3 at **750 THz**.",
+      "The sim uses c = 2.998 × 10⁸ m/s and h = 6.626 × 10⁻³⁴ J·s. Work each calculation before you read the readout."
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "Wavelength and frequency: c = {{λν}}     One photon's energy: E = {{hν}} = hc/λ"
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Screen 1 (500 nm): calculate the photon energy. What is ΔE of the species for absorption? For emission?",
+       "lines": 3,
+       "answer": "E = hc/λ = (6.626 × 10⁻³⁴)(2.998 × 10⁸)/(5.00 × 10⁻⁷ m) = **3.97 × 10⁻¹⁹ J**. Absorption ΔE = +3.97 × 10⁻¹⁹ J; emission ΔE = −3.97 × 10⁻¹⁹ J. The photon energy stays positive."
+      },
+      {
+       "prompt": "Screen 2 (600 nm): calculate the frequency in s⁻¹.",
+       "lines": 2,
+       "answer": "ν = c/λ = (2.998 × 10⁸ m/s)/(6.00 × 10⁻⁷ m) = **5.00 × 10¹⁴ s⁻¹** (sim: 500 THz)."
+      },
+      {
+       "prompt": "Screen 3 (750 THz = 7.50 × 10¹⁴ s⁻¹): calculate the photon energy. Then predict E if you double the frequency.",
+       "lines": 2,
+       "answer": "E = (6.626 × 10⁻³⁴ J·s)(7.50 × 10¹⁴ s⁻¹) = **4.97 × 10⁻¹⁹ J**. Doubling ν doubles E (9.94 × 10⁻¹⁹ J)."
+      },
+      {
+       "prompt": "Screen 4: the level gap is set by a 486 nm photon, and the candidate is 600 nm. Calculate both energies. Will the 600 nm photon be absorbed?",
+       "lines": 3,
+       "answer": "Gap = hc/486 nm = **4.09 × 10⁻¹⁹ J**. 600 nm photon = **3.31 × 10⁻¹⁹ J**, 19 % too small, so it is rejected. Retune to 486 nm to match (within the sim's 0.5 % tolerance)."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Wavelength and frequency move in {{opposite}} directions. Frequency and one-photon energy change in the {{same}} ratio.",
+      "A mismatched photon does {{not}} partially move the electronic level."
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Why is a 600 nm photon not absorbed by this species, even though it has more than half the gap energy?",
+       "lines": 2,
+       "answer": "Energy levels are quantized: the photon's energy must match the gap (within tolerance). A photon that does not match is not absorbed at all, no partial transition."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "3.13 Beer–Lambert Law",
+   "sim_screen": "Topic 3.13 · Guided · Screens 1–4",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Topic 3.13 Beer–Lambert Law** in **Guided** mode (4 screens). Absorber **Allura Red AC**, concentration **25.0 µM**, path length **1.00 cm**, wavelength **504 nm**.",
+      "Change one control at a time, then press **Measure**. The sim gives Allura Red ε = 2.68 × 10⁴ L mol⁻¹ cm⁻¹ at its λmax (504 nm)."
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "Beer–Lambert law: A = {{εbc}}     A has {{no}} unit; ε in L mol⁻¹ cm⁻¹, b in cm, c in mol/L"
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Screen 1: calculate A for 25.0 µM (2.50 × 10⁻⁵ M), b = 1.00 cm, ε = 26,807 L mol⁻¹ cm⁻¹.",
+       "lines": 2,
+       "answer": "A = (26,807)(1.00 cm)(2.50 × 10⁻⁵ M) = **0.670**."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table",
+     "subtitle": "Screens 2–4: change only the bold variable (type it in the box), press Measure, record A",
+     "columns": [
+      "Run",
+      "c (µM)",
+      "b (cm)",
+      "λ (nm)",
+      "A (measured)"
+     ],
+     "rows": [
+      [
+       "1",
+       "**12.5**",
+       "1.00",
+       "504",
+       "{{0.335}}"
+      ],
+      [
+       "2",
+       "**50.0**",
+       "1.00",
+       "504",
+       "{{1.340}}"
+      ],
+      [
+       "3",
+       "25.0",
+       "**2.00**",
+       "504",
+       "{{1.340}}"
+      ],
+      [
+       "4",
+       "25.0",
+       "**0.50**",
+       "504",
+       "{{0.335}}"
+      ],
+      [
+       "5",
+       "25.0",
+       "1.00",
+       "**600**",
+       "{{0.0324}}"
+      ]
+     ],
+     "row_height": 0.36
+    },
+    {
+     "type": "graph",
+     "prompt": "Plot A vs c for runs 1, 2 and Screen 1 (25.0 µM, A = 0.670), plus the point (0, 0). Draw the best-fit line.",
+     "x_label": "Concentration (µM)",
+     "y_label": "Absorbance A",
+     "answer": "Straight line through the origin; slope = εb = 0.0268 per µM.",
+     "height": 1.8
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "A hypothetical unknown Allura Red sample reads A = 0.402 (1.00 cm, 504 nm). Use your line or A = εbc to find c in µM. Then set that c in the sim to check.",
+       "lines": 2,
+       "answer": "c = A/(εb) = 0.402/(26,807 × 1.00) = 1.50 × 10⁻⁵ M = **15.0 µM** (sim shows A = 0.402)."
+      }
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Why should you measure at 504 nm (λmax) instead of 600 nm? Use runs 5 and Screen 1.",
+       "lines": 2,
+       "answer": "ε is largest at λmax (2.68 × 10⁴ vs 1.30 × 10³ at 600 nm), so A changes most per unit of concentration: the calibration line is steepest and most sensitive (0.670 vs 0.0324)."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "conclusion": [
+  {
+   "prompt": "Use evidence from Topics 3.1 and 3.10: explain why NaCl and glucose dissolve in water but iodine dissolves better in hexane. Name the attractions broken and formed.",
+   "lines": 4,
+   "answer": "Water forms ion–dipole attractions with Na⁺/Cl⁻ and hydrogen bonds with glucose that replace the attractions broken. Iodine is nonpolar; in water, weak dipole-induced dipole attractions can't replace water's hydrogen bonds, but iodine–hexane dispersion forces are similar to the ones broken."
+  },
+  {
+   "prompt": "Topics 3.4–3.6: 1.00 mol of N₂ at 300 K is in a 24.6 L container, then compressed to 0.100 L. Calculate P_ideal both times (R = 0.08206), and explain why Z changes from 0.999 to 1.081.",
+   "lines": 4,
+   "answer": "P_ideal = 1.00 atm at 24.6 L and 246 atm at 0.100 L. At low P the particles' own volume and attractions are negligible (Z ≈ 1). At 0.100 L the particles' volume is a big share of the container, so free volume is smaller and the real pressure is higher (Z > 1)."
+  },
+  {
+   "prompt": "Topics 3.12–3.13: Allura Red absorbs most strongly at 504 nm. Calculate the energy of one 504 nm photon, and explain why the solution looks red.",
+   "lines": 3,
+   "answer": "E = hc/λ = (6.626 × 10⁻³⁴)(2.998 × 10⁸)/(5.04 × 10⁻⁷) = 3.94 × 10⁻¹⁹ J. The dye absorbs blue-green light near 504 nm, so the light it transmits (mostly red) is what we see. Accept: absorbed color is removed; complementary color is seen."
+  }
+ ],
+ "key_notes": [
+  "**Sim used:** Properties of Substances & Mixtures Sim (deployed commit 7d2af55), Topics 3.1–3.13, Guided mode. Every value below comes from that build; see units/unit3/sources.md for file:line.",
+  "**Three different R values.** Topics 3.4 uses R = 0.08206 L·atm/mol·K (also 8.314 L·kPa and 62.36 L·mmHg, same 62.36 for torr). Topic 3.5 uses 8.314462618 J/mol·K. Topic 3.6 uses 0.082057366. Answers agree to 3 significant figures.",
+  "**3.4 pressure unit switch does not convert.** Changing atm → kPa relabels the number you typed (1 atm becomes 1 kPa). It is fine when the sim is solving for P (as on p. 4), but tell students to retype P after switching units when P is an input. Temperature K ↔ Celsius does convert.",
+  "**3.1 shows “deg C”** instead of °C, and the vapor-pressure readout says e.g. “higher when boiling point is −161.5 deg C”. The worksheet uses °C. The dispersion score and force “score” values are invented model numbers; the worksheet labels them as such.",
+  "**3.1 Screen 3 default pair** (chloromethane + methane) shows **Dispersion** as the dominant force (score 4.6 vs 4.3 for dipole-induced dipole). That is why p. 1 asks for chloromethane + chloromethane (dipole-dipole 6.2).",
+  "**3.3 slider units** “T” and “V” are relative 0–100 scales, not K or L. The worksheet only asks for the word labels.",
+  "**3.6 uses a van der Waals model** with a and b derived from critical constants (N₂ a = 1.35, b = 0.0386; CO₂ a = 3.61, b = 0.0428). These differ a little from textbook tables (CO₂ a = 3.59, b = 0.0427).",
+  "**3.8 represented counts are rounded:** represented units = round(target × model volume ÷ 4). Target 6 at volume 2 gives 3 NaCl units (not 6). Water = 16 per model-volume unit.",
+  "**3.9 shuffles the dyes.** Each reset loads the next “sample” and reassigns which letter is most polar. Page 9's answers are for sample 1 (A moves farthest, C least). If a student reset first, accept answers that match their sample number.",
+  "**3.10 iodine:** the sim rates iodine in ethanol “moderate qualitative solubility” (score 3) and in hexane “appreciable” (score 2). The category words and the scores disagree in order. The worksheet only asks for iodine + hexane.",
+  "**3.11 visible range is 400–780 nm**; many textbooks say 400–700 nm. 3.13 wavelengths are limited to 400–700 nm, 0–50 µM, 0.1–2 cm.",
+  "**3.13 ε values** are built from EU food-additive specs: Allura Red ε = 540 × 496.42/10 = 26,807 L mol⁻¹ cm⁻¹ at 504 nm; tartrazine 28,322 at 426 nm. The band shape away from λmax is the sim's model, not a measured spectrum. The A = 0.402 unknown on p. 13 is hypothetical.",
+  "**3.5 average KE readout** is per mole (kJ/mol); per particle it is (3/2)kT = 8.28 × 10⁻²¹ J at 400 K."
+ ],
+ "lesson_plan": {
+  "period_minutes": 50,
+  "ap_topics": [
+   "3.1 Intermolecular and Interparticle Forces",
+   "3.2 Properties of Solids",
+   "3.3 Solids, Liquids, and Gases",
+   "3.4 Ideal Gas Law",
+   "3.5 Kinetic Molecular Theory",
+   "3.6 Deviation from Ideal Gas Law",
+   "3.7 Solutions and Mixtures",
+   "3.8 Representations of Solutions",
+   "3.9 Separation of Solutions and Mixtures",
+   "3.10 Solubility",
+   "3.11 Spectroscopy and the Electromagnetic Spectrum",
+   "3.12 Properties of Photons",
+   "3.13 Beer–Lambert Law"
+  ],
+  "sim_location": "ChemSims.app → Properties of Substances & Mixtures Sim → Unit 3 → Topics 3.1–3.13 (Guided: chemsims.app/sims/unit1/unit/unit-3/topic/3.N; Free Explore: …/free-explore)",
+  "essential_question": "How do the attractions between particles explain the properties of solids, liquids, gases and solutions, and how does light let us measure them?",
+  "objectives": [
+   "Identify the intermolecular forces between particles and use them to rank boiling point, vapor pressure and solubility.",
+   "Classify solids as ionic, covalent network, molecular or metallic and explain their properties from particle structure.",
+   "Use PV = nRT, the combined gas laws and Dalton's law with the sim's R value, and explain deviations with Z.",
+   "Relate temperature to average kinetic energy and read a Maxwell-Boltzmann distribution.",
+   "Calculate molarity, moles and particle counts, and draw particle diagrams of solutions.",
+   "Choose a separation method (filtration, chromatography, distillation) from the intermolecular forces involved.",
+   "Connect spectral regions to molecular motions, calculate photon energy with E = hν = hc/λ, and use A = εbc."
+  ],
+  "materials": [
+   "Scientific calculators (needed on pp. 4–7, 12, 13)",
+   "Colored pencils for the particle diagrams on p. 8"
+  ],
+  "prep": [
+   "Run each of the 13 topics once in Guided mode. Several topics have only 4 or 5 screens (3.3, 3.6, 3.7 have 5; 3.8–3.13 have 4).",
+   "On Topic 3.4, try switching atm → kPa while P is an input, so you can show students that the number does not convert.",
+   "On Topic 3.9, note the “sample” number on the chromatography screen. Remind students not to reset before recording sample 1.",
+   "The sim doesn't cover gas density / molar mass from PV = nRT (M = dRT/P), Graham's law, vapor-pressure curves or phase diagrams, quantitative Rf calculation, or real absorbance spectra and %T. Use your usual lesson for these (see sources.md, “AP topics not covered by the sim”)."
+  ],
+  "vocabulary": [
+   "London dispersion force",
+   "dipole-dipole",
+   "hydrogen bond",
+   "ion-dipole",
+   "polarizability",
+   "ionic / covalent network / molecular / metallic solid",
+   "alloy (substitutional, interstitial)",
+   "crystalline, amorphous",
+   "partial pressure, mole fraction",
+   "kinetic molecular theory",
+   "Maxwell-Boltzmann distribution",
+   "compressibility factor Z",
+   "molarity",
+   "solute, solvent",
+   "filtrate, residue",
+   "chromatography, mobile and stationary phase",
+   "distillation",
+   "miscible, immiscible",
+   "rotational / vibrational / electronic transition",
+   "photon, frequency, wavelength",
+   "absorbance, molar absorptivity, path length"
+  ],
+  "prior_knowledge": [
+   "Lewis structures, VSEPR shape and bond polarity (Unit 2)",
+   "Ionic vs covalent vs metallic bonding (Unit 2)",
+   "Moles, molar mass and Avogadro's number (Unit 1)",
+   "Converting °C to K and mL to L"
+  ],
+  "days": [
+   {
+    "day": 1,
+    "title": "Teacher demo: intermolecular forces (Topic 3.1)",
+    "goal": "Students see how the sim links a particle-level force to a measured property, and complete worksheet p. 1 with the teacher.",
+    "worksheet_pages": "Cover + p. 1 (3.1)",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: “Why does water boil at 100 °C but methane at −162 °C?” (write, then share)"
+     ],
+     [
+      "5–10",
+      "Hand out packets. Show how each page runs: set up, predict, notes, data, analyze."
+     ],
+     [
+      "10–40",
+      "Projected demo of Topic 3.1 (script below). Students fill in p. 1 as you go."
+     ],
+     [
+      "40–47",
+      "Pairs answer the p. 1 Analyze questions; cold-call two pairs."
+     ],
+     [
+      "47–50",
+      "Exit ticket question 1"
+     ]
+    ],
+    "demo_script": [
+     {
+      "do": "Open the sim → Unit 3 → Topic 3.1 Intermolecular and Interparticle Forces → Guided. Screen 1: set Macroscopic property = Boiling point.",
+      "say": "“Methane and methanol are about the same size. Which boils higher? Write your guess in the Predict box first.”",
+      "students": "p. 1 Predict box."
+     },
+     {
+      "do": "Point to the two ranked cards: methanol 64.7, methane −161.5 (the sim writes “deg C”).",
+      "say": "“That is a 226-degree difference. Read the reason line under each card. What force does methanol have that methane doesn't?” (Expected: H bonding.)",
+      "students": "Table rows 1–2: −161.5 °C and 64.7 °C."
+     },
+     {
+      "do": "Read the Guide panel aloud: “Name the force and connect it to the molecular structure.”",
+      "say": "“From now on, ‘stronger’ is not an answer. You must name the force and the structure that causes it.”",
+      "students": "Nothing yet; listen."
+     },
+     {
+      "do": "Press Next → Screen 2 London dispersion forces. Click Inspect molecule: methane, then chlorine, then iodine.",
+      "say": "“These are all nonpolar. Why does the dispersion score go up?” (Expected: more electrons, bigger cloud, more polarizable.) “These scores are the sim's model numbers, not measurements.”",
+      "students": "Table row 3: 3.8 / 5.9 / 9.9. Notes bullets 1–2."
+     },
+     {
+      "do": "Press Next → Screen 3 Dipoles. Set Particle A = Chloromethane, Particle B = Chloromethane. Read the Dominant force tile.",
+      "say": "“Dipole-dipole: the δ+ end of one faces the δ− end of the other.” Then set A and B = Carbon dioxide. “CO₂ has polar C=O bonds. Is the molecule polar?” (Expected: no, the linear shape cancels the bond dipoles, so only dispersion is left.)",
+      "students": "Table row 4: Dipole-dipole. Notes bullet 3 (geometry)."
+     },
+     {
+      "do": "Press Next → Screen 4 Hydrogen bonding. Default pair is methanol + water. Read the Dominant force (H bonding) and the donor/acceptor grid.",
+      "say": "“What two things does hydrogen bonding need?” (Expected: H on N, O or F, and an N, O or F acceptor.)",
+      "students": "Table row 5: H bonding. Notes bullet 4."
+     },
+     {
+      "do": "Set A and B = Fluoromethane. Read the Dominant force and the model cue.",
+      "say": "“It has H and F. Why no hydrogen bond?” (Expected: the H is on carbon, not on F.) Don't give the full written answer; it is Analyze question 1.",
+      "students": "Start Analyze question 1."
+     },
+     {
+      "do": "Press Next → Screen 5 Comparing intermolecular forces (n-pentane vs neopentane, Boiling point). Then switch the property to Vapor pressure.",
+      "say": "“Same formula, C₅H₁₂. Why 36.1 vs 9.5 °C?” (Expected: shape, contact area.) “Now vapor pressure: the ranking flips. Why?” (Expected: weaker attractions → higher vapor pressure.)",
+      "students": "Table row 6: 36.1 / 9.5 °C. Notes bullet 5."
+     },
+     {
+      "do": "Press Next → Screen 6 Full IMF analyzer. Show the challenge list but don't solve one.",
+      "say": "“Tomorrow you'll drive the sim yourself. Try one challenge at home if you finish early.”",
+      "students": "Explore box (optional)."
+     }
+    ]
+   },
+   {
+    "day": 2,
+    "title": "Student sim work: solids, phases and gas laws (3.2–3.4)",
+    "goal": "Classify solids, compare phases, and do the first gas-law calculations with the sim's R value.",
+    "worksheet_pages": "pp. 2–4 (3.2, 3.3, 3.4)",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: classify diamond, NaCl, copper, ice as ionic, network, molecular or metallic"
+     ],
+     [
+      "5–20",
+      "p. 2: Topic 3.2 Properties of Solids"
+     ],
+     [
+      "20–32",
+      "p. 3: Topic 3.3 Solids, Liquids, and Gases"
+     ],
+     [
+      "32–47",
+      "p. 4: Topic 3.4 Ideal Gas Law (calculate before reading the readout)"
+     ],
+     [
+      "47–50",
+      "Checkpoint: one student reads their Screen 4 answer"
+     ]
+    ],
+    "circulate": [
+     "p. 2: NaCl conductivity is recorded with the Ionic condition on **Solid**, then **Molten**.",
+     "p. 2: steel needs Metal model = **Interstitial alloy** (choosing it switches the solid to steel).",
+     "p. 3: students write the word labels for Speed, Spacing, Collisions, not the bar lengths.",
+     "p. 4: students work the calculation **before** typing values, and keep the pressure unit on atm until the kPa step.",
+     "p. 4: units on every number (atm, L, K, mol). Celsius is never used in a gas-law ratio."
+    ],
+    "checkpoint": "Screen 4 of Topic 3.4: 1 mol He at 298 K in 50 L gives P = 0.489 atm (49.6 kPa).",
+    "early_finishers": "Topic 3.4 Screen 6: run the “Solve for moles” challenge (2.50 L, 745 mmHg, 27.0 °C → 0.0995 mol) on paper first."
+   },
+   {
+    "day": 3,
+    "title": "Student sim work: KMT, real gases and molarity (3.5–3.7)",
+    "goal": "Link temperature to kinetic energy, explain why real gases deviate, and calculate molarity and particle counts.",
+    "worksheet_pages": "pp. 5–7 (3.5, 3.6, 3.7)",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: “Doubling the Kelvin temperature doubles ____ but not ____.” (average KE; speed)"
+     ],
+     [
+      "5–20",
+      "p. 5: Topic 3.5 Kinetic Molecular Theory"
+     ],
+     [
+      "20–33",
+      "p. 6: Topic 3.6 Deviation from Ideal Gas Law"
+     ],
+     [
+      "33–47",
+      "p. 7: Topic 3.7 Solutions and Mixtures"
+     ],
+     [
+      "47–50",
+      "Checkpoint"
+     ]
+    ],
+    "circulate": [
+     "p. 5: mass in kg per particle (divide g/mol by 1000 and by 6.022 × 10²³) before using ½mv².",
+     "p. 5: v_rms uses M in kg/mol (0.02801, not 28.01).",
+     "p. 5: the graph sketch shows shape only: hotter curve lower, wider, peak to the right.",
+     "p. 6: P_ideal for CO₂ is calculated before Screen 2 is opened.",
+     "p. 7: mL converted to L before dividing; “final solution volume”, not solvent volume."
+    ],
+    "checkpoint": "CO₂ (1 mol, 320 K, 1 L): P_ideal = 26.3 atm, real 23.8 atm, Z = 0.907, lower than ideal.",
+    "early_finishers": "Topic 3.6: load “Competing effects” and explain why Z ≈ 1 even though both corrections are about 100 atm."
+   },
+   {
+    "day": 4,
+    "title": "Student sim work: particle diagrams, separations, solubility (3.8–3.10)",
+    "goal": "Draw correct particle views of solutions and choose separation methods and solvents from IMFs.",
+    "worksheet_pages": "pp. 8–10 (3.8, 3.9, 3.10)",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: draw two water molecules around Na⁺ and around Cl⁻"
+     ],
+     [
+      "5–20",
+      "p. 8: Topic 3.8 Representations of Solutions"
+     ],
+     [
+      "20–35",
+      "p. 9: Topic 3.9 Separation of Solutions and Mixtures"
+     ],
+     [
+      "35–47",
+      "p. 10: Topic 3.10 Solubility"
+     ],
+     [
+      "47–50",
+      "Checkpoint"
+     ]
+    ],
+    "circulate": [
+     "p. 8: Model volume = 2 gives **3** represented NaCl units (the sim rounds target × volume ÷ 4).",
+     "p. 8 drawing: Ca²⁺ : Cl⁻ is 1 : 2, O ends toward Ca²⁺, H ends toward Cl⁻.",
+     "p. 9: sample number on the chromatography screen reads **sample 1** when they record Data table 2.",
+     "p. 10: students wait for the pour-and-mix animation to finish before copying the outcome."
+    ],
+    "checkpoint": "Paper chromatography, sample 1, strength 3: A 80, B 50, C 29 relative movement; C is most attracted to the polar paper.",
+    "early_finishers": "Topic 3.10 Screen 3: test iodine in all three solvents and explain the order the sim gives."
+   },
+   {
+    "day": 5,
+    "title": "Student sim work: spectroscopy, photons and Beer–Lambert (3.11–3.13)",
+    "goal": "Connect spectral regions to molecular motions, calculate photon energies, and build a Beer–Lambert calibration.",
+    "worksheet_pages": "pp. 11–13 (3.11, 3.12, 3.13) + Conclusion",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: which has more energy, a red or a blue photon?"
+     ],
+     [
+      "5–15",
+      "p. 11: Topic 3.11 Spectroscopy and the EM Spectrum"
+     ],
+     [
+      "15–30",
+      "p. 12: Topic 3.12 Properties of Photons"
+     ],
+     [
+      "30–45",
+      "p. 13: Topic 3.13 Beer–Lambert Law"
+     ],
+     [
+      "45–50",
+      "Start the Conclusion page (finish for homework)"
+     ]
+    ],
+    "circulate": [
+     "p. 12: wavelength in meters (500 nm = 5.00 × 10⁻⁷ m) before using c = λν.",
+     "p. 12: the sign of ΔE for the species (+ absorption, − emission); photon E always positive.",
+     "p. 13: concentration in mol/L (25.0 µM = 2.50 × 10⁻⁵ M); only one variable changed per run.",
+     "p. 13: the A vs c graph goes through the origin."
+    ],
+    "checkpoint": "Allura Red, 25.0 µM, 1.00 cm, 504 nm: A = 0.670. Doubling c or doubling b gives 1.340.",
+    "early_finishers": "Topic 3.13: switch to tartrazine and find its λmax (426 nm). Which dye gives the steeper calibration line?"
+   },
+   {
+    "day": 6,
+    "title": "Grading and wrap-up",
+    "goal": "Check the packet against the key, fix errors, and connect the 13 topics.",
+    "worksheet_pages": "All pages + Self-Grading Record",
+    "agenda": [
+     [
+      "0–5",
+      "Finish the Conclusion page"
+     ],
+     [
+      "5–30",
+      "Grading (self, peer or teacher; see grading options)"
+     ],
+     [
+      "30–42",
+      "Discussion: “Which page changed how you think about IMFs?” Go over p. 6 and p. 13 calculations on the board."
+     ],
+     [
+      "42–50",
+      "Exit ticket"
+     ]
+    ]
+   }
+  ],
+  "misconceptions": [
+   {
+    "misconception": "Melting or boiling a molecular substance breaks the covalent bonds inside the molecules.",
+    "sim_fix": "Topic 3.2 Screen 4 (“Do not break the molecule”): melting overcomes attractions between molecules; the molecules stay intact (ice stays H₂O)."
+   },
+   {
+    "misconception": "Any molecule with H and F (or O, N) can hydrogen bond.",
+    "sim_fix": "Topic 3.1 Screen 4: fluoromethane has H and F but no H–F bond, so the sim shows dipole-dipole, not hydrogen bonding."
+   },
+   {
+    "misconception": "Doubling the temperature doubles the speed of gas particles.",
+    "sim_fix": "Topic 3.5 Screens 3–4: average KE doubles (4.99 → 9.98 kJ/mol), but v_rms rises by √2 (517 → 731 m/s)."
+   },
+   {
+    "misconception": "Solutions with the same molarity contain the same number of particles.",
+    "sim_fix": "Topic 3.7 Screen 5: 250 mL and 750 mL of 0.500 M hold 0.125 and 0.375 mol."
+   },
+   {
+    "misconception": "A photon with part of the needed energy causes part of a transition.",
+    "sim_fix": "Topic 3.12 Screen 4: a 600 nm photon (3.31 × 10⁻¹⁹ J) is rejected by a 4.09 × 10⁻¹⁹ J gap; the level does not move at all."
+   }
+  ],
+  "sim_cautions": [
+   "Topic 3.4: switching the pressure unit (atm → kPa) does not convert a pressure you typed; it just relabels it. Retype the value after switching.",
+   "Topic 3.1 writes “deg C” instead of °C, and its “scores” (dispersion score, force score) are made-up model numbers. Use them for ranking only.",
+   "Topic 3.1 Screen 3's default pair (chloromethane + methane) shows Dispersion as the dominant force. Have students pick chloromethane + chloromethane to see dipole-dipole.",
+   "Topic 3.9: every reset loads a new chromatography sample and reshuffles which dye letter is most polar. Record sample 1 first.",
+   "Topic 3.8: “Represented” particle counts are rounded from the target you type (6 at model volume 2 shows 3).",
+   "Topic 3.3: the gas sliders use relative “T” and “V” units, not kelvins or liters.",
+   "Topic 3.10: for iodine, the words “moderate” (ethanol) and “appreciable” (hexane) don't match the order of the sim's internal scores. Focus on the explanation, not the word.",
+   "Different topics use slightly different R values (0.08206, 0.082057366, 8.314462618). Answers agree to 3 significant figures."
+  ],
+  "differentiation": {
+   "support": [
+    "Pair students; one drives the sim, one records, then switch each page.",
+    "Give a formula card with PV = nRT, V₁/T₁ = V₂/T₂, M = n/V, E = hc/λ, A = εbc and the sim's R value.",
+    "For p. 8, give a template with circles for ions and bent shapes for water.",
+    "Let students skip the second calculation on pp. 5 and 12 and do the first one fully."
+   ],
+   "extension": [
+    "Topic 3.6 Free Explore: find a CO₂ condition where Z goes from below 1 to above 1 as you shrink the volume, and explain the crossover.",
+    "Topic 3.4: derive the gas density formula d = PM/RT and check it with the Screen 4 numbers.",
+    "Topic 3.13: use tartrazine and Allura Red to design a two-wavelength measurement of a mixed food dye."
+   ]
+  },
+  "exit_ticket": [
+   {
+    "question": "Day 1: Methanol (CH₃OH) boils at 64.7 °C and methane (CH₄) at −161.5 °C. Name the force responsible and the structural feature that allows it.",
+    "answer": "Hydrogen bonding, because methanol has an H bonded directly to O (an O–H donor) and an O acceptor."
+   },
+   {
+    "question": "A 2.00 L flask holds 0.100 mol of gas at 300 K. Using R = 0.08206 L·atm/(mol·K), what is P? If the temperature rises to 450 K at fixed V, what is P?",
+    "answer": "P = (0.100)(0.08206)(300)/2.00 = 1.23 atm. At 450 K: 1.23 × 450/300 = 1.85 atm."
+   },
+   {
+    "question": "Day 6: A solution of Allura Red (ε = 26,807 L mol⁻¹ cm⁻¹ at 504 nm) gives A = 0.536 in a 1.00 cm cuvette. What is its concentration?",
+    "answer": "c = 0.536/(26,807 × 1.00) = 2.00 × 10⁻⁵ M = 20.0 µM."
+   }
+  ],
+  "ap_practice": [
+   {
+    "question": "Multiple choice: Which sample has the greatest average molecular speed? (A) N₂ at 300 K (B) N₂ at 600 K (C) CO₂ at 600 K (D) He at 300 K. Use v_rms = √(3RT/M).",
+    "answer": "(D) He at 300 K: 1367 m/s, vs 517 (A), 731 (B) and 583 m/s (C). Small M matters more than the doubled T."
+   },
+   {
+    "question": "FRQ: 1.00 mol of CO₂ is held at 320 K in a rigid 1.00 L container. (a) Calculate the pressure predicted by the ideal gas law. (b) The measured pressure is 23.8 atm. Calculate Z and say whether the pressure is higher or lower than ideal. (c) Explain the deviation at the particle level. (d) Predict whether Z gets closer to 1 if the volume is increased to 10.0 L, and justify.",
+    "answer": "(a) P = (1.00)(0.08206)(320)/1.00 = 26.3 atm. (b) Z = 23.8/26.3 = 0.907; lower than ideal. (c) Attractions between CO₂ molecules pull particles away from the wall, so they hit it with less force and P is lower; at this density this effect is larger than the particle-volume effect. (d) Yes: at 10.0 L the particles are far apart, attractions and particle volume matter less, so Z is near 1 (the sim gives 0.991)."
+   },
+   {
+    "question": "FRQ: A student makes Allura Red standards at 504 nm in a 1.00 cm cuvette and gets A = 0.335 at 12.5 µM and 0.670 at 25.0 µM. (a) What is the slope of A vs c, in per µM? (b) An unknown reads A = 0.402. Find c. (c) The student repeats the unknown in a 2.00 cm cuvette. Predict A. (d) Why would measuring at 600 nm give a less precise result?",
+    "answer": "(a) 0.0268 per µM (εb). (b) 0.402/0.0268 = 15.0 µM. (c) A doubles to 0.804. (d) ε at 600 nm is only about 1.3 × 10³, so A is small (≈0.02) and changes little with c; errors are a larger fraction of the reading."
+   }
+  ]
+ }
+}
