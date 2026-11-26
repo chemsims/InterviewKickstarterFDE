@@ -44,7 +44,7 @@
     },
     {
      "type": "table",
-     "row_height": 0.32,
+     "row_height": 0.29,
      "title": "Data table: Step 2 molar-mass breakdown",
      "columns": [
       "Element in H₂O",
@@ -82,7 +82,7 @@
        "answer": "n = m / M = 18.0 g ÷ 18.0 g/mol = **1.00 mol** H₂O (step 3 shows 1.00 mol)."
       },
       {
-       "prompt": "Do this BEFORE step 6: 36.0 g of NaCl (M = 58.4 g/mol). Find moles and formula units. Round to 3 significant figures.",
+       "prompt": "BEFORE step 6: find the moles and formula units in 36.0 g NaCl (M = 58.4 g/mol), to 3 sig. figs.",
        "lines": 2,
        "answer": "n = 36.0 g ÷ 58.4 g/mol = 0.616 mol (sim shows 0.62 mol). N = 0.616 mol × 6.022 × 10²³ = **3.71 × 10²³ formula units** (sim: 3.71 × 10²³)."
       }
@@ -90,9 +90,9 @@
     },
     {
      "type": "table",
-     "row_height": 0.32,
+     "row_height": 0.29,
      "title": "Data table: Step 6 / Free Explore",
-     "subtitle": "Pick the substance, type the mass in the Mass box, and record the Measurements panel",
+     "subtitle": "Row 1: starting mass. Row 2: slide to the top of the scale. Row 3: click NaCl, type 36.0 in the Mass box",
      "columns": [
       "Substance",
       "Mass (g)",
@@ -134,8 +134,7 @@
        "{{3.71 × 10²³}}",
        "{{formula units}}"
       ]
-     ],
-     "note": "Row 1: the starting mass. Row 2: slide the H₂O mass to the top of its scale (36.0 g)."
+     ]
     },
     {
      "type": "question",
@@ -182,14 +181,13 @@
      "items": [
       "The sample contains only neon, but its atoms do not all have the same {{mass}}. These different masses come from {{isotopes}}.",
       "Each isotope appears at a different {{m/z}} value because each isotope has a different mass.",
-      "For singly charged ions, m/z is approximately the {{isotope mass}}.",
       "The tallest peak is the {{most abundant}} isotope, not the heaviest. Peak height tracks {{abundance}}.",
       "Periodic-table atomic mass is a {{weighted average}} of isotope masses, so it is usually not a whole number."
      ]
     },
     {
      "type": "table",
-     "row_height": 0.32,
+     "row_height": 0.29,
      "title": "Data table: Neon isotope data (steps 2–4)",
      "columns": [
       "Isotope",
@@ -222,12 +220,12 @@
      "type": "calc",
      "items": [
       {
-       "prompt": "Do this BEFORE step 5: the isotope masses are 19.992, 20.994 and 21.991 amu. Use your fractional abundances to calculate neon's average atomic mass.",
+       "prompt": "BEFORE step 5: with masses 19.992, 20.994, 21.991 amu, calculate neon's average atomic mass.",
        "lines": 2,
        "answer": "19.992(0.9048) + 20.994(0.0027) + 21.991(0.0925) = 18.089 + 0.057 + 2.034 = **20.180 amu** (step 5 shows 20.180 amu)."
       },
       {
-       "prompt": "Do this BEFORE you click Boron on step 6: boron is 19.9% ¹⁰B (10.013 amu) and 80.1% ¹¹B (11.009 amu). Calculate boron's average atomic mass.",
+       "prompt": "BEFORE you click Boron: ¹⁰B 10.013 amu (19.9%), ¹¹B 11.009 amu (80.1%). Calculate the average.",
        "lines": 2,
        "answer": "10.013(0.199) + 11.009(0.801) = 1.993 + 8.818 = **10.811 amu** (sim: 10.811 amu)."
       }
@@ -235,7 +233,7 @@
     },
     {
      "type": "table",
-     "row_height": 0.32,
+     "row_height": 0.29,
      "title": "Data table: Step 6 natural abundance",
      "subtitle": "Click each element button and record the Isotope Data panel",
      "columns": [
@@ -318,7 +316,7 @@
     },
     {
      "type": "table",
-     "row_height": 0.32,
+     "row_height": 0.29,
      "title": "Data table: Steps 2–5 (Molecular example)",
      "columns": [
       "Element",
@@ -412,8 +410,7 @@
      "type": "equations",
      "items": [
       "m(element) = {{mass of substance|16}} × {{element mass ÷ molar mass|24}}",
-      "% composition = {{mass of element ÷ total mass|28}} × 100",
-      "f(CO₂) = (%O sample − %O CO) ÷ ({{%O CO₂ − %O CO|18}})"
+      "% composition = {{mass of element ÷ total mass|28}} × 100"
      ]
     },
     {
@@ -427,7 +424,7 @@
     },
     {
      "type": "table",
-     "row_height": 0.32,
+     "row_height": 0.29,
      "title": "Data table: Steps 1–3",
      "columns": [
       "Substance",
@@ -468,12 +465,12 @@
      "type": "calc",
      "items": [
       {
-       "prompt": "Do this BEFORE step 4: calculate the percent C and percent O of the whole mixture.",
+       "prompt": "BEFORE step 4: calculate % C and % O of the whole mixture.",
        "lines": 2,
        "answer": "%C = 12.0 ÷ 36.0 × 100 = **33.3%**; %O = 24.0 ÷ 36.0 × 100 = **66.7%** (step 4 shows the same)."
       },
       {
-       "prompt": "Do this BEFORE you read step 5: pure CO is 57.1% O and pure CO₂ is 72.7% O. What mass fraction of the sample is CO₂?",
+       "prompt": "BEFORE step 5: pure CO is 57.1% O, pure CO₂ is 72.7% O. Find f(CO₂) = (%O sample − %O CO) ÷ (%O CO₂ − %O CO).",
        "lines": 2,
        "answer": "f = (66.7 − 57.1) ÷ (72.7 − 57.1) = 0.615 ≈ **0.61** (sim shows 0.611 from unrounded percents; check: 22.0 g ÷ 36.0 g = 0.611). Accept 0.61–0.62."
       }
@@ -481,9 +478,9 @@
     },
     {
      "type": "table",
-     "row_height": 0.32,
+     "row_height": 0.29,
      "title": "Data table: Step 6 presets",
-     "subtitle": "Click each preset and record the Live Chart (Composition by element) and the Analysis Workspace",
+     "subtitle": "Click each preset; read the Live Chart and the Analysis Workspace",
      "columns": [
       "Preset",
       "% C",
@@ -568,7 +565,7 @@
     },
     {
      "type": "table",
-     "row_height": 0.32,
+     "row_height": 0.29,
      "title": "Data table: Step 2 Coulomb attraction (Cl, Z = 17)",
      "columns": [
       "Selected shell",
@@ -606,7 +603,7 @@
     },
     {
      "type": "table",
-     "row_height": 0.32,
+     "row_height": 0.29,
      "title": "Data table: Steps 4–6",
      "subtitle": "Use the Atom identity slider and charge buttons; read the atom model and Electron Summary",
      "columns": [
@@ -726,7 +723,7 @@
     },
     {
      "type": "table",
-     "row_height": 0.32,
+     "row_height": 0.29,
      "title": "Data table: Steps 5–6 (Species buttons)",
      "subtitle": "Record the Live Summary for each species",
      "columns": [
@@ -829,7 +826,6 @@
     {
      "type": "notes",
      "items": [
-      "Zeff is the effective nuclear charge felt by valence electrons. It is approximately {{nuclear}} charge minus core-electron {{shielding}}.",
       "Across a period, protons {{increase}} while the main shielding shell stays similar, so Zeff usually {{increases}}.",
       "Across a period, higher Zeff pulls the same main shell {{closer}}, so atoms usually get {{smaller}}.",
       "Down a group, new shells and more distance usually dominate, so atoms get {{bigger}}. Cations {{shrink}}; anions {{expand}}.",
@@ -840,7 +836,7 @@
     },
     {
      "type": "table",
-     "row_height": 0.32,
+     "row_height": 0.29,
      "title": "Data table: Period 3 (steps 1, 4 and 5)",
      "subtitle": "Radius, ionization energy and electronegativity from step 1; electron affinity from step 5",
      "columns": [
@@ -904,7 +900,7 @@
     },
     {
      "type": "table",
-     "row_height": 0.32,
+     "row_height": 0.29,
      "title": "Data table: Step 3 Atom / Cation / Anion tabs",
      "columns": [
       "Atom",
@@ -957,8 +953,7 @@
     {
      "type": "setup",
      "items": [
-      "Open **Topic 1.8 Valence Electrons and Ionic Compounds** in **Guided** mode. It starts with **Metal: Na** and **Nonmetal: Cl**.",
-      "From step 2, choose a **Metal** (Li, Na, K, Mg, Ca, Al) and a **Nonmetal** (F, Cl, Br, O, S, N, P). Al with Cl or Br is greyed out.",
+      "Open **Topic 1.8 Valence Electrons and Ionic Compounds** in **Guided** mode (starts with **Na** and **Cl**). From step 2, choose a **Metal** (Li, Na, K, Mg, Ca, Al) and a **Nonmetal** (F, Cl, Br, O, S, N, P). Al with Cl or Br is greyed out.",
       "Step 5 has **Change metal / Change nonmetal**. Step 6 has **Shells / Charges / Formula / Trends** views."
      ]
     },
@@ -995,7 +990,7 @@
      "type": "calc",
      "items": [
       {
-       "prompt": "Do this BEFORE you build it in the sim: aluminum forms Al³⁺ and oxygen forms O²⁻. Find the ion ratio, the formula, and how many electrons move in one formula unit.",
+       "prompt": "BEFORE you build it: Al forms Al³⁺ and O forms O²⁻. Find the ion ratio, formula, and electrons moved per formula unit.",
        "lines": 2,
        "answer": "LCM of 3 and 2 is 6: 2 Al³⁺ (+6) and 3 O²⁻ (−6). Ratio 2 : 3, **Al₂O₃**; 2(+3) + 3(−2) = 0. **6 electrons** move (sim: “Transferred 6”)."
       }
@@ -1003,7 +998,7 @@
     },
     {
      "type": "table",
-     "row_height": 0.32,
+     "row_height": 0.29,
      "title": "Data table: Steps 1–4",
      "columns": [
       "Metal + nonmetal",

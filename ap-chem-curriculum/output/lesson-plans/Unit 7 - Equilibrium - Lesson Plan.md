@@ -242,7 +242,7 @@ Students swap packets and grade with the key as in Option A, then return them; t
 
 | Misconception | What to do in the sim |
 |---|---|
-| At equilibrium the reaction stops. | The sim says both reactions run at the same rate; the concentration lines go flat but the beaker particles keep moving. |
+| At equilibrium the reaction stops. | The sim's own words: at equilibrium both reactions run at the same rate. The concentration lines go flat because the two rates cancel, not because nothing happens. |
 | At equilibrium the reactant and product concentrations are equal. | Le Chatelier ends at [A] = 0.11, [C] = 0.28; the sim says they "are not equal, just constant." |
 | Adding product (or changing pressure) changes K. | The K line and the Q = K panel stay at 10 after adding C and D or squeezing the gas; only heating changes Kp (10 → 1.0). |
 | Adding more solid makes more of it dissolve. | After 1875 mg, extra AB(s) sits on the bottom and Q stays at Ksp = 0.10. |
@@ -273,7 +273,7 @@ These are places where the sim's text or numbers can confuse students. The works
 
 - Find Kc for the p. 4 reaction from Kp (needs T; discuss why the sim can't give it).
 - Find the molar solubility of CaF₂ (Ksp = 3.9 × 10⁻¹¹) in water and in 0.10 M NaF.
-- Predict the Pressure Changes result for 2A + 3B ⇌ C + 4D (equal gas moles) and explain why volume would not shift it.
+- Predict what squeezing would do to 2A(g) + 3B(g) ⇌ C(g) + 4D(g) (equal gas moles; not one of the sim's gas reactions) and explain why volume would not shift it.
 
 ## Exit ticket (last day)
 

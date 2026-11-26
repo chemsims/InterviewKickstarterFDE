@@ -1283,7 +1283,7 @@
   "misconceptions": [
    {
     "misconception": "At equilibrium the reaction stops.",
-    "sim_fix": "The sim says both reactions run at the same rate; the concentration lines go flat but the beaker particles keep moving."
+    "sim_fix": "The sim's own words: at equilibrium both reactions run at the same rate. The concentration lines go flat because the two rates cancel, not because nothing happens."
    },
    {
     "misconception": "At equilibrium the reactant and product concentrations are equal.",
@@ -1321,7 +1321,7 @@
    "extension": [
     "Find Kc for the p. 4 reaction from Kp (needs T; discuss why the sim can't give it).",
     "Find the molar solubility of CaF₂ (Ksp = 3.9 × 10⁻¹¹) in water and in 0.10 M NaF.",
-    "Predict the Pressure Changes result for 2A + 3B ⇌ C + 4D (equal gas moles) and explain why volume would not shift it."
+    "Predict what squeezing would do to 2A(g) + 3B(g) ⇌ C(g) + 4D(g) (equal gas moles; not one of the sim's gas reactions) and explain why volume would not shift it."
    ]
   },
   "exit_ticket": [

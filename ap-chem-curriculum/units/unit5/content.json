@@ -720,7 +720,7 @@
  ],
  "key_notes": [
   "Settings chain: the values carry from screen to screen. Zero order runs 2–3 end with t₂ = 20 s; the first and second order screens never let students change t₂ in run 1, so they inherit 20 s. That makes the panel (which divides by the first time, 10 s) agree with the graph (which runs from 10 s to 20 s). If a student's values button does not show t = 10.00 20.0, their panel answers are still right but their [A] scrub readings will differ.",
-  "On the first and second order screens the sim treats the first time value as the reaction length t (k = (ln[A]₀ − ln[A]ₜ)/t). The graph instead runs from the first time to the second time. Only when t₂ = 2t₁ do they agree (first/index.tsx:169; ChartTime.tsx:83).",
+  "On the first and second order screens the sim treats the first time value as the reaction length t (k = (ln[A]₀ − ln[A]ₜ)/t). The graph instead runs from the first time to the second time. Only when t₂ = 2t₁ do they agree (first/index.tsx:159; ChartTime.tsx:83).",
   "The \"fixed rate constant\" reactions C to D and E to F are not fixed: k is always computed from the student's settings (the constants 0.04 and 0.07 in ConcentrationPlotView/constants.ts are never used). The worksheet records the panel k for runs 2–3 on the zero order page only.",
   "Rounding: the panel shows k to 2 decimals (0.05, 0.14, 0.30) and the step text to 3 decimals (0.050, 0.139, 0.300). Accept either.",
   "ln and 1/[A] columns are calculated from the 2-decimal [A] readings, so accept ±0.02.",
