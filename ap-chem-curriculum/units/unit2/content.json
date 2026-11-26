@@ -275,9 +275,9 @@
       },
       {
        "prompt": "Is C=C twice as strong as C–C? Find 614 ÷ 348 and the extra energy from the second bond (614 − 348).",
-       "lines": 2,
+       "lines": 1,
        "points": 2,
-       "answer": "614 ÷ 348 = **1.76** (less than 2). Extra from the second bond = 614 − 348 = **266 kJ/mol**, less than the 348 of the first bond. So a double bond is stronger, but not twice as strong."
+       "answer": "614 ÷ 348 = **1.76**; extra = 614 − 348 = **266 kJ/mol**. Stronger, but not twice as strong."
       }
      ]
     },
@@ -286,7 +286,7 @@
      "items": [
       {
        "prompt": "Going down the group from Cl₂ to Br₂ to I₂, what happens to r₀ and the bond energy? Explain with atom size.",
-       "lines": 3,
+       "lines": 2,
        "answer": "r₀ increases (199 → 228 → 267 pm) and bond energy decreases (243 → 193 → 151 kJ/mol). Bigger atoms put the shared pair farther from both nuclei, so the attraction is weaker."
       }
      ]

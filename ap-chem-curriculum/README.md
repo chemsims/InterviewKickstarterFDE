@@ -7,6 +7,8 @@ built on the ChemSims.app simulations.
 
 | Folder | What it holds |
 |---|---|
+| `OVERVIEW.md` | **Start here.** All nine units at a glance, how to use them, what to check before teaching, AP topics the sims miss |
+| `SIM-BUGS.md` | Every sim bug found while writing the worksheets, by unit, for the dev team |
 | `units/unitN/content.json` | Everything for unit N: worksheet pages, answer key, lesson plan. **Edit this, then rebuild.** |
 | `units/unitN/sources.md` | Where every answer comes from in the sim code (file:line), values checked by hand, and sim bugs found |
 | `output/worksheets/` | Printable PDFs: `Unit N - <title> - Student Notes.pdf` and `... - Answer Key.pdf` |
@@ -26,7 +28,13 @@ python3 tools/build_all.py
 2. **Student sim work (several periods).** Students run the sim themselves and fill in the paper worksheet as
    they go, like a lab record: set-up, prediction, data table, calculations, guided notes, analysis.
 3. **Grading (last day).** The teacher's choice: students self-grade (or peer-grade) in a second pen color with
-   the answer key, or the teacher grades. Each page has a Self-check box; the last page is a Self-Grading Record.
+   the answer key, or the teacher grades. Each section ends with a Self-check score in its page footer; the
+   packet ends with a Conclusion page and a Self-Grading Record page.
+
+The Answer Key is laid out from the Student Notes' measurements, so both PDFs have the same page breaks and
+page numbers (the key adds one Teacher Notes page at the end). A key answer longer than the student's writing
+space is printed smaller to fit. An EXPLORE box that doesn't fit at the end of a section is left out (it carries
+no points).
 
 ## Rules every worksheet follows (from the Unit 6 thermochemistry review)
 

@@ -554,17 +554,17 @@
  "conclusion": [
   {
    "prompt": "Name one endothermic process and one exothermic process from this unit. Give a number from the sim for each.",
-   "lines": 3,
+   "lines": 2,
    "answer": "Endothermic examples: water absorbing 1652 J from iron (Part 1); boiling 1 g of water, +2230 J (Part 2); breaking H—H, 436 kJ (Part 3). Exothermic examples: iron losing 1652 J (Part 1); forming H—Cl, −431 kJ (Part 3); C₂H₆ + Cl₂ → C₂H₅Cl + HCl, −120 kJ/mol (Part 4). Any correct pair with numbers."
   },
   {
    "prompt": "Part 3 (bond enthalpies) and Part 4 (ΔH°f table) both give the enthalpy of forming 1 mole of HCl. Compare the two values and explain why two different methods can give the same ΔH.",
-   "lines": 3,
+   "lines": 2,
    "answer": "Both give −92 kJ/mol. Enthalpy is a state function: ΔH depends only on the starting and ending substances, not on the path taken. This is the idea behind Hess's law."
   },
   {
    "prompt": "Melting 1 g of ice takes 333 J; breaking 1 mole of H—H bonds takes 436 kJ. Convert water's ΔH_f to kJ/mol (H₂O = 18.0 g/mol) and compare. Which are stronger: intermolecular forces or covalent bonds?",
-   "lines": 3,
+   "lines": 2,
    "answer": "333 J/g × 18.0 g/mol = 5994 J/mol ≈ **6.0 kJ/mol**, far smaller than 436 kJ/mol. Covalent bonds are much stronger than intermolecular forces."
   }
  ],

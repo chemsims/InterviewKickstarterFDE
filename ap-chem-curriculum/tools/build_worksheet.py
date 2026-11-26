@@ -67,7 +67,12 @@ BLANK_RE = re.compile(r"\{\{(.+?)\}\}")
 
 
 def blanks(text, key, min_chars=12):
-    """Replace {{answer}} with an underline (student) or the coral answer (key)."""
+    """Replace {{answer}} with an underline (student) or the coral answer (key).
+
+    The key's padding is measured so the answer spans about the same width as the student's line.
+    """
+    us = pdfmetrics.stringWidth("_", "Poppins", 10)
+    nb = pdfmetrics.stringWidth("\u00a0", "Poppins", 10)
     out, last = [], 0
     for m in BLANK_RE.finditer(text):
         out.append(rich(text[last:m.start()]))
@@ -77,9 +82,11 @@ def blanks(text, key, min_chars=12):
             ans, w = ans.rsplit("|", 1)
             if w.strip().isdigit():
                 width = int(w)
+        plain = re.sub(r"\*+", "", ans)
+        aw = pdfmetrics.stringWidth(plain, "Poppins-Bold", 10) * 1.06  # bold + fallback-glyph margin
         n = width or max(min_chars, int(len(ans) * 1.25) + 4)
         if key:
-            pad = "&nbsp;" * max(1, (n - len(ans)) // 3)
+            pad = "&nbsp;" * max(1, int((n * us - aw) / 2 / nb))
             out.append(f'<u>{pad}<font color="{CORAL_HEX}"><b>{rich(ans)}</b></font>{pad}</u>')
         else:
             out.append("_" * n)
@@ -125,14 +132,34 @@ class Band(Flowable):
             self.p2.drawOn(c, 0.6 * inch, y - h1 - h2)
 
 
+class _Optional(Flowable):
+    """Wraps an ungraded extra (the EXPLORE box): shown if it fits on the page, dropped otherwise."""
+
+    def __init__(self, inner):
+        super().__init__()
+        self.inner = inner
+
+    def wrap(self, aw, ah):
+        w, h = self.inner.wrap(aw, ah)
+        self.h = h + 4
+        return w, self.h
+
+    def draw(self):
+        self.inner.drawOn(self.canv, 0, 0)
+
+    def split(self, aw, ah):
+        return [Spacer(0, 0)]  # an empty piece fits, so the box is dropped rather than moved
+
+
 class GraphFrame(Flowable):
     """Empty axes for students to sketch on. Labels come from the content file."""
 
-    def __init__(self, x_label, y_label, height=2.3 * inch, width=None, title=None):
+    def __init__(self, x_label, y_label, height=2.3 * inch, width=None, title=None, answer=None):
         super().__init__()
         self.xl, self.yl, self.h = x_label, y_label, height
         self.w = width or CONTENT_W * 0.62
         self.title = title
+        self.answer = answer  # Answer Key only: written inside the grid so the key keeps the page breaks
 
     def wrap(self, aw, ah):
         return CONTENT_W, self.h + 0.45 * inch
@@ -152,6 +179,11 @@ class GraphFrame(Flowable):
         while y <= y0 + self.h + 0.1:
             c.line(x0, y, x0 + self.w, y)
             y += step
+        if self.answer:
+            ap_ = Paragraph(blanks(self.answer, True), ParagraphStyle("ga", parent=key_note, fontSize=8.5,
+                                                                      leading=10.5, backColor=colors.white))
+            aw_, ah_ = ap_.wrap(self.w - 0.3 * inch, self.h)
+            ap_.drawOn(self.canv, x0 + 0.15 * inch, y0 + self.h - ah_ - 0.1 * inch)
         c.setStrokeColor(colors.black)
         c.setLineWidth(1.4)
         c.line(x0, y0, x0 + self.w, y0)
@@ -185,9 +217,31 @@ class Lines(Flowable):
         self.lines_n = max(self.n, 1)
         if self.para:
             self.para.wrap(CONTENT_W - 0.4 * inch, ah)
-            self.lines_n = max(self.lines_n, len(self.para.blPara.lines))
+            if len(self.para.blPara.lines) > self.lines_n:
+                # A key answer longer than the student's space: shrink it to fit the same space,
+                # so the Answer Key keeps the Student Notes' page breaks.
+                txt = blanks(self.answer, True)
+                for fs in (9, 8.5, 8, 7.5, 7):
+                    lead = max(fs * 1.15, self.lines_n * self.LH / max(1, len(self.para.blPara.lines)))
+                    st = ParagraphStyle("key_small", parent=key_note, fontSize=fs, leading=fs * 1.2)
+                    p = Paragraph(txt, st)
+                    p.wrap(CONTENT_W - 0.4 * inch, ah)
+                    if len(p.blPara.lines) * fs * 1.2 <= self.lines_n * self.LH - 2:
+                        break
+                self.para, self.squeezed = p, True
+            self.lines_n = max(self.lines_n, 1)
+            if not getattr(self, "squeezed", False):
+                self.lines_n = max(self.lines_n, len(self.para.blPara.lines))
         self.h = self.lines_n * self.LH
         return CONTENT_W, self.h + 4
+
+    def split(self, aw, ah):
+        """At a page bottom, give up at most one writing line rather than spill onto a new page."""
+        fit = int((ah - 4) // self.LH)
+        need = len(self.para.blPara.lines) if self.para else 1
+        if fit >= max(1, self.n - 1, need) and fit < self.lines_n:
+            return [Lines(fit, self.answer, self.key)]
+        return []
 
     def draw(self):
         c = self.canv
@@ -198,14 +252,51 @@ class Lines(Flowable):
             c.line(0.2 * inch, y, CONTENT_W - 0.1 * inch, y)
         if self.para:
             pw, ph = self.para.wrap(CONTENT_W - 0.4 * inch, self.h)
-            fs = self.para.style.fontSize
-            first_baseline = self.h - self.LH + 2 + 3
-            self.para.drawOn(c, 0.25 * inch, first_baseline - ph + fs)
+            if getattr(self, "squeezed", False):
+                self.para.drawOn(c, 0.25 * inch, self.h - ph + 2)
+            else:
+                fs = self.para.style.fontSize
+                first_baseline = self.h - self.LH + 2 + 3
+                self.para.drawOn(c, 0.25 * inch, first_baseline - ph + fs)
+
+
+class _Dual(Flowable):
+    """Takes its size and page splits from the student flowable, but draws the key flowable."""
+
+    def __init__(self, stu, key):
+        super().__init__()
+        self.stu, self.key_fl = stu, key
+
+    def wrap(self, aw, ah):
+        self.w, self.h = self.stu.wrap(aw, ah)
+        self.kw, self.kh = self.key_fl.wrap(aw, max(ah, 10 * inch))
+        return self.w, self.h
+
+    def getSpaceBefore(self):
+        return self.stu.getSpaceBefore()
+
+    def getSpaceAfter(self):
+        return self.stu.getSpaceAfter()
+
+    def draw(self):
+        self.key_fl.drawOn(self.canv, 0, self.h - self.kh)
+
+    def split(self, aw, ah):
+        sp = self.stu.split(aw, ah)
+        if not sp:
+            return []
+        if isinstance(self.stu, Lines):
+            return [_Dual(sp[0], Lines(sp[0].n, self.key_fl.answer, True))]
+        kp = self.key_fl.split(aw, ah)
+        if len(kp) == len(sp):
+            return [_Dual(a, b) for a, b in zip(sp, kp)]
+        return sp  # rare: fall back to the student piece
 
 
 class Worksheet:
     def __init__(self, data, key):
         self.d, self.key = data, key
+        self._student_twin = Worksheet(data, False) if key else None
         self.toc = []  # (title, page)
         self.points = []  # (title, page, points)
         self.page_title = ""
@@ -238,10 +329,10 @@ class Worksheet:
             c.drawRightString(PAGE_W - MARGIN_X, top - 0.55 * inch, self.page_sub)
         c.setFillColor(colors.black)
         c.setFont("Poppins", 9)
-        c.drawString(MARGIN_X - 0.2 * inch, 0.4 * inch, str(doc.page - 1))
+        c.drawString(MARGIN_X - 0.2 * inch, 0.34 * inch, str(doc.page - 1))
         c.setFont("Poppins", 7.5)
         c.setFillColor(colors.HexColor("#777777"))
-        c.drawRightString(PAGE_W - MARGIN_X, 0.4 * inch,
+        c.drawRightString(PAGE_W - MARGIN_X, 0.34 * inch,
                           f"ChemSims.app · Unit {self.d['unit']}: {self.d['unit_title']}")
         c.restoreState()
 
@@ -316,7 +407,8 @@ class Worksheet:
     def toc_rows(self):
         if self.toc:
             return self.toc
-        return [(p["title"], "") for p in self.d["pages"]] + [("Conclusion & Self-Grading Record", "")]
+        extra = [("Conclusion", "")] if self.d.get("conclusion") else []
+        return [(p["title"], "") for p in self.d["pages"]] + extra + [("Self-Grading Record", "")]
 
     # ---------- blocks ----------
     def block(self, b, pts):
@@ -407,13 +499,10 @@ class Worksheet:
                 out.append(Paragraph(blanks(b["prompt"], k), bullet, bulletText="•"))
                 pts[0] += count_blanks(b["prompt"])
             out.append(GraphFrame(b.get("x_label", ""), b.get("y_label", ""),
-                                  height=b.get("height", 2.1) * inch))
-            if k and b.get("answer"):
-                out.append(Paragraph(blanks(b["answer"], True), key_note))
+                                  height=b.get("height", 2.1) * inch, answer=b.get("answer") if k else None))
             pts[0] += b.get("points", 2)
         elif t == "explore":
-            out.append(Spacer(1, 4))
-            out.append(Band("icon_explore.png", b.get("title", "Explore"), b["text"]))
+            out.append(_Optional(Band("icon_explore.png", b.get("title", "Explore"), b["text"])))
         else:
             raise ValueError(f"unknown block type {t}")
         return out
@@ -426,6 +515,10 @@ class Worksheet:
             s.append(_Mark(self, p["title"], p.get("sim_screen", "")))
             for b in p["blocks"]:
                 fl = self.block(b, pts)
+                if self.key:
+                    # Lay the key out with the Student Notes' sizes, so both PDFs break pages identically
+                    stu = self._student_twin.block(b, [0])
+                    fl = [_Dual(a_, k_) for a_, k_ in zip(stu, fl)]
                 # tables and graphs move as one piece; other blocks keep the band with their first item
                 if b["type"] in ("table", "graph"):
                     s.append(KeepTogether(fl))
@@ -435,21 +528,31 @@ class Worksheet:
                 else:
                     s.extend(fl)
             s.append(_Points(self, p["title"], pts[0]))
+            self._static_pts.append((p["title"], pts[0]))
             s.append(PageBreak())
-        s.extend(self.closing())
+        if self.key:
+            stu = self._student_twin.closing()
+            kc = self.closing()
+            s.extend(_Dual(a_, k_) if type(a_) is type(k_) and not isinstance(a_, (_Mark, PageBreak)) else k_
+                     for a_, k_ in zip(stu, kc))
+            s.extend(kc[len(stu):])
+        else:
+            s.extend(self.closing())
         return s
 
     def closing(self):
         k = self.key
-        s = [_Mark(self, "Conclusion & Self-Grading Record", "")]
+        s = []
         concl = self.d.get("conclusion", [])
         if concl:
+            s.append(_Mark(self, "Conclusion", ""))
             s.append(Band("icon_notes.png", "Conclusion",
                           "Pull it together. Use numbers you recorded on the earlier pages as evidence"))
             for q in concl:
                 s.append(Paragraph(blanks(q["prompt"], k), bullet, bulletText="•"))
                 s.append(Lines(q.get("lines", 3), q.get("answer"), k))
-        s.append(Spacer(1, 6))
+            s.append(PageBreak())
+        s.append(_Mark(self, "Self-Grading Record", ""))
         s.append(Band("icon_equations.png", "Self-grading record",
                       "Grade in a different color pen. Mark each item ✓ or ✗, then write the correction next to every ✗"))
         rows = [[Paragraph("<b>Page</b>", cell_head), Paragraph("<b>Topic</b>", cell_head),
@@ -463,17 +566,17 @@ class Worksheet:
         rows.append([Paragraph("", cell), Paragraph("<b>TOTAL</b>", cell_left), Paragraph(f"<b>{total}</b>", cell),
                      Paragraph("", cell), Paragraph("", cell)])
         tbl = Table(rows, colWidths=[w * CONTENT_W * 0.96 for w in (0.08, 0.42, 0.15, 0.15, 0.2)],
-                    rowHeights=[None] + [0.32 * inch] * (len(rows) - 1), hAlign="CENTER")
+                    rowHeights=[None] + [0.28 * inch] * (len(rows) - 1), hAlign="CENTER")
         tbl.setStyle(TableStyle([("GRID", (0, 0), (-1, -1), 0.8, GRID), ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
                                  ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#f4f4f4"))]))
         s.append(tbl)
-        s.append(Spacer(1, 8))
+        s.append(Spacer(1, 4))
         s.append(Paragraph(rich("**Scoring:** each blank or table cell = 1 point · each prediction = 1 point · each "
                                 "calculation = 3 points (setup, numbers with units, answer) · each analysis question "
                                 "and each graph = 2 points."), small))
-        s.append(Spacer(1, 6))
+        s.append(Spacer(1, 2))
         s.append(Paragraph(rich("The question I got wrong that taught me the most, and why:"), body))
-        s.append(Lines(3))
+        s.append(Lines(2))
         s.append(Paragraph(rich("Graded by:  ☐ Myself    ☐ A classmate: ______________    ☐ My teacher"
                                 "          Teacher initials: ________"), body))
         if k and self.d.get("key_notes"):
@@ -499,6 +602,9 @@ class _Mark(Flowable):
     def draw(self):
         pass
 
+    def split(self, aw, ah):
+        return []  # never start a page just for this marker
+
     def drawOn(self, canvas, x, y, _sW=0):
         pass
 
@@ -514,14 +620,14 @@ class _Points(Flowable):
         super().__init__()
         self.ws, self.title, self.pts = ws, title, pts
 
+    """Zero-height marker at the end of a section. The Self-check score line is drawn in the footer
+    of the page where the section ends, so it never pushes content onto a new page."""
+
     def wrap(self, aw, ah):
-        return CONTENT_W, 0.32 * inch
+        return 0, 0
 
     def draw(self):
-        c = self.canv
-        c.setFont("Poppins-SemiBold", 9)
-        c.setFillColor(colors.HexColor("#444444"))
-        c.drawRightString(CONTENT_W, 0.08 * inch, f"Self-check:  ______ / {self.pts} points")
+        pass
 
 
 # Page-header + TOC bookkeeping is done in afterFlowable, so it works across both passes.
@@ -534,7 +640,10 @@ def _after_flowable(self, fl):
         if fl.title not in [t for t, _ in ws._toc_tmp]:
             ws._toc_tmp.append((fl.title, self.page - 1))
     elif isinstance(fl, _Points):
-        ws._pts_tmp.append((fl.title, [p for t, p in ws._toc_tmp if t == fl.title][0], fl.pts))
+        pass
+    elif ws._toc_tmp:
+        # the last page any real content of the current section lands on gets its Self-check line
+        ws._last_page[ws._toc_tmp[-1][0]] = self.page - 1
 
 
 BaseDocTemplate.afterFlowable = _after_flowable
@@ -573,13 +682,16 @@ def _build(ws, path):
     # onPage runs when a page starts, before its flowables, so the running header can't know the
     # page's topic yet. Pass 1 records which topic starts on which page; pass 2 uses that for the
     # headers, the cover's TOC page numbers and the self-grading table.
-    ws._toc_tmp, ws._pts_tmp = [], []
+    ws._toc_tmp, ws._last_page, ws._static_pts = [], {}, []
     make().build(ws.story())
-    toc, pts = ws._toc_tmp, ws._pts_tmp
+    toc = ws._toc_tmp
+    start = dict(toc)
+    pts = [(t, start[t], n) for t, n in ws._static_pts]
+    ws._selfcheck_by_page = {ws._last_page[t]: n for t, n in ws._static_pts if t in ws._last_page}
     # page -> (title, sub) for headers in pass 2
     ws.toc, ws.points = list(toc), list(pts)
     ws._title_by_page = _titles_by_page(toc, ws)
-    ws._toc_tmp, ws._pts_tmp = [], []
+    ws._toc_tmp, ws._last_page, ws._static_pts = [], {}, []
 
     orig = ws.header_footer
 
@@ -588,6 +700,13 @@ def _build(ws, path):
         if t:
             ws.page_title, ws.page_sub = t
         orig(c, d)
+        pts = ws._selfcheck_by_page.get(d.page - 1)
+        if pts is not None:
+            c.saveState()
+            c.setFont("Poppins-SemiBold", 9)
+            c.setFillColor(colors.HexColor("#444444"))
+            c.drawRightString(PAGE_W - MARGIN_X, 0.56 * inch, f"Self-check:  ______ / {pts} points")
+            c.restoreState()
 
     ws.header_footer = hf
     make().build(ws.story())
