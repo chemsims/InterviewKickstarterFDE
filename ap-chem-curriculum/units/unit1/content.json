@@ -470,7 +470,7 @@
        "answer": "%C = 12.0 ÷ 36.0 × 100 = **33.3%**; %O = 24.0 ÷ 36.0 × 100 = **66.7%** (step 4 shows the same)."
       },
       {
-       "prompt": "BEFORE step 5: pure CO is 57.1% O, pure CO₂ is 72.7% O. Find f(CO₂) = (%O sample − %O CO) ÷ (%O CO₂ − %O CO).",
+       "prompt": "BEFORE step 5: f(CO₂) = (%O sample − 57.1) ÷ (72.7 − 57.1). Find the CO₂ mass fraction.",
        "lines": 2,
        "answer": "f = (66.7 − 57.1) ÷ (72.7 − 57.1) = 0.615 ≈ **0.61** (sim shows 0.611 from unrounded percents; check: 22.0 g ÷ 36.0 g = 0.611). Accept 0.61–0.62."
       }
