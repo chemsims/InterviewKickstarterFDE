@@ -325,7 +325,7 @@
     },
     {
      "type": "explore",
-     "text": "Open Explore mode (orange "Explore mode" button in the top-left menu). Order: Zero (0): how does k change when the Time slider doubles? Order: First (1): keep Time at 10 s, move [A] end to half of [A]₀. What is t½? Change [A]₀: does t½ change?"
+     "text": "Open Explore mode (orange Explore mode button in the top-left menu). Order: Zero (0): how does k change when the Time slider doubles? Order: First (1): keep Time at 10 s, move [A] end to half of [A]₀. What is t½? Change [A]₀: does t½ change?"
     }
    ]
   },

@@ -19,7 +19,7 @@
      "type": "predict",
      "items": [
       {
-       "prompt": "If you double the mass of the water sample, what happens to the number of moles and the number of molecules?",
+       "prompt": "If you double the mass of water, what happens to the moles and the number of molecules?",
        "lines": 1,
        "answer": "Both double. For the same substance, moles and particles change in proportion to the mass."
       }
@@ -35,9 +35,8 @@
     {
      "type": "notes",
      "items": [
-      "We cannot count atoms one by one. We measure {{mass}}, then use the {{mole}} to connect mass to amount of substance.",
+      "We measure {{mass}}, then use the {{mole}} to connect mass to amount of substance.",
       "The {{molar mass}} tells how many grams correspond to {{one}} mole of the substance.",
-      "The same numerical value connects one particle mass in {{amu}} to one mole mass in {{grams}}.",
       "To find moles, {{divide}} the sample mass by the {{molar mass}}.",
       "One mole always contains {{6.022 × 10²³}} particles (Avogadro's number). Ionic NaCl is counted in {{formula units}}, not molecules.",
       "Each conversion factor {{cancels}} the previous unit until only the desired unit remains."
@@ -420,8 +419,8 @@
     {
      "type": "notes",
      "items": [
-      "Step 1 contains one kind of molecule: {{carbon monoxide}}. A pure substance has a fixed {{composition}} by mass, even when the sample size changes.",
-      "Adding carbon dioxide creates a {{mixture}} because two particle types are present. The relative amounts can {{vary}}.",
+      "Step 1 has one kind of molecule, {{carbon monoxide}}: a pure substance with a fixed {{composition}} by mass.",
+      "Adding CO₂ makes a {{mixture}} (two particle types); the relative amounts can {{vary}}.",
       "When the mass of carbon stays the same, CO₂ has {{twice}} as much oxygen as CO: {{32}} g O vs. 16 g O per 12 g C. This shows the Law of {{Multiple Proportions}}.",
       "A mixture gives an {{intermediate}} composition between the pure CO and pure CO₂ endpoints."
      ]
@@ -711,11 +710,9 @@
      "type": "notes",
      "items": [
       "PES removes electrons from atoms and measures the {{energy pattern}} that comes back.",
-      "Those signals reveal how the electrons are {{arranged}} and how strongly they {{interact}} with the nucleus.",
       "A PES spectrum gives a peak for each occupied {{subshell}}, not one peak for each shell.",
       "Peak {{height}} is proportional to the number of electrons in that subshell.",
       "Peak {{position}} shows binding energy: the energy required to {{remove}} an electron.",
-      "Inner electrons are closer to the nucleus and are usually held {{more}} strongly.",
       "When sodium forms a positive ion, the outer {{3s}} electron is removed. The remaining electrons feel less {{shielding}}, so their peaks shift to {{higher}} binding energy."
      ]
     },
@@ -724,7 +721,7 @@
      "prompt": "Sketch the Na spectrum from step 3. Put higher binding energy on the LEFT, as the sim does. Label each peak.",
      "x_label": "← Higher binding energy",
      "y_label": "Relative intensity",
-     "height": 1.4,
+     "height": 1.3,
      "answer": "Four peaks, left to right: 1s (height 2), 2s (height 2), 2p (tallest, height 6), 3s (smallest, height 1). Shape and order only."
     },
     {

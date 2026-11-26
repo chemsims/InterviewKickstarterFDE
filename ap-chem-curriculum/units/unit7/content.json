@@ -526,8 +526,7 @@
     {
      "type": "setup",
      "items": [
-      "Open **Temperature Changes** (?subUnitId=eqm.gaseous.temperature). It starts from a saved equilibrium: P_A = 1.09, P_B = 0.42, P_C = 0.46, P_D = 0.93 atm, Kp = 10.",
-      "Look at the reaction above the beaker: it shows **+ Heat** on the products side.",
+      "Open **Temperature Changes** (?subUnitId=eqm.gaseous.temperature). It starts at a saved equilibrium (P_A = 1.09, P_B = 0.42, P_C = 0.46, P_D = 0.93 atm, Kp = 10). The reaction shows **+ Heat** on the products side.",
       "At **use the flame slider**, drag the slider under the beaker **all the way to the right**. Read the new Kp in the Q = Kp panel."
      ]
     },
@@ -555,7 +554,7 @@
       {
        "prompt": "Right after heating, the pressures have not changed yet. What is Q? Compare it with the new Kp and give the direction.",
        "lines": 2,
-       "answer": "Q is still **10** (the system was at equilibrium with Kp = 10). New Kp = 1.0, so Q > Kp and the **reverse** reaction is favored (products turn into reactants)."
+       "answer": "Q is still **10** (it was at equilibrium). New Kp = 1.0, so Q > Kp: the **reverse** reaction is favored."
       }
      ]
     },
@@ -793,8 +792,7 @@
     {
      "type": "setup",
      "items": [
-      "Open **Common Ion Effect** (?subUnitId=eqm.solubility.common-ion). Ksp is still 0.10.",
-      "Shake **XB(s)** in until it stops (4 shakes = 500 mg). [B⁻] becomes **0.12** M.",
+      "Open **Common Ion Effect** (?subUnitId=eqm.solubility.common-ion); Ksp is still 0.10. Shake **XB(s)** in until it stops (4 shakes = 500 mg): [B⁻] becomes **0.12** M.",
       "Then shake **AB(s)** in until the sim says equilibrium (11 shakes), and add extra when asked. Do the **Calculate** box before you open the **Table** tab."
      ]
     },

@@ -141,7 +141,7 @@ rate · rate constant (k) · order · rate law · integrated rate law · half-li
 
 **Checkpoint before they move on:** Second order: k = 0.30 M⁻¹s⁻¹, half-lives 3.33 s then 6.67 s; 1/[A] rises from 1.00 to 4.00 M⁻¹.
 
-**Early finishers:** Explore box on p. 4: 🎲 New reaction, guess the order from the curve, check.
+**Early finishers:** Explore box on p. 4: New reaction, guess the order from the curve, check.
 
 ### Day 4: Student sim work: energy profiles and catalysts
 
@@ -171,7 +171,7 @@ rate · rate constant (k) · order · rate law · integrated rate law · half-li
 
 | Minutes | Activity |
 |---|---|
-| 0–20 | Explore mode: finish the Explore boxes in pairs (order guessing with 🎲 New reaction). |
+| 0–20 | Explore mode: finish the Explore boxes in pairs (order guessing with New reaction). |
 | 20–40 | Conclusion questions, individually. |
 | 40–50 | AP practice question 1 together; bridge to mechanisms: "A rate law k[A]² could come from a slow step where two A collide." |
 
