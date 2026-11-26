@@ -1094,11 +1094,6 @@
    "prompt": "Use Topics 1.5 and 1.8: explain why magnesium forms Mg²⁺ (not Mg⁺ or Mg³⁺) and why the formula with chlorine is MgCl₂.",
    "lines": 2,
    "answer": "Mg (…3s²) loses its two 3s electrons to reach a full previous shell; a third would be a core electron. Two Cl⁻ balance one Mg²⁺: MgCl₂."
-  },
-  {
-   "prompt": "Use Topics 1.1–1.4: a 36.0 g sample contains only carbon and oxygen and is 66.7% O. Can you tell from this alone whether it is a pure compound or a mixture? What would you compare it to?",
-   "lines": 2,
-   "answer": "Compare to the pure compositions: 66.7% O matches neither CO (57.1%) nor CO₂ (72.7%), so it is a mixture (14.0 g CO + 22.0 g CO₂)."
   }
  ],
  "key_notes": [
