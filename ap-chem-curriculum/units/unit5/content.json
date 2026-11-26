@@ -325,7 +325,7 @@
     },
     {
      "type": "explore",
-     "text": "Open Explore mode (🧪 button in the top-left menu). Order: Zero (0): how does k change when the Time slider doubles? Order: First (1): keep Time at 10 s, move [A] end to half of [A]₀. What is t½? Change [A]₀: does t½ change?"
+     "text": "Open Explore mode (orange "Explore mode" button in the top-left menu). Order: Zero (0): how does k change when the Time slider doubles? Order: First (1): keep Time at 10 s, move [A] end to half of [A]₀. What is t½? Change [A]₀: does t½ change?"
     }
    ]
   },
@@ -563,7 +563,7 @@
     },
     {
      "type": "explore",
-     "text": "Explore mode: click 🎲 New reaction. Before you look at the Order buttons, decide the order from the shape of the [A] curve. Then check. Repeat three times."
+     "text": "Explore mode: click New reaction. Before you look at the Order buttons, decide the order from the shape of the [A] curve. Then check. Repeat three times."
     }
    ]
   },
@@ -917,7 +917,7 @@
      "Rate laws in the identification table use the correct second order form [A]₀/([A]₀kt + 1)."
     ],
     "checkpoint": "Second order: k = 0.30 M⁻¹s⁻¹, half-lives 3.33 s then 6.67 s; 1/[A] rises from 1.00 to 4.00 M⁻¹.",
-    "early_finishers": "Explore box on p. 4: 🎲 New reaction, guess the order from the curve, check."
+    "early_finishers": "Explore box on p. 4: New reaction, guess the order from the curve, check."
    },
    {
     "day": 4,
@@ -957,7 +957,7 @@
     "agenda": [
      [
       "0–20",
-      "Explore mode: finish the Explore boxes in pairs (order guessing with 🎲 New reaction)."
+      "Explore mode: finish the Explore boxes in pairs (order guessing with New reaction)."
      ],
      [
       "20–40",

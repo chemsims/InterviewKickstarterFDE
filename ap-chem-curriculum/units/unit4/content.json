@@ -717,7 +717,7 @@
        "answer": "(1) 0.0200 × 0.02000 L = **4.00 × 10⁻⁴ mol** MnO₄⁻ (2) × 5 = **2.00 × 10⁻³ mol** Fe²⁺ (3) ÷ 0.02500 L = **0.0800 M**"
       },
       {
-       "prompt": "BEFORE you titrate the oxalic acid: 2MnO₄⁻ + 5H₂C₂O₄ + 6H⁺ → 2Mn²⁺ + 10CO₂ + 8H₂O. If the 25.00 mL sample is 0.0500 M, predict the endpoint volume of 0.0200 M KMnO₄. Then titrate to check.",
+       "prompt": "BEFORE titrating oxalic acid (2MnO₄⁻ + 5H₂C₂O₄ + 6H⁺ → 2Mn²⁺ + 10CO₂ + 8H₂O): if the 25.00 mL sample is 0.0500 M, predict the endpoint volume of 0.0200 M KMnO₄. Then check.",
        "lines": 2,
        "answer": "1.25 × 10⁻³ mol H₂C₂O₄ × 2/5 = 5.00 × 10⁻⁴ mol MnO₄⁻; ÷ 0.0200 M = 0.0250 L = **25.00 mL** ✓."
       },
@@ -730,10 +730,10 @@
     },
     {
      "type": "graph",
-     "prompt": "Sketch the chart for the Fe²⁺ titration: both lines, up to about 25 mL. Mark the endpoint.",
+     "prompt": "Sketch the Fe²⁺ titration chart (both lines, to about 25 mL). Mark the endpoint.",
      "x_label": "KMnO₄ added (mL)",
      "y_label": "moles in flask",
-     "height": 1.2,
+     "height": 1.05,
      "answer": "Fe²⁺ falls in a straight line to zero at 20.00 mL; excess MnO₄⁻ is zero until 20.00 mL, then rises less steeply (1/5 the slope)."
     },
     {

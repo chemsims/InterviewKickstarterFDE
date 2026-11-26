@@ -184,8 +184,8 @@
       "The sample contains only neon, but its atoms do not all have the same {{mass}}. These different masses come from {{isotopes}}.",
       "Each isotope appears at a different {{m/z}} value because each isotope has a different mass.",
       "For singly charged ions, m/z is approximately the {{isotope mass}}.",
-      "The tallest peak is not the heaviest isotope. It is the {{most abundant}} isotope. Peak height tracks {{abundance}}, not isotope mass.",
-      "The atomic mass on the periodic table is a {{weighted average}} of isotope masses. It is usually not a whole number because it is an {{average}}."
+      "The tallest peak is the {{most abundant}} isotope, not the heaviest. Peak height tracks {{abundance}}.",
+      "Periodic-table atomic mass is a {{weighted average}} of isotope masses, so it is usually not a whole number."
      ]
     },
     {
@@ -396,8 +396,7 @@
      "type": "setup",
      "items": [
       "Open **Topic 1.4 Composition of Mixtures** in **Guided** mode. It starts with **CO 14.0 g**; from step 2, **CO₂ 22.0 g** is added (the “50-50 mol example”).",
-      "Leave both mass sliders at these starting values for steps 1–5.",
-      "This topic uses **C = 12** and **O = 16** g/mol exactly. On step 6, use the preset buttons: **50-50 mol example, Pure CO, Pure CO₂, Mystery sample**."
+      "Leave both sliders at these values for steps 1–5. This topic uses **C = 12** and **O = 16** g/mol exactly. On step 6, use the preset buttons: **50-50 mol example, Pure CO, Pure CO₂, Mystery sample**."
      ]
     },
     {
@@ -687,9 +686,8 @@
     {
      "type": "setup",
      "items": [
-      "Open **Topic 1.6 Photoelectron Spectroscopy** in **Guided** mode. It starts on **neutral sodium (Na)**. Click a peak to select it.",
-      "The **Species** buttons (Na, Na⁺, Mg, Mg²⁺, Al, Ne) are always on screen: keep **Na** for steps 1–4. Step 5 adds **Na (neutral) / Na⁺ (positive ion)** buttons; step 6 adds a **single / overlay** toggle.",
-      "The binding-energy axis is **relative**: peaks are evenly spaced, so compare order, not distances."
+      "Open **Topic 1.6 Photoelectron Spectroscopy** in **Guided** mode. It starts on **neutral sodium (Na)**. Click a peak to select it. The axis is **relative**: peaks are evenly spaced, so compare order, not distances.",
+      "The **Species** buttons (Na, Na⁺, Mg, Mg²⁺, Al, Ne) are always on screen: keep **Na** for steps 1–4. Step 5 adds **Na (neutral) / Na⁺ (positive ion)** buttons; step 6 adds a **single / overlay** toggle."
      ]
     },
     {
@@ -811,8 +809,7 @@
      "type": "setup",
      "items": [
       "Open **Topic 1.7 Periodic Trends** in **Guided** mode. Path: **Across Period 3** (other buttons: **Down Group 1**, **Down Group 17**).",
-      "On step 1, click an element button to make it active; the **Property preview** shows its atomic radius, first ionization energy and electronegativity.",
-      "Step 3 has **Atom / Cation / Anion** tabs. Step 5 has an **Electron affinity / Electronegativity** toggle."
+      "On step 1, click an element button to make it active; the **Property preview** shows its radius, first ionization energy and electronegativity. Step 3 has **Atom / Cation / Anion** tabs. Step 5 has an **Electron affinity / Electronegativity** toggle."
      ]
     },
     {
@@ -842,16 +839,6 @@
       "First ionization energy is the energy needed to {{remove}} the first electron from a neutral atom.",
       "Electron affinity describes attracting an added {{electron}}. Electronegativity describes pulling shared electrons in a {{bond}}.",
       "Both become {{stronger}} when Zeff is high and the attracted electron is close to the nucleus."
-     ]
-    },
-    {
-     "type": "calc",
-     "items": [
-      {
-       "prompt": "Do this BEFORE step 2: chlorine has Z = 17 and 10 core electrons. Estimate Zeff. Then do the same for sodium (Z = 11).",
-       "lines": 2,
-       "answer": "Cl: Zeff ≈ 17 − 10 = **7**. Na: Zeff ≈ 11 − 10 = **1** (sim: “Zeff pull” 7 and 1)."
-      }
      ]
     },
     {

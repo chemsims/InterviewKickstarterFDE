@@ -225,8 +225,10 @@ class Worksheet:
         c.drawString(x, top - 0.25 * inch, title)
         c.setLineWidth(0.8)
         c.line(x, top - 0.33 * inch, PAGE_W - MARGIN_X, top - 0.33 * inch)
-        c.setFont("Poppins-BoldItalic", 11)
-        c.drawString(x, top - 0.55 * inch, self.page_title)
+        tp = Paragraph(rich(self.page_title), ParagraphStyle("pt", fontName="Poppins-BoldItalic", fontSize=11,
+                                                             leading=13))
+        tp.wrap(PAGE_W - MARGIN_X - x - 1.6 * inch, 30)
+        tp.drawOn(c, x, top - 0.55 * inch - 3)
         if self.page_sub:
             c.setFont("Poppins-Italic", 8)
             c.setFillColor(colors.HexColor("#666666"))
