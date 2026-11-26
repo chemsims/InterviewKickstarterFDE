@@ -1,0 +1,1037 @@
+{
+ "unit": 8,
+ "unit_title": "Acids and Bases",
+ "worksheet_title": "Acids and Bases",
+ "sim_name": "Acids & Bases",
+ "pages": [
+  {
+   "title": "Strong Acids and Bases",
+   "sim_screen": "Introduction · guided",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Acids & Bases → Introduction** (guided mode, not ?mode=explore). Click **Next** through the opening text. Leave the **water slider** where it starts.",
+      "Choose **HCl**, then later **KOH**. Each shake adds 1/14 of the full amount; the bottle stops after **14 shakes**.",
+      "Read pH from the **pH meter** (drag it into the beaker) or the equations at the top right."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "HCl is a strong acid. When you add more of it, will the pH go up or down? Why?",
+       "lines": 2,
+       "answer": "Down. More HCl means more H⁺ ions, and a higher [H⁺] means a lower pH."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "An **Arrhenius acid** dissociates in water into {{hydrogen ions (H⁺)}}. An Arrhenius base dissociates into {{hydroxide (OH⁻)}} ions.",
+      "The **Brønsted-Lowry** definition: acids {{donate}} protons (H⁺), and bases {{accept}} them. A Lewis base donates an {{electron pair}}.",
+      "Strong acids dissociate {{entirely}} into H⁺ ions. Their reaction with water goes to {{completion}}.",
+      "When [H⁺] and [OH⁻] are the same, both are {{10⁻⁷}} M and the pH is {{7}} (neutral).",
+      "The higher [H⁺] is, the {{lower}} the pH and the more {{acidic}} the solution. pH = {{−log[H⁺]}}, pOH = −log[OH⁻], and pH + pOH = {{14}}."
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Substance",
+      "Shakes",
+      "[H⁺] (M)",
+      "[OH⁻] (M)",
+      "pH",
+      "pOH"
+     ],
+     "rows": [
+      [
+       "HCl",
+       "7",
+       "{{5.0×10⁻²}}",
+       "{{2.0×10⁻¹³}}",
+       "{{1.3}}",
+       "{{12.7}}"
+      ],
+      [
+       "HCl",
+       "14",
+       "{{1.0×10⁻¹}}",
+       "{{1.0×10⁻¹³}}",
+       "{{1.0}}",
+       "{{13.0}}"
+      ],
+      [
+       "KOH",
+       "14",
+       "{{1.0×10⁻¹³}}",
+       "{{1.0×10⁻¹}}",
+       "{{13.0}}",
+       "{{1.0}}"
+      ]
+     ],
+     "note": "The sim shows pH and pOH to one decimal place."
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "After 14 shakes the beaker holds 0.10 M KOH. Before you look, calculate [OH⁻], pOH and pH. Then check the sim.",
+       "lines": 2,
+       "answer": "KOH is a strong base, so [OH⁻] = 0.10 M. pOH = −log(0.10) = **1.0**. pH = 14 − 1.0 = **13.0**."
+      }
+     ]
+    },
+    {
+     "type": "graph",
+     "prompt": "After 14 shakes of HCl the sim draws **pH vs. moles added**. Sketch its shape. (The sim's axes have no numbers, so draw shape only.)",
+     "x_label": "Moles of HCl added",
+     "y_label": "pH",
+     "answer": "Starts at pH 7, drops very steeply with the first moles added, then flattens out near pH 1 as more is added (a curve that falls fast, then levels off).",
+     "height": 1.3
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Doubling the HCl (7 shakes → 14 shakes) changed the pH by only 0.3. Explain why, using the pH equation.",
+       "lines": 2,
+       "answer": "pH is a log scale: doubling [H⁺] lowers pH by log 2 ≈ 0.3 (1.3 → 1.0). Accept: a 10× change is needed to move pH by 1."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Go Back and try HBr or HI, then LiOH or NaOH. Does the pH after 14 shakes change?"
+    }
+   ]
+  },
+  {
+   "title": "Weak Acids and Weak Bases",
+   "sim_screen": "Introduction · guided",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Keep going on the **Introduction** screen. Weak acid: choose **HA**. Weak base: choose **B⁻**.",
+      "Leave the water slider where it starts. Shake each bottle **14 times** (the bottle stops). The beaker then holds **0.10 M**, the same as the HCl and KOH on page 1.",
+      "The sim's constants (you will see them on the Buffers screen): HA **Ka = 7.3×10⁻⁵**; B⁻ **Kb = 4.0×10⁻⁵**."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "0.10 M HCl had pH 1.0. Will 0.10 M HA have a higher, lower or equal pH? Why?",
+       "lines": 2,
+       "answer": "Higher pH. HA is weak, so only a small part of it dissociates; [H⁺] is much less than 0.10 M."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Weak acids dissociate {{partially}} into H⁺ ions. Their reaction with water goes to {{equilibrium}}.",
+      "H₃O⁺ and H⁺ are used {{interchangeably}}. For weak acids and bases, {{H₂O}} is written as a reactant.",
+      "The {{double arrow}} (⇌) shows that HA does not go to completion.",
+      "When added, B⁻ reacts with water to make HB and OH⁻. B⁻ acts as a proton {{acceptor}}."
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "HA + H₂O ⇌ {{H₃O⁺}} + {{A⁻}}",
+      "B⁻ + H₂O ⇌ {{HB}} + {{OH⁻}}"
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Substance (0.10 M)",
+      "Strong or weak?",
+      "pH",
+      "[H⁺] (M)",
+      "[OH⁻] (M)"
+     ],
+     "rows": [
+      [
+       "HCl (from p. 1)",
+       "strong",
+       "1.0",
+       "1.0×10⁻¹",
+       "1.0×10⁻¹³"
+      ],
+      [
+       "HA",
+       "{{weak}}",
+       "{{2.6}}",
+       "{{2.7×10⁻³}}",
+       "{{3.8×10⁻¹²}}"
+      ],
+      [
+       "B⁻",
+       "{{weak}}",
+       "{{11.3}}",
+       "{{5.1×10⁻¹²}}",
+       "{{2.0×10⁻³}}"
+      ]
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Use Ka = 7.3×10⁻⁵ to find [H⁺] and pH of 0.10 M HA. Then find the percent ionization. Check pH against the sim.",
+       "lines": 4,
+       "answer": "Ka = x²/(0.10 − x). x ≈ √(7.3×10⁻⁵ × 0.10) = **2.7×10⁻³ M** (quadratic: 2.67×10⁻³). pH = −log(2.7×10⁻³) = **2.57** (sim shows 2.6). % ionization = 2.7×10⁻³/0.10 × 100 = **2.7%**."
+      },
+      {
+       "prompt": "Use Kb = 4.0×10⁻⁵ to find [OH⁻], pOH and pH of 0.10 M B⁻.",
+       "lines": 3,
+       "answer": "x ≈ √(4.0×10⁻⁵ × 0.10) = **2.0×10⁻³ M** OH⁻. pOH = **2.70**. pH = 14 − 2.70 = **11.30** (sim shows 11.3)."
+      }
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "HCl and HA are both 0.10 M. Use the particles in the beaker and your pH values to explain why their pH values differ by more than 1.5 units.",
+       "lines": 3,
+       "answer": "HCl is fully ionized (beaker shows only H⁺ and Cl⁻), so [H⁺] = 0.10 M, pH 1.0. HA is only partly ionized (beaker still shows many HA molecules), so [H⁺] is only 2.7×10⁻³ M, pH 2.6. Accept any answer linking fewer H⁺ ions to partial dissociation."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Go Back and try HF (Ka = 4.5×10⁻⁴) and HCN (Ka = 9×10⁻⁵ in this sim). Predict which gives the lowest pH, then check."
+    }
+   ]
+  },
+  {
+   "title": "Weak Acid Equilibrium and Ka",
+   "sim_screen": "Buffers · guided, part 1",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Acids & Bases → Buffers** (guided). Choose the weak acid **HA**.",
+      "At “Use the water slider”, **leave the slider where it starts** (the middle) and click Next. Your answers depend on this.",
+      "Shake **HA** until **[HA]** in the equations stops rising (about 9 shakes; the beaker holds 43 particles). Then click Next to let it reach equilibrium."
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "K for an acid dissociating is called {{Ka}}; for a base it is called {{Kb}}.",
+      "The weak acid with a higher Ka produces {{more}} H⁺ ions at equilibrium, so it is more {{acidic}}.",
+      "Water is a pure {{liquid}}, so it is not included in the Ka expression.",
+      "A⁻ can trap a proton, so it works as a base. A⁻ is the {{conjugate base}} of HA. HA and A⁻ are a {{conjugate acid-base pair}}.",
+      "Kw = [H⁺][OH⁻] = {{10⁻¹⁴}} at 25 °C. Ka and Kb of a pair are linked by Kw = {{Ka × Kb}}."
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "Ka = {{[H⁺][A⁻] / [HA]}}        pKa = {{−log(Ka)}}"
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Before you click to equilibrium: the sim shows [HA] = 0.206 M at the start and Ka = 7.3×10⁻⁵. Calculate [H⁺] and pH at equilibrium.",
+       "lines": 4,
+       "answer": "7.3×10⁻⁵ = x²/(0.206 − x). x ≈ √(7.3×10⁻⁵ × 0.206) = **3.9×10⁻³ M** (quadratic: 3.8×10⁻³, the sim's value). pH = −log(3.8×10⁻³) = **2.42**."
+      },
+      {
+       "prompt": "Calculate pKa of HA and Kb of its conjugate base A⁻.",
+       "lines": 2,
+       "answer": "pKa = −log(7.3×10⁻⁵) = **4.14**. Kb = Kw/Ka = 1.0×10⁻¹⁴ / 7.3×10⁻⁵ = **1.4×10⁻¹⁰**."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Data table",
+     "subtitle": "Record the equilibrium values from the sim's equations",
+     "columns": [
+      "[HA] start (M)",
+      "[H⁺] (M)",
+      "[A⁻] (M)",
+      "[HA] equil. (M)",
+      "pH",
+      "pKa"
+     ],
+     "rows": [
+      [
+       "{{0.206}}",
+       "{{3.8×10⁻³}}",
+       "{{3.8×10⁻³}}",
+       "{{0.202}}",
+       "{{2.42}}",
+       "{{4.14}}"
+      ]
+     ]
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "The sim says “Notice there's plenty of HA remaining.” Use your data to support this claim with a number.",
+       "lines": 2,
+       "answer": "[HA] at equilibrium is 0.202 M, almost the starting 0.206 M; only 3.8×10⁻³/0.206 ≈ 1.9% ionized. Accept: [HA] ≫ [A⁻]."
+      },
+      {
+       "prompt": "Is this solution a buffer yet? Use the fraction-of-species graph (it shows HA and A⁻ vs. pH) to explain.",
+       "lines": 2,
+       "answer": "No. At pH 2.42 the solution is mostly HA and almost no A⁻; it is outside the buffer range (the shaded band around pKa). A buffer needs a lot of both HA and A⁻."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Go Back to the choice step and try HF. It has a larger Ka (4.5×10⁻⁴). Predict: higher or lower pH at equilibrium than HA?"
+    }
+   ]
+  },
+  {
+   "title": "Making and Testing an Acid Buffer",
+   "sim_screen": "Buffers · guided, part 2",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Continue from page 3 with **HA** (water slider untouched). Shake the salt **MA** until the guide moves on by itself (about 9 shakes).",
+      "Then shake **HCl** into the buffer until the guide says the buffer has reached its limit. Watch the **pH vs. moles added** graph."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Adding salt MA adds A⁻ ions. Will the pH go up, go down or stay the same? Why?",
+       "lines": 1,
+       "answer": "Up. A⁻ traps the free H⁺ ions (A⁻ + H⁺ → HA), so [H⁺] falls and pH rises."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "Buffers are solutions that {{resist}} a change in pH when acid or base is added. They are made of a weak acid and its {{conjugate base}} (or a weak base and its conjugate acid).",
+      "When HA and A⁻ are equally present, both fractions on the graph are {{0.50}} and pH = {{pKa}}. The buffer range is {{±1}} from that point.",
+      "Equal amounts of HA and A⁻ give the buffer its highest {{effectiveness}}, because it can buffer equal amounts of added H⁺ or OH⁻.",
+      "MA is a {{salt}} that ionizes completely, letting A⁻ ions free in the solution."
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "Henderson-Hasselbalch:   pH = pKa + log( {{[A⁻] / [HA]}} )"
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "When the guide says the buffer is ready, [A⁻] = [HA] = 0.206 M. Use Henderson-Hasselbalch to find the pH and the buffer range. Then check the sim.",
+       "lines": 2,
+       "answer": "pH = 4.14 + log(0.206/0.206) = 4.14 + 0 = **4.14** (= pKa). Buffer range = 4.14 ± 1 = **3.14 to 5.14**."
+      },
+      {
+       "prompt": "*Hypothetical* (not a sim setting): what would the pH be if [A⁻]/[HA] were 10/1? 1/10?",
+       "lines": 1,
+       "answer": "10/1: pH = 4.14 + 1 = **5.14**. 1/10: pH = 4.14 − 1 = **3.14**. These are the edges of the buffer range."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Moment",
+      "pH (sim)",
+      "Which is larger: [HA] or [A⁻]?"
+     ],
+     "rows": [
+      [
+       "HA at equilibrium (p. 3)",
+       "{{2.42}}",
+       "{{[HA]}}"
+      ],
+      [
+       "Buffer ready (after MA)",
+       "{{4.14}}",
+       "{{equal}}"
+      ],
+      [
+       "Buffer limit (after HCl)",
+       "{{2.64}}",
+       "{{[HA]}}"
+      ]
+     ],
+     "col_widths": [
+      2.6,
+      1.6,
+      2.8
+     ],
+     "row_height": 0.34
+    },
+    {
+     "type": "graph",
+     "prompt": "Sketch the sim's pH vs. moles of HCl added: one line for HCl in pure water and one for HCl in your buffer. Shape only.",
+     "x_label": "Moles of HCl added",
+     "y_label": "pH",
+     "answer": "Pure water: a straight, steep line falling from high pH to low pH. Buffer: starts at 4.14, stays nearly flat at first, then falls more and more, ending about 1.5 units lower (2.64). The buffer line is much flatter than the water line.",
+     "height": 1.3
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Explain at the particle level why the pH fell only slowly when HCl was added to the buffer, and why it finally dropped.",
+       "lines": 3,
+       "answer": "Added H⁺ reacts with A⁻ to make HA (H⁺ + A⁻ → HA), so few free H⁺ stay in solution. As A⁻ is used up, the ratio [A⁻]/[HA] falls and pH drops; at 2.64 the pH is below the buffer range (3.14), so the buffer is used up."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "A Weak Base Buffer",
+   "sim_screen": "Buffers · guided, part 3",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Continue on **Buffers**. Choose the weak base **B⁻**. The sim resets the water to the middle; **leave it there**.",
+      "Shake **B⁻** until [B⁻] stops rising (43 particles). Then add the salt **HBX** until the guide moves on, then shake **KOH** until the guide says the buffer reached its limit."
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "The weak base with a higher Kb produces {{more}} OH⁻ ions at equilibrium, so it is more {{basic}}.",
+      "HB is the {{conjugate acid}} of B⁻. When Kb is large, Ka is {{small}}, and vice versa.",
+      "When B⁻ and HB are equal, pOH = {{pKb}}.",
+      "When KOH is added to the buffer, pH does not go up right away: HB reacts with the free {{OH⁻}} ions to make more B⁻."
+     ]
+    },
+    {
+     "type": "equations",
+     "items": [
+      "Kb = {{[HB][OH⁻] / [B⁻]}}        pOH = pKb + log( {{[HB] / [B⁻]}} )"
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "Before you look: the sim uses Kb = 4.0×10⁻⁵ for B⁻. Find pKb, then the pOH and pH of the finished buffer ([HB] = [B⁻]).",
+       "lines": 3,
+       "answer": "pKb = −log(4.0×10⁻⁵) = **4.40** (sim: 4.398). Buffer: pOH = 4.40 + log(1) = **4.40**; pH = 14 − 4.40 = **9.60**."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Moment",
+      "pOH (sim)",
+      "pH (sim)"
+     ],
+     "rows": [
+      [
+       "B⁻ at equilibrium ([B⁻] start = 0.206 M)",
+       "{{2.55}}",
+       "{{11.45}}"
+      ],
+      [
+       "Buffer ready (after HBX)",
+       "{{4.40}}",
+       "{{9.60}}"
+      ],
+      [
+       "Buffer limit (after KOH)",
+       "{{2.90}}",
+       "{{11.10}}"
+      ]
+     ],
+     "col_widths": [
+      3.4,
+      1.6,
+      1.6
+     ],
+     "first_col_left": true
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "The guide says “pOH went up” when HBX was added. Use your table to support this and explain it with particles.",
+       "lines": 3,
+       "answer": "pOH rose from 2.55 to 4.40. HB from the salt trapped the free OH⁻ ions (HB + OH⁻ → B⁻ + H₂O), so [OH⁻] fell and pOH rose (pH fell from 11.45 to 9.60)."
+      },
+      {
+       "prompt": "Compare your acid buffer (p. 4) and base buffer. Which would you choose to hold a solution near pH 9.5? Justify with pKa or pKb.",
+       "lines": 2,
+       "answer": "The B⁻/HB buffer. Its pH = 14 − pKb = 9.60, and its range (8.60–10.60) includes 9.5. The HA/A⁻ buffer only covers 3.14–5.14."
+      }
+     ]
+    },
+    {
+     "type": "explore",
+     "text": "Go Back and make the buffer with more water (raise the slider before adding B⁻). Does the buffer pH change?"
+    }
+   ]
+  },
+  {
+   "title": "Strong Acid–Strong Base Titration",
+   "sim_screen": "Titration · guided, parts 1–2",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Open **Acids & Bases → Titration** (guided). Choose **HCl**. **Do not move the water slider**: the math panel must show V(HCl) = **0.400** L.",
+      "Shake until the guide moves on by itself (**14 shakes**). Add the indicator (5 taps). **Do not move the KOH slider** (it starts at **0.35 M**). Tap the burette to add KOH.",
+      "Part 2: choose **KOH**; it is titrated with **HCl** at 0.35 M. Same settings."
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "An acid reacts with a base to form a {{salt}} and {{water}}. This is called {{neutralization}}.",
+      "The ionic equation shows only the ions that react: H⁺ + OH⁻ → {{H₂O}}.",
+      "The {{equivalence point}} is where the acid and base have totally neutralized each other. For strong acids and bases, the pH there is {{7}}.",
+      "Before the EP there is an excess of {{H⁺}}; after the EP, all OH⁻ added stays in the solution, making it {{basic}}."
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "The panel shows M(HCl) = 0.335 M and V(HCl) = 0.400 L. Before titrating, find the moles of HCl, the volume of 0.350 M KOH needed to reach the EP, and the starting pH.",
+       "lines": 4,
+       "answer": "n = 0.400 L × 0.335 M = **0.134 mol**. V(KOH) = 0.134 mol / 0.350 M = **0.383 L**. Starting pH = −log(0.335) = **0.48** (meter shows 0.5)."
+      },
+      {
+       "prompt": "When the panel shows V(KOH) = 0.191 L (halfway), what is the pH? Use [H⁺] = (n(HCl) − n(KOH)) / (V(HCl) + V(KOH)).",
+       "lines": 3,
+       "answer": "n(KOH) = 0.191 × 0.350 = 0.067 mol. [H⁺] = (0.134 − 0.067)/(0.400 + 0.191) = 0.113 M. pH = **0.95**."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Titration",
+      "Stage",
+      "V titrant (L)",
+      "pH (panel)"
+     ],
+     "rows": [
+      [
+       "HCl + KOH",
+       "Halfway",
+       "{{0.191}}",
+       "{{0.95}}"
+      ],
+      [
+       "HCl + KOH",
+       "Equivalence point",
+       "{{0.383}}",
+       "{{7.00}}"
+      ],
+      [
+       "HCl + KOH",
+       "End (guide moves on)",
+       "{{0.766}}",
+       "{{13.06}}"
+      ],
+      [
+       "KOH + HCl",
+       "Start (meter)",
+       "0",
+       "{{13.5}}"
+      ],
+      [
+       "KOH + HCl",
+       "Equivalence point",
+       "{{0.383}}",
+       "{{7.00}}"
+      ],
+      [
+       "KOH + HCl",
+       "End (guide moves on)",
+       "{{0.766}}",
+       "{{0.94}}"
+      ]
+     ],
+     "col_widths": [
+      1.6,
+      2.2,
+      1.6,
+      1.6
+     ],
+     "row_height": 0.32
+    },
+    {
+     "type": "graph",
+     "prompt": "Sketch the titration curve for HCl titrated with KOH. Mark the equivalence point. (The sim's axes have no numbers; label your own points from the table.)",
+     "x_label": "Volume of KOH added (L)",
+     "y_label": "pH",
+     "answer": "Starts low (~0.5), rises slowly, then a near-vertical jump through pH 7 at 0.383 L (EP), then levels off high (~13). Accept an S-shaped curve with the EP marked at pH 7.",
+     "height": 1.5
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Why is the pH exactly 7.00 at the equivalence point of a strong acid–strong base titration?",
+       "lines": 2,
+       "answer": "All H⁺ has reacted with OH⁻; only water and the salt KCl are left. K⁺ and Cl⁻ do not react with water, so the solution is neutral."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Weak Acid and Weak Base Titrations",
+   "sim_screen": "Titration · guided, parts 3–4",
+   "blocks": [
+    {
+     "type": "setup",
+     "items": [
+      "Keep going on **Titration**. Weak acid: **HA**, titrated with **KOH**. Weak base: **B⁻**, titrated with **HCl**. Same settings as page 6 (sliders untouched; shake until the guide moves on).",
+      "The guide stops you at the halfway point and at the equivalence point. Record the pH each time."
+     ]
+    },
+    {
+     "type": "predict",
+     "items": [
+      {
+       "prompt": "Will the pH at the equivalence point of HA + KOH be below 7, at 7 or above 7? Why?",
+       "lines": 1,
+       "answer": "Above 7. At the EP the beaker holds A⁻, the conjugate base of a weak acid; A⁻ reacts with water to make a little OH⁻."
+      }
+     ]
+    },
+    {
+     "type": "notes",
+     "items": [
+      "K⁺ ions are {{spectator}} ions: they do not take part in the reaction.",
+      "Before the EP, the weak acid acts as a buffer, so this part of the curve is called the {{buffer region}}.",
+      "Halfway to the EP there are equal amounts of A⁻ and HA. This is the point of max {{buffer capacity}}, and pH = {{pKa}}.",
+      "In a laboratory, a titration normally ends at the {{equivalence point}}, because the goal is to find the concentration of a species."
+     ]
+    },
+    {
+     "type": "calc",
+     "items": [
+      {
+       "prompt": "HA: 0.134 mol in 0.400 L. Before the guide shows it, find the pH at the EP. (At the EP, V total = 0.400 + 0.383 = 0.783 L, and all HA is now A⁻. Kb of A⁻ = 1.4×10⁻¹⁰.)",
+       "lines": 4,
+       "answer": "[A⁻] = 0.134/0.783 = 0.171 M. [OH⁻] = √(1.37×10⁻¹⁰ × 0.171) = 4.8×10⁻⁶ M. pOH = 5.32, pH = **8.69**."
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Titration",
+      "Start pH",
+      "Halfway: V (L)",
+      "Halfway pH",
+      "EP: V (L)",
+      "EP pH"
+     ],
+     "rows": [
+      [
+       "HA + KOH",
+       "{{2.31}}",
+       "{{0.191}}",
+       "{{4.14}}",
+       "{{0.383}}",
+       "{{8.69}}"
+      ],
+      [
+       "B⁻ + HCl",
+       "{{11.56}}",
+       "{{0.191}}",
+       "{{9.60}}",
+       "{{0.383}}",
+       "{{5.18}}"
+      ]
+     ],
+     "note": "Start pH is in the guide's message after the weak acid or base reacts (two decimals). For B⁻ the guide gives pOH 2.44."
+    },
+    {
+     "type": "graph",
+     "prompt": "Sketch the curve for HA titrated with KOH. Label the buffer region, the halfway point (pH = pKa) and the EP.",
+     "x_label": "Volume of KOH added (L)",
+     "y_label": "pH",
+     "answer": "Starts at 2.31, quick small rise, then a gentle, nearly flat buffer region through pH 4.14 at 0.191 L, a steep rise to the EP at 0.383 L and pH 8.69 (above 7), then levels off near 13.",
+     "height": 1.4
+    },
+    {
+     "type": "question",
+     "items": [
+      {
+       "prompt": "Compare the HCl and HA titrations. Give two differences in the curves and explain each with the species present.",
+       "lines": 3,
+       "answer": "(1) HA starts at a higher pH (2.31 vs 0.48): HA is only partly ionized. (2) HA has a flat buffer region with pH = pKa at halfway: HA/A⁻ buffer. (3) HA's EP is 8.69, not 7: A⁻ is a base. Any two."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "conclusion": [
+  {
+   "prompt": "HCl, HA and the HA/A⁻ buffer all had acid added or were made at similar concentrations in this sim. Rank them from lowest to highest pH (use your values) and explain each position with the species present.",
+   "lines": 4,
+   "answer": "0.10 M HCl (1.0) < 0.10 M HA (2.6) < HA/A⁻ buffer (4.14). HCl is fully ionized; HA is only ~3% ionized; in the buffer, A⁻ ties up H⁺ so pH = pKa."
+  },
+  {
+   "prompt": "The halfway point of the HA titration (pH 4.14) and the HA/A⁻ buffer you made with MA (pH 4.14) have the same pH. Explain why, and say what this tells you about how to make a buffer.",
+   "lines": 3,
+   "answer": "In both, [A⁻] = [HA], so pH = pKa + log 1 = 4.14. A buffer can be made by mixing a weak acid with its salt OR by adding a strong base to half-neutralize the weak acid."
+  },
+  {
+   "prompt": "Choose a buffer system from this unit for pH 10. Explain your choice using pKa/pKb and the ±1 buffer range.",
+   "lines": 3,
+   "answer": "B⁻/HB: pH = 14 − pKb = 9.60, range 8.60–10.60 includes 10. Accept HS⁻ (sim pH 11.0, range 10–12) if justified by its range."
+  }
+ ],
+ "key_notes": [
+  "Sim pH values come from concentration only. On the Introduction screen, the water slider does not change pH: 14 shakes always means 0.10 M (GuidedIntroScreen.tsx:271–279).",
+  "Buffers and Titration answers assume the water slider is NOT moved (Buffers: 11 rows, 209 slots; Titration: V = 0.400 L). If a student moved it, their numbers will differ; check their logic, not the numbers.",
+  "Titration answers assume 70 particles of substance (shake until the guide moves on) and titrant at 0.35 M. Students who press Next after 6 shakes will have 0.144 M or other values.",
+  "Sim constants vs. textbook: HCN Ka = 9×10⁻⁵ in the sim (textbook 6.2×10⁻¹⁰). F⁻ Kb = 1.3×10⁻⁵ in the sim, but Kw/Ka(HF) = 2.2×10⁻¹¹. HS⁻ Kb = 1×10⁻³ (textbook ~1×10⁻⁷). The worksheet uses HA and B⁻, whose values are self-consistent.",
+  "The buffer “limit” is scripted: the sim always ends the HCl (or KOH) test exactly 1.5 pH units past pKa (pH 2.64 for HA; 11.10 for B⁻). It is not a real buffer-capacity calculation.",
+  "The indicator is generic: the beaker tint changes gradually with pH and has no real transition range or pKa.",
+  "On the Titration math panel, for a weak acid before the EP the [H⁺] box shows (n(HA) − n(KOH))/V total, which is the leftover HA, not [H⁺]. It does not match the pH shown. Tell students to use the pH value and ignore that box (not used on the worksheet).",
+  "The weak-base fraction-of-species curve on Buffers is drawn reversed (B⁻ shown low at high pH). The worksheet asks only about the weak-acid curve.",
+  "?mode=explore does not unlock the bottles or steps on these screens (from code reading); use guided mode, and Back, for every exploration.",
+  "Explore answers: p. 1 every strong acid gives pH 1.0 and every strong base pH 13.0 after 14 shakes; p. 2 HF gives the lowest pH (2.2; largest Ka), HCN 2.5; p. 3 HF at equilibrium pH 2.03 (lower than HA); p. 5 more water does not change the buffer pH (ratio [HB]/[B⁻] is still 1)."
+ ],
+ "lesson_plan": {
+  "period_minutes": 50,
+  "ap_topics": [
+   "8.1 Introduction to Acids and Bases",
+   "8.2 pH and pOH of Strong Acids and Bases",
+   "8.3 Weak Acid and Base Equilibria",
+   "8.4 Acid-Base Reactions and Buffers",
+   "8.5 Acid-Base Titrations",
+   "8.7 pH and pKa",
+   "8.8 Properties of Buffers",
+   "8.9 Henderson-Hasselbalch Equation",
+   "8.10 Buffer Capacity (qualitative only)"
+  ],
+  "sim_location": "ChemSims.app → Simulations → Acids & Bases (chemsims.app/sims/acids-bases): Introduction, Buffers, Titration screens, guided mode",
+  "essential_question": "How does the strength of an acid or base, and the presence of its conjugate, decide the pH of a solution and how that pH responds when more acid or base is added?",
+  "objectives": [
+   "Calculate pH, pOH, [H⁺] and [OH⁻] for strong acids and bases, and explain the log scale.",
+   "Use Ka or Kb to find the pH and percent ionization of a weak acid or base.",
+   "Explain how a buffer resists pH change at the particle level and use Henderson-Hasselbalch to find its pH and range.",
+   "Find the equivalence-point volume of a titration and explain why the EP pH is 7, above 7 or below 7.",
+   "Identify the half-equivalence point as pH = pKa."
+  ],
+  "materials": [
+   "Scientific calculators (log and 10ˣ keys)"
+  ],
+  "prep": [
+   "Run all three screens (Introduction, Buffers, Titration) in guided mode with the Answer Key. Do not use ?mode=explore: from the code, the bottles and steps stay locked in that mode.",
+   "Tell students before every screen: do not move the water slider on Buffers or Titration, and do not move the titrant slider. The Answer Key depends on it.",
+   "The Titration screen needs many burette taps (70 to the EP, up to 115 after). Show students that fast double-taps stream drops.",
+   "The sim doesn't cover 8.6 Molecular Structure of Acids and Bases (bond polarity, bond strength, oxyacids, why HF is weak), polyprotic acids, indicator selection by pKa, or quantitative buffer capacity; use your usual lesson for them."
+  ],
+  "vocabulary": [
+   "Arrhenius acid/base",
+   "Brønsted-Lowry acid/base",
+   "Lewis acid/base",
+   "pH",
+   "pOH",
+   "Kw",
+   "Ka",
+   "Kb",
+   "pKa",
+   "pKb",
+   "percent ionization",
+   "conjugate acid-base pair",
+   "buffer",
+   "buffer range",
+   "Henderson-Hasselbalch equation",
+   "titrant",
+   "equivalence point",
+   "half-equivalence point",
+   "indicator",
+   "spectator ion"
+  ],
+  "prior_knowledge": [
+   "Equilibrium constants and ICE tables (Unit 7)",
+   "Logarithms and scientific notation",
+   "Molarity and moles = M × V"
+  ],
+  "days": [
+   {
+    "day": 1,
+    "title": "Teacher demo: strong acids, strong bases and the pH scale",
+    "goal": "Introduce acid-base definitions and pH/pOH with the projected sim; students fill in page 1.",
+    "worksheet_pages": "Cover + p. 1",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: “Lemon juice pH 2, soap pH 10. Which has more H⁺? How many times more?”"
+     ],
+     [
+      "5–35",
+      "Demo of the Introduction screen, strong acid (script below); students fill in p. 1 as you go"
+     ],
+     [
+      "35–47",
+      "Students finish p. 1 in pairs: KOH row, calculation and graph (projected or own devices)"
+     ],
+     [
+      "47–50",
+      "Quick check: “pH of 0.10 M HCl? Of 0.10 M KOH?” (1.0, 13.0)"
+     ]
+    ],
+    "demo_script": [
+     {
+      "do": "Open Acids & Bases → Introduction. Read the first bubble; click Next through the Arrhenius, Brønsted-Lowry and Lewis bubbles.",
+      "say": "Which definition is about H⁺ in water? Which is about giving and taking protons? Which is about electron pairs?",
+      "students": "Notes bullets 1–2 (hydrogen ions, hydroxide, donate, accept, electron pair)."
+     },
+     {
+      "do": "At “Choose a strong acid”, open the selector and pick HCl. Point to the equation HCl → H⁺ + Cl⁻.",
+      "say": "Single arrow. What does it tell you about how much HCl breaks apart?",
+      "students": "Notes bullet 3: entirely, completion."
+     },
+     {
+      "do": "Click Next to the pH scale bubble. Toggle the scale between Concentration and pH Scale.",
+      "say": "When [H⁺] and [OH⁻] are equal, what are they? What pH is that?",
+      "students": "Notes bullet 4: 10⁻⁷, 7."
+     },
+     {
+      "do": "Click Next through the pH and pOH formula bubbles (the formulas light up at the top right).",
+      "say": "If [H⁺] goes up, does pH go up or down? (Down.) What do pH and pOH always add to? (14)",
+      "students": "Notes bullet 5 (lower, acidic, −log[H⁺], 14)."
+     },
+     {
+      "do": "At “Set the amount of water”, point to the slider but leave it. Click Next.",
+      "say": "Predict: when we add HCl, will pH go up or down? Write it before I shake.",
+      "students": "Predict box."
+     },
+     {
+      "do": "Click the HCl bottle, then shake 7 times, counting aloud. Drag the pH meter into the beaker.",
+      "say": "Read me pH, [H⁺] and [OH⁻] from the equations. (1.3, 5.0×10⁻², 2.0×10⁻¹³)",
+      "students": "Table row 1 (HCl, 7 shakes)."
+     },
+     {
+      "do": "Shake 7 more times until the bottle stops (14 shakes).",
+      "say": "We doubled the acid. Did the pH halve? (No, 1.3 → 1.0.) Why only 0.3?",
+      "students": "Table row 2; Analyze question (log 2 ≈ 0.3)."
+     },
+     {
+      "do": "Click Next: the chart switches to pH vs. moles added.",
+      "say": "Describe the shape. Why does the first bit of acid change pH the most?",
+      "students": "Graph sketch: steep drop, then flattening."
+     },
+     {
+      "do": "Click Next to “Choose a strong base” and stop. Do not add KOH.",
+      "say": "Calculate pOH and pH of 0.10 M KOH before you try it. Then do it yourselves.",
+      "students": "Calculate box; then KOH row on their own."
+     }
+    ]
+   },
+   {
+    "day": 2,
+    "title": "Student sim work: weak acids, weak bases and Ka",
+    "goal": "Compare weak and strong substances at the same concentration, then find Ka-based pH.",
+    "worksheet_pages": "pp. 2–3",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: write the Ka expression for HA (from Unit 7 K expressions)"
+     ],
+     [
+      "5–25",
+      "Page 2 on the Introduction screen (HA and B⁻)"
+     ],
+     [
+      "25–47",
+      "Page 3 on the Buffers screen (HA equilibrium)"
+     ],
+     [
+      "47–50",
+      "Checkpoint and clean-up"
+     ]
+    ],
+    "circulate": [
+     "Students shake exactly 14 times on Introduction (the bottle stops).",
+     "On Buffers: the water slider was not moved; [HA] reads 0.206 before equilibrium.",
+     "Ka calculation uses 0.206 M, not 0.10 M (that was the Introduction screen).",
+     "pH from the sim is 1 decimal on Introduction, 2 decimals in the Buffers equations."
+    ],
+    "checkpoint": "Every group has HA at equilibrium: [H⁺] = 3.8×10⁻³ M, pH = 2.42, pKa = 4.14.",
+    "early_finishers": "Page 3 Explore (HF), then compare percent ionization of HA at 0.10 M (2.7%) and 0.206 M (1.9%): why does it go down?"
+   },
+   {
+    "day": 3,
+    "title": "Student sim work: acid and base buffers",
+    "goal": "Build buffers from a weak acid or base and its salt, test them, and use Henderson-Hasselbalch.",
+    "worksheet_pages": "pp. 4–5",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: “Blood is pH 7.4. What would happen without a buffer if you drank lemon juice?”"
+     ],
+     [
+      "5–28",
+      "Page 4: add MA, then test with HCl"
+     ],
+     [
+      "28–47",
+      "Page 5: B⁻ buffer, test with KOH"
+     ],
+     [
+      "47–50",
+      "Checkpoint"
+     ]
+    ],
+    "circulate": [
+     "Calculations are done before the guide reveals the buffer pH.",
+     "The graph sketch is shape only; the sim's pH vs. moles graph has no numbers.",
+     "On page 5, students write pOH and pH (the sim's equations show 14 = pH + pOH).",
+     "Students should not read the weak-base fraction curve (it is drawn reversed)."
+    ],
+    "checkpoint": "HA buffer pH = 4.14 = pKa, falls to 2.64 at the limit; B⁻ buffer pH = 9.60, rises to 11.10.",
+    "early_finishers": "Page 5 Explore (more water); then predict the HS⁻/H₂S buffer pH from Kb = 1×10⁻³ (pH 11.0) and check."
+   },
+   {
+    "day": 4,
+    "title": "Student sim work: titrations",
+    "goal": "Find equivalence volumes and compare strong and weak titration curves.",
+    "worksheet_pages": "pp. 6–7 + Conclusion",
+    "agenda": [
+     [
+      "0–5",
+      "Warm-up: moles of acid in 0.400 L of 0.335 M HCl? (0.134 mol)"
+     ],
+     [
+      "5–25",
+      "Page 6: HCl + KOH, then KOH + HCl"
+     ],
+     [
+      "25–45",
+      "Page 7: HA + KOH, then B⁻ + HCl"
+     ],
+     [
+      "45–50",
+      "Start the Conclusion questions"
+     ]
+    ],
+    "circulate": [
+     "Math panel shows V(HCl) = 0.400 L and M(KOH) = 0.350; if not, the student moved a slider.",
+     "Students predict V at EP = 0.383 L before tapping.",
+     "Units on volume (L) and moles (mol).",
+     "Weak titrations: students record pH when the guide stops at halfway and at the EP."
+    ],
+    "checkpoint": "HA titration: halfway pH 4.14 (= pKa), EP pH 8.69 at 0.383 L.",
+    "early_finishers": "Redo the HA titration choosing HF (Back to the choice step). Predict the halfway pH (pKa = 3.35) before running."
+   },
+   {
+    "day": 5,
+    "title": "Grading and wrap-up",
+    "goal": "Grade the packet, fix misconceptions, connect to AP free response.",
+    "worksheet_pages": "Whole packet",
+    "agenda": [
+     [
+      "0–25",
+      "Grading (self, peer or teacher; see the grading section)"
+     ],
+     [
+      "25–40",
+      "Discussion: Conclusion questions; why EP pH ≠ 7 for weak titrations; structure of acids (8.6) mini-lesson preview"
+     ],
+     [
+      "40–50",
+      "Exit ticket"
+     ]
+    ]
+   }
+  ],
+  "misconceptions": [
+   {
+    "misconception": "A weak acid has a high pH because it is “dilute”.",
+    "sim_fix": "Page 2: HCl and HA are both 0.10 M, yet pH is 1.0 vs 2.6. Strength (how much ionizes) is not concentration."
+   },
+   {
+    "misconception": "The equivalence point is always pH 7.",
+    "sim_fix": "Page 7: HA + KOH reaches its EP at pH 8.69; B⁻ + HCl at 5.18. The conjugate left at the EP reacts with water."
+   },
+   {
+    "misconception": "A buffer keeps pH constant no matter how much acid is added.",
+    "sim_fix": "Page 4: the HCl test drops the buffer from 4.14 to 2.64, below its range. Buffers resist change only until the conjugate base is used up."
+   },
+   {
+    "misconception": "Doubling [H⁺] halves the pH.",
+    "sim_fix": "Page 1: 7 → 14 shakes doubles [H⁺] but pH only moves 1.3 → 1.0."
+   },
+   {
+    "misconception": "Half-equivalence pH = pKa only works in titrations.",
+    "sim_fix": "Conclusion Q2: the MA buffer (p. 4) and the halfway point (p. 7) both have [A⁻] = [HA] and pH 4.14."
+   }
+  ],
+  "sim_cautions": [
+   "Use guided mode only. The ?mode=explore link does not unlock the bottles or move through steps on these screens.",
+   "On Buffers and Titration, moving the water slider or the titrant slider changes every number. Tell students to leave both alone.",
+   "On the Introduction screen the water slider does not change pH at all; pH depends only on the number of shakes.",
+   "When HA is first chosen on the Introduction screen, the guide says HA “dissociates completely”. That is wrong for a weak acid; point students to the ⇌ arrow.",
+   "After the strong-base graph the guide still says “moles of strong acid you added”. It means base.",
+   "The Titration math panel's [H⁺] box is wrong for a weak acid before the EP (it shows leftover HA). Use the pH number.",
+   "The weak-base fraction-of-species curve is drawn backwards. Skip it.",
+   "HCN, F⁻ and HS⁻ use unrealistic constants (HCN Ka 9×10⁻⁵; F⁻ Kb 1.3×10⁻⁵; HS⁻ Kb 1×10⁻³). For F⁻ and HS⁻ the equation shows the conjugate acid as “F” and “HS” instead of HF and H₂S.",
+   "The buffer “limit” always lands 1.5 pH units past pKa; it is scripted, not calculated from moles of buffer."
+  ],
+  "differentiation": {
+   "support": [
+    "Pair students; one drives the sim, one records, then swap each page.",
+    "Give a log cheat-sheet: −log(1×10⁻ⁿ) = n; log 2 ≈ 0.3.",
+    "Allow the x ≈ √(Ka·C) shortcut and show it matches the sim within 0.01."
+   ],
+   "extension": [
+    "Use the quadratic formula for every weak acid/base and compare to the shortcut.",
+    "Calculate the pH of the HA titration after 0.100 L of KOH (pH = 4.14 + log(0.035/0.099) = 3.69) and compare to the curve shape.",
+    "Explain why HF is a weak acid even though F is very electronegative (8.6 bridge: H–F bond strength)."
+   ]
+  },
+  "exit_ticket": [
+   {
+    "question": "What is the pH of 0.10 M LiOH? Show the steps.",
+    "answer": "[OH⁻] = 0.10 M, pOH = 1.0, pH = 13.0."
+   },
+   {
+    "question": "A buffer has [A⁻] = [HA] and pKa = 4.14. What is its pH? What happens to the pH if a little HCl is added, and why?",
+    "answer": "pH = 4.14. It drops only slightly, because A⁻ reacts with the added H⁺ to make HA."
+   },
+   {
+    "question": "Why is the equivalence point of HA titrated with KOH above pH 7?",
+    "answer": "At the EP the beaker holds A⁻, a weak base, which reacts with water to make OH⁻ (sim: pH 8.69)."
+   }
+  ],
+  "ap_practice": [
+   {
+    "question": "(Multiple choice) A buffer is made with equal concentrations of the weak base B⁻ (Kb = 4.0×10⁻⁵) and its conjugate acid HB. What is the pH? (A) 4.40 (B) 7.00 (C) 9.60 (D) 11.45",
+    "answer": "(C) 9.60. pOH = pKb + log(1) = 4.40, pH = 14 − 4.40. (D) is the pH of B⁻ alone at 0.206 M; (A) is the pOH."
+   },
+   {
+    "question": "(FRQ) A 0.400 L sample of 0.335 M HA (Ka = 7.3×10⁻⁵) is titrated with 0.350 M KOH. (a) Write the net ionic equation. (b) Calculate the pH before any KOH is added. (c) Calculate the volume of KOH needed to reach the equivalence point. (d) What is the pH after half that volume is added? Justify. (e) Is the pH at the equivalence point greater than, less than or equal to 7? Explain. (f) Calculate it.",
+    "answer": "(a) HA + OH⁻ → A⁻ + H₂O. (b) [H⁺] = √(7.3×10⁻⁵ × 0.335) = 4.9×10⁻³ M, pH = 2.31. (c) n = 0.134 mol; V = 0.134/0.350 = 0.383 L. (d) pH = pKa = 4.14, since [A⁻] = [HA] (Henderson-Hasselbalch, log 1 = 0). (e) Greater than 7: A⁻ is a weak base and makes OH⁻. (f) [A⁻] = 0.134/0.783 = 0.171 M; Kb = 1.37×10⁻¹⁰; [OH⁻] = 4.8×10⁻⁶ M; pOH = 5.32; pH = 8.69."
+   }
+  ]
+ }
+}

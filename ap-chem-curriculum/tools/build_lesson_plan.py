@@ -32,8 +32,9 @@ H1 = ParagraphStyle("h1", fontName="Poppins-Bold", fontSize=20, leading=24, spac
 H1s = ParagraphStyle("h1s", fontName="Poppins", fontSize=11, leading=14, textColor=colors.HexColor("#555555"),
                      spaceAfter=10)
 H2 = ParagraphStyle("h2", fontName="Poppins-Bold", fontSize=13, leading=16, spaceBefore=12, spaceAfter=5,
-                    textColor=colors.white, backColor=bw.DARK, borderPadding=(4, 6, 4, 6))
-H3 = ParagraphStyle("h3", fontName="Poppins-Bold", fontSize=11, leading=14, spaceBefore=8, spaceAfter=3)
+                    textColor=colors.white, backColor=bw.DARK, borderPadding=(4, 6, 4, 6), keepWithNext=1)
+H3 = ParagraphStyle("h3", fontName="Poppins-Bold", fontSize=11, leading=14, spaceBefore=8, spaceAfter=3,
+                    keepWithNext=1)
 P = ParagraphStyle("p", fontName="Poppins", fontSize=9.5, leading=13.5, spaceAfter=4)
 B = ParagraphStyle("b", parent=P, leftIndent=14, bulletIndent=3, spaceAfter=2)
 C = ParagraphStyle("c", parent=P, fontSize=8.5, leading=11.5, spaceAfter=0)
