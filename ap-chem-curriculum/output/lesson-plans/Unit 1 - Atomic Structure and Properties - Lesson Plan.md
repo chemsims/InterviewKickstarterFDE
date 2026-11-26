@@ -15,7 +15,7 @@ Simulation lesson plan · Atomic Structure Sim · 6 class periods of about 50 mi
 
 By the end of this unit, students will be able to:
 
-- Convert between mass, moles and particles with n = m/M and N = n × N_A (1.1).
+- Convert between mass, moles and particles with n = m/M and N = n × Nₐ (1.1).
 - Read a mass spectrum and calculate an average atomic mass as a weighted average (1.2).
 - Find an empirical formula from mass data and a molecular formula from molar mass (1.3).
 - Use elemental composition to decide whether a sample is pure or a mixture (1.4).
@@ -95,7 +95,7 @@ mole · molar mass · Avogadro's number · isotope · m/z · relative abundance 
 |---|---|---|---|
 | 1 | Open chemsims.app/sims/unit1, choose Topic 1.1 Moles and Molar Mass, Guided mode. Point to the four panels: Sample, Conversion Pathway, Measurements, Equation and Working. | “We can't count atoms one at a time. What CAN we measure in the lab?” (Expected: mass.) | Set Up box; Predict: doubling the mass doubles moles and molecules. |
 | 2 | Step 1 “Why do we use the mole?”: point to the balance (18.0 g H₂O) and the grey Molar Mass, Moles and Particles boxes. | “Only mass is lit up. The mole is the bridge from mass to amount.” | First notes line: measure mass, use the mole. |
-| 3 | Point to the muted equations: n = m/M, N = n × N_A, N_A = 6.022 × 10²³ mol⁻¹. | “What does each letter stand for?” (n moles, m mass, M molar mass, N particles.) | Equations band and variable list. |
+| 3 | Point to the muted equations: n = m/M, N = n × Nₐ, Nₐ = 6.022 × 10²³ mol⁻¹. | “What does each letter stand for?” (n moles, m mass, M molar mass, N particles.) | Equations band and variable list. |
 | 4 | Click Next → step 2 “Building the molar mass”. Show the molecule view (2 H atoms, 1 O atom) and “2 x 1.0 + 16.0 = 18.0 g mol⁻¹”. | “Why do we multiply hydrogen by 2?” (Two H atoms in each molecule.) “What does 18.0 g/mol mean?” (One mole of water has a mass of 18.0 g.) | Step 2 data table; molar mass notes line; amu ↔ grams line. |
 | 5 | Do NOT click Next yet. Give 1 minute for Calculate #1. | “How many moles are in 18.0 g of water? Show the units cancelling.” | Calculate #1: 18.0 g ÷ 18.0 g/mol = 1.00 mol. |
 | 6 | Click Next → step 3. Point to Moles: 1.00 mol and the note “The grams cancel, leaving moles.” | “Did your answer match? Which unit cancelled?” (grams) | Notes: divide the sample mass by the molar mass. |

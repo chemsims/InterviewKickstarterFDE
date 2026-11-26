@@ -84,7 +84,7 @@ London dispersion force · dipole-dipole · hydrogen bond · ion-dipole · polar
 | 0–5 | Warm-up: “Why does water boil at 100 °C but methane at −162 °C?” (write, then share) |
 | 5–10 | Hand out packets. Show how each page runs: set up, predict, notes, data, analyze. |
 | 10–40 | Projected demo of Topic 3.1 (script below). Students fill in p. 1 as you go. |
-| 40–47 | Pairs answer the p. 1 Analyze questions; cold-call two pairs. |
+| 40–47 | Pairs answer the p. 1 Analyze question; cold-call two pairs. |
 | 47–50 | Exit ticket question 1 |
 
 **Demo script.** Do and say this at the projector:
@@ -92,14 +92,14 @@ London dispersion force · dipole-dipole · hydrogen bond · ion-dipole · polar
 | # | On screen (you click) | You say / ask | Students write |
 |---|---|---|---|
 | 1 | Open the sim → Unit 3 → Topic 3.1 Intermolecular and Interparticle Forces → Guided. Screen 1: set Macroscopic property = Boiling point. | “Methane and methanol are about the same size. Which boils higher? Write your guess in the Predict box first.” | p. 1 Predict box. |
-| 2 | Point to the two ranked cards: methanol 64.7, methane −161.5 (the sim writes “deg C”). | “That is a 226-degree difference. Read the reason line under each card. What force does methanol have that methane doesn't?” (Expected: H bonding.) | Table rows 1–2: −161.5 °C and 64.7 °C. |
+| 2 | Point to the two ranked cards: methanol 64.7, methane −161.5 (the sim writes “deg C”). | “That is a 226-degree difference. Read the reason line under each card. What force does methanol have that methane doesn't?” (Expected: H bonding.) | Table row 1: −161.5 °C / 64.7 °C. |
 | 3 | Read the Guide panel aloud: “Name the force and connect it to the molecular structure.” | “From now on, ‘stronger’ is not an answer. You must name the force and the structure that causes it.” | Nothing yet; listen. |
-| 4 | Press Next → Screen 2 London dispersion forces. Click Inspect molecule: methane, then chlorine, then iodine. | “These are all nonpolar. Why does the dispersion score go up?” (Expected: more electrons, bigger cloud, more polarizable.) “These scores are the sim's model numbers, not measurements.” | Table row 3: 3.8 / 5.9 / 9.9. Notes bullets 1–2. |
-| 5 | Press Next → Screen 3 Dipoles. Set Particle A = Chloromethane, Particle B = Chloromethane. Read the Dominant force tile. | “Dipole-dipole: the δ+ end of one faces the δ− end of the other.” Then set A and B = Carbon dioxide. “CO₂ has polar C=O bonds. Is the molecule polar?” (Expected: no, the linear shape cancels the bond dipoles, so only dispersion is left.) | Table row 4: Dipole-dipole. Notes bullet 3 (geometry). |
-| 6 | Press Next → Screen 4 Hydrogen bonding. Default pair is methanol + water. Read the Dominant force (H bonding) and the donor/acceptor grid. | “What two things does hydrogen bonding need?” (Expected: H on N, O or F, and an N, O or F acceptor.) | Table row 5: H bonding. Notes bullet 4. |
-| 7 | Set A and B = Fluoromethane. Read the Dominant force and the model cue. | “It has H and F. Why no hydrogen bond?” (Expected: the H is on carbon, not on F.) Don't give the full written answer; it is Analyze question 1. | Start Analyze question 1. |
-| 8 | Press Next → Screen 5 Comparing intermolecular forces (n-pentane vs neopentane, Boiling point). Then switch the property to Vapor pressure. | “Same formula, C₅H₁₂. Why 36.1 vs 9.5 °C?” (Expected: shape, contact area.) “Now vapor pressure: the ranking flips. Why?” (Expected: weaker attractions → higher vapor pressure.) | Table row 6: 36.1 / 9.5 °C. Notes bullet 5. |
-| 9 | Press Next → Screen 6 Full IMF analyzer. Show the challenge list but don't solve one. | “Tomorrow you'll drive the sim yourself. Try one challenge at home if you finish early.” | Explore box (optional). |
+| 4 | Press Next → Screen 2 London dispersion forces. Click Inspect molecule: methane, then chlorine, then iodine. | “These are all nonpolar. Why does the dispersion score go up?” (Expected: more electrons, bigger cloud, more polarizable.) “These scores are the sim's model numbers, not measurements.” | Table row 2: 3.8 / 5.9 / 9.9. Notes bullet 1. |
+| 5 | Press Next → Screen 3 Dipoles. Set Particle A = Chloromethane, Particle B = Chloromethane. Read the Dominant force tile. | “Dipole-dipole: the δ+ end of one faces the δ− end of the other.” Then set A and B = Carbon dioxide. “CO₂ has polar C=O bonds. Is the molecule polar?” (Expected: no, the linear shape cancels the bond dipoles, so only dispersion is left.) | Table row 3: Dipole-dipole. Notes bullet 2 (geometry). |
+| 6 | Press Next → Screen 4 Hydrogen bonding. Default pair is methanol + water. Read the Dominant force (H bonding) and the donor/acceptor grid. | “What two things does hydrogen bonding need?” (Expected: H on N, O or F, and an N, O or F acceptor.) | Table row 4: H bonding. Notes bullet 3 (first two blanks). |
+| 7 | Set A and B = Fluoromethane. Read the Dominant force and the model cue. | “It has H and F. Why no hydrogen bond?” (Expected: the H is on carbon, not on F.) Don't give the full written answer; it is the Analyze question. | Start the Analyze question. |
+| 8 | Press Next → Screen 5 Comparing intermolecular forces (n-pentane vs neopentane, Boiling point). Then switch the property to Vapor pressure. | “Same formula, C₅H₁₂. Why 36.1 vs 9.5 °C?” (Expected: shape, contact area.) “Now vapor pressure: the ranking flips. Why?” (Expected: weaker attractions → higher vapor pressure.) | Table row 5: 36.1 / 9.5 °C. Notes bullet 3 (vapor-pressure blank). |
+| 9 | Press Next → Screen 6 Full IMF analyzer. Show the challenge list but don't solve one. | “Tomorrow you'll drive the sim yourself. Try one challenge at home if you finish early.” | Nothing; preview only. |
 
 ### Day 2: Student sim work: solids, phases and gas laws (3.2–3.4)
 

@@ -169,35 +169,38 @@ class GraphFrame(Flowable):
 
 
 class Lines(Flowable):
-    """Ruled writing lines; in the key, the answer is printed over them."""
+    """Ruled writing lines; in the key, the answer is written on them, one text line per ruled line."""
+
+    LH = 0.3 * inch
 
     def __init__(self, n, answer=None, key=False):
         super().__init__()
         self.n, self.answer, self.key = n, answer, key
-        self.para = Paragraph(blanks(answer, True), key_note) if (key and answer) else None
+        self.para = None
+        if key and answer:
+            st = ParagraphStyle("key_lines", parent=key_note, leading=self.LH)
+            self.para = Paragraph(blanks(answer, True), st)
 
     def wrap(self, aw, ah):
-        self.lh = 0.3 * inch
-        h = self.n * self.lh
+        self.lines_n = max(self.n, 1)
         if self.para:
-            ph = self.para.wrap(CONTENT_W - 0.4 * inch, ah)[1]
-            h = max(h, ph + 6)
-        self.h = h
-        return CONTENT_W, h + 4
+            self.para.wrap(CONTENT_W - 0.4 * inch, ah)
+            self.lines_n = max(self.lines_n, len(self.para.blPara.lines))
+        self.h = self.lines_n * self.LH
+        return CONTENT_W, self.h + 4
 
     def draw(self):
         c = self.canv
         c.setStrokeColor(colors.HexColor("#9a9a9a"))
         c.setLineWidth(0.6)
-        y = self.h
-        for _ in range(max(self.n, 1)):
-            y -= self.lh
-            if y < 0:
-                break
-            c.line(0.2 * inch, y + 2, CONTENT_W - 0.1 * inch, y + 2)
+        for k in range(self.lines_n):
+            y = self.h - (k + 1) * self.LH + 2
+            c.line(0.2 * inch, y, CONTENT_W - 0.1 * inch, y)
         if self.para:
             pw, ph = self.para.wrap(CONTENT_W - 0.4 * inch, self.h)
-            self.para.drawOn(c, 0.25 * inch, self.h - ph)
+            fs = self.para.style.fontSize
+            first_baseline = self.h - self.LH + 2 + 3
+            self.para.drawOn(c, 0.25 * inch, first_baseline - ph + fs)
 
 
 class Worksheet:

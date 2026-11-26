@@ -20,7 +20,7 @@
       {
        "prompt": "Which boils higher, methane (CH₄) or methanol (CH₃OH)? Why?",
        "lines": 1,
-       "answer": "Methanol: its O–H group lets it hydrogen bond; methane has only weak London dispersion forces. Accept any prediction with a reason."
+       "answer": "Methanol: its O–H lets it hydrogen bond; methane has only dispersion. Accept any reasoned prediction."
       }
      ]
     },
@@ -79,7 +79,7 @@
       {
        "prompt": "Screen 4: can **fluoromethane** (CH₃F, A and B) hydrogen bond with itself? Why?",
        "lines": 2,
-       "answer": "No. Its H atoms are bonded to C, not to F, so it has no N–H, O–H or F–H donor. The sim shows dipole-dipole as the dominant force."
+       "answer": "No: its H atoms are on C, not F, so there is no N–H/O–H/F–H donor. The sim shows dipole-dipole."
       }
      ]
     }
@@ -448,7 +448,7 @@
     {
      "type": "notes",
      "items": [
-      "In M = n/V, V is the final {{solution|8}} volume (not solvent), in {{liters|7}}. Equal M does not mean equal {{moles|6}}."
+      "M = n/V uses the final {{solution|8}} volume in {{liters|7}}. Equal M does not mean equal {{moles|6}}."
      ]
     },
     {
@@ -936,14 +936,14 @@
     {
      "type": "setup",
      "items": [
-      "**Topic 3.13**, **Guided**: **Allura Red AC**, **25.0 µM**, **1.00 cm**, **504 nm**. Change one control at a time, then press **Measure**."
+      "**Topic 3.13**, **Guided**: **Allura Red AC**, **25.0 µM**, **1.00 cm**, **504 nm**. Press **Measure** after each change."
      ]
     },
     {
      "type": "calc",
      "items": [
       {
-       "prompt": "Screen 1: A = εbc has {{no}} unit. Calculate A for 25.0 µM (2.50 × 10⁻⁵ M), b = 1.00 cm, ε = 26,807 L mol⁻¹ cm⁻¹.",
+       "prompt": "Screen 1: A = εbc ({{no|4}} unit). Find A: c = 2.50 × 10⁻⁵ M, b = 1.00 cm, ε = 26,807 L mol⁻¹ cm⁻¹.",
        "lines": 1,
        "answer": "A = (26,807)(1.00)(2.50 × 10⁻⁵) = **0.670**."
       }
@@ -997,15 +997,15 @@
        "{{0.0324}}"
       ]
      ],
-     "row_height": 0.3
+     "row_height": 0.26
     },
     {
      "type": "graph",
-     "prompt": "Plot A vs c for runs 1, 2, Screen 1 and (0, 0). Draw the best-fit line. What is its slope?",
+     "prompt": "Plot A vs c (runs 1, 2, Screen 1, and 0,0). Draw the line; find its slope.",
      "x_label": "Concentration (µM)",
      "y_label": "Absorbance A",
      "answer": "Straight line through the origin; slope = εb = 0.0268 per µM.",
-     "height": 1.4
+     "height": 0.95
     },
     {
      "type": "question",
@@ -1013,7 +1013,7 @@
       {
        "prompt": "Why measure at 504 nm (λmax) instead of 600 nm? Use run 5.",
        "lines": 2,
-       "answer": "ε is largest at λmax (2.68 × 10⁴ vs 1.30 × 10³ at 600 nm), so A changes most with c: the steepest, most sensitive calibration (0.670 vs 0.0324)."
+       "answer": "ε is largest at λmax (2.68 × 10⁴ vs 1.30 × 10³), so A changes most with c (0.670 vs 0.0324): most sensitive."
       }
      ]
     }
@@ -1049,7 +1049,7 @@
   "**3.9 shuffles the dyes.** Each reset loads the next “sample” and reassigns which letter is most polar. Page 9's answers are for sample 1 (A moves farthest, C least). If a student reset first, accept answers that match their sample number.",
   "**3.10 iodine:** the sim rates iodine in ethanol “moderate qualitative solubility” (score 3) and in hexane “appreciable” (score 2). The category words and the scores disagree in order. The worksheet only asks for iodine + hexane.",
   "**3.11 visible range is 400–780 nm**; many textbooks say 400–700 nm. 3.13 wavelengths are limited to 400–700 nm, 0–50 µM, 0.1–2 cm.",
-  "**3.13 ε values** are built from EU food-additive specs: Allura Red ε = 540 × 496.42/10 = 26,807 L mol⁻¹ cm⁻¹ at 504 nm; tartrazine 28,322 at 426 nm. The band shape away from λmax is the sim's model, not a measured spectrum. The A = 0.402 unknown on p. 13 is hypothetical.",
+  "**3.13 ε values** are built from EU food-additive specs: Allura Red ε = 540 × 496.42/10 = 26,807 L mol⁻¹ cm⁻¹ at 504 nm; tartrazine 28,322 at 426 nm. The band shape away from λmax is the sim's model, not a measured spectrum. The A = 0.402 unknown in the AP practice FRQ is hypothetical.",
   "**3.5 average KE readout** is per mole (kJ/mol); per particle it is (3/2)kT = 8.28 × 10⁻²¹ J at 400 K."
  ],
  "lesson_plan": {
@@ -1140,7 +1140,7 @@
      ],
      [
       "40–47",
-      "Pairs answer the p. 1 Analyze questions; cold-call two pairs."
+      "Pairs answer the p. 1 Analyze question; cold-call two pairs."
      ],
      [
       "47–50",
@@ -1156,7 +1156,7 @@
      {
       "do": "Point to the two ranked cards: methanol 64.7, methane −161.5 (the sim writes “deg C”).",
       "say": "“That is a 226-degree difference. Read the reason line under each card. What force does methanol have that methane doesn't?” (Expected: H bonding.)",
-      "students": "Table rows 1–2: −161.5 °C and 64.7 °C."
+      "students": "Table row 1: −161.5 °C / 64.7 °C."
      },
      {
       "do": "Read the Guide panel aloud: “Name the force and connect it to the molecular structure.”",
@@ -1166,32 +1166,32 @@
      {
       "do": "Press Next → Screen 2 London dispersion forces. Click Inspect molecule: methane, then chlorine, then iodine.",
       "say": "“These are all nonpolar. Why does the dispersion score go up?” (Expected: more electrons, bigger cloud, more polarizable.) “These scores are the sim's model numbers, not measurements.”",
-      "students": "Table row 3: 3.8 / 5.9 / 9.9. Notes bullets 1–2."
+      "students": "Table row 2: 3.8 / 5.9 / 9.9. Notes bullet 1."
      },
      {
       "do": "Press Next → Screen 3 Dipoles. Set Particle A = Chloromethane, Particle B = Chloromethane. Read the Dominant force tile.",
       "say": "“Dipole-dipole: the δ+ end of one faces the δ− end of the other.” Then set A and B = Carbon dioxide. “CO₂ has polar C=O bonds. Is the molecule polar?” (Expected: no, the linear shape cancels the bond dipoles, so only dispersion is left.)",
-      "students": "Table row 4: Dipole-dipole. Notes bullet 3 (geometry)."
+      "students": "Table row 3: Dipole-dipole. Notes bullet 2 (geometry)."
      },
      {
       "do": "Press Next → Screen 4 Hydrogen bonding. Default pair is methanol + water. Read the Dominant force (H bonding) and the donor/acceptor grid.",
       "say": "“What two things does hydrogen bonding need?” (Expected: H on N, O or F, and an N, O or F acceptor.)",
-      "students": "Table row 5: H bonding. Notes bullet 4."
+      "students": "Table row 4: H bonding. Notes bullet 3 (first two blanks)."
      },
      {
       "do": "Set A and B = Fluoromethane. Read the Dominant force and the model cue.",
-      "say": "“It has H and F. Why no hydrogen bond?” (Expected: the H is on carbon, not on F.) Don't give the full written answer; it is Analyze question 1.",
-      "students": "Start Analyze question 1."
+      "say": "“It has H and F. Why no hydrogen bond?” (Expected: the H is on carbon, not on F.) Don't give the full written answer; it is the Analyze question.",
+      "students": "Start the Analyze question."
      },
      {
       "do": "Press Next → Screen 5 Comparing intermolecular forces (n-pentane vs neopentane, Boiling point). Then switch the property to Vapor pressure.",
       "say": "“Same formula, C₅H₁₂. Why 36.1 vs 9.5 °C?” (Expected: shape, contact area.) “Now vapor pressure: the ranking flips. Why?” (Expected: weaker attractions → higher vapor pressure.)",
-      "students": "Table row 6: 36.1 / 9.5 °C. Notes bullet 5."
+      "students": "Table row 5: 36.1 / 9.5 °C. Notes bullet 3 (vapor-pressure blank)."
      },
      {
       "do": "Press Next → Screen 6 Full IMF analyzer. Show the challenge list but don't solve one.",
       "say": "“Tomorrow you'll drive the sim yourself. Try one challenge at home if you finish early.”",
-      "students": "Explore box (optional)."
+      "students": "Nothing; preview only."
      }
     ]
    },
